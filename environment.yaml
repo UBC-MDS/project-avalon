@@ -1,0 +1,15 @@
+
+name: '522-project-avalon'
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11.*
+  - pip
+  - ipykernel
+  - nb_conda_kernels
+  - altair=5.1.2
+  - scipy
+  - matplotlib>=3.2.2
+  - scikit-learn>=1.1.3
+
