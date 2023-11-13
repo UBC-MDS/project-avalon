@@ -12,4 +12,15 @@ dependencies:
   - scipy
   - matplotlib>=3.2.2
   - scikit-learn>=1.1.3
+  - vl-convert-python  # For saving altair charts as static images
+  - vegafusion  # For working with charts > 5,000 graphical objects
+  - vegafusion-python-embed  # Same as the previous one
+  - vegafusion-jupyter  # For working with charts > 100,000 graphical objects
+  - vega_datasets  # Altair example data
+
+ # Notes:
+ # - matplotlib  # if you require more traditional types of plots or highly customized visualizations that Altair does not support
+ # - panel #If you plan to create interactive dashboards or web applications that incorporate your Altair visualizations
+
+
 
