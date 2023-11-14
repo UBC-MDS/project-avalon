@@ -14,9 +14,10 @@ Meeting times were established during the initial team meeting held on 2023-10-0
 
 - Weekly Meetings:
    - The group will have a milestone kick-off meeting during the lab for 522 on Monday at 2:00 PM. All members are expected to attend the meetings.
-   - Milestone finalization meetings to finalize the release will be held on Friday at 1:00 PM, via Google Meeting or in-person (if it's a school day).
+   - Milestone finalization meetings to finalize the release will be held on Friday at 1:00 PM, via Google Meeting or in person (if it's a school day).
 - Daily Virtual Stand-up:
-   - Post daily work progress on Slack before 11:00 AM on Tuesday, Wednesday and Thursday.
+   - Post daily work progress on Slack before 11:00 AM on Tuesday, Wednesday, and Thursday.
+   - Saturday and Sunday are on demand if the submission and milestone final review by the proofreader is not finished by Saturday, or in another case, the due is moved to Sunday.
 
 ## Communication
 
