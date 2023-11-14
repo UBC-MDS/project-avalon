@@ -20,6 +20,9 @@ Meeting times were established during the initial team meeting held on 2023-10-0
       - Post daily work progress on Slack before 11:00 AM on Tuesday, Wednesday, and Thursday.
    - Conditional but not optional:
       - Post daily work progress on Saturday and Sunday if the submission and milestone final review by the proofreader is not finished by Saturday, or in another case, the due is moved to Sunday.
+   - Daily Post Content:
+     - If you're unavailable to work on 522 for a day, it's OK to post `I'm available to work on the project today, due to....`. It's possible that you may have physical conditions, or no access to the internet or electronic devices for the next day's virtual stand-up. Just keep everyone posted.
+     - If you're available to post anything on Slack. Please notify the other group members on Slack or in person in advance. Ghosting with no reason or advance notice will reflect on the [Team work reflection](https://www.gradescope.ca/courses/12442)
 
 ## Communication
 
