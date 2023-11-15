@@ -1,15 +1,15 @@
-
-name: '522-project-avalon'
+name: 522-project-avalon
 channels:
   - conda-forge
   - defaults
 dependencies:
-  - python=3.11.*
-  - pip
-  - ipykernel
-  - nb_conda_kernels
   - altair=5.1.2
+  - ipykernel
+  - matplotlib[version='>=3.2.2']
+  - nb_conda_kernels
+  - pip
+  - python=3.11
+  - scikit-learn[version='>=1.1.3']
   - scipy
-  - matplotlib>=3.2.2
-  - scikit-learn>=1.1.3
-
+  - seaborn
+prefix: /Users/benchen/miniconda3/envs/522-project-avalon
