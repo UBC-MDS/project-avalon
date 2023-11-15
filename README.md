@@ -41,4 +41,8 @@ Here are some handy links for quick access:
 - **Course Notes**: [Reproducible and Trustworthy Workflows for Data Science](https://ubc-dsci.github.io/reproducible-and-trustworthy-workflows-for-data-science/README.html)
 - **Slack Channel**: [522_dsci-workflows on Slack](https://ubc-mds.slack.com/messages/522_dsci-workflows)
 
+## 📖 License
+
+This project is released under [MIT License](LICENSE.md).
+
 ---
