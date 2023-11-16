@@ -17,6 +17,7 @@ dependencies:
   - vegafusion-python-embed  # Same as the previous one
   - vegafusion-jupyter  # For working with charts > 100,000 graphical objects
   - vega_datasets  # Altair example data
+  - folium # For heatmap plotting
 
  # Notes:
  # - matplotlib  # if you require more traditional types of plots or highly customized visualizations that Altair does not support
