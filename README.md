@@ -7,16 +7,18 @@ Welcome to the repository for Project Avalon, a part of the DSCI-522 course by G
 
 ## ⭐️ Project Summary
 
-This project aims to perform statistical analyses on the crimes committed in the City of Vancouver, and develop a classification algorithm to determine the types of crime given a set of parameters.
+This project aims to perform statistical analyses on the crimes committed in the City of Vancouver and develop a classification algorithm to determine the types of crime given a set of parameters.
 
 ## 📘 Data Source
 
 [Crime Data Download, the Vancouver Police Department](https://geodash.vpd.ca/opendata/)
 
-
 ## 📋 Dependencies
 
 All required dependencies are listed in this [conda environment file](environment.yaml).
+- Run `conda env create --name avalon --file=environment.yaml`
+- Then switch to `avalon` env by `conda activate avalon`
+- If you added a new package in your local `environment.yaml`, you need to run `conda env update --name avalon --file=environment.yaml` to update your local env.
 
 ## 🧑‍💻 How to run the notebook
 
