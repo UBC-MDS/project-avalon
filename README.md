@@ -38,9 +38,6 @@ Our team, in alphabetical order:
 - **Mo Norouzi**
 - **Yiwei Zhang**
 
-## Project Management
-
-
 ## 📌 Useful URLs
 
 Here are some handy links for quick access:
