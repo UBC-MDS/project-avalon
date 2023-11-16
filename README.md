@@ -38,6 +38,9 @@ Our team, in alphabetical order:
 - **Mo Norouzi**
 - **Yiwei Zhang**
 
+## Project Management
+
+
 ## 📌 Useful URLs
 
 Here are some handy links for quick access:
@@ -45,6 +48,9 @@ Here are some handy links for quick access:
 - **Course Releases**: [DSCI_522 Course Releases](https://github.ubc.ca/MDS-2023-24/DSCI_522_dsci-workflows_students/tree/master/release)
 - **Course Notes**: [Reproducible and Trustworthy Workflows for Data Science](https://ubc-dsci.github.io/reproducible-and-trustworthy-workflows-for-data-science/README.html)
 - **Slack Channel**: [522_dsci-workflows on Slack](https://ubc-mds.slack.com/messages/522_dsci-workflows)
+- **Our GitHub Project**: [Project Kaban](https://github.com/orgs/UBC-MDS/projects/86)
+<img width="1439" alt="image" src="https://github.com/UBC-MDS/project-avalon/assets/18610590/9e46d78d-b383-4413-80a4-fac120a29658">
+
 
 ## 📖 License
 
