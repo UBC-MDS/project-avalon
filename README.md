@@ -21,6 +21,11 @@ All required dependencies are listed in this [conda environment file](environmen
 
 1. (Suggested) Create a new conda environment based on the provided [YAML file](environment.yaml).
   - Run `conda env create --name avalon --file=environment.yaml`
+  - Install the ipykernel:
+```
+conda activate avalon
+python -m ipykernel install --user --name avalon --display-name "Python (avalon)"
+```
   - Then switch to `avalon` env by clicking the drop-down, and select `avalon`
     <img width="455" alt="image" src="https://github.com/UBC-MDS/project-avalon/assets/18610590/95c2c615-b7e3-42bd-93ad-a61861bd7d3a">
   - Note:
