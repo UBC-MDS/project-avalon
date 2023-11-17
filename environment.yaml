@@ -6,7 +6,7 @@
 #   - If you need the avalon env locally, run 
 #       `conda activate avalon`
 #   - If you added a new package in your local environment.yaml, you need to run 
-#       `conda env update --name avalon --file=environment.yaml`
+#       `conda env update --name avalon --file=environment.yaml --prune`
 # How to use:
 #   - Switch to avalon env by clicking the drop-down in jupyter notebook, and then select the `avalon` kernel
 ##
