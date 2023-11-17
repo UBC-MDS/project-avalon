@@ -1,0 +1,2612 @@
+,TYPE,YEAR,MONTH,Observations,YEAR-MONTH
+0,Break and Enter Commercial,2003,1,303,2003-01-01
+1,Break and Enter Commercial,2003,2,254,2003-02-01
+2,Break and Enter Commercial,2003,3,292,2003-03-01
+3,Break and Enter Commercial,2003,4,266,2003-04-01
+4,Break and Enter Commercial,2003,5,290,2003-05-01
+5,Break and Enter Commercial,2003,6,307,2003-06-01
+6,Break and Enter Commercial,2003,7,252,2003-07-01
+7,Break and Enter Commercial,2003,8,240,2003-08-01
+8,Break and Enter Commercial,2003,9,209,2003-09-01
+9,Break and Enter Commercial,2003,10,306,2003-10-01
+10,Break and Enter Commercial,2003,11,263,2003-11-01
+11,Break and Enter Commercial,2003,12,214,2003-12-01
+12,Break and Enter Commercial,2004,1,217,2004-01-01
+13,Break and Enter Commercial,2004,2,256,2004-02-01
+14,Break and Enter Commercial,2004,3,274,2004-03-01
+15,Break and Enter Commercial,2004,4,289,2004-04-01
+16,Break and Enter Commercial,2004,5,254,2004-05-01
+17,Break and Enter Commercial,2004,6,258,2004-06-01
+18,Break and Enter Commercial,2004,7,236,2004-07-01
+19,Break and Enter Commercial,2004,8,266,2004-08-01
+20,Break and Enter Commercial,2004,9,377,2004-09-01
+21,Break and Enter Commercial,2004,10,317,2004-10-01
+22,Break and Enter Commercial,2004,11,271,2004-11-01
+23,Break and Enter Commercial,2004,12,264,2004-12-01
+24,Break and Enter Commercial,2005,1,192,2005-01-01
+25,Break and Enter Commercial,2005,2,211,2005-02-01
+26,Break and Enter Commercial,2005,3,204,2005-03-01
+27,Break and Enter Commercial,2005,4,154,2005-04-01
+28,Break and Enter Commercial,2005,5,201,2005-05-01
+29,Break and Enter Commercial,2005,6,227,2005-06-01
+30,Break and Enter Commercial,2005,7,249,2005-07-01
+31,Break and Enter Commercial,2005,8,221,2005-08-01
+32,Break and Enter Commercial,2005,9,219,2005-09-01
+33,Break and Enter Commercial,2005,10,250,2005-10-01
+34,Break and Enter Commercial,2005,11,276,2005-11-01
+35,Break and Enter Commercial,2005,12,235,2005-12-01
+36,Break and Enter Commercial,2006,1,277,2006-01-01
+37,Break and Enter Commercial,2006,2,209,2006-02-01
+38,Break and Enter Commercial,2006,3,242,2006-03-01
+39,Break and Enter Commercial,2006,4,241,2006-04-01
+40,Break and Enter Commercial,2006,5,271,2006-05-01
+41,Break and Enter Commercial,2006,6,224,2006-06-01
+42,Break and Enter Commercial,2006,7,238,2006-07-01
+43,Break and Enter Commercial,2006,8,223,2006-08-01
+44,Break and Enter Commercial,2006,9,201,2006-09-01
+45,Break and Enter Commercial,2006,10,233,2006-10-01
+46,Break and Enter Commercial,2006,11,206,2006-11-01
+47,Break and Enter Commercial,2006,12,280,2006-12-01
+48,Break and Enter Commercial,2007,1,290,2007-01-01
+49,Break and Enter Commercial,2007,2,174,2007-02-01
+50,Break and Enter Commercial,2007,3,214,2007-03-01
+51,Break and Enter Commercial,2007,4,192,2007-04-01
+52,Break and Enter Commercial,2007,5,187,2007-05-01
+53,Break and Enter Commercial,2007,6,210,2007-06-01
+54,Break and Enter Commercial,2007,7,207,2007-07-01
+55,Break and Enter Commercial,2007,8,245,2007-08-01
+56,Break and Enter Commercial,2007,9,216,2007-09-01
+57,Break and Enter Commercial,2007,10,172,2007-10-01
+58,Break and Enter Commercial,2007,11,177,2007-11-01
+59,Break and Enter Commercial,2007,12,151,2007-12-01
+60,Break and Enter Commercial,2008,1,201,2008-01-01
+61,Break and Enter Commercial,2008,2,192,2008-02-01
+62,Break and Enter Commercial,2008,3,243,2008-03-01
+63,Break and Enter Commercial,2008,4,186,2008-04-01
+64,Break and Enter Commercial,2008,5,196,2008-05-01
+65,Break and Enter Commercial,2008,6,174,2008-06-01
+66,Break and Enter Commercial,2008,7,188,2008-07-01
+67,Break and Enter Commercial,2008,8,201,2008-08-01
+68,Break and Enter Commercial,2008,9,159,2008-09-01
+69,Break and Enter Commercial,2008,10,179,2008-10-01
+70,Break and Enter Commercial,2008,11,139,2008-11-01
+71,Break and Enter Commercial,2008,12,167,2008-12-01
+72,Break and Enter Commercial,2009,1,179,2009-01-01
+73,Break and Enter Commercial,2009,2,153,2009-02-01
+74,Break and Enter Commercial,2009,3,151,2009-03-01
+75,Break and Enter Commercial,2009,4,136,2009-04-01
+76,Break and Enter Commercial,2009,5,185,2009-05-01
+77,Break and Enter Commercial,2009,6,154,2009-06-01
+78,Break and Enter Commercial,2009,7,142,2009-07-01
+79,Break and Enter Commercial,2009,8,157,2009-08-01
+80,Break and Enter Commercial,2009,9,152,2009-09-01
+81,Break and Enter Commercial,2009,10,167,2009-10-01
+82,Break and Enter Commercial,2009,11,155,2009-11-01
+83,Break and Enter Commercial,2009,12,128,2009-12-01
+84,Break and Enter Commercial,2010,1,126,2010-01-01
+85,Break and Enter Commercial,2010,2,109,2010-02-01
+86,Break and Enter Commercial,2010,3,159,2010-03-01
+87,Break and Enter Commercial,2010,4,143,2010-04-01
+88,Break and Enter Commercial,2010,5,139,2010-05-01
+89,Break and Enter Commercial,2010,6,132,2010-06-01
+90,Break and Enter Commercial,2010,7,122,2010-07-01
+91,Break and Enter Commercial,2010,8,175,2010-08-01
+92,Break and Enter Commercial,2010,9,150,2010-09-01
+93,Break and Enter Commercial,2010,10,151,2010-10-01
+94,Break and Enter Commercial,2010,11,110,2010-11-01
+95,Break and Enter Commercial,2010,12,143,2010-12-01
+96,Break and Enter Commercial,2011,1,149,2011-01-01
+97,Break and Enter Commercial,2011,2,143,2011-02-01
+98,Break and Enter Commercial,2011,3,139,2011-03-01
+99,Break and Enter Commercial,2011,4,118,2011-04-01
+100,Break and Enter Commercial,2011,5,124,2011-05-01
+101,Break and Enter Commercial,2011,6,305,2011-06-01
+102,Break and Enter Commercial,2011,7,146,2011-07-01
+103,Break and Enter Commercial,2011,8,150,2011-08-01
+104,Break and Enter Commercial,2011,9,139,2011-09-01
+105,Break and Enter Commercial,2011,10,121,2011-10-01
+106,Break and Enter Commercial,2011,11,92,2011-11-01
+107,Break and Enter Commercial,2011,12,124,2011-12-01
+108,Break and Enter Commercial,2012,1,156,2012-01-01
+109,Break and Enter Commercial,2012,2,118,2012-02-01
+110,Break and Enter Commercial,2012,3,165,2012-03-01
+111,Break and Enter Commercial,2012,4,155,2012-04-01
+112,Break and Enter Commercial,2012,5,133,2012-05-01
+113,Break and Enter Commercial,2012,6,136,2012-06-01
+114,Break and Enter Commercial,2012,7,105,2012-07-01
+115,Break and Enter Commercial,2012,8,114,2012-08-01
+116,Break and Enter Commercial,2012,9,122,2012-09-01
+117,Break and Enter Commercial,2012,10,145,2012-10-01
+118,Break and Enter Commercial,2012,11,172,2012-11-01
+119,Break and Enter Commercial,2012,12,166,2012-12-01
+120,Break and Enter Commercial,2013,1,136,2013-01-01
+121,Break and Enter Commercial,2013,2,155,2013-02-01
+122,Break and Enter Commercial,2013,3,195,2013-03-01
+123,Break and Enter Commercial,2013,4,177,2013-04-01
+124,Break and Enter Commercial,2013,5,116,2013-05-01
+125,Break and Enter Commercial,2013,6,152,2013-06-01
+126,Break and Enter Commercial,2013,7,134,2013-07-01
+127,Break and Enter Commercial,2013,8,121,2013-08-01
+128,Break and Enter Commercial,2013,9,116,2013-09-01
+129,Break and Enter Commercial,2013,10,137,2013-10-01
+130,Break and Enter Commercial,2013,11,151,2013-11-01
+131,Break and Enter Commercial,2013,12,180,2013-12-01
+132,Break and Enter Commercial,2014,1,186,2014-01-01
+133,Break and Enter Commercial,2014,2,163,2014-02-01
+134,Break and Enter Commercial,2014,3,183,2014-03-01
+135,Break and Enter Commercial,2014,4,198,2014-04-01
+136,Break and Enter Commercial,2014,5,195,2014-05-01
+137,Break and Enter Commercial,2014,6,167,2014-06-01
+138,Break and Enter Commercial,2014,7,160,2014-07-01
+139,Break and Enter Commercial,2014,8,170,2014-08-01
+140,Break and Enter Commercial,2014,9,213,2014-09-01
+141,Break and Enter Commercial,2014,10,200,2014-10-01
+142,Break and Enter Commercial,2014,11,205,2014-11-01
+143,Break and Enter Commercial,2014,12,201,2014-12-01
+144,Break and Enter Commercial,2015,1,228,2015-01-01
+145,Break and Enter Commercial,2015,2,186,2015-02-01
+146,Break and Enter Commercial,2015,3,192,2015-03-01
+147,Break and Enter Commercial,2015,4,179,2015-04-01
+148,Break and Enter Commercial,2015,5,189,2015-05-01
+149,Break and Enter Commercial,2015,6,212,2015-06-01
+150,Break and Enter Commercial,2015,7,214,2015-07-01
+151,Break and Enter Commercial,2015,8,198,2015-08-01
+152,Break and Enter Commercial,2015,9,189,2015-09-01
+153,Break and Enter Commercial,2015,10,234,2015-10-01
+154,Break and Enter Commercial,2015,11,206,2015-11-01
+155,Break and Enter Commercial,2015,12,225,2015-12-01
+156,Break and Enter Commercial,2016,1,260,2016-01-01
+157,Break and Enter Commercial,2016,2,206,2016-02-01
+158,Break and Enter Commercial,2016,3,244,2016-03-01
+159,Break and Enter Commercial,2016,4,219,2016-04-01
+160,Break and Enter Commercial,2016,5,226,2016-05-01
+161,Break and Enter Commercial,2016,6,234,2016-06-01
+162,Break and Enter Commercial,2016,7,240,2016-07-01
+163,Break and Enter Commercial,2016,8,197,2016-08-01
+164,Break and Enter Commercial,2016,9,219,2016-09-01
+165,Break and Enter Commercial,2016,10,200,2016-10-01
+166,Break and Enter Commercial,2016,11,230,2016-11-01
+167,Break and Enter Commercial,2016,12,207,2016-12-01
+168,Break and Enter Commercial,2017,1,164,2017-01-01
+169,Break and Enter Commercial,2017,2,185,2017-02-01
+170,Break and Enter Commercial,2017,3,231,2017-03-01
+171,Break and Enter Commercial,2017,4,187,2017-04-01
+172,Break and Enter Commercial,2017,5,186,2017-05-01
+173,Break and Enter Commercial,2017,6,142,2017-06-01
+174,Break and Enter Commercial,2017,7,157,2017-07-01
+175,Break and Enter Commercial,2017,8,171,2017-08-01
+176,Break and Enter Commercial,2017,9,164,2017-09-01
+177,Break and Enter Commercial,2017,10,192,2017-10-01
+178,Break and Enter Commercial,2017,11,206,2017-11-01
+179,Break and Enter Commercial,2017,12,207,2017-12-01
+180,Break and Enter Commercial,2018,1,216,2018-01-01
+181,Break and Enter Commercial,2018,2,192,2018-02-01
+182,Break and Enter Commercial,2018,3,177,2018-03-01
+183,Break and Enter Commercial,2018,4,166,2018-04-01
+184,Break and Enter Commercial,2018,5,141,2018-05-01
+185,Break and Enter Commercial,2018,6,176,2018-06-01
+186,Break and Enter Commercial,2018,7,130,2018-07-01
+187,Break and Enter Commercial,2018,8,134,2018-08-01
+188,Break and Enter Commercial,2018,9,193,2018-09-01
+189,Break and Enter Commercial,2018,10,152,2018-10-01
+190,Break and Enter Commercial,2018,11,170,2018-11-01
+191,Break and Enter Commercial,2018,12,173,2018-12-01
+192,Break and Enter Commercial,2019,1,174,2019-01-01
+193,Break and Enter Commercial,2019,2,134,2019-02-01
+194,Break and Enter Commercial,2019,3,167,2019-03-01
+195,Break and Enter Commercial,2019,4,152,2019-04-01
+196,Break and Enter Commercial,2019,5,188,2019-05-01
+197,Break and Enter Commercial,2019,6,209,2019-06-01
+198,Break and Enter Commercial,2019,7,218,2019-07-01
+199,Break and Enter Commercial,2019,8,221,2019-08-01
+200,Break and Enter Commercial,2019,9,241,2019-09-01
+201,Break and Enter Commercial,2019,10,258,2019-10-01
+202,Break and Enter Commercial,2019,11,264,2019-11-01
+203,Break and Enter Commercial,2019,12,264,2019-12-01
+204,Break and Enter Commercial,2020,1,254,2020-01-01
+205,Break and Enter Commercial,2020,2,243,2020-02-01
+206,Break and Enter Commercial,2020,3,336,2020-03-01
+207,Break and Enter Commercial,2020,4,375,2020-04-01
+208,Break and Enter Commercial,2020,5,213,2020-05-01
+209,Break and Enter Commercial,2020,6,171,2020-06-01
+210,Break and Enter Commercial,2020,7,153,2020-07-01
+211,Break and Enter Commercial,2020,8,158,2020-08-01
+212,Break and Enter Commercial,2020,9,223,2020-09-01
+213,Break and Enter Commercial,2020,10,259,2020-10-01
+214,Break and Enter Commercial,2020,11,207,2020-11-01
+215,Break and Enter Commercial,2020,12,196,2020-12-01
+216,Break and Enter Commercial,2021,1,237,2021-01-01
+217,Break and Enter Commercial,2021,2,184,2021-02-01
+218,Break and Enter Commercial,2021,3,173,2021-03-01
+219,Break and Enter Commercial,2021,4,179,2021-04-01
+220,Break and Enter Commercial,2021,5,180,2021-05-01
+221,Break and Enter Commercial,2021,6,180,2021-06-01
+222,Break and Enter Commercial,2021,7,166,2021-07-01
+223,Break and Enter Commercial,2021,8,154,2021-08-01
+224,Break and Enter Commercial,2021,9,150,2021-09-01
+225,Break and Enter Commercial,2021,10,156,2021-10-01
+226,Break and Enter Commercial,2021,11,144,2021-11-01
+227,Break and Enter Commercial,2021,12,175,2021-12-01
+228,Break and Enter Commercial,2022,1,226,2022-01-01
+229,Break and Enter Commercial,2022,2,204,2022-02-01
+230,Break and Enter Commercial,2022,3,180,2022-03-01
+231,Break and Enter Commercial,2022,4,162,2022-04-01
+232,Break and Enter Commercial,2022,5,154,2022-05-01
+233,Break and Enter Commercial,2022,6,146,2022-06-01
+234,Break and Enter Commercial,2022,7,141,2022-07-01
+235,Break and Enter Commercial,2022,8,179,2022-08-01
+236,Break and Enter Commercial,2022,9,166,2022-09-01
+237,Break and Enter Commercial,2022,10,142,2022-10-01
+238,Break and Enter Commercial,2022,11,132,2022-11-01
+239,Break and Enter Commercial,2022,12,154,2022-12-01
+240,Break and Enter Commercial,2023,1,161,2023-01-01
+241,Break and Enter Commercial,2023,2,146,2023-02-01
+242,Break and Enter Commercial,2023,3,202,2023-03-01
+243,Break and Enter Commercial,2023,4,175,2023-04-01
+244,Break and Enter Commercial,2023,5,140,2023-05-01
+245,Break and Enter Commercial,2023,6,157,2023-06-01
+246,Break and Enter Commercial,2023,7,132,2023-07-01
+247,Break and Enter Commercial,2023,8,133,2023-08-01
+248,Break and Enter Commercial,2023,9,167,2023-09-01
+249,Break and Enter Commercial,2023,10,130,2023-10-01
+251,Break and Enter Residential/Other,2003,1,643,2003-01-01
+252,Break and Enter Residential/Other,2003,2,507,2003-02-01
+253,Break and Enter Residential/Other,2003,3,515,2003-03-01
+254,Break and Enter Residential/Other,2003,4,608,2003-04-01
+255,Break and Enter Residential/Other,2003,5,565,2003-05-01
+256,Break and Enter Residential/Other,2003,6,531,2003-06-01
+257,Break and Enter Residential/Other,2003,7,535,2003-07-01
+258,Break and Enter Residential/Other,2003,8,502,2003-08-01
+259,Break and Enter Residential/Other,2003,9,631,2003-09-01
+260,Break and Enter Residential/Other,2003,10,643,2003-10-01
+261,Break and Enter Residential/Other,2003,11,616,2003-11-01
+262,Break and Enter Residential/Other,2003,12,588,2003-12-01
+263,Break and Enter Residential/Other,2004,1,584,2004-01-01
+264,Break and Enter Residential/Other,2004,2,524,2004-02-01
+265,Break and Enter Residential/Other,2004,3,541,2004-03-01
+266,Break and Enter Residential/Other,2004,4,553,2004-04-01
+267,Break and Enter Residential/Other,2004,5,559,2004-05-01
+268,Break and Enter Residential/Other,2004,6,516,2004-06-01
+269,Break and Enter Residential/Other,2004,7,435,2004-07-01
+270,Break and Enter Residential/Other,2004,8,517,2004-08-01
+271,Break and Enter Residential/Other,2004,9,561,2004-09-01
+272,Break and Enter Residential/Other,2004,10,611,2004-10-01
+273,Break and Enter Residential/Other,2004,11,580,2004-11-01
+274,Break and Enter Residential/Other,2004,12,553,2004-12-01
+275,Break and Enter Residential/Other,2005,1,553,2005-01-01
+276,Break and Enter Residential/Other,2005,2,429,2005-02-01
+277,Break and Enter Residential/Other,2005,3,490,2005-03-01
+278,Break and Enter Residential/Other,2005,4,470,2005-04-01
+279,Break and Enter Residential/Other,2005,5,524,2005-05-01
+280,Break and Enter Residential/Other,2005,6,482,2005-06-01
+281,Break and Enter Residential/Other,2005,7,430,2005-07-01
+282,Break and Enter Residential/Other,2005,8,429,2005-08-01
+283,Break and Enter Residential/Other,2005,9,454,2005-09-01
+284,Break and Enter Residential/Other,2005,10,476,2005-10-01
+285,Break and Enter Residential/Other,2005,11,406,2005-11-01
+286,Break and Enter Residential/Other,2005,12,395,2005-12-01
+287,Break and Enter Residential/Other,2006,1,483,2006-01-01
+288,Break and Enter Residential/Other,2006,2,400,2006-02-01
+289,Break and Enter Residential/Other,2006,3,464,2006-03-01
+290,Break and Enter Residential/Other,2006,4,391,2006-04-01
+291,Break and Enter Residential/Other,2006,5,404,2006-05-01
+292,Break and Enter Residential/Other,2006,6,462,2006-06-01
+293,Break and Enter Residential/Other,2006,7,491,2006-07-01
+294,Break and Enter Residential/Other,2006,8,436,2006-08-01
+295,Break and Enter Residential/Other,2006,9,488,2006-09-01
+296,Break and Enter Residential/Other,2006,10,600,2006-10-01
+297,Break and Enter Residential/Other,2006,11,510,2006-11-01
+298,Break and Enter Residential/Other,2006,12,543,2006-12-01
+299,Break and Enter Residential/Other,2007,1,487,2007-01-01
+300,Break and Enter Residential/Other,2007,2,381,2007-02-01
+301,Break and Enter Residential/Other,2007,3,397,2007-03-01
+302,Break and Enter Residential/Other,2007,4,408,2007-04-01
+303,Break and Enter Residential/Other,2007,5,414,2007-05-01
+304,Break and Enter Residential/Other,2007,6,455,2007-06-01
+305,Break and Enter Residential/Other,2007,7,436,2007-07-01
+306,Break and Enter Residential/Other,2007,8,456,2007-08-01
+307,Break and Enter Residential/Other,2007,9,364,2007-09-01
+308,Break and Enter Residential/Other,2007,10,386,2007-10-01
+309,Break and Enter Residential/Other,2007,11,454,2007-11-01
+310,Break and Enter Residential/Other,2007,12,358,2007-12-01
+311,Break and Enter Residential/Other,2008,1,432,2008-01-01
+312,Break and Enter Residential/Other,2008,2,404,2008-02-01
+313,Break and Enter Residential/Other,2008,3,375,2008-03-01
+314,Break and Enter Residential/Other,2008,4,337,2008-04-01
+315,Break and Enter Residential/Other,2008,5,368,2008-05-01
+316,Break and Enter Residential/Other,2008,6,376,2008-06-01
+317,Break and Enter Residential/Other,2008,7,364,2008-07-01
+318,Break and Enter Residential/Other,2008,8,353,2008-08-01
+319,Break and Enter Residential/Other,2008,9,385,2008-09-01
+320,Break and Enter Residential/Other,2008,10,376,2008-10-01
+321,Break and Enter Residential/Other,2008,11,321,2008-11-01
+322,Break and Enter Residential/Other,2008,12,337,2008-12-01
+323,Break and Enter Residential/Other,2009,1,370,2009-01-01
+324,Break and Enter Residential/Other,2009,2,317,2009-02-01
+325,Break and Enter Residential/Other,2009,3,267,2009-03-01
+326,Break and Enter Residential/Other,2009,4,256,2009-04-01
+327,Break and Enter Residential/Other,2009,5,263,2009-05-01
+328,Break and Enter Residential/Other,2009,6,225,2009-06-01
+329,Break and Enter Residential/Other,2009,7,230,2009-07-01
+330,Break and Enter Residential/Other,2009,8,285,2009-08-01
+331,Break and Enter Residential/Other,2009,9,325,2009-09-01
+332,Break and Enter Residential/Other,2009,10,338,2009-10-01
+333,Break and Enter Residential/Other,2009,11,338,2009-11-01
+334,Break and Enter Residential/Other,2009,12,283,2009-12-01
+335,Break and Enter Residential/Other,2010,1,255,2010-01-01
+336,Break and Enter Residential/Other,2010,2,245,2010-02-01
+337,Break and Enter Residential/Other,2010,3,301,2010-03-01
+338,Break and Enter Residential/Other,2010,4,316,2010-04-01
+339,Break and Enter Residential/Other,2010,5,274,2010-05-01
+340,Break and Enter Residential/Other,2010,6,276,2010-06-01
+341,Break and Enter Residential/Other,2010,7,243,2010-07-01
+342,Break and Enter Residential/Other,2010,8,275,2010-08-01
+343,Break and Enter Residential/Other,2010,9,221,2010-09-01
+344,Break and Enter Residential/Other,2010,10,280,2010-10-01
+345,Break and Enter Residential/Other,2010,11,301,2010-11-01
+346,Break and Enter Residential/Other,2010,12,279,2010-12-01
+347,Break and Enter Residential/Other,2011,1,323,2011-01-01
+348,Break and Enter Residential/Other,2011,2,215,2011-02-01
+349,Break and Enter Residential/Other,2011,3,296,2011-03-01
+350,Break and Enter Residential/Other,2011,4,263,2011-04-01
+351,Break and Enter Residential/Other,2011,5,262,2011-05-01
+352,Break and Enter Residential/Other,2011,6,249,2011-06-01
+353,Break and Enter Residential/Other,2011,7,235,2011-07-01
+354,Break and Enter Residential/Other,2011,8,221,2011-08-01
+355,Break and Enter Residential/Other,2011,9,300,2011-09-01
+356,Break and Enter Residential/Other,2011,10,253,2011-10-01
+357,Break and Enter Residential/Other,2011,11,308,2011-11-01
+358,Break and Enter Residential/Other,2011,12,305,2011-12-01
+359,Break and Enter Residential/Other,2012,1,255,2012-01-01
+360,Break and Enter Residential/Other,2012,2,233,2012-02-01
+361,Break and Enter Residential/Other,2012,3,231,2012-03-01
+362,Break and Enter Residential/Other,2012,4,240,2012-04-01
+363,Break and Enter Residential/Other,2012,5,235,2012-05-01
+364,Break and Enter Residential/Other,2012,6,240,2012-06-01
+365,Break and Enter Residential/Other,2012,7,238,2012-07-01
+366,Break and Enter Residential/Other,2012,8,324,2012-08-01
+367,Break and Enter Residential/Other,2012,9,328,2012-09-01
+368,Break and Enter Residential/Other,2012,10,310,2012-10-01
+369,Break and Enter Residential/Other,2012,11,329,2012-11-01
+370,Break and Enter Residential/Other,2012,12,348,2012-12-01
+371,Break and Enter Residential/Other,2013,1,326,2013-01-01
+372,Break and Enter Residential/Other,2013,2,215,2013-02-01
+373,Break and Enter Residential/Other,2013,3,198,2013-03-01
+374,Break and Enter Residential/Other,2013,4,251,2013-04-01
+375,Break and Enter Residential/Other,2013,5,244,2013-05-01
+376,Break and Enter Residential/Other,2013,6,237,2013-06-01
+377,Break and Enter Residential/Other,2013,7,281,2013-07-01
+378,Break and Enter Residential/Other,2013,8,265,2013-08-01
+379,Break and Enter Residential/Other,2013,9,263,2013-09-01
+380,Break and Enter Residential/Other,2013,10,227,2013-10-01
+381,Break and Enter Residential/Other,2013,11,273,2013-11-01
+382,Break and Enter Residential/Other,2013,12,244,2013-12-01
+383,Break and Enter Residential/Other,2014,1,249,2014-01-01
+384,Break and Enter Residential/Other,2014,2,210,2014-02-01
+385,Break and Enter Residential/Other,2014,3,248,2014-03-01
+386,Break and Enter Residential/Other,2014,4,233,2014-04-01
+387,Break and Enter Residential/Other,2014,5,262,2014-05-01
+388,Break and Enter Residential/Other,2014,6,254,2014-06-01
+389,Break and Enter Residential/Other,2014,7,268,2014-07-01
+390,Break and Enter Residential/Other,2014,8,265,2014-08-01
+391,Break and Enter Residential/Other,2014,9,212,2014-09-01
+392,Break and Enter Residential/Other,2014,10,285,2014-10-01
+393,Break and Enter Residential/Other,2014,11,258,2014-11-01
+394,Break and Enter Residential/Other,2014,12,298,2014-12-01
+395,Break and Enter Residential/Other,2015,1,293,2015-01-01
+396,Break and Enter Residential/Other,2015,2,209,2015-02-01
+397,Break and Enter Residential/Other,2015,3,219,2015-03-01
+398,Break and Enter Residential/Other,2015,4,187,2015-04-01
+399,Break and Enter Residential/Other,2015,5,231,2015-05-01
+400,Break and Enter Residential/Other,2015,6,237,2015-06-01
+401,Break and Enter Residential/Other,2015,7,277,2015-07-01
+402,Break and Enter Residential/Other,2015,8,238,2015-08-01
+403,Break and Enter Residential/Other,2015,9,251,2015-09-01
+404,Break and Enter Residential/Other,2015,10,290,2015-10-01
+405,Break and Enter Residential/Other,2015,11,307,2015-11-01
+406,Break and Enter Residential/Other,2015,12,377,2015-12-01
+407,Break and Enter Residential/Other,2016,1,346,2016-01-01
+408,Break and Enter Residential/Other,2016,2,272,2016-02-01
+409,Break and Enter Residential/Other,2016,3,269,2016-03-01
+410,Break and Enter Residential/Other,2016,4,232,2016-04-01
+411,Break and Enter Residential/Other,2016,5,207,2016-05-01
+412,Break and Enter Residential/Other,2016,6,218,2016-06-01
+413,Break and Enter Residential/Other,2016,7,235,2016-07-01
+414,Break and Enter Residential/Other,2016,8,259,2016-08-01
+415,Break and Enter Residential/Other,2016,9,234,2016-09-01
+416,Break and Enter Residential/Other,2016,10,217,2016-10-01
+417,Break and Enter Residential/Other,2016,11,269,2016-11-01
+418,Break and Enter Residential/Other,2016,12,230,2016-12-01
+419,Break and Enter Residential/Other,2017,1,184,2017-01-01
+420,Break and Enter Residential/Other,2017,2,158,2017-02-01
+421,Break and Enter Residential/Other,2017,3,226,2017-03-01
+422,Break and Enter Residential/Other,2017,4,211,2017-04-01
+423,Break and Enter Residential/Other,2017,5,214,2017-05-01
+424,Break and Enter Residential/Other,2017,6,199,2017-06-01
+425,Break and Enter Residential/Other,2017,7,241,2017-07-01
+426,Break and Enter Residential/Other,2017,8,219,2017-08-01
+427,Break and Enter Residential/Other,2017,9,203,2017-09-01
+428,Break and Enter Residential/Other,2017,10,177,2017-10-01
+429,Break and Enter Residential/Other,2017,11,244,2017-11-01
+430,Break and Enter Residential/Other,2017,12,178,2017-12-01
+431,Break and Enter Residential/Other,2018,1,243,2018-01-01
+432,Break and Enter Residential/Other,2018,2,179,2018-02-01
+433,Break and Enter Residential/Other,2018,3,203,2018-03-01
+434,Break and Enter Residential/Other,2018,4,209,2018-04-01
+435,Break and Enter Residential/Other,2018,5,223,2018-05-01
+436,Break and Enter Residential/Other,2018,6,217,2018-06-01
+437,Break and Enter Residential/Other,2018,7,164,2018-07-01
+438,Break and Enter Residential/Other,2018,8,163,2018-08-01
+439,Break and Enter Residential/Other,2018,9,192,2018-09-01
+440,Break and Enter Residential/Other,2018,10,190,2018-10-01
+441,Break and Enter Residential/Other,2018,11,195,2018-11-01
+442,Break and Enter Residential/Other,2018,12,213,2018-12-01
+443,Break and Enter Residential/Other,2019,1,157,2019-01-01
+444,Break and Enter Residential/Other,2019,2,152,2019-02-01
+445,Break and Enter Residential/Other,2019,3,137,2019-03-01
+446,Break and Enter Residential/Other,2019,4,151,2019-04-01
+447,Break and Enter Residential/Other,2019,5,179,2019-05-01
+448,Break and Enter Residential/Other,2019,6,158,2019-06-01
+449,Break and Enter Residential/Other,2019,7,179,2019-07-01
+450,Break and Enter Residential/Other,2019,8,212,2019-08-01
+451,Break and Enter Residential/Other,2019,9,217,2019-09-01
+452,Break and Enter Residential/Other,2019,10,269,2019-10-01
+453,Break and Enter Residential/Other,2019,11,228,2019-11-01
+454,Break and Enter Residential/Other,2019,12,230,2019-12-01
+455,Break and Enter Residential/Other,2020,1,218,2020-01-01
+456,Break and Enter Residential/Other,2020,2,182,2020-02-01
+457,Break and Enter Residential/Other,2020,3,208,2020-03-01
+458,Break and Enter Residential/Other,2020,4,176,2020-04-01
+459,Break and Enter Residential/Other,2020,5,150,2020-05-01
+460,Break and Enter Residential/Other,2020,6,147,2020-06-01
+461,Break and Enter Residential/Other,2020,7,199,2020-07-01
+462,Break and Enter Residential/Other,2020,8,176,2020-08-01
+463,Break and Enter Residential/Other,2020,9,170,2020-09-01
+464,Break and Enter Residential/Other,2020,10,165,2020-10-01
+465,Break and Enter Residential/Other,2020,11,124,2020-11-01
+466,Break and Enter Residential/Other,2020,12,168,2020-12-01
+467,Break and Enter Residential/Other,2021,1,142,2021-01-01
+468,Break and Enter Residential/Other,2021,2,135,2021-02-01
+469,Break and Enter Residential/Other,2021,3,120,2021-03-01
+470,Break and Enter Residential/Other,2021,4,139,2021-04-01
+471,Break and Enter Residential/Other,2021,5,171,2021-05-01
+472,Break and Enter Residential/Other,2021,6,147,2021-06-01
+473,Break and Enter Residential/Other,2021,7,128,2021-07-01
+474,Break and Enter Residential/Other,2021,8,115,2021-08-01
+475,Break and Enter Residential/Other,2021,9,98,2021-09-01
+476,Break and Enter Residential/Other,2021,10,92,2021-10-01
+477,Break and Enter Residential/Other,2021,11,101,2021-11-01
+478,Break and Enter Residential/Other,2021,12,102,2021-12-01
+479,Break and Enter Residential/Other,2022,1,101,2022-01-01
+480,Break and Enter Residential/Other,2022,2,120,2022-02-01
+481,Break and Enter Residential/Other,2022,3,116,2022-03-01
+482,Break and Enter Residential/Other,2022,4,115,2022-04-01
+483,Break and Enter Residential/Other,2022,5,106,2022-05-01
+484,Break and Enter Residential/Other,2022,6,109,2022-06-01
+485,Break and Enter Residential/Other,2022,7,124,2022-07-01
+486,Break and Enter Residential/Other,2022,8,88,2022-08-01
+487,Break and Enter Residential/Other,2022,9,80,2022-09-01
+488,Break and Enter Residential/Other,2022,10,121,2022-10-01
+489,Break and Enter Residential/Other,2022,11,76,2022-11-01
+490,Break and Enter Residential/Other,2022,12,110,2022-12-01
+491,Break and Enter Residential/Other,2023,1,105,2023-01-01
+492,Break and Enter Residential/Other,2023,2,85,2023-02-01
+493,Break and Enter Residential/Other,2023,3,119,2023-03-01
+494,Break and Enter Residential/Other,2023,4,97,2023-04-01
+495,Break and Enter Residential/Other,2023,5,108,2023-05-01
+496,Break and Enter Residential/Other,2023,6,115,2023-06-01
+497,Break and Enter Residential/Other,2023,7,95,2023-07-01
+498,Break and Enter Residential/Other,2023,8,95,2023-08-01
+499,Break and Enter Residential/Other,2023,9,100,2023-09-01
+500,Break and Enter Residential/Other,2023,10,115,2023-10-01
+502,Homicide,2003,3,1,2003-03-01
+503,Homicide,2003,4,1,2003-04-01
+504,Homicide,2003,5,2,2003-05-01
+505,Homicide,2003,7,2,2003-07-01
+506,Homicide,2003,8,4,2003-08-01
+507,Homicide,2003,9,1,2003-09-01
+508,Homicide,2003,10,1,2003-10-01
+509,Homicide,2003,11,4,2003-11-01
+510,Homicide,2003,12,1,2003-12-01
+511,Homicide,2004,1,2,2004-01-01
+512,Homicide,2004,2,2,2004-02-01
+513,Homicide,2004,3,2,2004-03-01
+514,Homicide,2004,4,3,2004-04-01
+515,Homicide,2004,5,3,2004-05-01
+516,Homicide,2004,7,2,2004-07-01
+517,Homicide,2004,8,3,2004-08-01
+518,Homicide,2004,9,3,2004-09-01
+519,Homicide,2004,11,2,2004-11-01
+520,Homicide,2005,1,2,2005-01-01
+521,Homicide,2005,2,1,2005-02-01
+522,Homicide,2005,3,1,2005-03-01
+523,Homicide,2005,4,1,2005-04-01
+524,Homicide,2005,5,3,2005-05-01
+525,Homicide,2005,6,2,2005-06-01
+526,Homicide,2005,7,1,2005-07-01
+527,Homicide,2005,8,2,2005-08-01
+528,Homicide,2005,9,2,2005-09-01
+529,Homicide,2005,10,1,2005-10-01
+530,Homicide,2005,11,2,2005-11-01
+531,Homicide,2005,12,4,2005-12-01
+532,Homicide,2006,1,1,2006-01-01
+533,Homicide,2006,2,2,2006-02-01
+534,Homicide,2006,3,3,2006-03-01
+535,Homicide,2006,4,2,2006-04-01
+536,Homicide,2006,5,4,2006-05-01
+537,Homicide,2006,7,2,2006-07-01
+538,Homicide,2006,8,2,2006-08-01
+539,Homicide,2006,10,1,2006-10-01
+540,Homicide,2006,11,1,2006-11-01
+541,Homicide,2007,2,4,2007-02-01
+542,Homicide,2007,3,1,2007-03-01
+543,Homicide,2007,5,2,2007-05-01
+544,Homicide,2007,6,2,2007-06-01
+545,Homicide,2007,8,4,2007-08-01
+546,Homicide,2007,9,2,2007-09-01
+547,Homicide,2007,10,1,2007-10-01
+548,Homicide,2007,11,2,2007-11-01
+549,Homicide,2007,12,1,2007-12-01
+550,Homicide,2008,1,2,2008-01-01
+551,Homicide,2008,2,4,2008-02-01
+552,Homicide,2008,3,3,2008-03-01
+553,Homicide,2008,5,1,2008-05-01
+554,Homicide,2008,7,2,2008-07-01
+555,Homicide,2008,8,2,2008-08-01
+556,Homicide,2008,9,1,2008-09-01
+557,Homicide,2008,10,2,2008-10-01
+558,Homicide,2008,12,1,2008-12-01
+559,Homicide,2009,1,3,2009-01-01
+560,Homicide,2009,2,4,2009-02-01
+561,Homicide,2009,3,2,2009-03-01
+562,Homicide,2009,4,4,2009-04-01
+563,Homicide,2009,6,1,2009-06-01
+564,Homicide,2009,7,2,2009-07-01
+565,Homicide,2009,8,1,2009-08-01
+566,Homicide,2009,9,1,2009-09-01
+567,Homicide,2010,1,2,2010-01-01
+568,Homicide,2010,3,1,2010-03-01
+569,Homicide,2010,4,1,2010-04-01
+570,Homicide,2010,5,1,2010-05-01
+571,Homicide,2010,6,1,2010-06-01
+572,Homicide,2010,8,1,2010-08-01
+573,Homicide,2010,9,1,2010-09-01
+574,Homicide,2010,10,1,2010-10-01
+575,Homicide,2010,11,1,2010-11-01
+576,Homicide,2011,2,1,2011-02-01
+577,Homicide,2011,3,2,2011-03-01
+578,Homicide,2011,4,1,2011-04-01
+579,Homicide,2011,6,3,2011-06-01
+580,Homicide,2011,7,3,2011-07-01
+581,Homicide,2011,9,1,2011-09-01
+582,Homicide,2011,10,1,2011-10-01
+583,Homicide,2011,11,1,2011-11-01
+584,Homicide,2011,12,2,2011-12-01
+585,Homicide,2012,1,1,2012-01-01
+586,Homicide,2012,2,1,2012-02-01
+587,Homicide,2012,3,1,2012-03-01
+588,Homicide,2012,5,2,2012-05-01
+589,Homicide,2012,8,1,2012-08-01
+590,Homicide,2012,10,2,2012-10-01
+591,Homicide,2013,1,1,2013-01-01
+592,Homicide,2013,2,1,2013-02-01
+593,Homicide,2013,3,1,2013-03-01
+594,Homicide,2013,6,1,2013-06-01
+595,Homicide,2013,8,1,2013-08-01
+596,Homicide,2013,10,1,2013-10-01
+597,Homicide,2013,12,1,2013-12-01
+598,Homicide,2014,2,1,2014-02-01
+599,Homicide,2014,3,1,2014-03-01
+600,Homicide,2014,4,3,2014-04-01
+601,Homicide,2014,5,1,2014-05-01
+602,Homicide,2014,6,1,2014-06-01
+603,Homicide,2014,11,2,2014-11-01
+604,Homicide,2015,1,1,2015-01-01
+605,Homicide,2015,2,1,2015-02-01
+606,Homicide,2015,3,3,2015-03-01
+607,Homicide,2015,4,1,2015-04-01
+608,Homicide,2015,7,3,2015-07-01
+609,Homicide,2015,8,3,2015-08-01
+610,Homicide,2015,9,2,2015-09-01
+611,Homicide,2015,11,1,2015-11-01
+612,Homicide,2016,1,1,2016-01-01
+613,Homicide,2016,3,2,2016-03-01
+614,Homicide,2016,5,2,2016-05-01
+615,Homicide,2016,6,1,2016-06-01
+616,Homicide,2016,8,1,2016-08-01
+617,Homicide,2016,9,3,2016-09-01
+618,Homicide,2016,11,1,2016-11-01
+619,Homicide,2016,12,1,2016-12-01
+620,Homicide,2017,1,1,2017-01-01
+621,Homicide,2017,2,2,2017-02-01
+622,Homicide,2017,3,3,2017-03-01
+623,Homicide,2017,4,2,2017-04-01
+624,Homicide,2017,5,1,2017-05-01
+625,Homicide,2017,6,1,2017-06-01
+626,Homicide,2017,7,1,2017-07-01
+627,Homicide,2017,8,1,2017-08-01
+628,Homicide,2017,9,1,2017-09-01
+629,Homicide,2017,10,2,2017-10-01
+630,Homicide,2017,11,1,2017-11-01
+631,Homicide,2017,12,1,2017-12-01
+632,Homicide,2018,1,4,2018-01-01
+633,Homicide,2018,2,2,2018-02-01
+634,Homicide,2018,4,2,2018-04-01
+635,Homicide,2018,6,2,2018-06-01
+636,Homicide,2018,7,2,2018-07-01
+637,Homicide,2018,8,1,2018-08-01
+638,Homicide,2018,11,1,2018-11-01
+639,Homicide,2018,12,1,2018-12-01
+640,Homicide,2019,1,3,2019-01-01
+641,Homicide,2019,3,1,2019-03-01
+642,Homicide,2019,4,2,2019-04-01
+643,Homicide,2019,6,2,2019-06-01
+644,Homicide,2019,9,1,2019-09-01
+645,Homicide,2019,10,1,2019-10-01
+646,Homicide,2019,11,2,2019-11-01
+647,Homicide,2020,1,3,2020-01-01
+648,Homicide,2020,2,1,2020-02-01
+649,Homicide,2020,5,2,2020-05-01
+650,Homicide,2020,7,4,2020-07-01
+651,Homicide,2020,8,1,2020-08-01
+652,Homicide,2020,9,3,2020-09-01
+653,Homicide,2020,10,1,2020-10-01
+654,Homicide,2020,11,1,2020-11-01
+655,Homicide,2020,12,3,2020-12-01
+656,Homicide,2021,1,2,2021-01-01
+657,Homicide,2021,3,2,2021-03-01
+658,Homicide,2021,4,3,2021-04-01
+659,Homicide,2021,5,1,2021-05-01
+660,Homicide,2021,6,2,2021-06-01
+661,Homicide,2021,7,3,2021-07-01
+662,Homicide,2021,8,1,2021-08-01
+663,Homicide,2021,9,1,2021-09-01
+664,Homicide,2021,10,1,2021-10-01
+665,Homicide,2021,11,1,2021-11-01
+666,Homicide,2021,12,2,2021-12-01
+667,Homicide,2022,2,1,2022-02-01
+668,Homicide,2022,5,3,2022-05-01
+669,Homicide,2022,6,2,2022-06-01
+670,Homicide,2022,7,2,2022-07-01
+671,Homicide,2022,11,3,2022-11-01
+672,Homicide,2023,1,3,2023-01-01
+673,Homicide,2023,2,1,2023-02-01
+674,Homicide,2023,3,2,2023-03-01
+675,Homicide,2023,5,2,2023-05-01
+676,Homicide,2023,6,1,2023-06-01
+677,Homicide,2023,7,1,2023-07-01
+678,Homicide,2023,8,1,2023-08-01
+679,Homicide,2023,9,2,2023-09-01
+680,Mischief,2003,1,551,2003-01-01
+681,Mischief,2003,2,483,2003-02-01
+682,Mischief,2003,3,575,2003-03-01
+683,Mischief,2003,4,620,2003-04-01
+684,Mischief,2003,5,589,2003-05-01
+685,Mischief,2003,6,571,2003-06-01
+686,Mischief,2003,7,555,2003-07-01
+687,Mischief,2003,8,508,2003-08-01
+688,Mischief,2003,9,475,2003-09-01
+689,Mischief,2003,10,570,2003-10-01
+690,Mischief,2003,11,465,2003-11-01
+691,Mischief,2003,12,425,2003-12-01
+692,Mischief,2004,1,451,2004-01-01
+693,Mischief,2004,2,401,2004-02-01
+694,Mischief,2004,3,426,2004-03-01
+695,Mischief,2004,4,462,2004-04-01
+696,Mischief,2004,5,479,2004-05-01
+697,Mischief,2004,6,491,2004-06-01
+698,Mischief,2004,7,494,2004-07-01
+699,Mischief,2004,8,489,2004-08-01
+700,Mischief,2004,9,506,2004-09-01
+701,Mischief,2004,10,492,2004-10-01
+702,Mischief,2004,11,453,2004-11-01
+703,Mischief,2004,12,454,2004-12-01
+704,Mischief,2005,1,375,2005-01-01
+705,Mischief,2005,2,360,2005-02-01
+706,Mischief,2005,3,475,2005-03-01
+707,Mischief,2005,4,444,2005-04-01
+708,Mischief,2005,5,477,2005-05-01
+709,Mischief,2005,6,426,2005-06-01
+710,Mischief,2005,7,420,2005-07-01
+711,Mischief,2005,8,416,2005-08-01
+712,Mischief,2005,9,378,2005-09-01
+713,Mischief,2005,10,456,2005-10-01
+714,Mischief,2005,11,366,2005-11-01
+715,Mischief,2005,12,469,2005-12-01
+716,Mischief,2006,1,444,2006-01-01
+717,Mischief,2006,2,385,2006-02-01
+718,Mischief,2006,3,456,2006-03-01
+719,Mischief,2006,4,423,2006-04-01
+720,Mischief,2006,5,407,2006-05-01
+721,Mischief,2006,6,423,2006-06-01
+722,Mischief,2006,7,492,2006-07-01
+723,Mischief,2006,8,459,2006-08-01
+724,Mischief,2006,9,455,2006-09-01
+725,Mischief,2006,10,477,2006-10-01
+726,Mischief,2006,11,354,2006-11-01
+727,Mischief,2006,12,405,2006-12-01
+728,Mischief,2007,1,357,2007-01-01
+729,Mischief,2007,2,343,2007-02-01
+730,Mischief,2007,3,357,2007-03-01
+731,Mischief,2007,4,400,2007-04-01
+732,Mischief,2007,5,428,2007-05-01
+733,Mischief,2007,6,450,2007-06-01
+734,Mischief,2007,7,408,2007-07-01
+735,Mischief,2007,8,466,2007-08-01
+736,Mischief,2007,9,392,2007-09-01
+737,Mischief,2007,10,425,2007-10-01
+738,Mischief,2007,11,389,2007-11-01
+739,Mischief,2007,12,397,2007-12-01
+740,Mischief,2008,1,354,2008-01-01
+741,Mischief,2008,2,456,2008-02-01
+742,Mischief,2008,3,630,2008-03-01
+743,Mischief,2008,4,511,2008-04-01
+744,Mischief,2008,5,425,2008-05-01
+745,Mischief,2008,6,413,2008-06-01
+746,Mischief,2008,7,432,2008-07-01
+747,Mischief,2008,8,442,2008-08-01
+748,Mischief,2008,9,366,2008-09-01
+749,Mischief,2008,10,469,2008-10-01
+750,Mischief,2008,11,442,2008-11-01
+751,Mischief,2008,12,330,2008-12-01
+752,Mischief,2009,1,370,2009-01-01
+753,Mischief,2009,2,314,2009-02-01
+754,Mischief,2009,3,373,2009-03-01
+755,Mischief,2009,4,362,2009-04-01
+756,Mischief,2009,5,426,2009-05-01
+757,Mischief,2009,6,386,2009-06-01
+758,Mischief,2009,7,404,2009-07-01
+759,Mischief,2009,8,379,2009-08-01
+760,Mischief,2009,9,360,2009-09-01
+761,Mischief,2009,10,370,2009-10-01
+762,Mischief,2009,11,355,2009-11-01
+763,Mischief,2009,12,326,2009-12-01
+764,Mischief,2010,1,390,2010-01-01
+765,Mischief,2010,2,358,2010-02-01
+766,Mischief,2010,3,332,2010-03-01
+767,Mischief,2010,4,357,2010-04-01
+768,Mischief,2010,5,448,2010-05-01
+769,Mischief,2010,6,391,2010-06-01
+770,Mischief,2010,7,380,2010-07-01
+771,Mischief,2010,8,397,2010-08-01
+772,Mischief,2010,9,341,2010-09-01
+773,Mischief,2010,10,442,2010-10-01
+774,Mischief,2010,11,354,2010-11-01
+775,Mischief,2010,12,324,2010-12-01
+776,Mischief,2011,1,341,2011-01-01
+777,Mischief,2011,2,319,2011-02-01
+778,Mischief,2011,3,380,2011-03-01
+779,Mischief,2011,4,380,2011-04-01
+780,Mischief,2011,5,368,2011-05-01
+781,Mischief,2011,6,813,2011-06-01
+782,Mischief,2011,7,397,2011-07-01
+783,Mischief,2011,8,381,2011-08-01
+784,Mischief,2011,9,357,2011-09-01
+785,Mischief,2011,10,379,2011-10-01
+786,Mischief,2011,11,349,2011-11-01
+787,Mischief,2011,12,370,2011-12-01
+788,Mischief,2012,1,342,2012-01-01
+789,Mischief,2012,2,326,2012-02-01
+790,Mischief,2012,3,335,2012-03-01
+791,Mischief,2012,4,306,2012-04-01
+792,Mischief,2012,5,379,2012-05-01
+793,Mischief,2012,6,379,2012-06-01
+794,Mischief,2012,7,357,2012-07-01
+795,Mischief,2012,8,369,2012-08-01
+796,Mischief,2012,9,386,2012-09-01
+797,Mischief,2012,10,359,2012-10-01
+798,Mischief,2012,11,367,2012-11-01
+799,Mischief,2012,12,323,2012-12-01
+800,Mischief,2013,1,315,2013-01-01
+801,Mischief,2013,2,290,2013-02-01
+802,Mischief,2013,3,398,2013-03-01
+803,Mischief,2013,4,350,2013-04-01
+804,Mischief,2013,5,380,2013-05-01
+805,Mischief,2013,6,322,2013-06-01
+806,Mischief,2013,7,387,2013-07-01
+807,Mischief,2013,8,345,2013-08-01
+808,Mischief,2013,9,355,2013-09-01
+809,Mischief,2013,10,380,2013-10-01
+810,Mischief,2013,11,348,2013-11-01
+811,Mischief,2013,12,311,2013-12-01
+812,Mischief,2014,1,358,2014-01-01
+813,Mischief,2014,2,349,2014-02-01
+814,Mischief,2014,3,377,2014-03-01
+815,Mischief,2014,4,416,2014-04-01
+816,Mischief,2014,5,380,2014-05-01
+817,Mischief,2014,6,359,2014-06-01
+818,Mischief,2014,7,392,2014-07-01
+819,Mischief,2014,8,413,2014-08-01
+820,Mischief,2014,9,377,2014-09-01
+821,Mischief,2014,10,422,2014-10-01
+822,Mischief,2014,11,338,2014-11-01
+823,Mischief,2014,12,328,2014-12-01
+824,Mischief,2015,1,315,2015-01-01
+825,Mischief,2015,2,322,2015-02-01
+826,Mischief,2015,3,339,2015-03-01
+827,Mischief,2015,4,347,2015-04-01
+828,Mischief,2015,5,379,2015-05-01
+829,Mischief,2015,6,326,2015-06-01
+830,Mischief,2015,7,365,2015-07-01
+831,Mischief,2015,8,338,2015-08-01
+832,Mischief,2015,9,320,2015-09-01
+833,Mischief,2015,10,398,2015-10-01
+834,Mischief,2015,11,387,2015-11-01
+835,Mischief,2015,12,342,2015-12-01
+836,Mischief,2016,1,381,2016-01-01
+837,Mischief,2016,2,340,2016-02-01
+838,Mischief,2016,3,379,2016-03-01
+839,Mischief,2016,4,416,2016-04-01
+840,Mischief,2016,5,410,2016-05-01
+841,Mischief,2016,6,396,2016-06-01
+842,Mischief,2016,7,422,2016-07-01
+843,Mischief,2016,8,400,2016-08-01
+844,Mischief,2016,9,388,2016-09-01
+845,Mischief,2016,10,361,2016-10-01
+846,Mischief,2016,11,343,2016-11-01
+847,Mischief,2016,12,345,2016-12-01
+848,Mischief,2017,1,365,2017-01-01
+849,Mischief,2017,2,329,2017-02-01
+850,Mischief,2017,3,440,2017-03-01
+851,Mischief,2017,4,448,2017-04-01
+852,Mischief,2017,5,451,2017-05-01
+853,Mischief,2017,6,421,2017-06-01
+854,Mischief,2017,7,420,2017-07-01
+855,Mischief,2017,8,478,2017-08-01
+856,Mischief,2017,9,438,2017-09-01
+857,Mischief,2017,10,524,2017-10-01
+858,Mischief,2017,11,514,2017-11-01
+859,Mischief,2017,12,542,2017-12-01
+860,Mischief,2018,1,510,2018-01-01
+861,Mischief,2018,2,422,2018-02-01
+862,Mischief,2018,3,509,2018-03-01
+863,Mischief,2018,4,479,2018-04-01
+864,Mischief,2018,5,426,2018-05-01
+865,Mischief,2018,6,499,2018-06-01
+866,Mischief,2018,7,451,2018-07-01
+867,Mischief,2018,8,483,2018-08-01
+868,Mischief,2018,9,471,2018-09-01
+869,Mischief,2018,10,529,2018-10-01
+870,Mischief,2018,11,469,2018-11-01
+871,Mischief,2018,12,468,2018-12-01
+872,Mischief,2019,1,485,2019-01-01
+873,Mischief,2019,2,402,2019-02-01
+874,Mischief,2019,3,458,2019-03-01
+875,Mischief,2019,4,452,2019-04-01
+876,Mischief,2019,5,468,2019-05-01
+877,Mischief,2019,6,451,2019-06-01
+878,Mischief,2019,7,536,2019-07-01
+879,Mischief,2019,8,509,2019-08-01
+880,Mischief,2019,9,495,2019-09-01
+881,Mischief,2019,10,529,2019-10-01
+882,Mischief,2019,11,506,2019-11-01
+883,Mischief,2019,12,541,2019-12-01
+884,Mischief,2020,1,634,2020-01-01
+885,Mischief,2020,2,611,2020-02-01
+886,Mischief,2020,3,577,2020-03-01
+887,Mischief,2020,4,567,2020-04-01
+888,Mischief,2020,5,440,2020-05-01
+889,Mischief,2020,6,438,2020-06-01
+890,Mischief,2020,7,468,2020-07-01
+891,Mischief,2020,8,438,2020-08-01
+892,Mischief,2020,9,491,2020-09-01
+893,Mischief,2020,10,532,2020-10-01
+894,Mischief,2020,11,460,2020-11-01
+895,Mischief,2020,12,453,2020-12-01
+896,Mischief,2021,1,500,2021-01-01
+897,Mischief,2021,2,421,2021-02-01
+898,Mischief,2021,3,447,2021-03-01
+899,Mischief,2021,4,445,2021-04-01
+900,Mischief,2021,5,489,2021-05-01
+901,Mischief,2021,6,414,2021-06-01
+902,Mischief,2021,7,458,2021-07-01
+903,Mischief,2021,8,477,2021-08-01
+904,Mischief,2021,9,492,2021-09-01
+905,Mischief,2021,10,481,2021-10-01
+906,Mischief,2021,11,400,2021-11-01
+907,Mischief,2021,12,383,2021-12-01
+908,Mischief,2022,1,468,2022-01-01
+909,Mischief,2022,2,452,2022-02-01
+910,Mischief,2022,3,491,2022-03-01
+911,Mischief,2022,4,484,2022-04-01
+912,Mischief,2022,5,477,2022-05-01
+913,Mischief,2022,6,428,2022-06-01
+914,Mischief,2022,7,499,2022-07-01
+915,Mischief,2022,8,505,2022-08-01
+916,Mischief,2022,9,507,2022-09-01
+917,Mischief,2022,10,519,2022-10-01
+918,Mischief,2022,11,406,2022-11-01
+919,Mischief,2022,12,378,2022-12-01
+920,Mischief,2023,1,503,2023-01-01
+921,Mischief,2023,2,443,2023-02-01
+922,Mischief,2023,3,626,2023-03-01
+923,Mischief,2023,4,535,2023-04-01
+924,Mischief,2023,5,496,2023-05-01
+925,Mischief,2023,6,502,2023-06-01
+926,Mischief,2023,7,566,2023-07-01
+927,Mischief,2023,8,618,2023-08-01
+928,Mischief,2023,9,557,2023-09-01
+929,Mischief,2023,10,513,2023-10-01
+931,Offence Against a Person,2003,1,347,2003-01-01
+932,Offence Against a Person,2003,2,280,2003-02-01
+933,Offence Against a Person,2003,3,316,2003-03-01
+934,Offence Against a Person,2003,4,241,2003-04-01
+935,Offence Against a Person,2003,5,290,2003-05-01
+936,Offence Against a Person,2003,6,311,2003-06-01
+937,Offence Against a Person,2003,7,279,2003-07-01
+938,Offence Against a Person,2003,8,295,2003-08-01
+939,Offence Against a Person,2003,9,269,2003-09-01
+940,Offence Against a Person,2003,10,309,2003-10-01
+941,Offence Against a Person,2003,11,291,2003-11-01
+942,Offence Against a Person,2003,12,284,2003-12-01
+943,Offence Against a Person,2004,1,331,2004-01-01
+944,Offence Against a Person,2004,2,281,2004-02-01
+945,Offence Against a Person,2004,3,343,2004-03-01
+946,Offence Against a Person,2004,4,309,2004-04-01
+947,Offence Against a Person,2004,5,270,2004-05-01
+948,Offence Against a Person,2004,6,310,2004-06-01
+949,Offence Against a Person,2004,7,309,2004-07-01
+950,Offence Against a Person,2004,8,370,2004-08-01
+951,Offence Against a Person,2004,9,338,2004-09-01
+952,Offence Against a Person,2004,10,302,2004-10-01
+953,Offence Against a Person,2004,11,327,2004-11-01
+954,Offence Against a Person,2004,12,308,2004-12-01
+955,Offence Against a Person,2005,1,308,2005-01-01
+956,Offence Against a Person,2005,2,273,2005-02-01
+957,Offence Against a Person,2005,3,293,2005-03-01
+958,Offence Against a Person,2005,4,281,2005-04-01
+959,Offence Against a Person,2005,5,308,2005-05-01
+960,Offence Against a Person,2005,6,289,2005-06-01
+961,Offence Against a Person,2005,7,328,2005-07-01
+962,Offence Against a Person,2005,8,359,2005-08-01
+963,Offence Against a Person,2005,9,343,2005-09-01
+964,Offence Against a Person,2005,10,318,2005-10-01
+965,Offence Against a Person,2005,11,332,2005-11-01
+966,Offence Against a Person,2005,12,332,2005-12-01
+967,Offence Against a Person,2006,1,386,2006-01-01
+968,Offence Against a Person,2006,2,334,2006-02-01
+969,Offence Against a Person,2006,3,360,2006-03-01
+970,Offence Against a Person,2006,4,343,2006-04-01
+971,Offence Against a Person,2006,5,371,2006-05-01
+972,Offence Against a Person,2006,6,352,2006-06-01
+973,Offence Against a Person,2006,7,382,2006-07-01
+974,Offence Against a Person,2006,8,413,2006-08-01
+975,Offence Against a Person,2006,9,348,2006-09-01
+976,Offence Against a Person,2006,10,361,2006-10-01
+977,Offence Against a Person,2006,11,321,2006-11-01
+978,Offence Against a Person,2006,12,348,2006-12-01
+979,Offence Against a Person,2007,1,381,2007-01-01
+980,Offence Against a Person,2007,2,291,2007-02-01
+981,Offence Against a Person,2007,3,362,2007-03-01
+982,Offence Against a Person,2007,4,367,2007-04-01
+983,Offence Against a Person,2007,5,392,2007-05-01
+984,Offence Against a Person,2007,6,347,2007-06-01
+985,Offence Against a Person,2007,7,397,2007-07-01
+986,Offence Against a Person,2007,8,425,2007-08-01
+987,Offence Against a Person,2007,9,335,2007-09-01
+988,Offence Against a Person,2007,10,394,2007-10-01
+989,Offence Against a Person,2007,11,369,2007-11-01
+990,Offence Against a Person,2007,12,335,2007-12-01
+991,Offence Against a Person,2008,1,381,2008-01-01
+992,Offence Against a Person,2008,2,331,2008-02-01
+993,Offence Against a Person,2008,3,339,2008-03-01
+994,Offence Against a Person,2008,4,304,2008-04-01
+995,Offence Against a Person,2008,5,360,2008-05-01
+996,Offence Against a Person,2008,6,328,2008-06-01
+997,Offence Against a Person,2008,7,378,2008-07-01
+998,Offence Against a Person,2008,8,393,2008-08-01
+999,Offence Against a Person,2008,9,368,2008-09-01
+1000,Offence Against a Person,2008,10,372,2008-10-01
+1001,Offence Against a Person,2008,11,311,2008-11-01
+1002,Offence Against a Person,2008,12,336,2008-12-01
+1003,Offence Against a Person,2009,1,354,2009-01-01
+1004,Offence Against a Person,2009,2,289,2009-02-01
+1005,Offence Against a Person,2009,3,288,2009-03-01
+1006,Offence Against a Person,2009,4,337,2009-04-01
+1007,Offence Against a Person,2009,5,333,2009-05-01
+1008,Offence Against a Person,2009,6,304,2009-06-01
+1009,Offence Against a Person,2009,7,341,2009-07-01
+1010,Offence Against a Person,2009,8,362,2009-08-01
+1011,Offence Against a Person,2009,9,321,2009-09-01
+1012,Offence Against a Person,2009,10,337,2009-10-01
+1013,Offence Against a Person,2009,11,298,2009-11-01
+1014,Offence Against a Person,2009,12,305,2009-12-01
+1015,Offence Against a Person,2010,1,332,2010-01-01
+1016,Offence Against a Person,2010,2,327,2010-02-01
+1017,Offence Against a Person,2010,3,305,2010-03-01
+1018,Offence Against a Person,2010,4,277,2010-04-01
+1019,Offence Against a Person,2010,5,315,2010-05-01
+1020,Offence Against a Person,2010,6,334,2010-06-01
+1021,Offence Against a Person,2010,7,362,2010-07-01
+1022,Offence Against a Person,2010,8,312,2010-08-01
+1023,Offence Against a Person,2010,9,296,2010-09-01
+1024,Offence Against a Person,2010,10,322,2010-10-01
+1025,Offence Against a Person,2010,11,263,2010-11-01
+1026,Offence Against a Person,2010,12,308,2010-12-01
+1027,Offence Against a Person,2011,1,354,2011-01-01
+1028,Offence Against a Person,2011,2,267,2011-02-01
+1029,Offence Against a Person,2011,3,305,2011-03-01
+1030,Offence Against a Person,2011,4,295,2011-04-01
+1031,Offence Against a Person,2011,5,385,2011-05-01
+1032,Offence Against a Person,2011,6,318,2011-06-01
+1033,Offence Against a Person,2011,7,360,2011-07-01
+1034,Offence Against a Person,2011,8,333,2011-08-01
+1035,Offence Against a Person,2011,9,307,2011-09-01
+1036,Offence Against a Person,2011,10,338,2011-10-01
+1037,Offence Against a Person,2011,11,305,2011-11-01
+1038,Offence Against a Person,2011,12,308,2011-12-01
+1039,Offence Against a Person,2012,1,315,2012-01-01
+1040,Offence Against a Person,2012,2,290,2012-02-01
+1041,Offence Against a Person,2012,3,289,2012-03-01
+1042,Offence Against a Person,2012,4,300,2012-04-01
+1043,Offence Against a Person,2012,5,320,2012-05-01
+1044,Offence Against a Person,2012,6,349,2012-06-01
+1045,Offence Against a Person,2012,7,307,2012-07-01
+1046,Offence Against a Person,2012,8,374,2012-08-01
+1047,Offence Against a Person,2012,9,347,2012-09-01
+1048,Offence Against a Person,2012,10,303,2012-10-01
+1049,Offence Against a Person,2012,11,278,2012-11-01
+1050,Offence Against a Person,2012,12,292,2012-12-01
+1051,Offence Against a Person,2013,1,293,2013-01-01
+1052,Offence Against a Person,2013,2,232,2013-02-01
+1053,Offence Against a Person,2013,3,319,2013-03-01
+1054,Offence Against a Person,2013,4,275,2013-04-01
+1055,Offence Against a Person,2013,5,309,2013-05-01
+1056,Offence Against a Person,2013,6,289,2013-06-01
+1057,Offence Against a Person,2013,7,348,2013-07-01
+1058,Offence Against a Person,2013,8,361,2013-08-01
+1059,Offence Against a Person,2013,9,311,2013-09-01
+1060,Offence Against a Person,2013,10,330,2013-10-01
+1061,Offence Against a Person,2013,11,283,2013-11-01
+1062,Offence Against a Person,2013,12,283,2013-12-01
+1063,Offence Against a Person,2014,1,283,2014-01-01
+1064,Offence Against a Person,2014,2,229,2014-02-01
+1065,Offence Against a Person,2014,3,283,2014-03-01
+1066,Offence Against a Person,2014,4,251,2014-04-01
+1067,Offence Against a Person,2014,5,294,2014-05-01
+1068,Offence Against a Person,2014,6,301,2014-06-01
+1069,Offence Against a Person,2014,7,277,2014-07-01
+1070,Offence Against a Person,2014,8,257,2014-08-01
+1071,Offence Against a Person,2014,9,223,2014-09-01
+1072,Offence Against a Person,2014,10,241,2014-10-01
+1073,Offence Against a Person,2014,11,241,2014-11-01
+1074,Offence Against a Person,2014,12,233,2014-12-01
+1075,Offence Against a Person,2015,1,296,2015-01-01
+1076,Offence Against a Person,2015,2,212,2015-02-01
+1077,Offence Against a Person,2015,3,245,2015-03-01
+1078,Offence Against a Person,2015,4,220,2015-04-01
+1079,Offence Against a Person,2015,5,309,2015-05-01
+1080,Offence Against a Person,2015,6,294,2015-06-01
+1081,Offence Against a Person,2015,7,270,2015-07-01
+1082,Offence Against a Person,2015,8,262,2015-08-01
+1083,Offence Against a Person,2015,9,242,2015-09-01
+1084,Offence Against a Person,2015,10,275,2015-10-01
+1085,Offence Against a Person,2015,11,290,2015-11-01
+1086,Offence Against a Person,2015,12,284,2015-12-01
+1087,Offence Against a Person,2016,1,291,2016-01-01
+1088,Offence Against a Person,2016,2,242,2016-02-01
+1089,Offence Against a Person,2016,3,253,2016-03-01
+1090,Offence Against a Person,2016,4,243,2016-04-01
+1091,Offence Against a Person,2016,5,266,2016-05-01
+1092,Offence Against a Person,2016,6,245,2016-06-01
+1093,Offence Against a Person,2016,7,310,2016-07-01
+1094,Offence Against a Person,2016,8,319,2016-08-01
+1095,Offence Against a Person,2016,9,249,2016-09-01
+1096,Offence Against a Person,2016,10,293,2016-10-01
+1097,Offence Against a Person,2016,11,256,2016-11-01
+1098,Offence Against a Person,2016,12,219,2016-12-01
+1099,Offence Against a Person,2017,1,272,2017-01-01
+1100,Offence Against a Person,2017,2,233,2017-02-01
+1101,Offence Against a Person,2017,3,232,2017-03-01
+1102,Offence Against a Person,2017,4,262,2017-04-01
+1103,Offence Against a Person,2017,5,283,2017-05-01
+1104,Offence Against a Person,2017,6,253,2017-06-01
+1105,Offence Against a Person,2017,7,285,2017-07-01
+1106,Offence Against a Person,2017,8,277,2017-08-01
+1107,Offence Against a Person,2017,9,291,2017-09-01
+1108,Offence Against a Person,2017,10,248,2017-10-01
+1109,Offence Against a Person,2017,11,259,2017-11-01
+1110,Offence Against a Person,2017,12,271,2017-12-01
+1111,Offence Against a Person,2018,1,283,2018-01-01
+1112,Offence Against a Person,2018,2,222,2018-02-01
+1113,Offence Against a Person,2018,3,269,2018-03-01
+1114,Offence Against a Person,2018,4,238,2018-04-01
+1115,Offence Against a Person,2018,5,231,2018-05-01
+1116,Offence Against a Person,2018,6,257,2018-06-01
+1117,Offence Against a Person,2018,7,276,2018-07-01
+1118,Offence Against a Person,2018,8,282,2018-08-01
+1119,Offence Against a Person,2018,9,277,2018-09-01
+1120,Offence Against a Person,2018,10,230,2018-10-01
+1121,Offence Against a Person,2018,11,250,2018-11-01
+1122,Offence Against a Person,2018,12,268,2018-12-01
+1123,Offence Against a Person,2019,1,246,2019-01-01
+1124,Offence Against a Person,2019,2,225,2019-02-01
+1125,Offence Against a Person,2019,3,286,2019-03-01
+1126,Offence Against a Person,2019,4,261,2019-04-01
+1127,Offence Against a Person,2019,5,301,2019-05-01
+1128,Offence Against a Person,2019,6,302,2019-06-01
+1129,Offence Against a Person,2019,7,337,2019-07-01
+1130,Offence Against a Person,2019,8,384,2019-08-01
+1131,Offence Against a Person,2019,9,315,2019-09-01
+1132,Offence Against a Person,2019,10,276,2019-10-01
+1133,Offence Against a Person,2019,11,264,2019-11-01
+1134,Offence Against a Person,2019,12,266,2019-12-01
+1135,Offence Against a Person,2020,1,309,2020-01-01
+1136,Offence Against a Person,2020,2,263,2020-02-01
+1137,Offence Against a Person,2020,3,317,2020-03-01
+1138,Offence Against a Person,2020,4,291,2020-04-01
+1139,Offence Against a Person,2020,5,318,2020-05-01
+1140,Offence Against a Person,2020,6,322,2020-06-01
+1141,Offence Against a Person,2020,7,340,2020-07-01
+1142,Offence Against a Person,2020,8,357,2020-08-01
+1143,Offence Against a Person,2020,9,364,2020-09-01
+1144,Offence Against a Person,2020,10,293,2020-10-01
+1145,Offence Against a Person,2020,11,288,2020-11-01
+1146,Offence Against a Person,2020,12,295,2020-12-01
+1147,Offence Against a Person,2021,1,288,2021-01-01
+1148,Offence Against a Person,2021,2,268,2021-02-01
+1149,Offence Against a Person,2021,3,326,2021-03-01
+1150,Offence Against a Person,2021,4,304,2021-04-01
+1151,Offence Against a Person,2021,5,321,2021-05-01
+1152,Offence Against a Person,2021,6,284,2021-06-01
+1153,Offence Against a Person,2021,7,367,2021-07-01
+1154,Offence Against a Person,2021,8,345,2021-08-01
+1155,Offence Against a Person,2021,9,340,2021-09-01
+1156,Offence Against a Person,2021,10,327,2021-10-01
+1157,Offence Against a Person,2021,11,320,2021-11-01
+1158,Offence Against a Person,2021,12,275,2021-12-01
+1159,Offence Against a Person,2022,1,325,2022-01-01
+1160,Offence Against a Person,2022,2,273,2022-02-01
+1161,Offence Against a Person,2022,3,274,2022-03-01
+1162,Offence Against a Person,2022,4,289,2022-04-01
+1163,Offence Against a Person,2022,5,335,2022-05-01
+1164,Offence Against a Person,2022,6,344,2022-06-01
+1165,Offence Against a Person,2022,7,432,2022-07-01
+1166,Offence Against a Person,2022,8,359,2022-08-01
+1167,Offence Against a Person,2022,9,377,2022-09-01
+1168,Offence Against a Person,2022,10,329,2022-10-01
+1169,Offence Against a Person,2022,11,280,2022-11-01
+1170,Offence Against a Person,2022,12,301,2022-12-01
+1171,Offence Against a Person,2023,1,304,2023-01-01
+1172,Offence Against a Person,2023,2,280,2023-02-01
+1173,Offence Against a Person,2023,3,290,2023-03-01
+1174,Offence Against a Person,2023,4,306,2023-04-01
+1175,Offence Against a Person,2023,5,345,2023-05-01
+1176,Offence Against a Person,2023,6,368,2023-06-01
+1177,Offence Against a Person,2023,7,369,2023-07-01
+1178,Offence Against a Person,2023,8,370,2023-08-01
+1179,Offence Against a Person,2023,9,365,2023-09-01
+1180,Offence Against a Person,2023,10,291,2023-10-01
+1182,Other Theft,2003,1,879,2003-01-01
+1183,Other Theft,2003,2,913,2003-02-01
+1184,Other Theft,2003,3,936,2003-03-01
+1185,Other Theft,2003,4,910,2003-04-01
+1186,Other Theft,2003,5,1010,2003-05-01
+1187,Other Theft,2003,6,1052,2003-06-01
+1188,Other Theft,2003,7,1025,2003-07-01
+1189,Other Theft,2003,8,1037,2003-08-01
+1190,Other Theft,2003,9,879,2003-09-01
+1191,Other Theft,2003,10,953,2003-10-01
+1192,Other Theft,2003,11,955,2003-11-01
+1193,Other Theft,2003,12,877,2003-12-01
+1194,Other Theft,2004,1,949,2004-01-01
+1195,Other Theft,2004,2,868,2004-02-01
+1196,Other Theft,2004,3,901,2004-03-01
+1197,Other Theft,2004,4,956,2004-04-01
+1198,Other Theft,2004,5,927,2004-05-01
+1199,Other Theft,2004,6,898,2004-06-01
+1200,Other Theft,2004,7,1005,2004-07-01
+1201,Other Theft,2004,8,1086,2004-08-01
+1202,Other Theft,2004,9,930,2004-09-01
+1203,Other Theft,2004,10,1017,2004-10-01
+1204,Other Theft,2004,11,939,2004-11-01
+1205,Other Theft,2004,12,962,2004-12-01
+1206,Other Theft,2005,1,849,2005-01-01
+1207,Other Theft,2005,2,897,2005-02-01
+1208,Other Theft,2005,3,993,2005-03-01
+1209,Other Theft,2005,4,967,2005-04-01
+1210,Other Theft,2005,5,981,2005-05-01
+1211,Other Theft,2005,6,973,2005-06-01
+1212,Other Theft,2005,7,1008,2005-07-01
+1213,Other Theft,2005,8,1030,2005-08-01
+1214,Other Theft,2005,9,979,2005-09-01
+1215,Other Theft,2005,10,1012,2005-10-01
+1216,Other Theft,2005,11,830,2005-11-01
+1217,Other Theft,2005,12,838,2005-12-01
+1218,Other Theft,2006,1,855,2006-01-01
+1219,Other Theft,2006,2,886,2006-02-01
+1220,Other Theft,2006,3,978,2006-03-01
+1221,Other Theft,2006,4,794,2006-04-01
+1222,Other Theft,2006,5,874,2006-05-01
+1223,Other Theft,2006,6,918,2006-06-01
+1224,Other Theft,2006,7,968,2006-07-01
+1225,Other Theft,2006,8,933,2006-08-01
+1226,Other Theft,2006,9,856,2006-09-01
+1227,Other Theft,2006,10,756,2006-10-01
+1228,Other Theft,2006,11,734,2006-11-01
+1229,Other Theft,2006,12,748,2006-12-01
+1230,Other Theft,2007,1,793,2007-01-01
+1231,Other Theft,2007,2,764,2007-02-01
+1232,Other Theft,2007,3,815,2007-03-01
+1233,Other Theft,2007,4,806,2007-04-01
+1234,Other Theft,2007,5,805,2007-05-01
+1235,Other Theft,2007,6,808,2007-06-01
+1236,Other Theft,2007,7,852,2007-07-01
+1237,Other Theft,2007,8,980,2007-08-01
+1238,Other Theft,2007,9,858,2007-09-01
+1239,Other Theft,2007,10,826,2007-10-01
+1240,Other Theft,2007,11,695,2007-11-01
+1241,Other Theft,2007,12,721,2007-12-01
+1242,Other Theft,2008,1,779,2008-01-01
+1243,Other Theft,2008,2,724,2008-02-01
+1244,Other Theft,2008,3,770,2008-03-01
+1245,Other Theft,2008,4,768,2008-04-01
+1246,Other Theft,2008,5,840,2008-05-01
+1247,Other Theft,2008,6,826,2008-06-01
+1248,Other Theft,2008,7,797,2008-07-01
+1249,Other Theft,2008,8,869,2008-08-01
+1250,Other Theft,2008,9,859,2008-09-01
+1251,Other Theft,2008,10,815,2008-10-01
+1252,Other Theft,2008,11,727,2008-11-01
+1253,Other Theft,2008,12,689,2008-12-01
+1254,Other Theft,2009,1,723,2009-01-01
+1255,Other Theft,2009,2,760,2009-02-01
+1256,Other Theft,2009,3,873,2009-03-01
+1257,Other Theft,2009,4,790,2009-04-01
+1258,Other Theft,2009,5,795,2009-05-01
+1259,Other Theft,2009,6,827,2009-06-01
+1260,Other Theft,2009,7,804,2009-07-01
+1261,Other Theft,2009,8,839,2009-08-01
+1262,Other Theft,2009,9,773,2009-09-01
+1263,Other Theft,2009,10,807,2009-10-01
+1264,Other Theft,2009,11,741,2009-11-01
+1265,Other Theft,2009,12,737,2009-12-01
+1266,Other Theft,2010,1,775,2010-01-01
+1267,Other Theft,2010,2,860,2010-02-01
+1268,Other Theft,2010,3,861,2010-03-01
+1269,Other Theft,2010,4,795,2010-04-01
+1270,Other Theft,2010,5,801,2010-05-01
+1271,Other Theft,2010,6,792,2010-06-01
+1272,Other Theft,2010,7,844,2010-07-01
+1273,Other Theft,2010,8,838,2010-08-01
+1274,Other Theft,2010,9,753,2010-09-01
+1275,Other Theft,2010,10,712,2010-10-01
+1276,Other Theft,2010,11,651,2010-11-01
+1277,Other Theft,2010,12,684,2010-12-01
+1278,Other Theft,2011,1,734,2011-01-01
+1279,Other Theft,2011,2,668,2011-02-01
+1280,Other Theft,2011,3,796,2011-03-01
+1281,Other Theft,2011,4,770,2011-04-01
+1282,Other Theft,2011,5,781,2011-05-01
+1283,Other Theft,2011,6,870,2011-06-01
+1284,Other Theft,2011,7,825,2011-07-01
+1285,Other Theft,2011,8,858,2011-08-01
+1286,Other Theft,2011,9,754,2011-09-01
+1287,Other Theft,2011,10,744,2011-10-01
+1288,Other Theft,2011,11,825,2011-11-01
+1289,Other Theft,2011,12,764,2011-12-01
+1290,Other Theft,2012,1,777,2012-01-01
+1291,Other Theft,2012,2,761,2012-02-01
+1292,Other Theft,2012,3,782,2012-03-01
+1293,Other Theft,2012,4,811,2012-04-01
+1294,Other Theft,2012,5,866,2012-05-01
+1295,Other Theft,2012,6,930,2012-06-01
+1296,Other Theft,2012,7,845,2012-07-01
+1297,Other Theft,2012,8,861,2012-08-01
+1298,Other Theft,2012,9,860,2012-09-01
+1299,Other Theft,2012,10,831,2012-10-01
+1300,Other Theft,2012,11,880,2012-11-01
+1301,Other Theft,2012,12,756,2012-12-01
+1302,Other Theft,2013,1,836,2013-01-01
+1303,Other Theft,2013,2,729,2013-02-01
+1304,Other Theft,2013,3,857,2013-03-01
+1305,Other Theft,2013,4,762,2013-04-01
+1306,Other Theft,2013,5,938,2013-05-01
+1307,Other Theft,2013,6,993,2013-06-01
+1308,Other Theft,2013,7,920,2013-07-01
+1309,Other Theft,2013,8,909,2013-08-01
+1310,Other Theft,2013,9,846,2013-09-01
+1311,Other Theft,2013,10,855,2013-10-01
+1312,Other Theft,2013,11,785,2013-11-01
+1313,Other Theft,2013,12,834,2013-12-01
+1314,Other Theft,2014,1,838,2014-01-01
+1315,Other Theft,2014,2,794,2014-02-01
+1316,Other Theft,2014,3,911,2014-03-01
+1317,Other Theft,2014,4,810,2014-04-01
+1318,Other Theft,2014,5,981,2014-05-01
+1319,Other Theft,2014,6,933,2014-06-01
+1320,Other Theft,2014,7,930,2014-07-01
+1321,Other Theft,2014,8,1044,2014-08-01
+1322,Other Theft,2014,9,922,2014-09-01
+1323,Other Theft,2014,10,917,2014-10-01
+1324,Other Theft,2014,11,900,2014-11-01
+1325,Other Theft,2014,12,814,2014-12-01
+1326,Other Theft,2015,1,857,2015-01-01
+1327,Other Theft,2015,2,826,2015-02-01
+1328,Other Theft,2015,3,889,2015-03-01
+1329,Other Theft,2015,4,847,2015-04-01
+1330,Other Theft,2015,5,893,2015-05-01
+1331,Other Theft,2015,6,877,2015-06-01
+1332,Other Theft,2015,7,944,2015-07-01
+1333,Other Theft,2015,8,942,2015-08-01
+1334,Other Theft,2015,9,862,2015-09-01
+1335,Other Theft,2015,10,934,2015-10-01
+1336,Other Theft,2015,11,875,2015-11-01
+1337,Other Theft,2015,12,852,2015-12-01
+1338,Other Theft,2016,1,985,2016-01-01
+1339,Other Theft,2016,2,910,2016-02-01
+1340,Other Theft,2016,3,1047,2016-03-01
+1341,Other Theft,2016,4,1010,2016-04-01
+1342,Other Theft,2016,5,1045,2016-05-01
+1343,Other Theft,2016,6,1049,2016-06-01
+1344,Other Theft,2016,7,1073,2016-07-01
+1345,Other Theft,2016,8,1108,2016-08-01
+1346,Other Theft,2016,9,977,2016-09-01
+1347,Other Theft,2016,10,1085,2016-10-01
+1348,Other Theft,2016,11,877,2016-11-01
+1349,Other Theft,2016,12,813,2016-12-01
+1350,Other Theft,2017,1,815,2017-01-01
+1351,Other Theft,2017,2,902,2017-02-01
+1352,Other Theft,2017,3,994,2017-03-01
+1353,Other Theft,2017,4,984,2017-04-01
+1354,Other Theft,2017,5,1009,2017-05-01
+1355,Other Theft,2017,6,1038,2017-06-01
+1356,Other Theft,2017,7,1088,2017-07-01
+1357,Other Theft,2017,8,985,2017-08-01
+1358,Other Theft,2017,9,1039,2017-09-01
+1359,Other Theft,2017,10,967,2017-10-01
+1360,Other Theft,2017,11,988,2017-11-01
+1361,Other Theft,2017,12,1000,2017-12-01
+1362,Other Theft,2018,1,1021,2018-01-01
+1363,Other Theft,2018,2,842,2018-02-01
+1364,Other Theft,2018,3,1015,2018-03-01
+1365,Other Theft,2018,4,988,2018-04-01
+1366,Other Theft,2018,5,951,2018-05-01
+1367,Other Theft,2018,6,961,2018-06-01
+1368,Other Theft,2018,7,953,2018-07-01
+1369,Other Theft,2018,8,1000,2018-08-01
+1370,Other Theft,2018,9,921,2018-09-01
+1371,Other Theft,2018,10,914,2018-10-01
+1372,Other Theft,2018,11,843,2018-11-01
+1373,Other Theft,2018,12,842,2018-12-01
+1374,Other Theft,2019,1,935,2019-01-01
+1375,Other Theft,2019,2,884,2019-02-01
+1376,Other Theft,2019,3,1046,2019-03-01
+1377,Other Theft,2019,4,1029,2019-04-01
+1378,Other Theft,2019,5,1044,2019-05-01
+1379,Other Theft,2019,6,992,2019-06-01
+1380,Other Theft,2019,7,1056,2019-07-01
+1381,Other Theft,2019,8,1133,2019-08-01
+1382,Other Theft,2019,9,1021,2019-09-01
+1383,Other Theft,2019,10,1090,2019-10-01
+1384,Other Theft,2019,11,1062,2019-11-01
+1385,Other Theft,2019,12,1030,2019-12-01
+1386,Other Theft,2020,1,1030,2020-01-01
+1387,Other Theft,2020,2,1030,2020-02-01
+1388,Other Theft,2020,3,875,2020-03-01
+1389,Other Theft,2020,4,529,2020-04-01
+1390,Other Theft,2020,5,420,2020-05-01
+1391,Other Theft,2020,6,527,2020-06-01
+1392,Other Theft,2020,7,673,2020-07-01
+1393,Other Theft,2020,8,722,2020-08-01
+1394,Other Theft,2020,9,651,2020-09-01
+1395,Other Theft,2020,10,787,2020-10-01
+1396,Other Theft,2020,11,713,2020-11-01
+1397,Other Theft,2020,12,690,2020-12-01
+1398,Other Theft,2021,1,756,2021-01-01
+1399,Other Theft,2021,2,643,2021-02-01
+1400,Other Theft,2021,3,598,2021-03-01
+1401,Other Theft,2021,4,596,2021-04-01
+1402,Other Theft,2021,5,649,2021-05-01
+1403,Other Theft,2021,6,678,2021-06-01
+1404,Other Theft,2021,7,775,2021-07-01
+1405,Other Theft,2021,8,785,2021-08-01
+1406,Other Theft,2021,9,696,2021-09-01
+1407,Other Theft,2021,10,727,2021-10-01
+1408,Other Theft,2021,11,892,2021-11-01
+1409,Other Theft,2021,12,788,2021-12-01
+1410,Other Theft,2022,1,821,2022-01-01
+1411,Other Theft,2022,2,778,2022-02-01
+1412,Other Theft,2022,3,930,2022-03-01
+1413,Other Theft,2022,4,960,2022-04-01
+1414,Other Theft,2022,5,920,2022-05-01
+1415,Other Theft,2022,6,858,2022-06-01
+1416,Other Theft,2022,7,991,2022-07-01
+1417,Other Theft,2022,8,995,2022-08-01
+1418,Other Theft,2022,9,925,2022-09-01
+1419,Other Theft,2022,10,930,2022-10-01
+1420,Other Theft,2022,11,818,2022-11-01
+1421,Other Theft,2022,12,827,2022-12-01
+1422,Other Theft,2023,1,831,2023-01-01
+1423,Other Theft,2023,2,1072,2023-02-01
+1424,Other Theft,2023,3,1028,2023-03-01
+1425,Other Theft,2023,4,953,2023-04-01
+1426,Other Theft,2023,5,1115,2023-05-01
+1427,Other Theft,2023,6,1242,2023-06-01
+1428,Other Theft,2023,7,1160,2023-07-01
+1429,Other Theft,2023,8,1154,2023-08-01
+1430,Other Theft,2023,9,1116,2023-09-01
+1431,Other Theft,2023,10,994,2023-10-01
+1433,Theft from Vehicle,2003,1,1438,2003-01-01
+1434,Theft from Vehicle,2003,2,1102,2003-02-01
+1435,Theft from Vehicle,2003,3,1251,2003-03-01
+1436,Theft from Vehicle,2003,4,1528,2003-04-01
+1437,Theft from Vehicle,2003,5,1873,2003-05-01
+1438,Theft from Vehicle,2003,6,1695,2003-06-01
+1439,Theft from Vehicle,2003,7,1445,2003-07-01
+1440,Theft from Vehicle,2003,8,1634,2003-08-01
+1441,Theft from Vehicle,2003,9,1470,2003-09-01
+1442,Theft from Vehicle,2003,10,1554,2003-10-01
+1443,Theft from Vehicle,2003,11,1332,2003-11-01
+1444,Theft from Vehicle,2003,12,1422,2003-12-01
+1445,Theft from Vehicle,2004,1,1319,2004-01-01
+1446,Theft from Vehicle,2004,2,1276,2004-02-01
+1447,Theft from Vehicle,2004,3,1523,2004-03-01
+1448,Theft from Vehicle,2004,4,1558,2004-04-01
+1449,Theft from Vehicle,2004,5,1494,2004-05-01
+1450,Theft from Vehicle,2004,6,1335,2004-06-01
+1451,Theft from Vehicle,2004,7,1426,2004-07-01
+1452,Theft from Vehicle,2004,8,1677,2004-08-01
+1453,Theft from Vehicle,2004,9,1743,2004-09-01
+1454,Theft from Vehicle,2004,10,1650,2004-10-01
+1455,Theft from Vehicle,2004,11,1689,2004-11-01
+1456,Theft from Vehicle,2004,12,1512,2004-12-01
+1457,Theft from Vehicle,2005,1,1516,2005-01-01
+1458,Theft from Vehicle,2005,2,1305,2005-02-01
+1459,Theft from Vehicle,2005,3,1408,2005-03-01
+1460,Theft from Vehicle,2005,4,1563,2005-04-01
+1461,Theft from Vehicle,2005,5,1530,2005-05-01
+1462,Theft from Vehicle,2005,6,1426,2005-06-01
+1463,Theft from Vehicle,2005,7,1323,2005-07-01
+1464,Theft from Vehicle,2005,8,1362,2005-08-01
+1465,Theft from Vehicle,2005,9,1316,2005-09-01
+1466,Theft from Vehicle,2005,10,1261,2005-10-01
+1467,Theft from Vehicle,2005,11,1271,2005-11-01
+1468,Theft from Vehicle,2005,12,1272,2005-12-01
+1469,Theft from Vehicle,2006,1,1492,2006-01-01
+1470,Theft from Vehicle,2006,2,1125,2006-02-01
+1471,Theft from Vehicle,2006,3,1326,2006-03-01
+1472,Theft from Vehicle,2006,4,1006,2006-04-01
+1473,Theft from Vehicle,2006,5,1197,2006-05-01
+1474,Theft from Vehicle,2006,6,1239,2006-06-01
+1475,Theft from Vehicle,2006,7,1206,2006-07-01
+1476,Theft from Vehicle,2006,8,1227,2006-08-01
+1477,Theft from Vehicle,2006,9,1178,2006-09-01
+1478,Theft from Vehicle,2006,10,1116,2006-10-01
+1479,Theft from Vehicle,2006,11,1313,2006-11-01
+1480,Theft from Vehicle,2006,12,1305,2006-12-01
+1481,Theft from Vehicle,2007,1,1307,2007-01-01
+1482,Theft from Vehicle,2007,2,966,2007-02-01
+1483,Theft from Vehicle,2007,3,1048,2007-03-01
+1484,Theft from Vehicle,2007,4,1048,2007-04-01
+1485,Theft from Vehicle,2007,5,1037,2007-05-01
+1486,Theft from Vehicle,2007,6,950,2007-06-01
+1487,Theft from Vehicle,2007,7,933,2007-07-01
+1488,Theft from Vehicle,2007,8,1107,2007-08-01
+1489,Theft from Vehicle,2007,9,1078,2007-09-01
+1490,Theft from Vehicle,2007,10,1025,2007-10-01
+1491,Theft from Vehicle,2007,11,911,2007-11-01
+1492,Theft from Vehicle,2007,12,817,2007-12-01
+1493,Theft from Vehicle,2008,1,781,2008-01-01
+1494,Theft from Vehicle,2008,2,867,2008-02-01
+1495,Theft from Vehicle,2008,3,1061,2008-03-01
+1496,Theft from Vehicle,2008,4,888,2008-04-01
+1497,Theft from Vehicle,2008,5,919,2008-05-01
+1498,Theft from Vehicle,2008,6,1017,2008-06-01
+1499,Theft from Vehicle,2008,7,875,2008-07-01
+1500,Theft from Vehicle,2008,8,943,2008-08-01
+1501,Theft from Vehicle,2008,9,1000,2008-09-01
+1502,Theft from Vehicle,2008,10,1016,2008-10-01
+1503,Theft from Vehicle,2008,11,972,2008-11-01
+1504,Theft from Vehicle,2008,12,956,2008-12-01
+1505,Theft from Vehicle,2009,1,897,2009-01-01
+1506,Theft from Vehicle,2009,2,972,2009-02-01
+1507,Theft from Vehicle,2009,3,842,2009-03-01
+1508,Theft from Vehicle,2009,4,747,2009-04-01
+1509,Theft from Vehicle,2009,5,817,2009-05-01
+1510,Theft from Vehicle,2009,6,803,2009-06-01
+1511,Theft from Vehicle,2009,7,799,2009-07-01
+1512,Theft from Vehicle,2009,8,871,2009-08-01
+1513,Theft from Vehicle,2009,9,927,2009-09-01
+1514,Theft from Vehicle,2009,10,806,2009-10-01
+1515,Theft from Vehicle,2009,11,831,2009-11-01
+1516,Theft from Vehicle,2009,12,696,2009-12-01
+1517,Theft from Vehicle,2010,1,709,2010-01-01
+1518,Theft from Vehicle,2010,2,627,2010-02-01
+1519,Theft from Vehicle,2010,3,714,2010-03-01
+1520,Theft from Vehicle,2010,4,599,2010-04-01
+1521,Theft from Vehicle,2010,5,677,2010-05-01
+1522,Theft from Vehicle,2010,6,675,2010-06-01
+1523,Theft from Vehicle,2010,7,685,2010-07-01
+1524,Theft from Vehicle,2010,8,793,2010-08-01
+1525,Theft from Vehicle,2010,9,833,2010-09-01
+1526,Theft from Vehicle,2010,10,915,2010-10-01
+1527,Theft from Vehicle,2010,11,725,2010-11-01
+1528,Theft from Vehicle,2010,12,662,2010-12-01
+1529,Theft from Vehicle,2011,1,628,2011-01-01
+1530,Theft from Vehicle,2011,2,680,2011-02-01
+1531,Theft from Vehicle,2011,3,605,2011-03-01
+1532,Theft from Vehicle,2011,4,510,2011-04-01
+1533,Theft from Vehicle,2011,5,608,2011-05-01
+1534,Theft from Vehicle,2011,6,520,2011-06-01
+1535,Theft from Vehicle,2011,7,749,2011-07-01
+1536,Theft from Vehicle,2011,8,678,2011-08-01
+1537,Theft from Vehicle,2011,9,671,2011-09-01
+1538,Theft from Vehicle,2011,10,589,2011-10-01
+1539,Theft from Vehicle,2011,11,568,2011-11-01
+1540,Theft from Vehicle,2011,12,628,2011-12-01
+1541,Theft from Vehicle,2012,1,665,2012-01-01
+1542,Theft from Vehicle,2012,2,661,2012-02-01
+1543,Theft from Vehicle,2012,3,733,2012-03-01
+1544,Theft from Vehicle,2012,4,758,2012-04-01
+1545,Theft from Vehicle,2012,5,597,2012-05-01
+1546,Theft from Vehicle,2012,6,627,2012-06-01
+1547,Theft from Vehicle,2012,7,599,2012-07-01
+1548,Theft from Vehicle,2012,8,736,2012-08-01
+1549,Theft from Vehicle,2012,9,638,2012-09-01
+1550,Theft from Vehicle,2012,10,639,2012-10-01
+1551,Theft from Vehicle,2012,11,802,2012-11-01
+1552,Theft from Vehicle,2012,12,641,2012-12-01
+1553,Theft from Vehicle,2013,1,516,2013-01-01
+1554,Theft from Vehicle,2013,2,496,2013-02-01
+1555,Theft from Vehicle,2013,3,641,2013-03-01
+1556,Theft from Vehicle,2013,4,720,2013-04-01
+1557,Theft from Vehicle,2013,5,754,2013-05-01
+1558,Theft from Vehicle,2013,6,667,2013-06-01
+1559,Theft from Vehicle,2013,7,677,2013-07-01
+1560,Theft from Vehicle,2013,8,683,2013-08-01
+1561,Theft from Vehicle,2013,9,668,2013-09-01
+1562,Theft from Vehicle,2013,10,813,2013-10-01
+1563,Theft from Vehicle,2013,11,891,2013-11-01
+1564,Theft from Vehicle,2013,12,807,2013-12-01
+1565,Theft from Vehicle,2014,1,718,2014-01-01
+1566,Theft from Vehicle,2014,2,603,2014-02-01
+1567,Theft from Vehicle,2014,3,682,2014-03-01
+1568,Theft from Vehicle,2014,4,664,2014-04-01
+1569,Theft from Vehicle,2014,5,859,2014-05-01
+1570,Theft from Vehicle,2014,6,845,2014-06-01
+1571,Theft from Vehicle,2014,7,1016,2014-07-01
+1572,Theft from Vehicle,2014,8,1103,2014-08-01
+1573,Theft from Vehicle,2014,9,1042,2014-09-01
+1574,Theft from Vehicle,2014,10,963,2014-10-01
+1575,Theft from Vehicle,2014,11,822,2014-11-01
+1576,Theft from Vehicle,2014,12,823,2014-12-01
+1577,Theft from Vehicle,2015,1,861,2015-01-01
+1578,Theft from Vehicle,2015,2,723,2015-02-01
+1579,Theft from Vehicle,2015,3,705,2015-03-01
+1580,Theft from Vehicle,2015,4,780,2015-04-01
+1581,Theft from Vehicle,2015,5,773,2015-05-01
+1582,Theft from Vehicle,2015,6,718,2015-06-01
+1583,Theft from Vehicle,2015,7,912,2015-07-01
+1584,Theft from Vehicle,2015,8,822,2015-08-01
+1585,Theft from Vehicle,2015,9,853,2015-09-01
+1586,Theft from Vehicle,2015,10,1033,2015-10-01
+1587,Theft from Vehicle,2015,11,1215,2015-11-01
+1588,Theft from Vehicle,2015,12,1151,2015-12-01
+1589,Theft from Vehicle,2016,1,1264,2016-01-01
+1590,Theft from Vehicle,2016,2,1017,2016-02-01
+1591,Theft from Vehicle,2016,3,1143,2016-03-01
+1592,Theft from Vehicle,2016,4,1062,2016-04-01
+1593,Theft from Vehicle,2016,5,1183,2016-05-01
+1594,Theft from Vehicle,2016,6,1090,2016-06-01
+1595,Theft from Vehicle,2016,7,1156,2016-07-01
+1596,Theft from Vehicle,2016,8,1003,2016-08-01
+1597,Theft from Vehicle,2016,9,985,2016-09-01
+1598,Theft from Vehicle,2016,10,1091,2016-10-01
+1599,Theft from Vehicle,2016,11,943,2016-11-01
+1600,Theft from Vehicle,2016,12,877,2016-12-01
+1601,Theft from Vehicle,2017,1,841,2017-01-01
+1602,Theft from Vehicle,2017,2,756,2017-02-01
+1603,Theft from Vehicle,2017,3,990,2017-03-01
+1604,Theft from Vehicle,2017,4,961,2017-04-01
+1605,Theft from Vehicle,2017,5,992,2017-05-01
+1606,Theft from Vehicle,2017,6,1058,2017-06-01
+1607,Theft from Vehicle,2017,7,1098,2017-07-01
+1608,Theft from Vehicle,2017,8,1209,2017-08-01
+1609,Theft from Vehicle,2017,9,1186,2017-09-01
+1610,Theft from Vehicle,2017,10,1313,2017-10-01
+1611,Theft from Vehicle,2017,11,1300,2017-11-01
+1612,Theft from Vehicle,2017,12,1253,2017-12-01
+1613,Theft from Vehicle,2018,1,1359,2018-01-01
+1614,Theft from Vehicle,2018,2,1112,2018-02-01
+1615,Theft from Vehicle,2018,3,1137,2018-03-01
+1616,Theft from Vehicle,2018,4,1261,2018-04-01
+1617,Theft from Vehicle,2018,5,1151,2018-05-01
+1618,Theft from Vehicle,2018,6,1174,2018-06-01
+1619,Theft from Vehicle,2018,7,1079,2018-07-01
+1620,Theft from Vehicle,2018,8,1250,2018-08-01
+1621,Theft from Vehicle,2018,9,1291,2018-09-01
+1622,Theft from Vehicle,2018,10,1262,2018-10-01
+1623,Theft from Vehicle,2018,11,1396,2018-11-01
+1624,Theft from Vehicle,2018,12,1524,2018-12-01
+1625,Theft from Vehicle,2019,1,1544,2019-01-01
+1626,Theft from Vehicle,2019,2,1115,2019-02-01
+1627,Theft from Vehicle,2019,3,1282,2019-03-01
+1628,Theft from Vehicle,2019,4,1321,2019-04-01
+1629,Theft from Vehicle,2019,5,1454,2019-05-01
+1630,Theft from Vehicle,2019,6,1306,2019-06-01
+1631,Theft from Vehicle,2019,7,1506,2019-07-01
+1632,Theft from Vehicle,2019,8,1536,2019-08-01
+1633,Theft from Vehicle,2019,9,1626,2019-09-01
+1634,Theft from Vehicle,2019,10,1642,2019-10-01
+1635,Theft from Vehicle,2019,11,1405,2019-11-01
+1636,Theft from Vehicle,2019,12,1269,2019-12-01
+1637,Theft from Vehicle,2020,1,1350,2020-01-01
+1638,Theft from Vehicle,2020,2,1263,2020-02-01
+1639,Theft from Vehicle,2020,3,1164,2020-03-01
+1640,Theft from Vehicle,2020,4,943,2020-04-01
+1641,Theft from Vehicle,2020,5,556,2020-05-01
+1642,Theft from Vehicle,2020,6,534,2020-06-01
+1643,Theft from Vehicle,2020,7,687,2020-07-01
+1644,Theft from Vehicle,2020,8,848,2020-08-01
+1645,Theft from Vehicle,2020,9,844,2020-09-01
+1646,Theft from Vehicle,2020,10,870,2020-10-01
+1647,Theft from Vehicle,2020,11,685,2020-11-01
+1648,Theft from Vehicle,2020,12,686,2020-12-01
+1649,Theft from Vehicle,2021,1,711,2021-01-01
+1650,Theft from Vehicle,2021,2,565,2021-02-01
+1651,Theft from Vehicle,2021,3,546,2021-03-01
+1652,Theft from Vehicle,2021,4,526,2021-04-01
+1653,Theft from Vehicle,2021,5,602,2021-05-01
+1654,Theft from Vehicle,2021,6,562,2021-06-01
+1655,Theft from Vehicle,2021,7,691,2021-07-01
+1656,Theft from Vehicle,2021,8,735,2021-08-01
+1657,Theft from Vehicle,2021,9,716,2021-09-01
+1658,Theft from Vehicle,2021,10,630,2021-10-01
+1659,Theft from Vehicle,2021,11,633,2021-11-01
+1660,Theft from Vehicle,2021,12,584,2021-12-01
+1661,Theft from Vehicle,2022,1,593,2022-01-01
+1662,Theft from Vehicle,2022,2,541,2022-02-01
+1663,Theft from Vehicle,2022,3,697,2022-03-01
+1664,Theft from Vehicle,2022,4,667,2022-04-01
+1665,Theft from Vehicle,2022,5,602,2022-05-01
+1666,Theft from Vehicle,2022,6,640,2022-06-01
+1667,Theft from Vehicle,2022,7,574,2022-07-01
+1668,Theft from Vehicle,2022,8,621,2022-08-01
+1669,Theft from Vehicle,2022,9,680,2022-09-01
+1670,Theft from Vehicle,2022,10,655,2022-10-01
+1671,Theft from Vehicle,2022,11,497,2022-11-01
+1672,Theft from Vehicle,2022,12,509,2022-12-01
+1673,Theft from Vehicle,2023,1,644,2023-01-01
+1674,Theft from Vehicle,2023,2,495,2023-02-01
+1675,Theft from Vehicle,2023,3,651,2023-03-01
+1676,Theft from Vehicle,2023,4,547,2023-04-01
+1677,Theft from Vehicle,2023,5,611,2023-05-01
+1678,Theft from Vehicle,2023,6,645,2023-06-01
+1679,Theft from Vehicle,2023,7,684,2023-07-01
+1680,Theft from Vehicle,2023,8,749,2023-08-01
+1681,Theft from Vehicle,2023,9,651,2023-09-01
+1682,Theft from Vehicle,2023,10,656,2023-10-01
+1684,Theft of Bicycle,2003,1,96,2003-01-01
+1685,Theft of Bicycle,2003,2,71,2003-02-01
+1686,Theft of Bicycle,2003,3,76,2003-03-01
+1687,Theft of Bicycle,2003,4,97,2003-04-01
+1688,Theft of Bicycle,2003,5,114,2003-05-01
+1689,Theft of Bicycle,2003,6,154,2003-06-01
+1690,Theft of Bicycle,2003,7,191,2003-07-01
+1691,Theft of Bicycle,2003,8,192,2003-08-01
+1692,Theft of Bicycle,2003,9,158,2003-09-01
+1693,Theft of Bicycle,2003,10,145,2003-10-01
+1694,Theft of Bicycle,2003,11,74,2003-11-01
+1695,Theft of Bicycle,2003,12,51,2003-12-01
+1696,Theft of Bicycle,2004,1,42,2004-01-01
+1697,Theft of Bicycle,2004,2,57,2004-02-01
+1698,Theft of Bicycle,2004,3,100,2004-03-01
+1699,Theft of Bicycle,2004,4,93,2004-04-01
+1700,Theft of Bicycle,2004,5,109,2004-05-01
+1701,Theft of Bicycle,2004,6,124,2004-06-01
+1702,Theft of Bicycle,2004,7,198,2004-07-01
+1703,Theft of Bicycle,2004,8,155,2004-08-01
+1704,Theft of Bicycle,2004,9,130,2004-09-01
+1705,Theft of Bicycle,2004,10,107,2004-10-01
+1706,Theft of Bicycle,2004,11,71,2004-11-01
+1707,Theft of Bicycle,2004,12,44,2004-12-01
+1708,Theft of Bicycle,2005,1,51,2005-01-01
+1709,Theft of Bicycle,2005,2,53,2005-02-01
+1710,Theft of Bicycle,2005,3,83,2005-03-01
+1711,Theft of Bicycle,2005,4,75,2005-04-01
+1712,Theft of Bicycle,2005,5,133,2005-05-01
+1713,Theft of Bicycle,2005,6,153,2005-06-01
+1714,Theft of Bicycle,2005,7,162,2005-07-01
+1715,Theft of Bicycle,2005,8,197,2005-08-01
+1716,Theft of Bicycle,2005,9,180,2005-09-01
+1717,Theft of Bicycle,2005,10,159,2005-10-01
+1718,Theft of Bicycle,2005,11,106,2005-11-01
+1719,Theft of Bicycle,2005,12,64,2005-12-01
+1720,Theft of Bicycle,2006,1,66,2006-01-01
+1721,Theft of Bicycle,2006,2,82,2006-02-01
+1722,Theft of Bicycle,2006,3,93,2006-03-01
+1723,Theft of Bicycle,2006,4,79,2006-04-01
+1724,Theft of Bicycle,2006,5,103,2006-05-01
+1725,Theft of Bicycle,2006,6,197,2006-06-01
+1726,Theft of Bicycle,2006,7,242,2006-07-01
+1727,Theft of Bicycle,2006,8,222,2006-08-01
+1728,Theft of Bicycle,2006,9,134,2006-09-01
+1729,Theft of Bicycle,2006,10,128,2006-10-01
+1730,Theft of Bicycle,2006,11,67,2006-11-01
+1731,Theft of Bicycle,2006,12,54,2006-12-01
+1732,Theft of Bicycle,2007,1,57,2007-01-01
+1733,Theft of Bicycle,2007,2,56,2007-02-01
+1734,Theft of Bicycle,2007,3,71,2007-03-01
+1735,Theft of Bicycle,2007,4,82,2007-04-01
+1736,Theft of Bicycle,2007,5,108,2007-05-01
+1737,Theft of Bicycle,2007,6,137,2007-06-01
+1738,Theft of Bicycle,2007,7,169,2007-07-01
+1739,Theft of Bicycle,2007,8,197,2007-08-01
+1740,Theft of Bicycle,2007,9,130,2007-09-01
+1741,Theft of Bicycle,2007,10,105,2007-10-01
+1742,Theft of Bicycle,2007,11,46,2007-11-01
+1743,Theft of Bicycle,2007,12,45,2007-12-01
+1744,Theft of Bicycle,2008,1,44,2008-01-01
+1745,Theft of Bicycle,2008,2,46,2008-02-01
+1746,Theft of Bicycle,2008,3,61,2008-03-01
+1747,Theft of Bicycle,2008,4,79,2008-04-01
+1748,Theft of Bicycle,2008,5,134,2008-05-01
+1749,Theft of Bicycle,2008,6,119,2008-06-01
+1750,Theft of Bicycle,2008,7,178,2008-07-01
+1751,Theft of Bicycle,2008,8,155,2008-08-01
+1752,Theft of Bicycle,2008,9,159,2008-09-01
+1753,Theft of Bicycle,2008,10,119,2008-10-01
+1754,Theft of Bicycle,2008,11,56,2008-11-01
+1755,Theft of Bicycle,2008,12,26,2008-12-01
+1756,Theft of Bicycle,2009,1,29,2009-01-01
+1757,Theft of Bicycle,2009,2,52,2009-02-01
+1758,Theft of Bicycle,2009,3,43,2009-03-01
+1759,Theft of Bicycle,2009,4,127,2009-04-01
+1760,Theft of Bicycle,2009,5,186,2009-05-01
+1761,Theft of Bicycle,2009,6,167,2009-06-01
+1762,Theft of Bicycle,2009,7,285,2009-07-01
+1763,Theft of Bicycle,2009,8,310,2009-08-01
+1764,Theft of Bicycle,2009,9,183,2009-09-01
+1765,Theft of Bicycle,2009,10,110,2009-10-01
+1766,Theft of Bicycle,2009,11,88,2009-11-01
+1767,Theft of Bicycle,2009,12,61,2009-12-01
+1768,Theft of Bicycle,2010,1,52,2010-01-01
+1769,Theft of Bicycle,2010,2,68,2010-02-01
+1770,Theft of Bicycle,2010,3,89,2010-03-01
+1771,Theft of Bicycle,2010,4,128,2010-04-01
+1772,Theft of Bicycle,2010,5,143,2010-05-01
+1773,Theft of Bicycle,2010,6,139,2010-06-01
+1774,Theft of Bicycle,2010,7,231,2010-07-01
+1775,Theft of Bicycle,2010,8,304,2010-08-01
+1776,Theft of Bicycle,2010,9,222,2010-09-01
+1777,Theft of Bicycle,2010,10,169,2010-10-01
+1778,Theft of Bicycle,2010,11,77,2010-11-01
+1779,Theft of Bicycle,2010,12,47,2010-12-01
+1780,Theft of Bicycle,2011,1,39,2011-01-01
+1781,Theft of Bicycle,2011,2,47,2011-02-01
+1782,Theft of Bicycle,2011,3,58,2011-03-01
+1783,Theft of Bicycle,2011,4,84,2011-04-01
+1784,Theft of Bicycle,2011,5,99,2011-05-01
+1785,Theft of Bicycle,2011,6,175,2011-06-01
+1786,Theft of Bicycle,2011,7,297,2011-07-01
+1787,Theft of Bicycle,2011,8,249,2011-08-01
+1788,Theft of Bicycle,2011,9,171,2011-09-01
+1789,Theft of Bicycle,2011,10,142,2011-10-01
+1790,Theft of Bicycle,2011,11,93,2011-11-01
+1791,Theft of Bicycle,2011,12,63,2011-12-01
+1792,Theft of Bicycle,2012,1,76,2012-01-01
+1793,Theft of Bicycle,2012,2,93,2012-02-01
+1794,Theft of Bicycle,2012,3,91,2012-03-01
+1795,Theft of Bicycle,2012,4,111,2012-04-01
+1796,Theft of Bicycle,2012,5,174,2012-05-01
+1797,Theft of Bicycle,2012,6,170,2012-06-01
+1798,Theft of Bicycle,2012,7,251,2012-07-01
+1799,Theft of Bicycle,2012,8,290,2012-08-01
+1800,Theft of Bicycle,2012,9,237,2012-09-01
+1801,Theft of Bicycle,2012,10,181,2012-10-01
+1802,Theft of Bicycle,2012,11,79,2012-11-01
+1803,Theft of Bicycle,2012,12,64,2012-12-01
+1804,Theft of Bicycle,2013,1,69,2013-01-01
+1805,Theft of Bicycle,2013,2,70,2013-02-01
+1806,Theft of Bicycle,2013,3,135,2013-03-01
+1807,Theft of Bicycle,2013,4,153,2013-04-01
+1808,Theft of Bicycle,2013,5,182,2013-05-01
+1809,Theft of Bicycle,2013,6,256,2013-06-01
+1810,Theft of Bicycle,2013,7,270,2013-07-01
+1811,Theft of Bicycle,2013,8,338,2013-08-01
+1812,Theft of Bicycle,2013,9,197,2013-09-01
+1813,Theft of Bicycle,2013,10,162,2013-10-01
+1814,Theft of Bicycle,2013,11,121,2013-11-01
+1815,Theft of Bicycle,2013,12,79,2013-12-01
+1816,Theft of Bicycle,2014,1,116,2014-01-01
+1817,Theft of Bicycle,2014,2,72,2014-02-01
+1818,Theft of Bicycle,2014,3,89,2014-03-01
+1819,Theft of Bicycle,2014,4,169,2014-04-01
+1820,Theft of Bicycle,2014,5,218,2014-05-01
+1821,Theft of Bicycle,2014,6,296,2014-06-01
+1822,Theft of Bicycle,2014,7,415,2014-07-01
+1823,Theft of Bicycle,2014,8,347,2014-08-01
+1824,Theft of Bicycle,2014,9,309,2014-09-01
+1825,Theft of Bicycle,2014,10,226,2014-10-01
+1826,Theft of Bicycle,2014,11,124,2014-11-01
+1827,Theft of Bicycle,2014,12,80,2014-12-01
+1828,Theft of Bicycle,2015,1,87,2015-01-01
+1829,Theft of Bicycle,2015,2,90,2015-02-01
+1830,Theft of Bicycle,2015,3,126,2015-03-01
+1831,Theft of Bicycle,2015,4,187,2015-04-01
+1832,Theft of Bicycle,2015,5,282,2015-05-01
+1833,Theft of Bicycle,2015,6,411,2015-06-01
+1834,Theft of Bicycle,2015,7,521,2015-07-01
+1835,Theft of Bicycle,2015,8,437,2015-08-01
+1836,Theft of Bicycle,2015,9,340,2015-09-01
+1837,Theft of Bicycle,2015,10,306,2015-10-01
+1838,Theft of Bicycle,2015,11,156,2015-11-01
+1839,Theft of Bicycle,2015,12,121,2015-12-01
+1840,Theft of Bicycle,2016,1,108,2016-01-01
+1841,Theft of Bicycle,2016,2,107,2016-02-01
+1842,Theft of Bicycle,2016,3,140,2016-03-01
+1843,Theft of Bicycle,2016,4,217,2016-04-01
+1844,Theft of Bicycle,2016,5,413,2016-05-01
+1845,Theft of Bicycle,2016,6,391,2016-06-01
+1846,Theft of Bicycle,2016,7,313,2016-07-01
+1847,Theft of Bicycle,2016,8,340,2016-08-01
+1848,Theft of Bicycle,2016,9,244,2016-09-01
+1849,Theft of Bicycle,2016,10,172,2016-10-01
+1850,Theft of Bicycle,2016,11,129,2016-11-01
+1851,Theft of Bicycle,2016,12,63,2016-12-01
+1852,Theft of Bicycle,2017,1,64,2017-01-01
+1853,Theft of Bicycle,2017,2,70,2017-02-01
+1854,Theft of Bicycle,2017,3,116,2017-03-01
+1855,Theft of Bicycle,2017,4,129,2017-04-01
+1856,Theft of Bicycle,2017,5,218,2017-05-01
+1857,Theft of Bicycle,2017,6,277,2017-06-01
+1858,Theft of Bicycle,2017,7,334,2017-07-01
+1859,Theft of Bicycle,2017,8,344,2017-08-01
+1860,Theft of Bicycle,2017,9,275,2017-09-01
+1861,Theft of Bicycle,2017,10,195,2017-10-01
+1862,Theft of Bicycle,2017,11,110,2017-11-01
+1863,Theft of Bicycle,2017,12,70,2017-12-01
+1864,Theft of Bicycle,2018,1,86,2018-01-01
+1865,Theft of Bicycle,2018,2,71,2018-02-01
+1866,Theft of Bicycle,2018,3,98,2018-03-01
+1867,Theft of Bicycle,2018,4,140,2018-04-01
+1868,Theft of Bicycle,2018,5,241,2018-05-01
+1869,Theft of Bicycle,2018,6,233,2018-06-01
+1870,Theft of Bicycle,2018,7,333,2018-07-01
+1871,Theft of Bicycle,2018,8,300,2018-08-01
+1872,Theft of Bicycle,2018,9,267,2018-09-01
+1873,Theft of Bicycle,2018,10,169,2018-10-01
+1874,Theft of Bicycle,2018,11,134,2018-11-01
+1875,Theft of Bicycle,2018,12,95,2018-12-01
+1876,Theft of Bicycle,2019,1,86,2019-01-01
+1877,Theft of Bicycle,2019,2,59,2019-02-01
+1878,Theft of Bicycle,2019,3,108,2019-03-01
+1879,Theft of Bicycle,2019,4,152,2019-04-01
+1880,Theft of Bicycle,2019,5,206,2019-05-01
+1881,Theft of Bicycle,2019,6,220,2019-06-01
+1882,Theft of Bicycle,2019,7,291,2019-07-01
+1883,Theft of Bicycle,2019,8,341,2019-08-01
+1884,Theft of Bicycle,2019,9,283,2019-09-01
+1885,Theft of Bicycle,2019,10,205,2019-10-01
+1886,Theft of Bicycle,2019,11,171,2019-11-01
+1887,Theft of Bicycle,2019,12,99,2019-12-01
+1888,Theft of Bicycle,2020,1,67,2020-01-01
+1889,Theft of Bicycle,2020,2,98,2020-02-01
+1890,Theft of Bicycle,2020,3,108,2020-03-01
+1891,Theft of Bicycle,2020,4,171,2020-04-01
+1892,Theft of Bicycle,2020,5,148,2020-05-01
+1893,Theft of Bicycle,2020,6,197,2020-06-01
+1894,Theft of Bicycle,2020,7,243,2020-07-01
+1895,Theft of Bicycle,2020,8,269,2020-08-01
+1896,Theft of Bicycle,2020,9,250,2020-09-01
+1897,Theft of Bicycle,2020,10,223,2020-10-01
+1898,Theft of Bicycle,2020,11,133,2020-11-01
+1899,Theft of Bicycle,2020,12,80,2020-12-01
+1900,Theft of Bicycle,2021,1,86,2021-01-01
+1901,Theft of Bicycle,2021,2,88,2021-02-01
+1902,Theft of Bicycle,2021,3,84,2021-03-01
+1903,Theft of Bicycle,2021,4,139,2021-04-01
+1904,Theft of Bicycle,2021,5,151,2021-05-01
+1905,Theft of Bicycle,2021,6,175,2021-06-01
+1906,Theft of Bicycle,2021,7,201,2021-07-01
+1907,Theft of Bicycle,2021,8,178,2021-08-01
+1908,Theft of Bicycle,2021,9,119,2021-09-01
+1909,Theft of Bicycle,2021,10,86,2021-10-01
+1910,Theft of Bicycle,2021,11,87,2021-11-01
+1911,Theft of Bicycle,2021,12,66,2021-12-01
+1912,Theft of Bicycle,2022,1,54,2022-01-01
+1913,Theft of Bicycle,2022,2,65,2022-02-01
+1914,Theft of Bicycle,2022,3,102,2022-03-01
+1915,Theft of Bicycle,2022,4,120,2022-04-01
+1916,Theft of Bicycle,2022,5,150,2022-05-01
+1917,Theft of Bicycle,2022,6,152,2022-06-01
+1918,Theft of Bicycle,2022,7,182,2022-07-01
+1919,Theft of Bicycle,2022,8,205,2022-08-01
+1920,Theft of Bicycle,2022,9,175,2022-09-01
+1921,Theft of Bicycle,2022,10,149,2022-10-01
+1922,Theft of Bicycle,2022,11,105,2022-11-01
+1923,Theft of Bicycle,2022,12,69,2022-12-01
+1924,Theft of Bicycle,2023,1,73,2023-01-01
+1925,Theft of Bicycle,2023,2,56,2023-02-01
+1926,Theft of Bicycle,2023,3,48,2023-03-01
+1927,Theft of Bicycle,2023,4,76,2023-04-01
+1928,Theft of Bicycle,2023,5,122,2023-05-01
+1929,Theft of Bicycle,2023,6,121,2023-06-01
+1930,Theft of Bicycle,2023,7,141,2023-07-01
+1931,Theft of Bicycle,2023,8,123,2023-08-01
+1932,Theft of Bicycle,2023,9,95,2023-09-01
+1933,Theft of Bicycle,2023,10,111,2023-10-01
+1935,Theft of Vehicle,2003,1,640,2003-01-01
+1936,Theft of Vehicle,2003,2,528,2003-02-01
+1937,Theft of Vehicle,2003,3,569,2003-03-01
+1938,Theft of Vehicle,2003,4,476,2003-04-01
+1939,Theft of Vehicle,2003,5,540,2003-05-01
+1940,Theft of Vehicle,2003,6,564,2003-06-01
+1941,Theft of Vehicle,2003,7,487,2003-07-01
+1942,Theft of Vehicle,2003,8,506,2003-08-01
+1943,Theft of Vehicle,2003,9,441,2003-09-01
+1944,Theft of Vehicle,2003,10,541,2003-10-01
+1945,Theft of Vehicle,2003,11,512,2003-11-01
+1946,Theft of Vehicle,2003,12,556,2003-12-01
+1947,Theft of Vehicle,2004,1,457,2004-01-01
+1948,Theft of Vehicle,2004,2,493,2004-02-01
+1949,Theft of Vehicle,2004,3,604,2004-03-01
+1950,Theft of Vehicle,2004,4,464,2004-04-01
+1951,Theft of Vehicle,2004,5,487,2004-05-01
+1952,Theft of Vehicle,2004,6,471,2004-06-01
+1953,Theft of Vehicle,2004,7,516,2004-07-01
+1954,Theft of Vehicle,2004,8,514,2004-08-01
+1955,Theft of Vehicle,2004,9,549,2004-09-01
+1956,Theft of Vehicle,2004,10,617,2004-10-01
+1957,Theft of Vehicle,2004,11,455,2004-11-01
+1958,Theft of Vehicle,2004,12,473,2004-12-01
+1959,Theft of Vehicle,2005,1,510,2005-01-01
+1960,Theft of Vehicle,2005,2,420,2005-02-01
+1961,Theft of Vehicle,2005,3,470,2005-03-01
+1962,Theft of Vehicle,2005,4,459,2005-04-01
+1963,Theft of Vehicle,2005,5,401,2005-05-01
+1964,Theft of Vehicle,2005,6,402,2005-06-01
+1965,Theft of Vehicle,2005,7,415,2005-07-01
+1966,Theft of Vehicle,2005,8,483,2005-08-01
+1967,Theft of Vehicle,2005,9,377,2005-09-01
+1968,Theft of Vehicle,2005,10,354,2005-10-01
+1969,Theft of Vehicle,2005,11,392,2005-11-01
+1970,Theft of Vehicle,2005,12,347,2005-12-01
+1971,Theft of Vehicle,2006,1,364,2006-01-01
+1972,Theft of Vehicle,2006,2,334,2006-02-01
+1973,Theft of Vehicle,2006,3,319,2006-03-01
+1974,Theft of Vehicle,2006,4,312,2006-04-01
+1975,Theft of Vehicle,2006,5,274,2006-05-01
+1976,Theft of Vehicle,2006,6,286,2006-06-01
+1977,Theft of Vehicle,2006,7,248,2006-07-01
+1978,Theft of Vehicle,2006,8,320,2006-08-01
+1979,Theft of Vehicle,2006,9,359,2006-09-01
+1980,Theft of Vehicle,2006,10,339,2006-10-01
+1981,Theft of Vehicle,2006,11,274,2006-11-01
+1982,Theft of Vehicle,2006,12,252,2006-12-01
+1983,Theft of Vehicle,2007,1,304,2007-01-01
+1984,Theft of Vehicle,2007,2,236,2007-02-01
+1985,Theft of Vehicle,2007,3,232,2007-03-01
+1986,Theft of Vehicle,2007,4,228,2007-04-01
+1987,Theft of Vehicle,2007,5,256,2007-05-01
+1988,Theft of Vehicle,2007,6,299,2007-06-01
+1989,Theft of Vehicle,2007,7,326,2007-07-01
+1990,Theft of Vehicle,2007,8,329,2007-08-01
+1991,Theft of Vehicle,2007,9,289,2007-09-01
+1992,Theft of Vehicle,2007,10,321,2007-10-01
+1993,Theft of Vehicle,2007,11,285,2007-11-01
+1994,Theft of Vehicle,2007,12,199,2007-12-01
+1995,Theft of Vehicle,2008,1,214,2008-01-01
+1996,Theft of Vehicle,2008,2,202,2008-02-01
+1997,Theft of Vehicle,2008,3,219,2008-03-01
+1998,Theft of Vehicle,2008,4,227,2008-04-01
+1999,Theft of Vehicle,2008,5,240,2008-05-01
+2000,Theft of Vehicle,2008,6,207,2008-06-01
+2001,Theft of Vehicle,2008,7,197,2008-07-01
+2002,Theft of Vehicle,2008,8,213,2008-08-01
+2003,Theft of Vehicle,2008,9,185,2008-09-01
+2004,Theft of Vehicle,2008,10,178,2008-10-01
+2005,Theft of Vehicle,2008,11,185,2008-11-01
+2006,Theft of Vehicle,2008,12,150,2008-12-01
+2007,Theft of Vehicle,2009,1,175,2009-01-01
+2008,Theft of Vehicle,2009,2,164,2009-02-01
+2009,Theft of Vehicle,2009,3,154,2009-03-01
+2010,Theft of Vehicle,2009,4,148,2009-04-01
+2011,Theft of Vehicle,2009,5,154,2009-05-01
+2012,Theft of Vehicle,2009,6,150,2009-06-01
+2013,Theft of Vehicle,2009,7,152,2009-07-01
+2014,Theft of Vehicle,2009,8,162,2009-08-01
+2015,Theft of Vehicle,2009,9,135,2009-09-01
+2016,Theft of Vehicle,2009,10,166,2009-10-01
+2017,Theft of Vehicle,2009,11,154,2009-11-01
+2018,Theft of Vehicle,2009,12,166,2009-12-01
+2019,Theft of Vehicle,2010,1,161,2010-01-01
+2020,Theft of Vehicle,2010,2,103,2010-02-01
+2021,Theft of Vehicle,2010,3,106,2010-03-01
+2022,Theft of Vehicle,2010,4,122,2010-04-01
+2023,Theft of Vehicle,2010,5,104,2010-05-01
+2024,Theft of Vehicle,2010,6,114,2010-06-01
+2025,Theft of Vehicle,2010,7,96,2010-07-01
+2026,Theft of Vehicle,2010,8,158,2010-08-01
+2027,Theft of Vehicle,2010,9,132,2010-09-01
+2028,Theft of Vehicle,2010,10,106,2010-10-01
+2029,Theft of Vehicle,2010,11,109,2010-11-01
+2030,Theft of Vehicle,2010,12,154,2010-12-01
+2031,Theft of Vehicle,2011,1,115,2011-01-01
+2032,Theft of Vehicle,2011,2,77,2011-02-01
+2033,Theft of Vehicle,2011,3,85,2011-03-01
+2034,Theft of Vehicle,2011,4,79,2011-04-01
+2035,Theft of Vehicle,2011,5,75,2011-05-01
+2036,Theft of Vehicle,2011,6,123,2011-06-01
+2037,Theft of Vehicle,2011,7,106,2011-07-01
+2038,Theft of Vehicle,2011,8,82,2011-08-01
+2039,Theft of Vehicle,2011,9,99,2011-09-01
+2040,Theft of Vehicle,2011,10,102,2011-10-01
+2041,Theft of Vehicle,2011,11,79,2011-11-01
+2042,Theft of Vehicle,2011,12,72,2011-12-01
+2043,Theft of Vehicle,2012,1,76,2012-01-01
+2044,Theft of Vehicle,2012,2,56,2012-02-01
+2045,Theft of Vehicle,2012,3,121,2012-03-01
+2046,Theft of Vehicle,2012,4,93,2012-04-01
+2047,Theft of Vehicle,2012,5,88,2012-05-01
+2048,Theft of Vehicle,2012,6,114,2012-06-01
+2049,Theft of Vehicle,2012,7,107,2012-07-01
+2050,Theft of Vehicle,2012,8,112,2012-08-01
+2051,Theft of Vehicle,2012,9,110,2012-09-01
+2052,Theft of Vehicle,2012,10,106,2012-10-01
+2053,Theft of Vehicle,2012,11,96,2012-11-01
+2054,Theft of Vehicle,2012,12,73,2012-12-01
+2055,Theft of Vehicle,2013,1,74,2013-01-01
+2056,Theft of Vehicle,2013,2,95,2013-02-01
+2057,Theft of Vehicle,2013,3,120,2013-03-01
+2058,Theft of Vehicle,2013,4,102,2013-04-01
+2059,Theft of Vehicle,2013,5,89,2013-05-01
+2060,Theft of Vehicle,2013,6,84,2013-06-01
+2061,Theft of Vehicle,2013,7,85,2013-07-01
+2062,Theft of Vehicle,2013,8,64,2013-08-01
+2063,Theft of Vehicle,2013,9,90,2013-09-01
+2064,Theft of Vehicle,2013,10,77,2013-10-01
+2065,Theft of Vehicle,2013,11,83,2013-11-01
+2066,Theft of Vehicle,2013,12,70,2013-12-01
+2067,Theft of Vehicle,2014,1,99,2014-01-01
+2068,Theft of Vehicle,2014,2,90,2014-02-01
+2069,Theft of Vehicle,2014,3,110,2014-03-01
+2070,Theft of Vehicle,2014,4,89,2014-04-01
+2071,Theft of Vehicle,2014,5,107,2014-05-01
+2072,Theft of Vehicle,2014,6,115,2014-06-01
+2073,Theft of Vehicle,2014,7,114,2014-07-01
+2074,Theft of Vehicle,2014,8,103,2014-08-01
+2075,Theft of Vehicle,2014,9,106,2014-09-01
+2076,Theft of Vehicle,2014,10,152,2014-10-01
+2077,Theft of Vehicle,2014,11,111,2014-11-01
+2078,Theft of Vehicle,2014,12,95,2014-12-01
+2079,Theft of Vehicle,2015,1,103,2015-01-01
+2080,Theft of Vehicle,2015,2,76,2015-02-01
+2081,Theft of Vehicle,2015,3,89,2015-03-01
+2082,Theft of Vehicle,2015,4,84,2015-04-01
+2083,Theft of Vehicle,2015,5,124,2015-05-01
+2084,Theft of Vehicle,2015,6,105,2015-06-01
+2085,Theft of Vehicle,2015,7,86,2015-07-01
+2086,Theft of Vehicle,2015,8,115,2015-08-01
+2087,Theft of Vehicle,2015,9,139,2015-09-01
+2088,Theft of Vehicle,2015,10,143,2015-10-01
+2089,Theft of Vehicle,2015,11,164,2015-11-01
+2090,Theft of Vehicle,2015,12,143,2015-12-01
+2091,Theft of Vehicle,2016,1,115,2016-01-01
+2092,Theft of Vehicle,2016,2,80,2016-02-01
+2093,Theft of Vehicle,2016,3,111,2016-03-01
+2094,Theft of Vehicle,2016,4,114,2016-04-01
+2095,Theft of Vehicle,2016,5,106,2016-05-01
+2096,Theft of Vehicle,2016,6,154,2016-06-01
+2097,Theft of Vehicle,2016,7,161,2016-07-01
+2098,Theft of Vehicle,2016,8,139,2016-08-01
+2099,Theft of Vehicle,2016,9,138,2016-09-01
+2100,Theft of Vehicle,2016,10,134,2016-10-01
+2101,Theft of Vehicle,2016,11,120,2016-11-01
+2102,Theft of Vehicle,2016,12,106,2016-12-01
+2103,Theft of Vehicle,2017,1,90,2017-01-01
+2104,Theft of Vehicle,2017,2,84,2017-02-01
+2105,Theft of Vehicle,2017,3,158,2017-03-01
+2106,Theft of Vehicle,2017,4,101,2017-04-01
+2107,Theft of Vehicle,2017,5,162,2017-05-01
+2108,Theft of Vehicle,2017,6,114,2017-06-01
+2109,Theft of Vehicle,2017,7,147,2017-07-01
+2110,Theft of Vehicle,2017,8,142,2017-08-01
+2111,Theft of Vehicle,2017,9,124,2017-09-01
+2112,Theft of Vehicle,2017,10,141,2017-10-01
+2113,Theft of Vehicle,2017,11,125,2017-11-01
+2114,Theft of Vehicle,2017,12,108,2017-12-01
+2115,Theft of Vehicle,2018,1,101,2018-01-01
+2116,Theft of Vehicle,2018,2,64,2018-02-01
+2117,Theft of Vehicle,2018,3,88,2018-03-01
+2118,Theft of Vehicle,2018,4,94,2018-04-01
+2119,Theft of Vehicle,2018,5,117,2018-05-01
+2120,Theft of Vehicle,2018,6,106,2018-06-01
+2121,Theft of Vehicle,2018,7,107,2018-07-01
+2122,Theft of Vehicle,2018,8,123,2018-08-01
+2123,Theft of Vehicle,2018,9,114,2018-09-01
+2124,Theft of Vehicle,2018,10,75,2018-10-01
+2125,Theft of Vehicle,2018,11,81,2018-11-01
+2126,Theft of Vehicle,2018,12,75,2018-12-01
+2127,Theft of Vehicle,2019,1,95,2019-01-01
+2128,Theft of Vehicle,2019,2,73,2019-02-01
+2129,Theft of Vehicle,2019,3,81,2019-03-01
+2130,Theft of Vehicle,2019,4,98,2019-04-01
+2131,Theft of Vehicle,2019,5,125,2019-05-01
+2132,Theft of Vehicle,2019,6,121,2019-06-01
+2133,Theft of Vehicle,2019,7,148,2019-07-01
+2134,Theft of Vehicle,2019,8,143,2019-08-01
+2135,Theft of Vehicle,2019,9,152,2019-09-01
+2136,Theft of Vehicle,2019,10,122,2019-10-01
+2137,Theft of Vehicle,2019,11,118,2019-11-01
+2138,Theft of Vehicle,2019,12,102,2019-12-01
+2139,Theft of Vehicle,2020,1,70,2020-01-01
+2140,Theft of Vehicle,2020,2,70,2020-02-01
+2141,Theft of Vehicle,2020,3,89,2020-03-01
+2142,Theft of Vehicle,2020,4,72,2020-04-01
+2143,Theft of Vehicle,2020,5,41,2020-05-01
+2144,Theft of Vehicle,2020,6,52,2020-06-01
+2145,Theft of Vehicle,2020,7,60,2020-07-01
+2146,Theft of Vehicle,2020,8,83,2020-08-01
+2147,Theft of Vehicle,2020,9,95,2020-09-01
+2148,Theft of Vehicle,2020,10,84,2020-10-01
+2149,Theft of Vehicle,2020,11,65,2020-11-01
+2150,Theft of Vehicle,2020,12,72,2020-12-01
+2151,Theft of Vehicle,2021,1,69,2021-01-01
+2152,Theft of Vehicle,2021,2,46,2021-02-01
+2153,Theft of Vehicle,2021,3,58,2021-03-01
+2154,Theft of Vehicle,2021,4,60,2021-04-01
+2155,Theft of Vehicle,2021,5,71,2021-05-01
+2156,Theft of Vehicle,2021,6,64,2021-06-01
+2157,Theft of Vehicle,2021,7,80,2021-07-01
+2158,Theft of Vehicle,2021,8,76,2021-08-01
+2159,Theft of Vehicle,2021,9,96,2021-09-01
+2160,Theft of Vehicle,2021,10,91,2021-10-01
+2161,Theft of Vehicle,2021,11,61,2021-11-01
+2162,Theft of Vehicle,2021,12,67,2021-12-01
+2163,Theft of Vehicle,2022,1,75,2022-01-01
+2164,Theft of Vehicle,2022,2,73,2022-02-01
+2165,Theft of Vehicle,2022,3,77,2022-03-01
+2166,Theft of Vehicle,2022,4,70,2022-04-01
+2167,Theft of Vehicle,2022,5,84,2022-05-01
+2168,Theft of Vehicle,2022,6,62,2022-06-01
+2169,Theft of Vehicle,2022,7,87,2022-07-01
+2170,Theft of Vehicle,2022,8,84,2022-08-01
+2171,Theft of Vehicle,2022,9,102,2022-09-01
+2172,Theft of Vehicle,2022,10,88,2022-10-01
+2173,Theft of Vehicle,2022,11,64,2022-11-01
+2174,Theft of Vehicle,2022,12,44,2022-12-01
+2175,Theft of Vehicle,2023,1,61,2023-01-01
+2176,Theft of Vehicle,2023,2,69,2023-02-01
+2177,Theft of Vehicle,2023,3,73,2023-03-01
+2178,Theft of Vehicle,2023,4,55,2023-04-01
+2179,Theft of Vehicle,2023,5,56,2023-05-01
+2180,Theft of Vehicle,2023,6,69,2023-06-01
+2181,Theft of Vehicle,2023,7,72,2023-07-01
+2182,Theft of Vehicle,2023,8,76,2023-08-01
+2183,Theft of Vehicle,2023,9,56,2023-09-01
+2184,Theft of Vehicle,2023,10,52,2023-10-01
+2186,Vehicle Collision or Pedestrian Struck (with Fatality),2003,1,3,2003-01-01
+2187,Vehicle Collision or Pedestrian Struck (with Fatality),2003,3,4,2003-03-01
+2188,Vehicle Collision or Pedestrian Struck (with Fatality),2003,4,1,2003-04-01
+2189,Vehicle Collision or Pedestrian Struck (with Fatality),2003,6,2,2003-06-01
+2190,Vehicle Collision or Pedestrian Struck (with Fatality),2003,7,1,2003-07-01
+2191,Vehicle Collision or Pedestrian Struck (with Fatality),2003,8,3,2003-08-01
+2192,Vehicle Collision or Pedestrian Struck (with Fatality),2003,9,2,2003-09-01
+2193,Vehicle Collision or Pedestrian Struck (with Fatality),2003,10,3,2003-10-01
+2194,Vehicle Collision or Pedestrian Struck (with Fatality),2003,11,4,2003-11-01
+2195,Vehicle Collision or Pedestrian Struck (with Fatality),2003,12,2,2003-12-01
+2196,Vehicle Collision or Pedestrian Struck (with Fatality),2004,2,2,2004-02-01
+2197,Vehicle Collision or Pedestrian Struck (with Fatality),2004,3,1,2004-03-01
+2198,Vehicle Collision or Pedestrian Struck (with Fatality),2004,5,6,2004-05-01
+2199,Vehicle Collision or Pedestrian Struck (with Fatality),2004,6,2,2004-06-01
+2200,Vehicle Collision or Pedestrian Struck (with Fatality),2004,7,4,2004-07-01
+2201,Vehicle Collision or Pedestrian Struck (with Fatality),2004,9,2,2004-09-01
+2202,Vehicle Collision or Pedestrian Struck (with Fatality),2004,10,2,2004-10-01
+2203,Vehicle Collision or Pedestrian Struck (with Fatality),2004,11,1,2004-11-01
+2204,Vehicle Collision or Pedestrian Struck (with Fatality),2004,12,2,2004-12-01
+2205,Vehicle Collision or Pedestrian Struck (with Fatality),2005,2,4,2005-02-01
+2206,Vehicle Collision or Pedestrian Struck (with Fatality),2005,4,6,2005-04-01
+2207,Vehicle Collision or Pedestrian Struck (with Fatality),2005,5,2,2005-05-01
+2208,Vehicle Collision or Pedestrian Struck (with Fatality),2005,6,2,2005-06-01
+2209,Vehicle Collision or Pedestrian Struck (with Fatality),2005,8,6,2005-08-01
+2210,Vehicle Collision or Pedestrian Struck (with Fatality),2005,9,2,2005-09-01
+2211,Vehicle Collision or Pedestrian Struck (with Fatality),2005,10,2,2005-10-01
+2212,Vehicle Collision or Pedestrian Struck (with Fatality),2005,11,6,2005-11-01
+2213,Vehicle Collision or Pedestrian Struck (with Fatality),2005,12,3,2005-12-01
+2214,Vehicle Collision or Pedestrian Struck (with Fatality),2006,1,4,2006-01-01
+2215,Vehicle Collision or Pedestrian Struck (with Fatality),2006,2,1,2006-02-01
+2216,Vehicle Collision or Pedestrian Struck (with Fatality),2006,3,2,2006-03-01
+2217,Vehicle Collision or Pedestrian Struck (with Fatality),2006,4,1,2006-04-01
+2218,Vehicle Collision or Pedestrian Struck (with Fatality),2006,5,1,2006-05-01
+2219,Vehicle Collision or Pedestrian Struck (with Fatality),2006,6,3,2006-06-01
+2220,Vehicle Collision or Pedestrian Struck (with Fatality),2006,7,5,2006-07-01
+2221,Vehicle Collision or Pedestrian Struck (with Fatality),2006,9,1,2006-09-01
+2222,Vehicle Collision or Pedestrian Struck (with Fatality),2006,10,1,2006-10-01
+2223,Vehicle Collision or Pedestrian Struck (with Fatality),2006,12,1,2006-12-01
+2224,Vehicle Collision or Pedestrian Struck (with Fatality),2007,1,4,2007-01-01
+2225,Vehicle Collision or Pedestrian Struck (with Fatality),2007,2,1,2007-02-01
+2226,Vehicle Collision or Pedestrian Struck (with Fatality),2007,5,1,2007-05-01
+2227,Vehicle Collision or Pedestrian Struck (with Fatality),2007,7,4,2007-07-01
+2228,Vehicle Collision or Pedestrian Struck (with Fatality),2007,8,3,2007-08-01
+2229,Vehicle Collision or Pedestrian Struck (with Fatality),2007,9,2,2007-09-01
+2230,Vehicle Collision or Pedestrian Struck (with Fatality),2007,10,2,2007-10-01
+2231,Vehicle Collision or Pedestrian Struck (with Fatality),2007,11,4,2007-11-01
+2232,Vehicle Collision or Pedestrian Struck (with Fatality),2007,12,3,2007-12-01
+2233,Vehicle Collision or Pedestrian Struck (with Fatality),2008,1,5,2008-01-01
+2234,Vehicle Collision or Pedestrian Struck (with Fatality),2008,3,2,2008-03-01
+2235,Vehicle Collision or Pedestrian Struck (with Fatality),2008,6,2,2008-06-01
+2236,Vehicle Collision or Pedestrian Struck (with Fatality),2008,7,2,2008-07-01
+2237,Vehicle Collision or Pedestrian Struck (with Fatality),2008,8,2,2008-08-01
+2238,Vehicle Collision or Pedestrian Struck (with Fatality),2008,9,1,2008-09-01
+2239,Vehicle Collision or Pedestrian Struck (with Fatality),2008,11,1,2008-11-01
+2240,Vehicle Collision or Pedestrian Struck (with Fatality),2008,12,2,2008-12-01
+2241,Vehicle Collision or Pedestrian Struck (with Fatality),2009,1,1,2009-01-01
+2242,Vehicle Collision or Pedestrian Struck (with Fatality),2009,2,4,2009-02-01
+2243,Vehicle Collision or Pedestrian Struck (with Fatality),2009,4,1,2009-04-01
+2244,Vehicle Collision or Pedestrian Struck (with Fatality),2009,5,1,2009-05-01
+2245,Vehicle Collision or Pedestrian Struck (with Fatality),2009,6,1,2009-06-01
+2246,Vehicle Collision or Pedestrian Struck (with Fatality),2009,8,1,2009-08-01
+2247,Vehicle Collision or Pedestrian Struck (with Fatality),2009,9,1,2009-09-01
+2248,Vehicle Collision or Pedestrian Struck (with Fatality),2009,10,2,2009-10-01
+2249,Vehicle Collision or Pedestrian Struck (with Fatality),2009,11,1,2009-11-01
+2250,Vehicle Collision or Pedestrian Struck (with Fatality),2009,12,1,2009-12-01
+2251,Vehicle Collision or Pedestrian Struck (with Fatality),2010,1,3,2010-01-01
+2252,Vehicle Collision or Pedestrian Struck (with Fatality),2010,4,1,2010-04-01
+2253,Vehicle Collision or Pedestrian Struck (with Fatality),2010,6,1,2010-06-01
+2254,Vehicle Collision or Pedestrian Struck (with Fatality),2010,7,2,2010-07-01
+2255,Vehicle Collision or Pedestrian Struck (with Fatality),2010,8,1,2010-08-01
+2256,Vehicle Collision or Pedestrian Struck (with Fatality),2010,10,1,2010-10-01
+2257,Vehicle Collision or Pedestrian Struck (with Fatality),2010,11,1,2010-11-01
+2258,Vehicle Collision or Pedestrian Struck (with Fatality),2011,1,3,2011-01-01
+2259,Vehicle Collision or Pedestrian Struck (with Fatality),2011,3,2,2011-03-01
+2260,Vehicle Collision or Pedestrian Struck (with Fatality),2011,4,1,2011-04-01
+2261,Vehicle Collision or Pedestrian Struck (with Fatality),2011,5,1,2011-05-01
+2262,Vehicle Collision or Pedestrian Struck (with Fatality),2011,6,3,2011-06-01
+2263,Vehicle Collision or Pedestrian Struck (with Fatality),2011,7,1,2011-07-01
+2264,Vehicle Collision or Pedestrian Struck (with Fatality),2011,10,1,2011-10-01
+2265,Vehicle Collision or Pedestrian Struck (with Fatality),2012,2,1,2012-02-01
+2266,Vehicle Collision or Pedestrian Struck (with Fatality),2012,3,3,2012-03-01
+2267,Vehicle Collision or Pedestrian Struck (with Fatality),2012,4,2,2012-04-01
+2268,Vehicle Collision or Pedestrian Struck (with Fatality),2012,6,3,2012-06-01
+2269,Vehicle Collision or Pedestrian Struck (with Fatality),2012,7,1,2012-07-01
+2270,Vehicle Collision or Pedestrian Struck (with Fatality),2012,8,1,2012-08-01
+2271,Vehicle Collision or Pedestrian Struck (with Fatality),2012,9,2,2012-09-01
+2272,Vehicle Collision or Pedestrian Struck (with Fatality),2012,10,1,2012-10-01
+2273,Vehicle Collision or Pedestrian Struck (with Fatality),2012,11,3,2012-11-01
+2274,Vehicle Collision or Pedestrian Struck (with Fatality),2012,12,1,2012-12-01
+2275,Vehicle Collision or Pedestrian Struck (with Fatality),2013,2,1,2013-02-01
+2276,Vehicle Collision or Pedestrian Struck (with Fatality),2013,3,1,2013-03-01
+2277,Vehicle Collision or Pedestrian Struck (with Fatality),2013,5,4,2013-05-01
+2278,Vehicle Collision or Pedestrian Struck (with Fatality),2013,6,4,2013-06-01
+2279,Vehicle Collision or Pedestrian Struck (with Fatality),2013,7,2,2013-07-01
+2280,Vehicle Collision or Pedestrian Struck (with Fatality),2013,8,1,2013-08-01
+2281,Vehicle Collision or Pedestrian Struck (with Fatality),2013,10,1,2013-10-01
+2282,Vehicle Collision or Pedestrian Struck (with Fatality),2013,11,1,2013-11-01
+2283,Vehicle Collision or Pedestrian Struck (with Fatality),2014,1,1,2014-01-01
+2284,Vehicle Collision or Pedestrian Struck (with Fatality),2014,3,1,2014-03-01
+2285,Vehicle Collision or Pedestrian Struck (with Fatality),2014,4,1,2014-04-01
+2286,Vehicle Collision or Pedestrian Struck (with Fatality),2014,5,1,2014-05-01
+2287,Vehicle Collision or Pedestrian Struck (with Fatality),2014,7,1,2014-07-01
+2288,Vehicle Collision or Pedestrian Struck (with Fatality),2014,9,1,2014-09-01
+2289,Vehicle Collision or Pedestrian Struck (with Fatality),2014,10,3,2014-10-01
+2290,Vehicle Collision or Pedestrian Struck (with Fatality),2014,11,1,2014-11-01
+2291,Vehicle Collision or Pedestrian Struck (with Fatality),2014,12,4,2014-12-01
+2292,Vehicle Collision or Pedestrian Struck (with Fatality),2015,1,3,2015-01-01
+2293,Vehicle Collision or Pedestrian Struck (with Fatality),2015,2,1,2015-02-01
+2294,Vehicle Collision or Pedestrian Struck (with Fatality),2015,3,2,2015-03-01
+2295,Vehicle Collision or Pedestrian Struck (with Fatality),2015,4,1,2015-04-01
+2296,Vehicle Collision or Pedestrian Struck (with Fatality),2015,7,1,2015-07-01
+2297,Vehicle Collision or Pedestrian Struck (with Fatality),2015,8,2,2015-08-01
+2298,Vehicle Collision or Pedestrian Struck (with Fatality),2015,9,1,2015-09-01
+2299,Vehicle Collision or Pedestrian Struck (with Fatality),2015,10,1,2015-10-01
+2300,Vehicle Collision or Pedestrian Struck (with Fatality),2015,11,2,2015-11-01
+2301,Vehicle Collision or Pedestrian Struck (with Fatality),2016,1,2,2016-01-01
+2302,Vehicle Collision or Pedestrian Struck (with Fatality),2016,2,1,2016-02-01
+2303,Vehicle Collision or Pedestrian Struck (with Fatality),2016,3,4,2016-03-01
+2304,Vehicle Collision or Pedestrian Struck (with Fatality),2016,4,2,2016-04-01
+2305,Vehicle Collision or Pedestrian Struck (with Fatality),2016,5,1,2016-05-01
+2306,Vehicle Collision or Pedestrian Struck (with Fatality),2016,7,1,2016-07-01
+2307,Vehicle Collision or Pedestrian Struck (with Fatality),2016,8,2,2016-08-01
+2308,Vehicle Collision or Pedestrian Struck (with Fatality),2016,10,2,2016-10-01
+2309,Vehicle Collision or Pedestrian Struck (with Fatality),2017,2,1,2017-02-01
+2310,Vehicle Collision or Pedestrian Struck (with Fatality),2017,4,2,2017-04-01
+2311,Vehicle Collision or Pedestrian Struck (with Fatality),2017,5,1,2017-05-01
+2312,Vehicle Collision or Pedestrian Struck (with Fatality),2017,6,1,2017-06-01
+2313,Vehicle Collision or Pedestrian Struck (with Fatality),2017,8,4,2017-08-01
+2314,Vehicle Collision or Pedestrian Struck (with Fatality),2017,9,1,2017-09-01
+2315,Vehicle Collision or Pedestrian Struck (with Fatality),2017,11,1,2017-11-01
+2316,Vehicle Collision or Pedestrian Struck (with Fatality),2017,12,4,2017-12-01
+2317,Vehicle Collision or Pedestrian Struck (with Fatality),2018,2,1,2018-02-01
+2318,Vehicle Collision or Pedestrian Struck (with Fatality),2018,3,1,2018-03-01
+2319,Vehicle Collision or Pedestrian Struck (with Fatality),2018,5,2,2018-05-01
+2320,Vehicle Collision or Pedestrian Struck (with Fatality),2018,7,2,2018-07-01
+2321,Vehicle Collision or Pedestrian Struck (with Fatality),2018,8,3,2018-08-01
+2322,Vehicle Collision or Pedestrian Struck (with Fatality),2018,10,1,2018-10-01
+2323,Vehicle Collision or Pedestrian Struck (with Fatality),2018,11,2,2018-11-01
+2324,Vehicle Collision or Pedestrian Struck (with Fatality),2018,12,1,2018-12-01
+2325,Vehicle Collision or Pedestrian Struck (with Fatality),2019,1,2,2019-01-01
+2326,Vehicle Collision or Pedestrian Struck (with Fatality),2019,2,3,2019-02-01
+2327,Vehicle Collision or Pedestrian Struck (with Fatality),2019,4,1,2019-04-01
+2328,Vehicle Collision or Pedestrian Struck (with Fatality),2019,5,2,2019-05-01
+2329,Vehicle Collision or Pedestrian Struck (with Fatality),2019,8,1,2019-08-01
+2330,Vehicle Collision or Pedestrian Struck (with Fatality),2019,10,2,2019-10-01
+2331,Vehicle Collision or Pedestrian Struck (with Fatality),2019,11,2,2019-11-01
+2332,Vehicle Collision or Pedestrian Struck (with Fatality),2019,12,1,2019-12-01
+2333,Vehicle Collision or Pedestrian Struck (with Fatality),2020,1,1,2020-01-01
+2334,Vehicle Collision or Pedestrian Struck (with Fatality),2020,2,1,2020-02-01
+2335,Vehicle Collision or Pedestrian Struck (with Fatality),2020,3,1,2020-03-01
+2336,Vehicle Collision or Pedestrian Struck (with Fatality),2020,8,1,2020-08-01
+2337,Vehicle Collision or Pedestrian Struck (with Fatality),2020,9,2,2020-09-01
+2338,Vehicle Collision or Pedestrian Struck (with Fatality),2020,11,1,2020-11-01
+2339,Vehicle Collision or Pedestrian Struck (with Fatality),2020,12,1,2020-12-01
+2340,Vehicle Collision or Pedestrian Struck (with Fatality),2021,2,2,2021-02-01
+2341,Vehicle Collision or Pedestrian Struck (with Fatality),2021,3,2,2021-03-01
+2342,Vehicle Collision or Pedestrian Struck (with Fatality),2021,4,1,2021-04-01
+2343,Vehicle Collision or Pedestrian Struck (with Fatality),2021,5,4,2021-05-01
+2344,Vehicle Collision or Pedestrian Struck (with Fatality),2021,6,1,2021-06-01
+2345,Vehicle Collision or Pedestrian Struck (with Fatality),2021,7,1,2021-07-01
+2346,Vehicle Collision or Pedestrian Struck (with Fatality),2021,8,1,2021-08-01
+2347,Vehicle Collision or Pedestrian Struck (with Fatality),2021,9,2,2021-09-01
+2348,Vehicle Collision or Pedestrian Struck (with Fatality),2021,10,5,2021-10-01
+2349,Vehicle Collision or Pedestrian Struck (with Fatality),2021,11,2,2021-11-01
+2350,Vehicle Collision or Pedestrian Struck (with Fatality),2021,12,1,2021-12-01
+2351,Vehicle Collision or Pedestrian Struck (with Fatality),2022,1,2,2022-01-01
+2352,Vehicle Collision or Pedestrian Struck (with Fatality),2022,2,2,2022-02-01
+2353,Vehicle Collision or Pedestrian Struck (with Fatality),2022,3,2,2022-03-01
+2354,Vehicle Collision or Pedestrian Struck (with Fatality),2022,4,1,2022-04-01
+2355,Vehicle Collision or Pedestrian Struck (with Fatality),2022,5,2,2022-05-01
+2356,Vehicle Collision or Pedestrian Struck (with Fatality),2022,6,2,2022-06-01
+2357,Vehicle Collision or Pedestrian Struck (with Fatality),2022,7,3,2022-07-01
+2358,Vehicle Collision or Pedestrian Struck (with Fatality),2022,9,1,2022-09-01
+2359,Vehicle Collision or Pedestrian Struck (with Fatality),2022,10,1,2022-10-01
+2360,Vehicle Collision or Pedestrian Struck (with Fatality),2022,11,3,2022-11-01
+2361,Vehicle Collision or Pedestrian Struck (with Fatality),2023,1,2,2023-01-01
+2362,Vehicle Collision or Pedestrian Struck (with Fatality),2023,2,1,2023-02-01
+2363,Vehicle Collision or Pedestrian Struck (with Fatality),2023,3,1,2023-03-01
+2364,Vehicle Collision or Pedestrian Struck (with Fatality),2023,5,1,2023-05-01
+2365,Vehicle Collision or Pedestrian Struck (with Fatality),2023,6,1,2023-06-01
+2366,Vehicle Collision or Pedestrian Struck (with Fatality),2023,7,3,2023-07-01
+2367,Vehicle Collision or Pedestrian Struck (with Fatality),2023,8,2,2023-08-01
+2368,Vehicle Collision or Pedestrian Struck (with Fatality),2023,10,4,2023-10-01
+2369,Vehicle Collision or Pedestrian Struck (with Injury),2003,1,143,2003-01-01
+2370,Vehicle Collision or Pedestrian Struck (with Injury),2003,2,110,2003-02-01
+2371,Vehicle Collision or Pedestrian Struck (with Injury),2003,3,134,2003-03-01
+2372,Vehicle Collision or Pedestrian Struck (with Injury),2003,4,147,2003-04-01
+2373,Vehicle Collision or Pedestrian Struck (with Injury),2003,5,166,2003-05-01
+2374,Vehicle Collision or Pedestrian Struck (with Injury),2003,6,149,2003-06-01
+2375,Vehicle Collision or Pedestrian Struck (with Injury),2003,7,153,2003-07-01
+2376,Vehicle Collision or Pedestrian Struck (with Injury),2003,8,176,2003-08-01
+2377,Vehicle Collision or Pedestrian Struck (with Injury),2003,9,158,2003-09-01
+2378,Vehicle Collision or Pedestrian Struck (with Injury),2003,10,199,2003-10-01
+2379,Vehicle Collision or Pedestrian Struck (with Injury),2003,11,162,2003-11-01
+2380,Vehicle Collision or Pedestrian Struck (with Injury),2003,12,159,2003-12-01
+2381,Vehicle Collision or Pedestrian Struck (with Injury),2004,1,131,2004-01-01
+2382,Vehicle Collision or Pedestrian Struck (with Injury),2004,2,122,2004-02-01
+2383,Vehicle Collision or Pedestrian Struck (with Injury),2004,3,156,2004-03-01
+2384,Vehicle Collision or Pedestrian Struck (with Injury),2004,4,118,2004-04-01
+2385,Vehicle Collision or Pedestrian Struck (with Injury),2004,5,160,2004-05-01
+2386,Vehicle Collision or Pedestrian Struck (with Injury),2004,6,148,2004-06-01
+2387,Vehicle Collision or Pedestrian Struck (with Injury),2004,7,155,2004-07-01
+2388,Vehicle Collision or Pedestrian Struck (with Injury),2004,8,173,2004-08-01
+2389,Vehicle Collision or Pedestrian Struck (with Injury),2004,9,164,2004-09-01
+2390,Vehicle Collision or Pedestrian Struck (with Injury),2004,10,206,2004-10-01
+2391,Vehicle Collision or Pedestrian Struck (with Injury),2004,11,181,2004-11-01
+2392,Vehicle Collision or Pedestrian Struck (with Injury),2004,12,178,2004-12-01
+2393,Vehicle Collision or Pedestrian Struck (with Injury),2005,1,109,2005-01-01
+2394,Vehicle Collision or Pedestrian Struck (with Injury),2005,2,137,2005-02-01
+2395,Vehicle Collision or Pedestrian Struck (with Injury),2005,3,166,2005-03-01
+2396,Vehicle Collision or Pedestrian Struck (with Injury),2005,4,145,2005-04-01
+2397,Vehicle Collision or Pedestrian Struck (with Injury),2005,5,185,2005-05-01
+2398,Vehicle Collision or Pedestrian Struck (with Injury),2005,6,164,2005-06-01
+2399,Vehicle Collision or Pedestrian Struck (with Injury),2005,7,161,2005-07-01
+2400,Vehicle Collision or Pedestrian Struck (with Injury),2005,8,187,2005-08-01
+2401,Vehicle Collision or Pedestrian Struck (with Injury),2005,9,177,2005-09-01
+2402,Vehicle Collision or Pedestrian Struck (with Injury),2005,10,182,2005-10-01
+2403,Vehicle Collision or Pedestrian Struck (with Injury),2005,11,179,2005-11-01
+2404,Vehicle Collision or Pedestrian Struck (with Injury),2005,12,211,2005-12-01
+2405,Vehicle Collision or Pedestrian Struck (with Injury),2006,1,149,2006-01-01
+2406,Vehicle Collision or Pedestrian Struck (with Injury),2006,2,101,2006-02-01
+2407,Vehicle Collision or Pedestrian Struck (with Injury),2006,3,114,2006-03-01
+2408,Vehicle Collision or Pedestrian Struck (with Injury),2006,4,107,2006-04-01
+2409,Vehicle Collision or Pedestrian Struck (with Injury),2006,5,121,2006-05-01
+2410,Vehicle Collision or Pedestrian Struck (with Injury),2006,6,120,2006-06-01
+2411,Vehicle Collision or Pedestrian Struck (with Injury),2006,7,107,2006-07-01
+2412,Vehicle Collision or Pedestrian Struck (with Injury),2006,8,125,2006-08-01
+2413,Vehicle Collision or Pedestrian Struck (with Injury),2006,9,111,2006-09-01
+2414,Vehicle Collision or Pedestrian Struck (with Injury),2006,10,117,2006-10-01
+2415,Vehicle Collision or Pedestrian Struck (with Injury),2006,11,101,2006-11-01
+2416,Vehicle Collision or Pedestrian Struck (with Injury),2006,12,115,2006-12-01
+2417,Vehicle Collision or Pedestrian Struck (with Injury),2007,1,115,2007-01-01
+2418,Vehicle Collision or Pedestrian Struck (with Injury),2007,2,93,2007-02-01
+2419,Vehicle Collision or Pedestrian Struck (with Injury),2007,3,100,2007-03-01
+2420,Vehicle Collision or Pedestrian Struck (with Injury),2007,4,91,2007-04-01
+2421,Vehicle Collision or Pedestrian Struck (with Injury),2007,5,80,2007-05-01
+2422,Vehicle Collision or Pedestrian Struck (with Injury),2007,6,115,2007-06-01
+2423,Vehicle Collision or Pedestrian Struck (with Injury),2007,7,106,2007-07-01
+2424,Vehicle Collision or Pedestrian Struck (with Injury),2007,8,110,2007-08-01
+2425,Vehicle Collision or Pedestrian Struck (with Injury),2007,9,104,2007-09-01
+2426,Vehicle Collision or Pedestrian Struck (with Injury),2007,10,108,2007-10-01
+2427,Vehicle Collision or Pedestrian Struck (with Injury),2007,11,98,2007-11-01
+2428,Vehicle Collision or Pedestrian Struck (with Injury),2007,12,119,2007-12-01
+2429,Vehicle Collision or Pedestrian Struck (with Injury),2008,1,76,2008-01-01
+2430,Vehicle Collision or Pedestrian Struck (with Injury),2008,2,80,2008-02-01
+2431,Vehicle Collision or Pedestrian Struck (with Injury),2008,3,95,2008-03-01
+2432,Vehicle Collision or Pedestrian Struck (with Injury),2008,4,94,2008-04-01
+2433,Vehicle Collision or Pedestrian Struck (with Injury),2008,5,109,2008-05-01
+2434,Vehicle Collision or Pedestrian Struck (with Injury),2008,6,86,2008-06-01
+2435,Vehicle Collision or Pedestrian Struck (with Injury),2008,7,114,2008-07-01
+2436,Vehicle Collision or Pedestrian Struck (with Injury),2008,8,117,2008-08-01
+2437,Vehicle Collision or Pedestrian Struck (with Injury),2008,9,98,2008-09-01
+2438,Vehicle Collision or Pedestrian Struck (with Injury),2008,10,124,2008-10-01
+2439,Vehicle Collision or Pedestrian Struck (with Injury),2008,11,115,2008-11-01
+2440,Vehicle Collision or Pedestrian Struck (with Injury),2008,12,78,2008-12-01
+2441,Vehicle Collision or Pedestrian Struck (with Injury),2009,1,82,2009-01-01
+2442,Vehicle Collision or Pedestrian Struck (with Injury),2009,2,88,2009-02-01
+2443,Vehicle Collision or Pedestrian Struck (with Injury),2009,3,100,2009-03-01
+2444,Vehicle Collision or Pedestrian Struck (with Injury),2009,4,92,2009-04-01
+2445,Vehicle Collision or Pedestrian Struck (with Injury),2009,5,95,2009-05-01
+2446,Vehicle Collision or Pedestrian Struck (with Injury),2009,6,120,2009-06-01
+2447,Vehicle Collision or Pedestrian Struck (with Injury),2009,7,134,2009-07-01
+2448,Vehicle Collision or Pedestrian Struck (with Injury),2009,8,102,2009-08-01
+2449,Vehicle Collision or Pedestrian Struck (with Injury),2009,9,114,2009-09-01
+2450,Vehicle Collision or Pedestrian Struck (with Injury),2009,10,124,2009-10-01
+2451,Vehicle Collision or Pedestrian Struck (with Injury),2009,11,141,2009-11-01
+2452,Vehicle Collision or Pedestrian Struck (with Injury),2009,12,86,2009-12-01
+2453,Vehicle Collision or Pedestrian Struck (with Injury),2010,1,120,2010-01-01
+2454,Vehicle Collision or Pedestrian Struck (with Injury),2010,2,122,2010-02-01
+2455,Vehicle Collision or Pedestrian Struck (with Injury),2010,3,108,2010-03-01
+2456,Vehicle Collision or Pedestrian Struck (with Injury),2010,4,106,2010-04-01
+2457,Vehicle Collision or Pedestrian Struck (with Injury),2010,5,78,2010-05-01
+2458,Vehicle Collision or Pedestrian Struck (with Injury),2010,6,106,2010-06-01
+2459,Vehicle Collision or Pedestrian Struck (with Injury),2010,7,101,2010-07-01
+2460,Vehicle Collision or Pedestrian Struck (with Injury),2010,8,128,2010-08-01
+2461,Vehicle Collision or Pedestrian Struck (with Injury),2010,9,130,2010-09-01
+2462,Vehicle Collision or Pedestrian Struck (with Injury),2010,10,98,2010-10-01
+2463,Vehicle Collision or Pedestrian Struck (with Injury),2010,11,104,2010-11-01
+2464,Vehicle Collision or Pedestrian Struck (with Injury),2010,12,126,2010-12-01
+2465,Vehicle Collision or Pedestrian Struck (with Injury),2011,1,120,2011-01-01
+2466,Vehicle Collision or Pedestrian Struck (with Injury),2011,2,98,2011-02-01
+2467,Vehicle Collision or Pedestrian Struck (with Injury),2011,3,105,2011-03-01
+2468,Vehicle Collision or Pedestrian Struck (with Injury),2011,4,87,2011-04-01
+2469,Vehicle Collision or Pedestrian Struck (with Injury),2011,5,91,2011-05-01
+2470,Vehicle Collision or Pedestrian Struck (with Injury),2011,6,100,2011-06-01
+2471,Vehicle Collision or Pedestrian Struck (with Injury),2011,7,83,2011-07-01
+2472,Vehicle Collision or Pedestrian Struck (with Injury),2011,8,101,2011-08-01
+2473,Vehicle Collision or Pedestrian Struck (with Injury),2011,9,114,2011-09-01
+2474,Vehicle Collision or Pedestrian Struck (with Injury),2011,10,110,2011-10-01
+2475,Vehicle Collision or Pedestrian Struck (with Injury),2011,11,141,2011-11-01
+2476,Vehicle Collision or Pedestrian Struck (with Injury),2011,12,111,2011-12-01
+2477,Vehicle Collision or Pedestrian Struck (with Injury),2012,1,125,2012-01-01
+2478,Vehicle Collision or Pedestrian Struck (with Injury),2012,2,99,2012-02-01
+2479,Vehicle Collision or Pedestrian Struck (with Injury),2012,3,122,2012-03-01
+2480,Vehicle Collision or Pedestrian Struck (with Injury),2012,4,113,2012-04-01
+2481,Vehicle Collision or Pedestrian Struck (with Injury),2012,5,124,2012-05-01
+2482,Vehicle Collision or Pedestrian Struck (with Injury),2012,6,135,2012-06-01
+2483,Vehicle Collision or Pedestrian Struck (with Injury),2012,7,118,2012-07-01
+2484,Vehicle Collision or Pedestrian Struck (with Injury),2012,8,147,2012-08-01
+2485,Vehicle Collision or Pedestrian Struck (with Injury),2012,9,126,2012-09-01
+2486,Vehicle Collision or Pedestrian Struck (with Injury),2012,10,111,2012-10-01
+2487,Vehicle Collision or Pedestrian Struck (with Injury),2012,11,123,2012-11-01
+2488,Vehicle Collision or Pedestrian Struck (with Injury),2012,12,134,2012-12-01
+2489,Vehicle Collision or Pedestrian Struck (with Injury),2013,1,107,2013-01-01
+2490,Vehicle Collision or Pedestrian Struck (with Injury),2013,2,111,2013-02-01
+2491,Vehicle Collision or Pedestrian Struck (with Injury),2013,3,110,2013-03-01
+2492,Vehicle Collision or Pedestrian Struck (with Injury),2013,4,125,2013-04-01
+2493,Vehicle Collision or Pedestrian Struck (with Injury),2013,5,141,2013-05-01
+2494,Vehicle Collision or Pedestrian Struck (with Injury),2013,6,132,2013-06-01
+2495,Vehicle Collision or Pedestrian Struck (with Injury),2013,7,130,2013-07-01
+2496,Vehicle Collision or Pedestrian Struck (with Injury),2013,8,131,2013-08-01
+2497,Vehicle Collision or Pedestrian Struck (with Injury),2013,9,129,2013-09-01
+2498,Vehicle Collision or Pedestrian Struck (with Injury),2013,10,155,2013-10-01
+2499,Vehicle Collision or Pedestrian Struck (with Injury),2013,11,110,2013-11-01
+2500,Vehicle Collision or Pedestrian Struck (with Injury),2013,12,111,2013-12-01
+2501,Vehicle Collision or Pedestrian Struck (with Injury),2014,1,126,2014-01-01
+2502,Vehicle Collision or Pedestrian Struck (with Injury),2014,2,97,2014-02-01
+2503,Vehicle Collision or Pedestrian Struck (with Injury),2014,3,105,2014-03-01
+2504,Vehicle Collision or Pedestrian Struck (with Injury),2014,4,117,2014-04-01
+2505,Vehicle Collision or Pedestrian Struck (with Injury),2014,5,133,2014-05-01
+2506,Vehicle Collision or Pedestrian Struck (with Injury),2014,6,119,2014-06-01
+2507,Vehicle Collision or Pedestrian Struck (with Injury),2014,7,151,2014-07-01
+2508,Vehicle Collision or Pedestrian Struck (with Injury),2014,8,131,2014-08-01
+2509,Vehicle Collision or Pedestrian Struck (with Injury),2014,9,162,2014-09-01
+2510,Vehicle Collision or Pedestrian Struck (with Injury),2014,10,141,2014-10-01
+2511,Vehicle Collision or Pedestrian Struck (with Injury),2014,11,141,2014-11-01
+2512,Vehicle Collision or Pedestrian Struck (with Injury),2014,12,156,2014-12-01
+2513,Vehicle Collision or Pedestrian Struck (with Injury),2015,1,118,2015-01-01
+2514,Vehicle Collision or Pedestrian Struck (with Injury),2015,2,122,2015-02-01
+2515,Vehicle Collision or Pedestrian Struck (with Injury),2015,3,130,2015-03-01
+2516,Vehicle Collision or Pedestrian Struck (with Injury),2015,4,134,2015-04-01
+2517,Vehicle Collision or Pedestrian Struck (with Injury),2015,5,144,2015-05-01
+2518,Vehicle Collision or Pedestrian Struck (with Injury),2015,6,164,2015-06-01
+2519,Vehicle Collision or Pedestrian Struck (with Injury),2015,7,150,2015-07-01
+2520,Vehicle Collision or Pedestrian Struck (with Injury),2015,8,148,2015-08-01
+2521,Vehicle Collision or Pedestrian Struck (with Injury),2015,9,142,2015-09-01
+2522,Vehicle Collision or Pedestrian Struck (with Injury),2015,10,134,2015-10-01
+2523,Vehicle Collision or Pedestrian Struck (with Injury),2015,11,158,2015-11-01
+2524,Vehicle Collision or Pedestrian Struck (with Injury),2015,12,127,2015-12-01
+2525,Vehicle Collision or Pedestrian Struck (with Injury),2016,1,149,2016-01-01
+2526,Vehicle Collision or Pedestrian Struck (with Injury),2016,2,138,2016-02-01
+2527,Vehicle Collision or Pedestrian Struck (with Injury),2016,3,133,2016-03-01
+2528,Vehicle Collision or Pedestrian Struck (with Injury),2016,4,118,2016-04-01
+2529,Vehicle Collision or Pedestrian Struck (with Injury),2016,5,151,2016-05-01
+2530,Vehicle Collision or Pedestrian Struck (with Injury),2016,6,141,2016-06-01
+2531,Vehicle Collision or Pedestrian Struck (with Injury),2016,7,137,2016-07-01
+2532,Vehicle Collision or Pedestrian Struck (with Injury),2016,8,185,2016-08-01
+2533,Vehicle Collision or Pedestrian Struck (with Injury),2016,9,156,2016-09-01
+2534,Vehicle Collision or Pedestrian Struck (with Injury),2016,10,119,2016-10-01
+2535,Vehicle Collision or Pedestrian Struck (with Injury),2016,11,182,2016-11-01
+2536,Vehicle Collision or Pedestrian Struck (with Injury),2016,12,101,2016-12-01
+2537,Vehicle Collision or Pedestrian Struck (with Injury),2017,1,108,2017-01-01
+2538,Vehicle Collision or Pedestrian Struck (with Injury),2017,2,96,2017-02-01
+2539,Vehicle Collision or Pedestrian Struck (with Injury),2017,3,129,2017-03-01
+2540,Vehicle Collision or Pedestrian Struck (with Injury),2017,4,136,2017-04-01
+2541,Vehicle Collision or Pedestrian Struck (with Injury),2017,5,123,2017-05-01
+2542,Vehicle Collision or Pedestrian Struck (with Injury),2017,6,110,2017-06-01
+2543,Vehicle Collision or Pedestrian Struck (with Injury),2017,7,116,2017-07-01
+2544,Vehicle Collision or Pedestrian Struck (with Injury),2017,8,115,2017-08-01
+2545,Vehicle Collision or Pedestrian Struck (with Injury),2017,9,134,2017-09-01
+2546,Vehicle Collision or Pedestrian Struck (with Injury),2017,10,168,2017-10-01
+2547,Vehicle Collision or Pedestrian Struck (with Injury),2017,11,148,2017-11-01
+2548,Vehicle Collision or Pedestrian Struck (with Injury),2017,12,143,2017-12-01
+2549,Vehicle Collision or Pedestrian Struck (with Injury),2018,1,170,2018-01-01
+2550,Vehicle Collision or Pedestrian Struck (with Injury),2018,2,97,2018-02-01
+2551,Vehicle Collision or Pedestrian Struck (with Injury),2018,3,95,2018-03-01
+2552,Vehicle Collision or Pedestrian Struck (with Injury),2018,4,110,2018-04-01
+2553,Vehicle Collision or Pedestrian Struck (with Injury),2018,5,131,2018-05-01
+2554,Vehicle Collision or Pedestrian Struck (with Injury),2018,6,127,2018-06-01
+2555,Vehicle Collision or Pedestrian Struck (with Injury),2018,7,152,2018-07-01
+2556,Vehicle Collision or Pedestrian Struck (with Injury),2018,8,136,2018-08-01
+2557,Vehicle Collision or Pedestrian Struck (with Injury),2018,9,98,2018-09-01
+2558,Vehicle Collision or Pedestrian Struck (with Injury),2018,10,134,2018-10-01
+2559,Vehicle Collision or Pedestrian Struck (with Injury),2018,11,116,2018-11-01
+2560,Vehicle Collision or Pedestrian Struck (with Injury),2018,12,110,2018-12-01
+2561,Vehicle Collision or Pedestrian Struck (with Injury),2019,1,90,2019-01-01
+2562,Vehicle Collision or Pedestrian Struck (with Injury),2019,2,76,2019-02-01
+2563,Vehicle Collision or Pedestrian Struck (with Injury),2019,3,64,2019-03-01
+2564,Vehicle Collision or Pedestrian Struck (with Injury),2019,4,92,2019-04-01
+2565,Vehicle Collision or Pedestrian Struck (with Injury),2019,5,104,2019-05-01
+2566,Vehicle Collision or Pedestrian Struck (with Injury),2019,6,98,2019-06-01
+2567,Vehicle Collision or Pedestrian Struck (with Injury),2019,7,92,2019-07-01
+2568,Vehicle Collision or Pedestrian Struck (with Injury),2019,8,99,2019-08-01
+2569,Vehicle Collision or Pedestrian Struck (with Injury),2019,9,126,2019-09-01
+2570,Vehicle Collision or Pedestrian Struck (with Injury),2019,10,92,2019-10-01
+2571,Vehicle Collision or Pedestrian Struck (with Injury),2019,11,106,2019-11-01
+2572,Vehicle Collision or Pedestrian Struck (with Injury),2019,12,99,2019-12-01
+2573,Vehicle Collision or Pedestrian Struck (with Injury),2020,1,97,2020-01-01
+2574,Vehicle Collision or Pedestrian Struck (with Injury),2020,2,77,2020-02-01
+2575,Vehicle Collision or Pedestrian Struck (with Injury),2020,3,61,2020-03-01
+2576,Vehicle Collision or Pedestrian Struck (with Injury),2020,4,33,2020-04-01
+2577,Vehicle Collision or Pedestrian Struck (with Injury),2020,5,65,2020-05-01
+2578,Vehicle Collision or Pedestrian Struck (with Injury),2020,6,57,2020-06-01
+2579,Vehicle Collision or Pedestrian Struck (with Injury),2020,7,72,2020-07-01
+2580,Vehicle Collision or Pedestrian Struck (with Injury),2020,8,80,2020-08-01
+2581,Vehicle Collision or Pedestrian Struck (with Injury),2020,9,75,2020-09-01
+2582,Vehicle Collision or Pedestrian Struck (with Injury),2020,10,91,2020-10-01
+2583,Vehicle Collision or Pedestrian Struck (with Injury),2020,11,70,2020-11-01
+2584,Vehicle Collision or Pedestrian Struck (with Injury),2020,12,75,2020-12-01
+2585,Vehicle Collision or Pedestrian Struck (with Injury),2021,1,72,2021-01-01
+2586,Vehicle Collision or Pedestrian Struck (with Injury),2021,2,54,2021-02-01
+2587,Vehicle Collision or Pedestrian Struck (with Injury),2021,3,76,2021-03-01
+2588,Vehicle Collision or Pedestrian Struck (with Injury),2021,4,80,2021-04-01
+2589,Vehicle Collision or Pedestrian Struck (with Injury),2021,5,73,2021-05-01
+2590,Vehicle Collision or Pedestrian Struck (with Injury),2021,6,84,2021-06-01
+2591,Vehicle Collision or Pedestrian Struck (with Injury),2021,7,81,2021-07-01
+2592,Vehicle Collision or Pedestrian Struck (with Injury),2021,8,114,2021-08-01
+2593,Vehicle Collision or Pedestrian Struck (with Injury),2021,9,103,2021-09-01
+2594,Vehicle Collision or Pedestrian Struck (with Injury),2021,10,92,2021-10-01
+2595,Vehicle Collision or Pedestrian Struck (with Injury),2021,11,112,2021-11-01
+2596,Vehicle Collision or Pedestrian Struck (with Injury),2021,12,80,2021-12-01
+2597,Vehicle Collision or Pedestrian Struck (with Injury),2022,1,59,2022-01-01
+2598,Vehicle Collision or Pedestrian Struck (with Injury),2022,2,71,2022-02-01
+2599,Vehicle Collision or Pedestrian Struck (with Injury),2022,3,79,2022-03-01
+2600,Vehicle Collision or Pedestrian Struck (with Injury),2022,4,84,2022-04-01
+2601,Vehicle Collision or Pedestrian Struck (with Injury),2022,5,81,2022-05-01
+2602,Vehicle Collision or Pedestrian Struck (with Injury),2022,6,101,2022-06-01
+2603,Vehicle Collision or Pedestrian Struck (with Injury),2022,7,91,2022-07-01
+2604,Vehicle Collision or Pedestrian Struck (with Injury),2022,8,108,2022-08-01
+2605,Vehicle Collision or Pedestrian Struck (with Injury),2022,9,92,2022-09-01
+2606,Vehicle Collision or Pedestrian Struck (with Injury),2022,10,102,2022-10-01
+2607,Vehicle Collision or Pedestrian Struck (with Injury),2022,11,79,2022-11-01
+2608,Vehicle Collision or Pedestrian Struck (with Injury),2022,12,66,2022-12-01
+2609,Vehicle Collision or Pedestrian Struck (with Injury),2023,1,77,2023-01-01
+2610,Vehicle Collision or Pedestrian Struck (with Injury),2023,2,74,2023-02-01
+2611,Vehicle Collision or Pedestrian Struck (with Injury),2023,3,75,2023-03-01
+2612,Vehicle Collision or Pedestrian Struck (with Injury),2023,4,79,2023-04-01
+2613,Vehicle Collision or Pedestrian Struck (with Injury),2023,5,109,2023-05-01
+2614,Vehicle Collision or Pedestrian Struck (with Injury),2023,6,100,2023-06-01
+2615,Vehicle Collision or Pedestrian Struck (with Injury),2023,7,104,2023-07-01
+2616,Vehicle Collision or Pedestrian Struck (with Injury),2023,8,98,2023-08-01
+2617,Vehicle Collision or Pedestrian Struck (with Injury),2023,9,110,2023-09-01
+2618,Vehicle Collision or Pedestrian Struck (with Injury),2023,10,85,2023-10-01
