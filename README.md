@@ -26,6 +26,11 @@ All required dependencies are listed in this [conda environment file](environmen
   - Note:
     - If you need the `avalon` env locally, run  `conda activate avalon`
     - If you added a new package in your local `environment.yaml`, you need to run `conda env update --name avalon --file=environment.yaml` to update your local env.
+    - In case that jupyter does not recognize the new conda environment, Install ipykernel's kernel spec thru the following command:
+```
+conda activate avalon
+python -m ipykernel install --user --name avalon --display-name "Python (avalon)"
+```
 2. Ensure all dependencies are installed.
 3. Open Jupyter Notebook or JupyterLab to run the [analysis notebook](milestone_1.ipynb)
 
