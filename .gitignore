@@ -166,3 +166,6 @@ cython_debug/
 
 # vim caches
 **/*~
+
+# idea caches
+**/.idea/
