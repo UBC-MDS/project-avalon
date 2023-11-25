@@ -9,7 +9,7 @@ Welcome to the repository for Project Avalon, a part of the DSCI-522 course by G
 
 This project aims to perform statistical analyses on the crimes committed in the City of Vancouver and develop a classification algorithm to determine the types of crime given a set of parameters.
 
-Latest report: [Crime_Forecast In Vancouver.pdf](https://github.com/UBC-MDS/project-avalon/blob/main/notebooks/crime_forecasting.pdf)
+Latest report: [Crime Forecast In Vancouver.pdf](https://github.com/UBC-MDS/project-avalon/blob/main/notebooks/crime_forecasting.pdf)
 
 ## 📘 Data Source
 
@@ -18,6 +18,13 @@ Latest report: [Crime_Forecast In Vancouver.pdf](https://github.com/UBC-MDS/proj
 ## 📋 Dependencies
 
 All required dependencies are listed in this [conda environment file](environment.yaml).
+
+## 🧪 Test Automation
+
+To run tests, execute the following command in the project root directory:
+```
+python3 tests/run_all_tests.py
+```
 
 ## 🧑‍💻 How to run the notebook
 
