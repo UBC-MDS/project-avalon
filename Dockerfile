@@ -1,6 +1,6 @@
 FROM quay.io/jupyter/minimal-notebook:2023-11-22
 
-WORKDIR /app
+WORKDIR /home/jovyan
 
 COPY environment.yaml .
 
