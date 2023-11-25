@@ -3,33 +3,29 @@ from statsmodels.tsa.arima.model import ARIMA
 
 def arima_prediction(df, window_size=12):
     """
-    Perform ARIMA forecast with a rolling window.
+    Performs an ARIMA forecast using a rolling window approach.
 
-    Parameters
+    Parameters:
     ----------
-    df : DataFrame
-        Input DataFrame containing a single column with a datetime index.
+    df : pandas.DataFrame
+        The input DataFrame must contain a single column with a datetime index.
     window_size : int, optional
-        Size of the rolling window for forecasting (default=12).
+        The size of the rolling window for the forecast (default is 12).
 
-    Returns
+    Returns:
     -------
     list
-        A list containing the forecasted values.
+        A list containing the forecasted values for each window.
 
-    Raises
+    Raises:
     ------
     ValueError
-        - If the input DataFrame contains more than one column.
-        - If the index of the DataFrame is not a DatetimeIndex.
-        - If the only column in the DataFrame is not numerical.
-        - If the window size is not a positive integer greater than 1 or exceeds the length of the DataFrame.
-    
-    Notes
+        If the DataFrame does not meet the requirements specified in the docstring.
+
+    Notes:
     -----
-    This function takes a DataFrame with a single column and a date index to perform ARIMA prediction.
-    It iterates through the DataFrame using a rolling window of 'window_size' length, fits an ARIMA model
-    to each window, and forecasts the next value. The function returns a list of forecasted values.
+    The function fits an ARIMA model to each window of the specified size and forecasts
+    the next value. The DataFrame index is adjusted for inferred frequency to align the forecasted values.
     """
 
     # Check if the input DataFrame has more than one column
