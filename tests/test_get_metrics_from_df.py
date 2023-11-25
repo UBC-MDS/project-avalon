@@ -3,8 +3,11 @@
 import pandas as pd
 import pytest
 import sys
-sys.path.append('../src/helpers')
-from get_metrics_from_df import get_metrics_from_df
+import os
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__),".."))
+
+from src.get_metrics_from_df import get_metrics_from_df
 
 
 def test_non_dataframe_input():
