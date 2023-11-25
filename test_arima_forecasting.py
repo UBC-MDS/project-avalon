@@ -1,3 +1,5 @@
+
+
 data = np.random.rand(50, 1)  # Generating random data
 df = pd.DataFrame(data, columns=['Value'], index=pd.date_range('2023-01-01', periods=50, freq='D'))
 
