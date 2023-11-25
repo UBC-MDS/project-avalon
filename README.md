@@ -28,7 +28,7 @@ python3 tests/run_all_tests.py
 
 ## 🧑‍💻 How to run the notebook
 
-### Local conda environment (recommended)
+### Local conda environment
 1. Create a new conda environment based on the provided [YAML file](environment.yaml).
   - Run `conda env create --name avalon --file=environment.yaml`
   - Then switch to `avalon` env by clicking the drop-down, and select `avalon`
@@ -44,7 +44,10 @@ python -m ipykernel install --user --name avalon --display-name "Python (avalon)
 2. Ensure all dependencies are installed.
 3. Open Jupyter Notebook or JupyterLab to run the [analysis notebook](milestone_1.ipynb)
 
-### Docker/Docker compose
+### Docker/Docker compose (recommended)
+
+Link to [DockerHub Image](https://hub.docker.com/repository/docker/solosynth1/project-avalon/general)
+
 1. Make sure Docker Engine/Desktop is installed and running.
 1. Go to the project root folder.
 2. Run `docker compose pull && docker compose up` to bring up the container.
