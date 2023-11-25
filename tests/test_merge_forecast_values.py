@@ -17,8 +17,8 @@ invalid_col_name = 123
 
 def test_merge_forecast_values_numeric():
     merged_df = merge_forecast_values(sample_df, sample_forecasted_values, sample_col_name)
-    assert col_name in merged_df.columns
-    assert len(merged_df) == len(original_df) + 1
+    assert sample_col_name in merged_df.columns
+    assert len(merged_df) == len(sample_df) + 1
 
 def test_merge_forecast_values_invalid_col_name():
     with pytest.raises(ValueError):
