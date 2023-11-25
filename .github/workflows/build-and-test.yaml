@@ -6,7 +6,7 @@ on:
 
 jobs:
   test_building:
-    name: Buiold Docker image to test if everything is running properly
+    name: Build Docker image to test if everything is running properly
     runs-on: ubuntu-latest
     steps:
       - name: Check out the repo
