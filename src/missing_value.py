@@ -5,25 +5,22 @@ import numpy as np
 
 def missing_zero_values_table(df):
     """
-    Generate a summary table that identifies the count and percentage of missing values
-    and zero values in the provided DataFrame.
+    Creates a summary table for missing and zero values in a DataFrame.
 
     Parameters:
-    - df (pandas.DataFrame): The DataFrame for which missing and zero values are to be analyzed.
+    ----------
+    df : pandas.DataFrame
+        The DataFrame to analyze for missing and zero values.
 
     Returns:
-    - pandas.DataFrame: A table displaying the count and percentage of zero values,
-      missing values, their combined total, percentage of the total values, and the data types
-      of the columns containing these values.
-      
-    The table is sorted in descending order based on the percentage of missing or zero values.
+    -------
+    pandas.DataFrame
+        A summary table with counts and percentages of missing and zero values.
 
-    Example Usage:
-    ```
-    # Assuming 'data' is your dataset
-    missing_zero_values_table(data)
-    ```
+    The table is sorted in descending order by the percentage of missing or zero values and includes
+    the data type of each column.
     """
+
     zero_val = (df == 0.00).astype(int).sum(axis=0)
     mis_val = df.isnull().sum()
     mis_val_percent = 100 * df.isnull().sum() / len(df)

@@ -6,15 +6,23 @@ import pandas as pd
 
 def create_numeric_cols_chart(data, numeric_cols):
     """
-    Generate bar charts for numeric columns in the given dataset.
+    Generates bar charts for numeric columns in a dataset using Altair.
 
     Parameters:
-    - data (pandas.DataFrame): The dataset containing numeric columns to visualize.
-    - numeric_cols (list): List of column names (strings) that are numeric.
+    ----------
+    data : pandas.DataFrame
+        The dataset containing the numeric columns.
+    numeric_cols : list of str
+        The names of the numeric columns to visualize.
 
     Returns:
-    - alt.Chart: Combined Altair chart displaying bar charts for each numeric column.
+    -------
+    alt.Chart
+        An Altair Chart object displaying the bar charts for the specified numeric columns.
+
+    This function creates a bar chart for each numeric column and combines them into a single Altair Chart.
     """
+
     alt.data_transformers.enable('vegafusion')
     
     charts = []

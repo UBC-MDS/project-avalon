@@ -2,28 +2,23 @@ import pandas as pd
 
 def merge_forecast_values(original_df, forecasted_values, col_name):
     """
-    Merge forecasted values into an original DataFrame.
+    Merges forecasted values into the original DataFrame with a new column.
 
-    Parameters
+    Parameters:
     ----------
-    original_df : DataFrame
-        Original DataFrame containing the historical data.
-    forecasted_values : array-like
-        Forecasted values to be merged into the original DataFrame.
+    original_df : pandas.DataFrame
+        The original DataFrame with historical data.
+    forecasted_values : list
+        The list of forecasted values to merge.
     col_name : str
-        Name of the column for the forecasted values.
+        The name for the column containing the forecasted values.
 
-    Returns
+    Returns:
     -------
-    DataFrame
-        A new DataFrame with the forecasted values merged into the original data.
+    pandas.DataFrame
+        The original DataFrame with a new column for the forecasted values.
 
-    Notes
-    -----
-    This function merges the forecasted_values into the original DataFrame,
-    assigning them to a new column named col_name. It extracts the frequency
-    of the original DataFrame's index to determine the next date, ensuring
-    correct alignment of the forecasted values in the merged DataFrame.
+    This function appends the forecasted values to the original DataFrame based on the inferred frequency of the index.
     """
 
     # Check if the index of original df is a DatetimeIndex
