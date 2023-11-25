@@ -1,7 +1,12 @@
 import pytest
 import pandas as pd
 import numpy as np
-from src/arima_forecasting import arima_prediction  
+import sys
+import os
+
+# Import the count_classes function from the src folder
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+from src.arima_forecasting import arima_prediction
 
 # Test Data
 data = np.random.rand(50, 1)  # Generating random data
@@ -39,31 +44,3 @@ def test_non_numerical_column():
 def test_invalid_window_size():
     with pytest.raises(ValueError):
         arima_prediction(sample_df, window_size=0)
-
-# # Test for multiple columns in the DataFrame
-# def test_invalid_column_count():
-#     try:
-#         arima_prediction(two_col_df)
-#     except ValueError as e:
-#         assert str(e) == "Input DataFrame must contain only one column for ARIMA prediction."
-
-# # Test for non-DatetimeIndex index
-# def test_non_datetime_index():
-#     try:
-#         arima_prediction(non_datetime_index_df)
-#     except ValueError as e:
-#         assert str(e) == "Index of the DataFrame must be a DatetimeIndex for ARIMA prediction."
-
-# # Test for non-numeric column
-# def test_non_numerical_column():
-#     try:
-#         arima_prediction(non_numeric_df)
-#     except ValueError as e:
-#         assert str(e) == "The column in the DataFrame should be numerical for ARIMA prediction."
-
-# # Test for invalid window size
-# def test_invalid_window_size():
-#     try:
-#         arima_prediction(sample_df, window_size=0)
-#     except ValueError as e:
-#         assert str(e) == "Window size must be a positive integer that is greater than 1 and less than the length of df for ARIMA prediction."
