@@ -1,0 +1,13 @@
+version: '3'
+services:
+  notebook-server:
+    image: "solosynth1/project-avalon:main"
+    volumes:
+      - .:/home/jovyan/work
+    ports:
+      - "8888:8888"
+    platform: linux/amd64
+    deploy:
+      resources:
+        limits:
+          memory: 8G
