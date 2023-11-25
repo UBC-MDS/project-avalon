@@ -2,9 +2,9 @@
 # date: 2023-11-24
 import pandas as pd
 import pytest
-from get_metrics_from_df import get_metrics_from_df
 import sys
 sys.path.append('../src/helpers')
+from get_metrics_from_df import get_metrics_from_df
 
 
 def test_non_dataframe_input():
