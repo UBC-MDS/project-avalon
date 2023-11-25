@@ -4,8 +4,8 @@ def merge_forecast_values(original_df, forecasted_values, col_name):
     """
     Merge forecasted values into an original DataFrame.
 
-    Parameters:
-    -----------
+    Parameters
+    ----------
     original_df : DataFrame
         Original DataFrame containing the historical data.
     forecasted_values : array-like
@@ -13,13 +13,13 @@ def merge_forecast_values(original_df, forecasted_values, col_name):
     col_name : str
         Name of the column for the forecasted values.
 
-    Returns:
-    --------
+    Returns
+    -------
     DataFrame
         A new DataFrame with the forecasted values merged into the original data.
 
-    Notes:
-    ------
+    Notes
+    -----
     This function merges the forecasted_values into the original DataFrame,
     assigning them to a new column named col_name. It extracts the frequency
     of the original DataFrame's index to determine the next date, ensuring

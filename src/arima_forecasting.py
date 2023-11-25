@@ -5,28 +5,28 @@ def arima_prediction(df, window_size=12):
     """
     Perform ARIMA forecast with a rolling window.
 
-    Parameters:
-    -----------
+    Parameters
+    ----------
     df : DataFrame
         Input DataFrame containing a single column with a datetime index.
     window_size : int, optional
         Size of the rolling window for forecasting (default=12).
 
-    Returns:
-    --------
+    Returns
+    -------
     list
         A list containing the forecasted values.
 
-    Raises:
-    -------
+    Raises
+    ------
     ValueError
         - If the input DataFrame contains more than one column.
         - If the index of the DataFrame is not a DatetimeIndex.
         - If the only column in the DataFrame is not numerical.
         - If the window size is not a positive integer greater than 1 or exceeds the length of the DataFrame.
     
-    Notes:
-    ------
+    Notes
+    -----
     This function takes a DataFrame with a single column and a date index to perform ARIMA prediction.
     It iterates through the DataFrame using a rolling window of 'window_size' length, fits an ARIMA model
     to each window, and forecasts the next value. The function returns a list of forecasted values.

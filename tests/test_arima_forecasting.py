@@ -9,6 +9,7 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from src.arima_forecasting import arima_prediction
 
 # Test Data
+np.random.seed(0)
 data = np.random.rand(50, 1)  # Generating random data
 sample_df = pd.DataFrame(data, columns=['Value'], index=pd.date_range('2023-01-01', periods=50, freq='D'))
 two_col_df = pd.DataFrame({'Column1': [1, 2, 3], 'Column2': [4, 5, 6]})
