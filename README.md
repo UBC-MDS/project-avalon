@@ -9,6 +9,8 @@ Welcome to the repository for Project Avalon, a part of the DSCI-522 course by G
 
 This project aims to perform statistical analyses on the crimes committed in the City of Vancouver and develop a classification algorithm to determine the types of crime given a set of parameters.
 
+Latest report: [Crime_Forecast In Vancouver.pdf](https://github.com/UBC-MDS/project-avalon/blob/main/notebooks/crime_forecasting.pdf)
+
 ## 📘 Data Source
 
 [Crime Data Download, the Vancouver Police Department](https://geodash.vpd.ca/opendata/)
