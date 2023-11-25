@@ -1,6 +1,7 @@
 # author: Mo Norouzi
 # date: 2023-11-24
 import pandas as pd
+import numpy as np
 
 def missing_zero_values_table(df):
     """
@@ -39,3 +40,4 @@ def missing_zero_values_table(df):
            "There are " + str(mz_table.shape[0]) +
               " columns that have missing values.")
     return mz_table
+

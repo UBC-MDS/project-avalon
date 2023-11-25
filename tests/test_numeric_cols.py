@@ -3,39 +3,39 @@
 
 import pandas as pd
 import altair as alt
-from numeric_cols import create_numeric_cols_chart 
+import pytest
+import sys
+import os
 
-# Create sample data for testing
-def create_sample_data():
-    data = {
-        "MONTH": [1, 2, 3, 4, 5],
-        "DAY": [10, 15, 20, 25, 30],
-        "HOUR": [8, 12, 16, 20, 24],
-        "MINUTE": [0, 15, 30, 45, 60]
-    }
-    return pd.DataFrame(data)
+sys.path.append(os.path.join(os.path.dirname(__file__),".."))
 
-def test_create_numeric_cols_chart():
-    # Given
-    data = create_sample_data()
-    numeric_cols = ["MONTH", "DAY", "HOUR", "MINUTE"]
+from src.numeric_cols import create_numeric_cols_chart 
 
-    # When
-    result_chart = create_numeric_cols_chart(data, numeric_cols)
+# Sample test data
+data = pd.DataFrame({
+    'A': [1, 2, 3],
+    'B': [4, 5, 6],
+    'C': [7, 8, 9],
+    'D': ['a', 'b', 'c']
+})
 
-    # Then
-    assert isinstance(result_chart, alt.Chart)
-    assert len(result_chart) == len(numeric_cols)
+def test_create_numeric_cols_chart_output_type():
+    # Test if the output is of type alt.Chart
+    result_chart = create_numeric_cols_chart(data, ['A', 'B', 'C'])
+    assert isinstance(result_chart, alt.vegalite.v5.api.HConcatChart)
 
-def test_plotting_numeric_cols():
-    # Given
-    data = create_sample_data()
-    numeric_cols = ["MONTH", "DAY", "HOUR", "MINUTE"]
 
-    # When
-    plot = plotting_numeric_cols(data, numeric_cols)
+def test_create_numeric_cols_chart_empty_columns():
+    # Test if the function handles an empty list of columns
+    result_chart = create_numeric_cols_chart(data, [])
+    assert isinstance(result_chart, alt.vegalite.v5.api.HConcatChart)
 
-    # Then
-    assert isinstance(plot, alt.Chart)
-    assert len(plot) == len(numeric_cols)
+def test_create_numeric_cols_chart_numeric():
+    try:
+        pd.to_numeric(data, ['A', 'B', 'D'])
+    except Exception as e:
+        assert isinstance(e, ValueError)
+
+
+
 

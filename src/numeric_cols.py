@@ -2,6 +2,7 @@
 # date: 2023-11-24
 
 import altair as alt
+import pandas as pd
 
 def create_numeric_cols_chart(data, numeric_cols):
     """
