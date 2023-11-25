@@ -1,3 +1,6 @@
+import pandas as pd
+from statsmodels.tsa.arima.model import ARIMA
+
 def arima_prediction(df, window_size=12):
     """
     Perform ARIMA forecast with a rolling window.
