@@ -26,21 +26,17 @@ def merge_forecast_values(original_df, forecasted_values, col_name):
     correct alignment of the forecasted values in the merged DataFrame.
     """
 
-    # Check if the original df has more than one column
-    if len(original_df.columns) != 1:
-        raise ValueError("Input DataFrame must contain only one column for ARIMA prediction.")
-
     # Check if the index of original df is a DatetimeIndex
     if not isinstance(original_df.index, pd.DatetimeIndex):
         raise ValueError("Index of the DataFrame must be a DatetimeIndex for ARIMA prediction.")
-
-    # Check if the only column in the original df is numerical
-    if not pd.api.types.is_numeric_dtype(original_df.iloc[:, 0]):
-        raise ValueError("The column in the DataFrame should be numerical for ARIMA prediction.")
     
-    # Check if forecasted_values is a list
-    if not isinstance(forecasted_values, list):
-        raise ValueError("Forecasted values must be a list.")
+    # Check if all columns in original df is numerical
+    if not all(pd.api.types.is_numeric_dtype(original_df.loc[:, col]) for col in original_df.columns):
+        raise ValueError("Not all columns in merged_df are numerical.")
+    
+    # Check if forecasted_values is a 1d list
+    if not isinstance(forecasted_values, list) or isinstance(forecasted_values[0], list):
+        raise ValueError("Forecasted values must be a 1D list.")
     
     # Check if forecasted_values is a numerical list
     if not all(isinstance(value, (int, float)) for value in forecasted_values):
