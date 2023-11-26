@@ -28,7 +28,20 @@ python3 tests/run_all_tests.py
 
 ## 🧑‍💻 How to run the notebook
 
-### Local conda environment (recommended)
+### Docker/Docker compose (recommended)
+
+Link to [DockerHub Image](https://hub.docker.com/repository/docker/solosynth1/project-avalon/general)
+
+1. Make sure Docker Engine/Desktop is installed and running.
+1. Go to the project root folder.
+2. Run `docker compose pull && docker compose up` to bring up the container.
+4. Use browser to visit http://localhost:8888 and supply the generate token.
+
+**Important Notes:**
+- (For Docker Desktop users) The created container will require more than 4GB of RAM to run the analysis notebook. Please ensure the settings in Docker Desktop enables provisioning at least 8GB of RAM to the container.
+- (For Apple Silicon users) Please enable the feature "Use Rosetta for x86/amd64 emulation on Apple Silicon" inside the setting menu. Otherwise, the kernel will not be properly run.
+
+### Local conda environment
 1. Create a new conda environment based on the provided [YAML file](environment.yaml).
   - Run `conda env create --name avalon --file=environment.yaml`
   - Then switch to `avalon` env by clicking the drop-down, and select `avalon`
@@ -43,16 +56,6 @@ python -m ipykernel install --user --name avalon --display-name "Python (avalon)
 ```
 2. Ensure all dependencies are installed.
 3. Open Jupyter Notebook or JupyterLab to run the [analysis notebook](milestone_1.ipynb)
-
-### Docker/Docker compose
-1. Make sure Docker Engine/Desktop is installed and running.
-1. Go to the project root folder.
-2. Run `docker compose pull && docker compose up` to bring up the container.
-4. Use browser to visit http://localhost:8888 and supply the generate token.
-
-**Important Notes:**
-- (For Docker Desktop users) The created container will require more than 4GB of RAM to run the analysis notebook. Please ensure the settings in Docker Desktop enables provisioning at least 8GB of RAM to the container.
-- (For Apple Silicon users) Please enable the feature "Use Rosetta for x86/amd64 emulation on Apple Silicon" inside the setting menu. Otherwise, the kernel will not be properly run.
 
 ## 🌟 Stakeholders
 
