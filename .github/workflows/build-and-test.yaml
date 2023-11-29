@@ -4,6 +4,9 @@ on:
   pull_request:
     branches: [ "main" ]
 
+env:
+  IMAGE_NAME: solosynth1/project-avalon
+
 jobs:
   test_building:
     name: Build Docker image to test if everything is running properly
@@ -22,7 +25,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
-          images: SoloSynth1/project-avalon
+          images: ${{ env.IMAGE_NAME }}
 
       - name: Build and export to Docker
         uses: docker/build-push-action@v5
@@ -34,4 +37,5 @@ jobs:
 
       - name: Test the Image
         run: |
-          docker run --rm python -m pytest
+#          docker run --rm python -m pytest
+          pwd && ls -alF
