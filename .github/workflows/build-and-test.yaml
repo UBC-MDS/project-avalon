@@ -37,5 +37,4 @@ jobs:
 
       - name: Test the Image
         run: |
-#          docker run --rm python -m pytest
           pwd && ls -alF
