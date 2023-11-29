@@ -37,4 +37,4 @@ jobs:
 
       - name: Test the Image
         run: |
-          pwd && ls -alF
+          docker run --rm -v /home/runner/work/project-avalon/project-avalon:/home/jovyan/work ${{ steps.meta.outputs.labels }}:${{ steps.meta.outputs.tags }} pytest work
