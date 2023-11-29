@@ -5,32 +5,6 @@ on:
     branches: [ "main" ]
 
 jobs:
-  unit_tests:
-    name: Run pytest tests
-    runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        python-version: ["3.11"]
-
-    steps:
-      - uses: szenius/set-timezone@v1.2
-        with:
-          timezoneLinux: "America/Vancouver"
-      - uses: actions/checkout@v3
-      - name: Set up Python ${{ matrix.python-version }}
-        uses: actions/setup-python@v4
-        with:
-          python-version: ${{ matrix.python-version }}
-      - name: Install dependencies (conda)
-        run: |
-          $CONDA/bin/conda env update --file environment.yaml --name base
-      - name: Install dependencies (pip)
-        run: pip install pytest pytest-md pytest-emoji
-      - uses: pavelzw/pytest-action@v2
-        with:
-          emoji: false
-          verbose: false
-          job-summary: true
   test_building:
     name: Build Docker image to test if everything is running properly
     runs-on: ubuntu-latest
@@ -49,12 +23,15 @@ jobs:
         uses: docker/metadata-action@9ec57ed1fcdbf14dcef7dfbe97b2010124a938b7
         with:
           images: SoloSynth1/project-avalon
-      
-      - name: Build Docker image
-        uses: docker/build-push-action@3b5e8027fcad23fda98b2e3ac259d8d67585f671
+
+      - name: Build and export to Docker
+        uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./Dockerfile
-          push: false
+          load: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+
+      - name: Test the Image
+        run: |
+          docker run --rm python -m pytest
