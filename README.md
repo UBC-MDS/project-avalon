@@ -1,8 +1,10 @@
 
 ---
 
-# Project Avalon: DSCI-522 Group 23
-
+# Crime Forecast in Vancouver
+  - DSCI-522 Group 23
+  - Alias: Project Avalon
+    
 Welcome to the repository for Project Avalon, a part of the DSCI-522 course by Group 23 in the MDS-V Cohort 8 at UBC.
 
 ## ⭐️ Project Summary
