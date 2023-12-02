@@ -22,3 +22,4 @@ dependencies:
   - vega_datasets=0.9.0
   - folium=0.15.0
   - seaborn=0.13.0
+  - myst-nb=1.0.0
