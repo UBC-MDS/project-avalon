@@ -43,7 +43,8 @@ def main(input_filepath, output_filepath):
     pd.DataFrame(au_corr).to_csv(os.path.join(output_filepath, "tables", "correlation.csv"), index=False)
 
     #numeric distribution
-    numeric_plot = create_numeric_cols_chart(data, numeric_columns)
+    numeric_cols = ["MONTH", "DAY", "HOUR", "MINUTE"]
+    numeric_plot = create_numeric_cols_chart(data, numeric_cols)
     numeric_plot.save(os.path.join(output_filepath, "figures", "numeric_dist.png"))
 
     #categrical distribution
