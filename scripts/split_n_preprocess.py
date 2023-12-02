@@ -33,7 +33,7 @@ def main(raw_data, data_to, preview_to=None):
         raw_data = "../data/raw/crimedata_csv_AllNeighbourhoods_AllYears.csv"
 
     if data_to is None:
-        data_to = "../data"
+        data_to = "../data/processed"
 
     if preview_to is None:
         preview_to = data_to
