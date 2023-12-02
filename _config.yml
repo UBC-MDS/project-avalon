@@ -1,0 +1,10 @@
+title: "Crime Forecast in VancouverC"
+author: "Orix Au Yeung, Ben Chen, Mo Norouzi, Yiwei Zhang"
+date: "2023-12-01"
+sphinx:
+  config:
+    bibtex_reference_style: author_year
+execute:
+  execute_notebooks: force 
+bibtex_bibfiles:
+    - references.bib
