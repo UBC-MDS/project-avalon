@@ -17,7 +17,15 @@ def main(prediction_df, results_folder):
 
     data = pd.read_csv(prediction_df, index_col=[0])
     data.index = pd.to_datetime(data.index)
-    print(data)
+    
+    #Original Plot
+    plt.figure(figsize=(10, 6))
+    plt.plot(data.index, data['Observations'], label='Original Values', color='black')
+    plt.legend()
+    plt.title('Original Value')
+    plt.xlabel('Date')
+    plt.ylabel('Value')
+    plt.savefig(os.path.join(results_folder, "figures", "original_plot.png"))
 
     # ARIMA Plot
     plt.figure(figsize=(10, 6))

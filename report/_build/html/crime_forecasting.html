@@ -732,13 +732,7 @@ dtype: float64
 <section id="preprocessing">
 <h2>Preprocessing<a class="headerlink" href="#preprocessing" title="Permalink to this heading">#</a></h2>
 <p>We’ll start the data preprocessing phase by grouping the rows according to the TYPE, YEAR, and MONTH columns to aggregate the counts of specific crimes occurring in each month. Additionally, we’ll adjust the datetime variable format for consistency. However, as the latest month (2023-11) is incomplete, we’ll exclude this month from the dataset. Finally, we’ll filter the data so that we focus only on <code class="docutils literal notranslate"><span class="pre">Theft</span> <span class="pre">from</span> <span class="pre">Vehicle</span></code> crimes, the most common crime in Vancouver in the past 20 years. This initial processing sets the groundwork for our subsequent time-series forecasting models.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">preprocessed_data_full</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../data/processed/preprocessed_data_full.csv&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
-<span class="n">preprocessed_data_full</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
+<div class="cell tag_output_scroll tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div>
 <style scoped>
@@ -810,13 +804,7 @@ dtype: float64
 </table>
 </div></div></div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theft_from_vehicle</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../data/processed/preprocessed_theft_from_vehicle_full.csv&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
-<span class="n">theft_from_vehicle</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
+<div class="cell tag_output_scroll tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div>
 <style scoped>
@@ -888,12 +876,7 @@ dtype: float64
 </table>
 </div></div></div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theft_from_vehicle</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
+<div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
 RangeIndex: 250 entries, 0 to 249
@@ -924,14 +907,7 @@ memory usage: 9.9+ KB
 <img alt="_images/e1e65eac8b8994abcee1dfc31206ac2acecb43ae1c75f08e7b331cb3894551bc.png" src="_images/e1e65eac8b8994abcee1dfc31206ac2acecb43ae1c75f08e7b331cb3894551bc.png" />
 </div>
 </div>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theft_from_vehicle_filtered</span> <span class="o">=</span> <span class="n">theft_from_vehicle</span><span class="p">[[</span><span class="s1">&#39;YEAR-MONTH&#39;</span><span class="p">,</span><span class="s1">&#39;Observations&#39;</span><span class="p">]]</span>
-<span class="n">theft_from_vehicle_filtered</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;YEAR-MONTH&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">theft_from_vehicle_filtered</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
+<div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div>
 <style scoped>
@@ -986,157 +962,7 @@ memory usage: 9.9+ KB
 </section>
 <section id="simple-moving-average-exponential-smoothing">
 <h2>Simple Moving Average &amp; Exponential Smoothing<a class="headerlink" href="#simple-moving-average-exponential-smoothing" title="Permalink to this heading">#</a></h2>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define the size of the sliding window</span>
-<span class="n">window_size</span> <span class="o">=</span> <span class="mi">12</span>
-<span class="c1"># Define alpha (smoothing parameter in ES)</span>
-<span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span>
-
-<span class="c1"># Perform Simple Moving Average (SMA) and Exponential Smoothing (ES)</span>
-<span class="n">sma_values</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="n">smoothed_values</span> <span class="o">=</span> <span class="p">[]</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">theft_from_vehicle_filtered</span><span class="p">)</span> <span class="o">-</span> <span class="n">window_size</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
-    
-    <span class="n">window</span> <span class="o">=</span> <span class="n">theft_from_vehicle_filtered</span><span class="p">[</span><span class="s1">&#39;Observations&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">window_size</span><span class="p">]</span>
-
-    <span class="c1"># SMA</span>
-    <span class="n">window_mean</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
-    <span class="n">sma_values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">window_mean</span><span class="p">)</span>
-
-    <span class="c1"># ES</span>
-    <span class="n">smoothed_val</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">ewm</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span> <span class="n">adjust</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-    <span class="n">smoothed_values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">smoothed_val</span><span class="p">)</span>
-
-<span class="n">sma_merged</span> <span class="o">=</span> <span class="n">merge_forecast_values</span><span class="p">(</span><span class="n">theft_from_vehicle_filtered</span><span class="p">,</span> <span class="n">sma_values</span><span class="p">,</span> <span class="s2">&quot;SMA_Forecast&quot;</span><span class="p">)</span>
-<span class="n">es_merged</span> <span class="o">=</span> <span class="n">merge_forecast_values</span><span class="p">(</span><span class="n">theft_from_vehicle_filtered</span><span class="p">,</span> <span class="n">smoothed_values</span><span class="p">,</span> <span class="s2">&quot;ES_Forecast&quot;</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
-<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">12</span><span class="p">],</span> <span class="n">line</span> <span class="mi">21</span>
-<span class="g g-Whitespace">     </span><span class="mi">18</span>     <span class="n">smoothed_val</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">ewm</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span> <span class="n">adjust</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-<span class="g g-Whitespace">     </span><span class="mi">19</span>     <span class="n">smoothed_values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">smoothed_val</span><span class="p">)</span>
-<span class="ne">---&gt; </span><span class="mi">21</span> <span class="n">sma_merged</span> <span class="o">=</span> <span class="n">merge_forecast_values</span><span class="p">(</span><span class="n">theft_from_vehicle_filtered</span><span class="p">,</span> <span class="n">sma_values</span><span class="p">,</span> <span class="s2">&quot;SMA_Forecast&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">22</span> <span class="n">es_merged</span> <span class="o">=</span> <span class="n">merge_forecast_values</span><span class="p">(</span><span class="n">theft_from_vehicle_filtered</span><span class="p">,</span> <span class="n">smoothed_values</span><span class="p">,</span> <span class="s2">&quot;ES_Forecast&quot;</span><span class="p">)</span>
-
-<span class="nn">File ~/git/522/project-avalon/report/../src/merge_forecast_values.py:26,</span> in <span class="ni">merge_forecast_values</span><span class="nt">(original_df, forecasted_values, col_name)</span>
-<span class="g g-Whitespace">     </span><span class="mi">24</span> <span class="c1"># Check if the index of original df is a DatetimeIndex</span>
-<span class="g g-Whitespace">     </span><span class="mi">25</span> <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">original_df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DatetimeIndex</span><span class="p">):</span>
-<span class="ne">---&gt; </span><span class="mi">26</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Index of the DataFrame must be a DatetimeIndex for ARIMA prediction.&quot;</span><span class="p">)</span>
-<span class="g g-Whitespace">     </span><span class="mi">28</span> <span class="c1"># Check if all columns in original df is numerical</span>
-<span class="g g-Whitespace">     </span><span class="mi">29</span> <span class="k">if</span> <span class="ow">not</span> <span class="nb">all</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">is_numeric_dtype</span><span class="p">(</span><span class="n">original_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">col</span><span class="p">])</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">original_df</span><span class="o">.</span><span class="n">columns</span><span class="p">):</span>
-
-<span class="ne">ValueError</span>: Index of the DataFrame must be a DatetimeIndex for ARIMA prediction.
-</pre></div>
-</div>
-</div>
-</div>
-<figure class="align-default" id="sma-prediction-plot">
-<a class="reference internal image-reference" href="_images/sma_prediction_plot.png"><img alt="_images/sma_prediction_plot.png" src="_images/sma_prediction_plot.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 3 </span><span class="caption-text">The plot that compares the original value and the predictions made by simple moving average.</span><a class="headerlink" href="#sma-prediction-plot" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<figure class="align-default" id="es-prediction-plot">
-<a class="reference internal image-reference" href="_images/es_prediction_plot.png"><img alt="_images/es_prediction_plot.png" src="_images/es_prediction_plot.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 4 </span><span class="caption-text">The plot that compares the original value and the predictions made by exponential smoothing.</span><a class="headerlink" href="#es-prediction-plot" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>Based on a visual assessment of the Simple Moving Average (SMA) and Exponential Smoothing (ES) forecasts, it’s evident that both methods broadly capture the general trend of the actual values. However, neither forecast method appears to be highly accurate. The Exponential Smoothing approach demonstrates a slightly improved performance compared to SMA.</p>
-</section>
-<section id="arima-1-1-0">
-<h2>ARIMA(1,1,0)<a class="headerlink" href="#arima-1-1-0" title="Permalink to this heading">#</a></h2>
-<figure class="align-default" id="autocorrelation-plot">
-<a class="reference internal image-reference" href="_images/autocorrelation_plot.png"><img alt="_images/autocorrelation_plot.png" src="_images/autocorrelation_plot.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 5 </span><span class="caption-text">The autocorrelation plot for the time-series observations in our preprocessed data.</span><a class="headerlink" href="#autocorrelation-plot" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<figure class="align-default" id="autocorrelation-with-diff-plot">
-<a class="reference internal image-reference" href="_images/autocorrelation_with_diff_plot.png"><img alt="_images/autocorrelation_with_diff_plot.png" src="_images/autocorrelation_with_diff_plot.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 6 </span><span class="caption-text">The autocorrelation plot for the time-series observations in our preprocessed data with 1-time differencing.</span><a class="headerlink" href="#autocorrelation-with-diff-plot" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arima_pred_values</span> <span class="o">=</span> <span class="n">arima_prediction</span><span class="p">(</span><span class="n">theft_from_vehicle_filtered</span><span class="p">)</span>
-<span class="n">arima_merged</span> <span class="o">=</span> <span class="n">merge_forecast_values</span><span class="p">(</span><span class="n">theft_from_vehicle_filtered</span><span class="p">,</span> <span class="n">arima_pred_values</span><span class="p">,</span> <span class="s2">&quot;ARIMA_Forecast&quot;</span><span class="p">)</span>
-<span class="n">arima_merged</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output text_html"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Observations</th>
-      <th>ARIMA_Forecast</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>2003-01-01</th>
-      <td>1438.0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2003-02-01</th>
-      <td>1102.0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2003-03-01</th>
-      <td>1251.0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2003-04-01</th>
-      <td>1528.0</td>
-      <td>NaN</td>
-    </tr>
-    <tr>
-      <th>2003-05-01</th>
-      <td>1873.0</td>
-      <td>NaN</td>
-    </tr>
-  </tbody>
-</table>
-</div></div></div>
-</div>
-<figure class="align-default" id="arima-prediction-plot">
-<a class="reference internal image-reference" href="_images/arima_prediction_plot.png"><img alt="_images/arima_prediction_plot.png" src="_images/arima_prediction_plot.png" style="width: 600px;" /></a>
-<figcaption>
-<p><span class="caption-number">Fig. 7 </span><span class="caption-text">The plot that compares the original value and the predictions made by arima model.</span><a class="headerlink" href="#arima-prediction-plot" title="Permalink to this image">#</a></p>
-</figcaption>
-</figure>
-<p>The forecast from the ARIMA model looks much better! We can see some clear overlaps between the forecasted value and the original value.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">merged_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">sma_merged</span><span class="p">,</span> <span class="n">es_merged</span><span class="p">[</span><span class="s2">&quot;ES_Forecast&quot;</span><span class="p">],</span> <span class="n">arima_merged</span><span class="p">[</span><span class="s2">&quot;ARIMA_Forecast&quot;</span><span class="p">]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">merged_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
+<div class="cell tag_remove-input docutils container">
 <div class="cell_output docutils container">
 <div class="output text_html"><div>
 <style scoped>
@@ -1198,9 +1024,199 @@ memory usage: 9.9+ KB
       <td>NaN</td>
       <td>NaN</td>
     </tr>
+    <tr>
+      <th>2003-06-01</th>
+      <td>1695.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2003-07-01</th>
+      <td>1445.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2003-08-01</th>
+      <td>1634.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2003-09-01</th>
+      <td>1470.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2003-10-01</th>
+      <td>1554.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2003-11-01</th>
+      <td>1332.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2003-12-01</th>
+      <td>1422.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2004-01-01</th>
+      <td>1319.0</td>
+      <td>1478.666667</td>
+      <td>1462.018909</td>
+      <td>1338.041199</td>
+    </tr>
+    <tr>
+      <th>2004-02-01</th>
+      <td>1276.0</td>
+      <td>1468.750000</td>
+      <td>1414.462564</td>
+      <td>1276.886645</td>
+    </tr>
+    <tr>
+      <th>2004-03-01</th>
+      <td>1523.0</td>
+      <td>1483.250000</td>
+      <td>1374.986147</td>
+      <td>1489.313366</td>
+    </tr>
   </tbody>
 </table>
 </div></div></div>
+</div>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Observations</th>
+      <th>SMA_Forecast</th>
+      <th>ES_Forecast</th>
+      <th>ARIMA_Forecast</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2023-07-01</th>
+      <td>684.0</td>
+      <td>594.083333</td>
+      <td>603.749242</td>
+      <td>665.145976</td>
+    </tr>
+    <tr>
+      <th>2023-08-01</th>
+      <td>749.0</td>
+      <td>603.250000</td>
+      <td>628.475010</td>
+      <td>717.025302</td>
+    </tr>
+    <tr>
+      <th>2023-09-01</th>
+      <td>651.0</td>
+      <td>613.916667</td>
+      <td>665.449143</td>
+      <td>701.821954</td>
+    </tr>
+    <tr>
+      <th>2023-10-01</th>
+      <td>656.0</td>
+      <td>611.500000</td>
+      <td>660.768368</td>
+      <td>652.819444</td>
+    </tr>
+    <tr>
+      <th>2023-11-01</th>
+      <td>NaN</td>
+      <td>611.583333</td>
+      <td>657.150934</td>
+      <td>652.854250</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<figure class="align-default" id="sma-prediction-plot">
+<a class="reference internal image-reference" href="_images/sma_prediction_plot.png"><img alt="_images/sma_prediction_plot.png" src="_images/sma_prediction_plot.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">The plot that compares the original value and the predictions made by simple moving average.</span><a class="headerlink" href="#sma-prediction-plot" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="es-prediction-plot">
+<a class="reference internal image-reference" href="_images/es_prediction_plot.png"><img alt="_images/es_prediction_plot.png" src="_images/es_prediction_plot.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">The plot that compares the original value and the predictions made by exponential smoothing.</span><a class="headerlink" href="#es-prediction-plot" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Based on a visual assessment of the Simple Moving Average (SMA) and Exponential Smoothing (ES) forecasts, it’s evident that both methods broadly capture the general trend of the actual values. However, neither forecast method appears to be highly accurate. The Exponential Smoothing approach demonstrates a slightly improved performance compared to SMA.</p>
+</section>
+<section id="arima-1-1-0">
+<h2>ARIMA(1,1,0)<a class="headerlink" href="#arima-1-1-0" title="Permalink to this heading">#</a></h2>
+<figure class="align-default" id="autocorrelation-plot">
+<a class="reference internal image-reference" href="_images/autocorrelation_plot.png"><img alt="_images/autocorrelation_plot.png" src="_images/autocorrelation_plot.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">The autocorrelation plot for the time-series observations in our preprocessed data.</span><a class="headerlink" href="#autocorrelation-plot" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="autocorrelation-with-diff-plot">
+<a class="reference internal image-reference" href="_images/autocorrelation_with_diff_plot.png"><img alt="_images/autocorrelation_with_diff_plot.png" src="_images/autocorrelation_with_diff_plot.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">The autocorrelation plot for the time-series observations in our preprocessed data with 1-time differencing.</span><a class="headerlink" href="#autocorrelation-with-diff-plot" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="arima-prediction-plot">
+<a class="reference internal image-reference" href="_images/arima_prediction_plot.png"><img alt="_images/arima_prediction_plot.png" src="_images/arima_prediction_plot.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">The plot that compares the original value and the predictions made by arima model.</span><a class="headerlink" href="#arima-prediction-plot" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The forecast from the ARIMA model looks much better! We can see some clear overlaps between the forecasted value and the original value.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">merged_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">sma_merged</span><span class="p">,</span> <span class="n">es_merged</span><span class="p">[</span><span class="s2">&quot;ES_Forecast&quot;</span><span class="p">],</span> <span class="n">arima_merged</span><span class="p">[</span><span class="s2">&quot;ARIMA_Forecast&quot;</span><span class="p">]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">merged_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">14</span><span class="p">],</span> <span class="n">line</span> <span class="mi">1</span>
+<span class="ne">----&gt; </span><span class="mi">1</span> <span class="n">merged_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">sma_merged</span><span class="p">,</span> <span class="n">es_merged</span><span class="p">[</span><span class="s2">&quot;ES_Forecast&quot;</span><span class="p">],</span> <span class="n">arima_merged</span><span class="p">[</span><span class="s2">&quot;ARIMA_Forecast&quot;</span><span class="p">]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">2</span> <span class="n">merged_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+
+<span class="ne">NameError</span>: name &#39;sma_merged&#39; is not defined
+</pre></div>
+</div>
+</div>
 </div>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
