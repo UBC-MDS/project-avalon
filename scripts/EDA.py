@@ -1,8 +1,11 @@
 import os
+import sys
 import click
 import pandas as pd
 import altair as alt
-from numeric_cols import create_numeric_cols_chart
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+from src.numeric_cols import create_numeric_cols_chart
 
 
 @click.command()
