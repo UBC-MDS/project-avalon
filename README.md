@@ -30,7 +30,7 @@ To run tests, execute the following command in the project root directory:
 python3 tests/run_all_tests.py
 ```
 
-## 🧑‍💻 How to run the notebook
+## 🧑‍💻 How to run the notebook server
 
 ### Docker/Docker compose (recommended)
 
@@ -61,9 +61,11 @@ python -m ipykernel install --user --name avalon --display-name "Python (avalon)
 2. Ensure all dependencies are installed.
 3. Open Jupyter Notebook or JupyterLab to run the [analysis notebook](milestone_1.ipynb)
 
-### Run the Scripts
+### 📔 Run the Scripts
 
-```
+Either in the docker environment/local conda environment, run the following command:
+
+```shell
 # Read raw data and perform EDA and output figures and tables
 python scripts/EDA.py \
    --input_filepath=data/raw/crimedata_csv_AllNeighbourhoods_AllYears.csv \
@@ -94,12 +96,11 @@ python scripts/get_metrics.py \
    --predictions_data=results/tables/all_predictions.csv \
    --results_folder=results/
 
-
 # build HTML report and copy build to docs folder
 jupyter-book build --builder html ./report && \
 rm -rf ./docs && \
 cp -rf ./report/_build/html ./docs && \
-jupyter-book clean report/ --all
+jupyter-book clean report/ --all 
 ```
 
 ## 🌟 Stakeholders

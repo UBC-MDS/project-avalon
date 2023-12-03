@@ -5,19 +5,24 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 
 @click.command()
-@click.argument('prediction_df')
-@click.argument('results_folder')
-
+@click.option('--prediction_df', type=str, help="Path of predictions csv")
+@click.option('--results_folder', type=str, help="Path to results folder")
 def main(prediction_df, results_folder):
-
     data = pd.read_csv(prediction_df, index_col=[0])
     data.index = pd.to_datetime(data.index)
-    print(data)
+
+    # Original Plot
+    plt.figure(figsize=(10, 6))
+    plt.plot(data.index, data['Observations'], label='Original Values', color='black')
+    plt.legend()
+    plt.title('Original Value')
+    plt.xlabel('Date')
+    plt.ylabel('Value')
+    plt.savefig(os.path.join(results_folder, "figures", "original_plot.png"))
 
     # ARIMA Plot
     plt.figure(figsize=(10, 6))
