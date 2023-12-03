@@ -1,0 +1,1280 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Crime Forecast in Vancouver &#8212; Crime Forecast in Vancouver</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'crime_forecasting';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Crime Forecast in Vancouver</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Crime Forecast in Vancouver
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/crime_forecasting.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Crime Forecast in Vancouver</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis">Analysis</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#results-discussions">Results &amp; Discussions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#missing-values">Missing values</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribution">Distribution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation">Correlation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing">Preprocessing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-moving-average-exponential-smoothing">Simple Moving Average &amp; Exponential Smoothing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arima-1-1-0">ARIMA(1,1,0)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="crime-forecast-in-vancouver">
+<h1>Crime Forecast in Vancouver<a class="headerlink" href="#crime-forecast-in-vancouver" title="Permalink to this heading">#</a></h1>
+<p>by Ben Chen, Mo Norouzi, Orix Au Yeung, Yiwei Zhang</p>
+<div class="cell tag_remove-input docutils container">
+</div>
+<div class="cell tag_remove-input docutils container">
+</div>
+<section id="summary">
+<h2>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h2>
+<p>In this notebook, our focus revolved around constructing a time-series forecasting model tailored to predict crime incidents in Vancouver, using “Month” as the temporal unit. Our primary emphasis centered on one of the most prevalent crime types in Vancouver over the past two decades: theft from vehicles. We evaluated the efficacy of three fundamental forecasting models—simple moving average, exponential smoothing, and ARIMA(1,1,0). Notably, the ARIMA(1,1,0) model emerged as the most effective, yielding a Mean Absolute Error (MAE) of 26.856890. Considering that the occurrences of “theft from a vehicle” crimes per month often range in the hundreds to thousands, achieving a forecast performance of this caliber is notably commendable. It’s worth highlighting that further refinement through comprehensive parameter tuning and integration of additional external variables holds the potential to cultivate even more accurate forecasting models.</p>
+</section>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h2>
+<p>Vehicle-related theft remains an ongoing concern nationwide in Canada, with statistics revealing a staggering incident of vehicle theft occurring every six minutes across the country <span id="id1">[<a class="reference internal" href="#id14" title="Hayatullah Amanat. Vehicle theft at a 'critical point' in canada, with car stolen every six minutes: report. 2023. URL: https://www.ctvnews.ca/canada/vehicle-theft-at-a-critical-point-in-canada-with-car-stolen-every-six-minutes-report-1.6443514 (visited on 2023-12-03).">Amanat, 2023</a>]</span>. This pervasive issue extends into Vancouver, presenting formidable challenges to both community safety and law enforcement efforts. Theft from vehicles, a prevalent form of this crime, significantly affects neighborhoods, inflicting distress and substantial financial losses on local residents. In response to this pressing concern, this project is dedicated to forecasting occurrences of theft from vehicles specifically within Vancouver.</p>
+<p>The primary objective of this project is to forecast instances of theft from vehicles in Vancouver by analyzing historical data. Leveraging a comprehensive dataset sourced from the Vancouver Police Department, encompassing diverse crime records in Vancouver over the past 20 years alongside incident locations, our goal is to construct a reliable predictive model. This model aims to anticipate the frequency and patterns specific to theft from vehicles. An accurate forecast holds the potential to empower the City of Vancouver to proactively allocate law enforcement resources, thereby curbing the occurrence of such crimes and enhancing community safety.</p>
+</section>
+<section id="methods">
+<h2>Methods<a class="headerlink" href="#methods" title="Permalink to this heading">#</a></h2>
+<section id="data">
+<h3>Data<a class="headerlink" href="#data" title="Permalink to this heading">#</a></h3>
+<p>The dataset utilized for this project originates from the Vancouver Police Department, available through the following link: <a class="reference external" href="https://geodash.vpd.ca/opendata/">https://geodash.vpd.ca/opendata/</a> <span id="id2">[<a class="reference internal" href="#id19" title="Vancouver Police Department. 2023.">Department, 2023</a>]</span>. It comprises 10 columns/variables and encompasses a substantial volume of data, totaling 879,861 rows. Each row corresponds to a distinct crime incident recorded within the dataset. The available information includes details about the crime type, the corresponding date of occurrence, and the specific location or neighborhood where the crime took place. These data points serve as crucial elements for our analysis and forecasting efforts.</p>
+</section>
+<section id="analysis">
+<h3>Analysis<a class="headerlink" href="#analysis" title="Permalink to this heading">#</a></h3>
+<p>We’re deploying three distinct time-series forecasting models—Simple Moving Average (SMA), Exponential Smoothing (ES), and Autoregressive Integrated Moving Average (ARIMA). These models rely solely on the timestamp and the targeted forecasted value. Despite having location data, which holds potential value, we’ve deferred its utilization in this phase of the project. Employing a rolling window approach, we’ll predict and assess model performance across a 20-year duration, setting the window size to 12 months. This configuration ensures that forecasts leverage the preceding year’s data for accuracy. Specifically for ARIMA, the hyperparameters (p, d, q) are set at (1, 1, 0). This specification signifies that the model factors in the most recent lagged observations of the differenced series to predict the subsequent value. Our analysis was executed using Python, leveraging various libraries: numpy <span id="id3">[<a class="reference internal" href="#id13" title="Charles R Harris, K Jarrod Millman, Stéfan J Van Der Walt, Ralf Gommers, Pauli Virtanen, David Cournapeau, Eric Wieser, Julian Taylor, Sebastian Berg, Nathaniel J Smith, and others. Array programming with numpy. Nature, 585(7825):357–362, 2020.">Harris <em>et al.</em>, 2020</a>]</span>, Pandas <span id="id4">[<a class="reference internal" href="#id12" title="Wes McKinney. Data Structures for Statistical Computing in Python. In Stéfan van der Walt and Jarrod Millman, editors, Proceedings of the 9th Python in Science Conference, 56 - 61. 2010. doi:10.25080/Majora-92bf1922-00a.">Wes McKinney, 2010</a>]</span>, Altair <span id="id5">[<a class="reference internal" href="#id18" title="Jacob VanderPlas, Brian E. Granger, Jeffrey Heer, Dominik Moritz, Kanit Wongsuphasawat, Arvind Satyanarayan, Eitan Lees, Ilia Timofeev, Ben Welsh, and Scott Sievert. Altair: interactive statistical visualizations for python. Journal of Open Source Software, 3(32):1057, 2018. URL: https://doi.org/10.21105/joss.01057, doi:10.21105/joss.01057.">VanderPlas <em>et al.</em>, 2018</a>]</span>, scikit-learn <span id="id6">[<a class="reference internal" href="#id16" title="Fabian Pedregosa, Gaël Varoquaux, Alexandre Gramfort, Vincent Michel, Bertrand Thirion, Olivier Grisel, Mathieu Blondel, Peter Prettenhofer, Ron Weiss, Vincent Dubourg, Jake Vanderplas, Alexandre Passos, David Cournapeau, Matthieu Brucher, Matthieu Perrot, and Édouard Duchesnay. Scikit-learn: machine learning in python. Journal of Machine Learning Research, 12(85):2825–2830, 2011. URL: http://jmlr.org/papers/v12/pedregosa11a.html.">Pedregosa <em>et al.</em>, 2011</a>]</span>, Matplotlib <span id="id7">[<a class="reference internal" href="#id15" title="John D. Hunter. Matplotlib: a 2d graphics environment. Computing in Science &amp; Engineering, 9(3):90-95, 2007. doi:10.1109/MCSE.2007.55.">Hunter, 2007</a>]</span>, Seaborn <span id="id8">[<a class="reference internal" href="#id20" title="Michael Waskom. seaborn: statistical data visualization. The Journal of Open Source Software, 6(60):3021, April 2021. doi:10.21105/joss.03021.">Waskom, 2021</a>]</span>, and Statsmodels <span id="id9">[<a class="reference internal" href="#id17" title="Skipper Seabold and Josef Perktold. Statsmodels: Econometric and Statistical Modeling with Python. In Stéfan van der Walt and Jarrod Millman, editors, Proceedings of the 9th Python in Science Conference, 92 - 96. 2010. doi:10.25080/Majora-92bf1922-011.">Skipper Seabold and Josef Perktold, 2010</a>]</span>.</p>
+</section>
+</section>
+<section id="results-discussions">
+<h2>Results &amp; Discussions<a class="headerlink" href="#results-discussions" title="Permalink to this heading">#</a></h2>
+<p>Upon conducting exploratory data analysis (EDA), conspicuous anomalies surface in the dataset. The HOUR and MINUTE columns exhibit an unusual frequency of zero values, along with a disproportionate occurrence of ‘30’ in the MINUTE column. Additionally, the DAY column prominently features an excessive number of records logged on the 31st of the month. These irregularities likely stem from convenience in data recording, casting uncertainty on the accuracy of these three columns. In light of these inconsistencies, the most prudent approach is to exclude the DAY, HOUR, and MINUTE columns from analysis and focus solely on forecasting crime occurrences based on the MONTH variable.</p>
+<figure class="align-default" id="data-head">
+<div class="output text_html"><style type="text/css">
+</style>
+<table id="T_bd103">
+  <thead>
+    <tr>
+      <th id="T_bd103_level0_col0" class="col_heading level0 col0" >TYPE</th>
+      <th id="T_bd103_level0_col1" class="col_heading level0 col1" >YEAR</th>
+      <th id="T_bd103_level0_col2" class="col_heading level0 col2" >MONTH</th>
+      <th id="T_bd103_level0_col3" class="col_heading level0 col3" >DAY</th>
+      <th id="T_bd103_level0_col4" class="col_heading level0 col4" >HOUR</th>
+      <th id="T_bd103_level0_col5" class="col_heading level0 col5" >MINUTE</th>
+      <th id="T_bd103_level0_col6" class="col_heading level0 col6" >HUNDRED_BLOCK</th>
+      <th id="T_bd103_level0_col7" class="col_heading level0 col7" >NEIGHBOURHOOD</th>
+      <th id="T_bd103_level0_col8" class="col_heading level0 col8" >X</th>
+      <th id="T_bd103_level0_col9" class="col_heading level0 col9" >Y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_bd103_row0_col0" class="data row0 col0" >Break and Enter Commercial</td>
+      <td id="T_bd103_row0_col1" class="data row0 col1" >2012</td>
+      <td id="T_bd103_row0_col2" class="data row0 col2" >12</td>
+      <td id="T_bd103_row0_col3" class="data row0 col3" >14</td>
+      <td id="T_bd103_row0_col4" class="data row0 col4" >8</td>
+      <td id="T_bd103_row0_col5" class="data row0 col5" >52</td>
+      <td id="T_bd103_row0_col6" class="data row0 col6" >nan</td>
+      <td id="T_bd103_row0_col7" class="data row0 col7" >Oakridge</td>
+      <td id="T_bd103_row0_col8" class="data row0 col8" >491285.000000</td>
+      <td id="T_bd103_row0_col9" class="data row0 col9" >5453433.000000</td>
+    </tr>
+    <tr>
+      <td id="T_bd103_row1_col0" class="data row1 col0" >Break and Enter Commercial</td>
+      <td id="T_bd103_row1_col1" class="data row1 col1" >2019</td>
+      <td id="T_bd103_row1_col2" class="data row1 col2" >3</td>
+      <td id="T_bd103_row1_col3" class="data row1 col3" >7</td>
+      <td id="T_bd103_row1_col4" class="data row1 col4" >2</td>
+      <td id="T_bd103_row1_col5" class="data row1 col5" >6</td>
+      <td id="T_bd103_row1_col6" class="data row1 col6" >10XX SITKA SQ</td>
+      <td id="T_bd103_row1_col7" class="data row1 col7" >Fairview</td>
+      <td id="T_bd103_row1_col8" class="data row1 col8" >490612.960000</td>
+      <td id="T_bd103_row1_col9" class="data row1 col9" >5457109.820000</td>
+    </tr>
+    <tr>
+      <td id="T_bd103_row2_col0" class="data row2 col0" >Break and Enter Commercial</td>
+      <td id="T_bd103_row2_col1" class="data row2 col1" >2019</td>
+      <td id="T_bd103_row2_col2" class="data row2 col2" >8</td>
+      <td id="T_bd103_row2_col3" class="data row2 col3" >27</td>
+      <td id="T_bd103_row2_col4" class="data row2 col4" >4</td>
+      <td id="T_bd103_row2_col5" class="data row2 col5" >12</td>
+      <td id="T_bd103_row2_col6" class="data row2 col6" >10XX ALBERNI ST</td>
+      <td id="T_bd103_row2_col7" class="data row2 col7" >West End</td>
+      <td id="T_bd103_row2_col8" class="data row2 col8" >491007.780000</td>
+      <td id="T_bd103_row2_col9" class="data row2 col9" >5459174.340000</td>
+    </tr>
+    <tr>
+      <td id="T_bd103_row3_col0" class="data row3 col0" >Break and Enter Commercial</td>
+      <td id="T_bd103_row3_col1" class="data row3 col1" >2021</td>
+      <td id="T_bd103_row3_col2" class="data row3 col2" >4</td>
+      <td id="T_bd103_row3_col3" class="data row3 col3" >26</td>
+      <td id="T_bd103_row3_col4" class="data row3 col4" >4</td>
+      <td id="T_bd103_row3_col5" class="data row3 col5" >44</td>
+      <td id="T_bd103_row3_col6" class="data row3 col6" >10XX ALBERNI ST</td>
+      <td id="T_bd103_row3_col7" class="data row3 col7" >West End</td>
+      <td id="T_bd103_row3_col8" class="data row3 col8" >491007.780000</td>
+      <td id="T_bd103_row3_col9" class="data row3 col9" >5459174.340000</td>
+    </tr>
+    <tr>
+      <td id="T_bd103_row4_col0" class="data row4 col0" >Break and Enter Commercial</td>
+      <td id="T_bd103_row4_col1" class="data row4 col1" >2014</td>
+      <td id="T_bd103_row4_col2" class="data row4 col2" >8</td>
+      <td id="T_bd103_row4_col3" class="data row4 col3" >8</td>
+      <td id="T_bd103_row4_col4" class="data row4 col4" >5</td>
+      <td id="T_bd103_row4_col5" class="data row4 col5" >13</td>
+      <td id="T_bd103_row4_col6" class="data row4 col6" >10XX ALBERNI ST</td>
+      <td id="T_bd103_row4_col7" class="data row4 col7" >West End</td>
+      <td id="T_bd103_row4_col8" class="data row4 col8" >491015.940000</td>
+      <td id="T_bd103_row4_col9" class="data row4 col9" >5459166.140000</td>
+    </tr>
+  </tbody>
+</table>
+</div><figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Data Preview</span><a class="headerlink" href="#data-head" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 879861 entries, 0 to 879860
+Data columns (total 10 columns):
+ #   Column         Non-Null Count   Dtype  
+---  ------         --------------   -----  
+ 0   TYPE           879861 non-null  object 
+ 1   YEAR           879861 non-null  int64  
+ 2   MONTH          879861 non-null  int64  
+ 3   DAY            879861 non-null  int64  
+ 4   HOUR           879861 non-null  int64  
+ 5   MINUTE         879861 non-null  int64  
+ 6   HUNDRED_BLOCK  879849 non-null  object 
+ 7   NEIGHBOURHOOD  879717 non-null  object 
+ 8   X              879785 non-null  float64
+ 9   Y              879785 non-null  float64
+dtypes: float64(2), int64(5), object(3)
+memory usage: 67.1+ MB
+</pre></div>
+</div>
+</div>
+</div>
+<figure class="align-default" id="data-description">
+<div class="output text_html"><style type="text/css">
+</style>
+<table id="T_132de">
+  <thead>
+    <tr>
+      <th id="T_132de_level0_col0" class="col_heading level0 col0" >variable</th>
+      <th id="T_132de_level0_col1" class="col_heading level0 col1" >count</th>
+      <th id="T_132de_level0_col2" class="col_heading level0 col2" >mean</th>
+      <th id="T_132de_level0_col3" class="col_heading level0 col3" >std</th>
+      <th id="T_132de_level0_col4" class="col_heading level0 col4" >min</th>
+      <th id="T_132de_level0_col5" class="col_heading level0 col5" >25%</th>
+      <th id="T_132de_level0_col6" class="col_heading level0 col6" >50%</th>
+      <th id="T_132de_level0_col7" class="col_heading level0 col7" >75%</th>
+      <th id="T_132de_level0_col8" class="col_heading level0 col8" >max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_132de_row0_col0" class="data row0 col0" >YEAR</td>
+      <td id="T_132de_row0_col1" class="data row0 col1" >879861.000000</td>
+      <td id="T_132de_row0_col2" class="data row0 col2" >2012.270000</td>
+      <td id="T_132de_row0_col3" class="data row0 col3" >6.180000</td>
+      <td id="T_132de_row0_col4" class="data row0 col4" >2003.000000</td>
+      <td id="T_132de_row0_col5" class="data row0 col5" >2006.000000</td>
+      <td id="T_132de_row0_col6" class="data row0 col6" >2012.000000</td>
+      <td id="T_132de_row0_col7" class="data row0 col7" >2018.000000</td>
+      <td id="T_132de_row0_col8" class="data row0 col8" >2023.000000</td>
+    </tr>
+    <tr>
+      <td id="T_132de_row1_col0" class="data row1 col0" >MONTH</td>
+      <td id="T_132de_row1_col1" class="data row1 col1" >879861.000000</td>
+      <td id="T_132de_row1_col2" class="data row1 col2" >6.520000</td>
+      <td id="T_132de_row1_col3" class="data row1 col3" >3.390000</td>
+      <td id="T_132de_row1_col4" class="data row1 col4" >1.000000</td>
+      <td id="T_132de_row1_col5" class="data row1 col5" >4.000000</td>
+      <td id="T_132de_row1_col6" class="data row1 col6" >7.000000</td>
+      <td id="T_132de_row1_col7" class="data row1 col7" >9.000000</td>
+      <td id="T_132de_row1_col8" class="data row1 col8" >12.000000</td>
+    </tr>
+    <tr>
+      <td id="T_132de_row2_col0" class="data row2 col0" >DAY</td>
+      <td id="T_132de_row2_col1" class="data row2 col1" >879861.000000</td>
+      <td id="T_132de_row2_col2" class="data row2 col2" >15.380000</td>
+      <td id="T_132de_row2_col3" class="data row2 col3" >8.760000</td>
+      <td id="T_132de_row2_col4" class="data row2 col4" >1.000000</td>
+      <td id="T_132de_row2_col5" class="data row2 col5" >8.000000</td>
+      <td id="T_132de_row2_col6" class="data row2 col6" >15.000000</td>
+      <td id="T_132de_row2_col7" class="data row2 col7" >23.000000</td>
+      <td id="T_132de_row2_col8" class="data row2 col8" >31.000000</td>
+    </tr>
+    <tr>
+      <td id="T_132de_row3_col0" class="data row3 col0" >HOUR</td>
+      <td id="T_132de_row3_col1" class="data row3 col1" >879861.000000</td>
+      <td id="T_132de_row3_col2" class="data row3 col2" >12.310000</td>
+      <td id="T_132de_row3_col3" class="data row3 col3" >7.460000</td>
+      <td id="T_132de_row3_col4" class="data row3 col4" >0.000000</td>
+      <td id="T_132de_row3_col5" class="data row3 col5" >7.000000</td>
+      <td id="T_132de_row3_col6" class="data row3 col6" >14.000000</td>
+      <td id="T_132de_row3_col7" class="data row3 col7" >18.000000</td>
+      <td id="T_132de_row3_col8" class="data row3 col8" >23.000000</td>
+    </tr>
+    <tr>
+      <td id="T_132de_row4_col0" class="data row4 col0" >MINUTE</td>
+      <td id="T_132de_row4_col1" class="data row4 col1" >879861.000000</td>
+      <td id="T_132de_row4_col2" class="data row4 col2" >15.860000</td>
+      <td id="T_132de_row4_col3" class="data row4 col3" >18.360000</td>
+      <td id="T_132de_row4_col4" class="data row4 col4" >0.000000</td>
+      <td id="T_132de_row4_col5" class="data row4 col5" >0.000000</td>
+      <td id="T_132de_row4_col6" class="data row4 col6" >5.000000</td>
+      <td id="T_132de_row4_col7" class="data row4 col7" >30.000000</td>
+      <td id="T_132de_row4_col8" class="data row4 col8" >59.000000</td>
+    </tr>
+    <tr>
+      <td id="T_132de_row5_col0" class="data row5 col0" >X</td>
+      <td id="T_132de_row5_col1" class="data row5 col1" >879785.000000</td>
+      <td id="T_132de_row5_col2" class="data row5 col2" >449007.420000</td>
+      <td id="T_132de_row5_col3" class="data row5 col3" >139304.300000</td>
+      <td id="T_132de_row5_col4" class="data row5 col4" >0.000000</td>
+      <td id="T_132de_row5_col5" class="data row5 col5" >490187.870000</td>
+      <td id="T_132de_row5_col6" class="data row5 col6" >491569.910000</td>
+      <td id="T_132de_row5_col7" class="data row5 col7" >493380.110000</td>
+      <td id="T_132de_row5_col8" class="data row5 col8" >511303.000000</td>
+    </tr>
+    <tr>
+      <td id="T_132de_row6_col0" class="data row6 col0" >Y</td>
+      <td id="T_132de_row6_col1" class="data row6 col1" >879785.000000</td>
+      <td id="T_132de_row6_col2" class="data row6 col2" >4977853.250000</td>
+      <td id="T_132de_row6_col3" class="data row6 col3" >1544127.070000</td>
+      <td id="T_132de_row6_col4" class="data row6 col4" >0.000000</td>
+      <td id="T_132de_row6_col5" class="data row6 col5" >5454211.410000</td>
+      <td id="T_132de_row6_col6" class="data row6 col6" >5457169.690000</td>
+      <td id="T_132de_row6_col7" class="data row6 col7" >5458718.060000</td>
+      <td id="T_132de_row6_col8" class="data row6 col8" >5512579.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div><figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">Data Summary Statistics</span><a class="headerlink" href="#data-description" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="missing-values">
+<h3>Missing values<a class="headerlink" href="#missing-values" title="Permalink to this heading">#</a></h3>
+<figure class="align-default" id="id10">
+<div class="output text_html"><style type="text/css">
+</style>
+<table id="T_fff46">
+  <thead>
+    <tr>
+      <th id="T_fff46_level0_col0" class="col_heading level0 col0" >Zero Values</th>
+      <th id="T_fff46_level0_col1" class="col_heading level0 col1" >Missing Values</th>
+      <th id="T_fff46_level0_col2" class="col_heading level0 col2" >% of Total Values</th>
+      <th id="T_fff46_level0_col3" class="col_heading level0 col3" >Total Zero Missing Values</th>
+      <th id="T_fff46_level0_col4" class="col_heading level0 col4" >% Total Zero Missing Values</th>
+      <th id="T_fff46_level0_col5" class="col_heading level0 col5" >Data Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_fff46_row0_col0" class="data row0 col0" >0</td>
+      <td id="T_fff46_row0_col1" class="data row0 col1" >144</td>
+      <td id="T_fff46_row0_col2" class="data row0 col2" >0.000000</td>
+      <td id="T_fff46_row0_col3" class="data row0 col3" >144</td>
+      <td id="T_fff46_row0_col4" class="data row0 col4" >0.000000</td>
+      <td id="T_fff46_row0_col5" class="data row0 col5" >object</td>
+    </tr>
+    <tr>
+      <td id="T_fff46_row1_col0" class="data row1 col0" >77225</td>
+      <td id="T_fff46_row1_col1" class="data row1 col1" >76</td>
+      <td id="T_fff46_row1_col2" class="data row1 col2" >0.000000</td>
+      <td id="T_fff46_row1_col3" class="data row1 col3" >77301</td>
+      <td id="T_fff46_row1_col4" class="data row1 col4" >8.800000</td>
+      <td id="T_fff46_row1_col5" class="data row1 col5" >float64</td>
+    </tr>
+    <tr>
+      <td id="T_fff46_row2_col0" class="data row2 col0" >77225</td>
+      <td id="T_fff46_row2_col1" class="data row2 col1" >76</td>
+      <td id="T_fff46_row2_col2" class="data row2 col2" >0.000000</td>
+      <td id="T_fff46_row2_col3" class="data row2 col3" >77301</td>
+      <td id="T_fff46_row2_col4" class="data row2 col4" >8.800000</td>
+      <td id="T_fff46_row2_col5" class="data row2 col5" >float64</td>
+    </tr>
+    <tr>
+      <td id="T_fff46_row3_col0" class="data row3 col0" >0</td>
+      <td id="T_fff46_row3_col1" class="data row3 col1" >12</td>
+      <td id="T_fff46_row3_col2" class="data row3 col2" >0.000000</td>
+      <td id="T_fff46_row3_col3" class="data row3 col3" >12</td>
+      <td id="T_fff46_row3_col4" class="data row3 col4" >0.000000</td>
+      <td id="T_fff46_row3_col5" class="data row3 col5" >object</td>
+    </tr>
+  </tbody>
+</table>
+</div><figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">Missing value in Data</span><a class="headerlink" href="#id10" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="distribution">
+<h3>Distribution<a class="headerlink" href="#distribution" title="Permalink to this heading">#</a></h3>
+<figure class="align-default" id="numeric-dist">
+<a class="reference internal image-reference" href="_images/numeric_dist.png"><img alt="_images/numeric_dist.png" src="_images/numeric_dist.png" style="width: 800px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">The distribution of numerical variables.</span><a class="headerlink" href="#numeric-dist" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="categ-dist">
+<a class="reference internal image-reference" href="_images/categ_dist.png"><img alt="_images/categ_dist.png" src="_images/categ_dist.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">The distribution of categorical variables.</span><a class="headerlink" href="#categ-dist" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="correlation">
+<h3>Correlation<a class="headerlink" href="#correlation" title="Permalink to this heading">#</a></h3>
+<figure class="align-default" id="data-correlation">
+<div class="output text_html"><style type="text/css">
+</style>
+<table id="T_5ca45">
+  <thead>
+    <tr>
+      <th id="T_5ca45_level0_col0" class="col_heading level0 col0" >Unnamed: 0</th>
+      <th id="T_5ca45_level0_col1" class="col_heading level0 col1" >YEAR</th>
+      <th id="T_5ca45_level0_col2" class="col_heading level0 col2" >MONTH</th>
+      <th id="T_5ca45_level0_col3" class="col_heading level0 col3" >DAY</th>
+      <th id="T_5ca45_level0_col4" class="col_heading level0 col4" >HOUR</th>
+      <th id="T_5ca45_level0_col5" class="col_heading level0 col5" >MINUTE</th>
+      <th id="T_5ca45_level0_col6" class="col_heading level0 col6" >X</th>
+      <th id="T_5ca45_level0_col7" class="col_heading level0 col7" >Y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_5ca45_row0_col0" class="data row0 col0" >YEAR</td>
+      <td id="T_5ca45_row0_col1" class="data row0 col1" >1.000000</td>
+      <td id="T_5ca45_row0_col2" class="data row0 col2" >0.010000</td>
+      <td id="T_5ca45_row0_col3" class="data row0 col3" >0.010000</td>
+      <td id="T_5ca45_row0_col4" class="data row0 col4" >0.040000</td>
+      <td id="T_5ca45_row0_col5" class="data row0 col5" >0.060000</td>
+      <td id="T_5ca45_row0_col6" class="data row0 col6" >0.020000</td>
+      <td id="T_5ca45_row0_col7" class="data row0 col7" >0.020000</td>
+    </tr>
+    <tr>
+      <td id="T_5ca45_row1_col0" class="data row1 col0" >MONTH</td>
+      <td id="T_5ca45_row1_col1" class="data row1 col1" >0.010000</td>
+      <td id="T_5ca45_row1_col2" class="data row1 col2" >1.000000</td>
+      <td id="T_5ca45_row1_col3" class="data row1 col3" >0.010000</td>
+      <td id="T_5ca45_row1_col4" class="data row1 col4" >0.000000</td>
+      <td id="T_5ca45_row1_col5" class="data row1 col5" >0.000000</td>
+      <td id="T_5ca45_row1_col6" class="data row1 col6" >0.000000</td>
+      <td id="T_5ca45_row1_col7" class="data row1 col7" >0.000000</td>
+    </tr>
+    <tr>
+      <td id="T_5ca45_row2_col0" class="data row2 col0" >DAY</td>
+      <td id="T_5ca45_row2_col1" class="data row2 col1" >0.010000</td>
+      <td id="T_5ca45_row2_col2" class="data row2 col2" >0.010000</td>
+      <td id="T_5ca45_row2_col3" class="data row2 col3" >1.000000</td>
+      <td id="T_5ca45_row2_col4" class="data row2 col4" >0.000000</td>
+      <td id="T_5ca45_row2_col5" class="data row2 col5" >0.000000</td>
+      <td id="T_5ca45_row2_col6" class="data row2 col6" >0.000000</td>
+      <td id="T_5ca45_row2_col7" class="data row2 col7" >0.000000</td>
+    </tr>
+    <tr>
+      <td id="T_5ca45_row3_col0" class="data row3 col0" >HOUR</td>
+      <td id="T_5ca45_row3_col1" class="data row3 col1" >0.040000</td>
+      <td id="T_5ca45_row3_col2" class="data row3 col2" >0.000000</td>
+      <td id="T_5ca45_row3_col3" class="data row3 col3" >0.000000</td>
+      <td id="T_5ca45_row3_col4" class="data row3 col4" >1.000000</td>
+      <td id="T_5ca45_row3_col5" class="data row3 col5" >0.110000</td>
+      <td id="T_5ca45_row3_col6" class="data row3 col6" >0.510000</td>
+      <td id="T_5ca45_row3_col7" class="data row3 col7" >0.510000</td>
+    </tr>
+    <tr>
+      <td id="T_5ca45_row4_col0" class="data row4 col0" >MINUTE</td>
+      <td id="T_5ca45_row4_col1" class="data row4 col1" >0.060000</td>
+      <td id="T_5ca45_row4_col2" class="data row4 col2" >0.000000</td>
+      <td id="T_5ca45_row4_col3" class="data row4 col3" >0.000000</td>
+      <td id="T_5ca45_row4_col4" class="data row4 col4" >0.110000</td>
+      <td id="T_5ca45_row4_col5" class="data row4 col5" >1.000000</td>
+      <td id="T_5ca45_row4_col6" class="data row4 col6" >0.270000</td>
+      <td id="T_5ca45_row4_col7" class="data row4 col7" >0.270000</td>
+    </tr>
+    <tr>
+      <td id="T_5ca45_row5_col0" class="data row5 col0" >X</td>
+      <td id="T_5ca45_row5_col1" class="data row5 col1" >0.020000</td>
+      <td id="T_5ca45_row5_col2" class="data row5 col2" >0.000000</td>
+      <td id="T_5ca45_row5_col3" class="data row5 col3" >0.000000</td>
+      <td id="T_5ca45_row5_col4" class="data row5 col4" >0.510000</td>
+      <td id="T_5ca45_row5_col5" class="data row5 col5" >0.270000</td>
+      <td id="T_5ca45_row5_col6" class="data row5 col6" >1.000000</td>
+      <td id="T_5ca45_row5_col7" class="data row5 col7" >1.000000</td>
+    </tr>
+    <tr>
+      <td id="T_5ca45_row6_col0" class="data row6 col0" >Y</td>
+      <td id="T_5ca45_row6_col1" class="data row6 col1" >0.020000</td>
+      <td id="T_5ca45_row6_col2" class="data row6 col2" >0.000000</td>
+      <td id="T_5ca45_row6_col3" class="data row6 col3" >0.000000</td>
+      <td id="T_5ca45_row6_col4" class="data row6 col4" >0.510000</td>
+      <td id="T_5ca45_row6_col5" class="data row6 col5" >0.270000</td>
+      <td id="T_5ca45_row6_col6" class="data row6 col6" >1.000000</td>
+      <td id="T_5ca45_row6_col7" class="data row6 col7" >1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div><figcaption>
+<p><span class="caption-number">Fig. 6 </span><span class="caption-text">Correlation of Numerical Variables</span><a class="headerlink" href="#data-correlation" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="preprocessing">
+<h3>Preprocessing<a class="headerlink" href="#preprocessing" title="Permalink to this heading">#</a></h3>
+<p>We’ll start the data preprocessing phase by grouping the rows according to the TYPE, YEAR, and MONTH columns to aggregate the counts of specific crimes occurring in each month. Additionally, we’ll adjust the datetime variable format for consistency. However, as the latest month (2023-11) is incomplete, we’ll exclude this month from the dataset. Finally, we’ll filter the data so that we focus only on <code class="docutils literal notranslate"><span class="pre">Theft</span> <span class="pre">from</span> <span class="pre">Vehicle</span></code> crimes, the most common crime in Vancouver in the past 20 years. This initial processing sets the groundwork for our subsequent time-series forecasting models.</p>
+<figure class="align-default" id="preprocessed-head">
+<div class="output text_html"><style type="text/css">
+</style>
+<table id="T_1409c">
+  <thead>
+    <tr>
+      <th id="T_1409c_level0_col0" class="col_heading level0 col0" >TYPE</th>
+      <th id="T_1409c_level0_col1" class="col_heading level0 col1" >YEAR</th>
+      <th id="T_1409c_level0_col2" class="col_heading level0 col2" >MONTH</th>
+      <th id="T_1409c_level0_col3" class="col_heading level0 col3" >Observations</th>
+      <th id="T_1409c_level0_col4" class="col_heading level0 col4" >YEAR-MONTH</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_1409c_row0_col0" class="data row0 col0" >Break and Enter Commercial</td>
+      <td id="T_1409c_row0_col1" class="data row0 col1" >2003</td>
+      <td id="T_1409c_row0_col2" class="data row0 col2" >1</td>
+      <td id="T_1409c_row0_col3" class="data row0 col3" >303</td>
+      <td id="T_1409c_row0_col4" class="data row0 col4" >2003-01-01</td>
+    </tr>
+    <tr>
+      <td id="T_1409c_row1_col0" class="data row1 col0" >Break and Enter Commercial</td>
+      <td id="T_1409c_row1_col1" class="data row1 col1" >2003</td>
+      <td id="T_1409c_row1_col2" class="data row1 col2" >2</td>
+      <td id="T_1409c_row1_col3" class="data row1 col3" >254</td>
+      <td id="T_1409c_row1_col4" class="data row1 col4" >2003-02-01</td>
+    </tr>
+    <tr>
+      <td id="T_1409c_row2_col0" class="data row2 col0" >Break and Enter Commercial</td>
+      <td id="T_1409c_row2_col1" class="data row2 col1" >2003</td>
+      <td id="T_1409c_row2_col2" class="data row2 col2" >3</td>
+      <td id="T_1409c_row2_col3" class="data row2 col3" >292</td>
+      <td id="T_1409c_row2_col4" class="data row2 col4" >2003-03-01</td>
+    </tr>
+    <tr>
+      <td id="T_1409c_row3_col0" class="data row3 col0" >Break and Enter Commercial</td>
+      <td id="T_1409c_row3_col1" class="data row3 col1" >2003</td>
+      <td id="T_1409c_row3_col2" class="data row3 col2" >4</td>
+      <td id="T_1409c_row3_col3" class="data row3 col3" >266</td>
+      <td id="T_1409c_row3_col4" class="data row3 col4" >2003-04-01</td>
+    </tr>
+    <tr>
+      <td id="T_1409c_row4_col0" class="data row4 col0" >Break and Enter Commercial</td>
+      <td id="T_1409c_row4_col1" class="data row4 col1" >2003</td>
+      <td id="T_1409c_row4_col2" class="data row4 col2" >5</td>
+      <td id="T_1409c_row4_col3" class="data row4 col3" >290</td>
+      <td id="T_1409c_row4_col4" class="data row4 col4" >2003-05-01</td>
+    </tr>
+  </tbody>
+</table>
+</div><figcaption>
+<p><span class="caption-number">Fig. 7 </span><span class="caption-text">Preview of Preprocessed Data.</span><a class="headerlink" href="#preprocessed-head" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="theft-from-vehicle-head">
+<div class="output text_html"><style type="text/css">
+</style>
+<table id="T_efe30">
+  <thead>
+    <tr>
+      <th id="T_efe30_level0_col0" class="col_heading level0 col0" >TYPE</th>
+      <th id="T_efe30_level0_col1" class="col_heading level0 col1" >YEAR</th>
+      <th id="T_efe30_level0_col2" class="col_heading level0 col2" >MONTH</th>
+      <th id="T_efe30_level0_col3" class="col_heading level0 col3" >Observations</th>
+      <th id="T_efe30_level0_col4" class="col_heading level0 col4" >YEAR-MONTH</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_efe30_row0_col0" class="data row0 col0" >Theft from Vehicle</td>
+      <td id="T_efe30_row0_col1" class="data row0 col1" >2003</td>
+      <td id="T_efe30_row0_col2" class="data row0 col2" >1</td>
+      <td id="T_efe30_row0_col3" class="data row0 col3" >1438</td>
+      <td id="T_efe30_row0_col4" class="data row0 col4" >2003-01-01</td>
+    </tr>
+    <tr>
+      <td id="T_efe30_row1_col0" class="data row1 col0" >Theft from Vehicle</td>
+      <td id="T_efe30_row1_col1" class="data row1 col1" >2003</td>
+      <td id="T_efe30_row1_col2" class="data row1 col2" >2</td>
+      <td id="T_efe30_row1_col3" class="data row1 col3" >1102</td>
+      <td id="T_efe30_row1_col4" class="data row1 col4" >2003-02-01</td>
+    </tr>
+    <tr>
+      <td id="T_efe30_row2_col0" class="data row2 col0" >Theft from Vehicle</td>
+      <td id="T_efe30_row2_col1" class="data row2 col1" >2003</td>
+      <td id="T_efe30_row2_col2" class="data row2 col2" >3</td>
+      <td id="T_efe30_row2_col3" class="data row2 col3" >1251</td>
+      <td id="T_efe30_row2_col4" class="data row2 col4" >2003-03-01</td>
+    </tr>
+    <tr>
+      <td id="T_efe30_row3_col0" class="data row3 col0" >Theft from Vehicle</td>
+      <td id="T_efe30_row3_col1" class="data row3 col1" >2003</td>
+      <td id="T_efe30_row3_col2" class="data row3 col2" >4</td>
+      <td id="T_efe30_row3_col3" class="data row3 col3" >1528</td>
+      <td id="T_efe30_row3_col4" class="data row3 col4" >2003-04-01</td>
+    </tr>
+    <tr>
+      <td id="T_efe30_row4_col0" class="data row4 col0" >Theft from Vehicle</td>
+      <td id="T_efe30_row4_col1" class="data row4 col1" >2003</td>
+      <td id="T_efe30_row4_col2" class="data row4 col2" >5</td>
+      <td id="T_efe30_row4_col3" class="data row4 col3" >1873</td>
+      <td id="T_efe30_row4_col4" class="data row4 col4" >2003-05-01</td>
+    </tr>
+  </tbody>
+</table>
+</div><figcaption>
+<p><span class="caption-number">Fig. 8 </span><span class="caption-text">Preview of Theft From Vehicle Data.</span><a class="headerlink" href="#theft-from-vehicle-head" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="cell tag_remove-input docutils container">
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 5 entries, 0 to 4
+Data columns (total 5 columns):
+ #   Column        Non-Null Count  Dtype 
+---  ------        --------------  ----- 
+ 0   TYPE          5 non-null      object
+ 1   YEAR          5 non-null      int64 
+ 2   MONTH         5 non-null      int64 
+ 3   Observations  5 non-null      int64 
+ 4   YEAR-MONTH    5 non-null      object
+dtypes: int64(3), object(2)
+memory usage: 332.0+ bytes
+</pre></div>
+</div>
+</div>
+</div>
+<figure class="align-default" id="original-plot">
+<a class="reference internal image-reference" href="_images/original_plot.png"><img alt="_images/original_plot.png" src="_images/original_plot.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 9 </span><span class="caption-text">The time-series trend of “Theft from Vehicle” in Vancouver.</span><a class="headerlink" href="#original-plot" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+<section id="simple-moving-average-exponential-smoothing">
+<h3>Simple Moving Average &amp; Exponential Smoothing<a class="headerlink" href="#simple-moving-average-exponential-smoothing" title="Permalink to this heading">#</a></h3>
+<figure class="align-default" id="all-predictions-head">
+<div class="output text_html"><style type="text/css">
+</style>
+<table id="T_ee4b9">
+  <thead>
+    <tr>
+      <th id="T_ee4b9_level0_col0" class="col_heading level0 col0" >Unnamed: 0</th>
+      <th id="T_ee4b9_level0_col1" class="col_heading level0 col1" >Observations</th>
+      <th id="T_ee4b9_level0_col2" class="col_heading level0 col2" >SMA_Forecast</th>
+      <th id="T_ee4b9_level0_col3" class="col_heading level0 col3" >ES_Forecast</th>
+      <th id="T_ee4b9_level0_col4" class="col_heading level0 col4" >ARIMA_Forecast</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_ee4b9_row0_col0" class="data row0 col0" >2003-01-01</td>
+      <td id="T_ee4b9_row0_col1" class="data row0 col1" >1438.000000</td>
+      <td id="T_ee4b9_row0_col2" class="data row0 col2" >nan</td>
+      <td id="T_ee4b9_row0_col3" class="data row0 col3" >nan</td>
+      <td id="T_ee4b9_row0_col4" class="data row0 col4" >nan</td>
+    </tr>
+    <tr>
+      <td id="T_ee4b9_row1_col0" class="data row1 col0" >2003-02-01</td>
+      <td id="T_ee4b9_row1_col1" class="data row1 col1" >1102.000000</td>
+      <td id="T_ee4b9_row1_col2" class="data row1 col2" >nan</td>
+      <td id="T_ee4b9_row1_col3" class="data row1 col3" >nan</td>
+      <td id="T_ee4b9_row1_col4" class="data row1 col4" >nan</td>
+    </tr>
+    <tr>
+      <td id="T_ee4b9_row2_col0" class="data row2 col0" >2003-03-01</td>
+      <td id="T_ee4b9_row2_col1" class="data row2 col1" >1251.000000</td>
+      <td id="T_ee4b9_row2_col2" class="data row2 col2" >nan</td>
+      <td id="T_ee4b9_row2_col3" class="data row2 col3" >nan</td>
+      <td id="T_ee4b9_row2_col4" class="data row2 col4" >nan</td>
+    </tr>
+    <tr>
+      <td id="T_ee4b9_row3_col0" class="data row3 col0" >2003-04-01</td>
+      <td id="T_ee4b9_row3_col1" class="data row3 col1" >1528.000000</td>
+      <td id="T_ee4b9_row3_col2" class="data row3 col2" >nan</td>
+      <td id="T_ee4b9_row3_col3" class="data row3 col3" >nan</td>
+      <td id="T_ee4b9_row3_col4" class="data row3 col4" >nan</td>
+    </tr>
+    <tr>
+      <td id="T_ee4b9_row4_col0" class="data row4 col0" >2003-05-01</td>
+      <td id="T_ee4b9_row4_col1" class="data row4 col1" >1873.000000</td>
+      <td id="T_ee4b9_row4_col2" class="data row4 col2" >nan</td>
+      <td id="T_ee4b9_row4_col3" class="data row4 col3" >nan</td>
+      <td id="T_ee4b9_row4_col4" class="data row4 col4" >nan</td>
+    </tr>
+    <tr>
+      <td id="T_ee4b9_row5_col0" class="data row5 col0" >2003-06-01</td>
+      <td id="T_ee4b9_row5_col1" class="data row5 col1" >1695.000000</td>
+      <td id="T_ee4b9_row5_col2" class="data row5 col2" >nan</td>
+      <td id="T_ee4b9_row5_col3" class="data row5 col3" >nan</td>
+      <td id="T_ee4b9_row5_col4" class="data row5 col4" >nan</td>
+    </tr>
+    <tr>
+      <td id="T_ee4b9_row6_col0" class="data row6 col0" >2003-07-01</td>
+      <td id="T_ee4b9_row6_col1" class="data row6 col1" >1445.000000</td>
+      <td id="T_ee4b9_row6_col2" class="data row6 col2" >nan</td>
+      <td id="T_ee4b9_row6_col3" class="data row6 col3" >nan</td>
+      <td id="T_ee4b9_row6_col4" class="data row6 col4" >nan</td>
+    </tr>
+    <tr>
+      <td id="T_ee4b9_row7_col0" class="data row7 col0" >2003-08-01</td>
+      <td id="T_ee4b9_row7_col1" class="data row7 col1" >1634.000000</td>
+      <td id="T_ee4b9_row7_col2" class="data row7 col2" >nan</td>
+      <td id="T_ee4b9_row7_col3" class="data row7 col3" >nan</td>
+      <td id="T_ee4b9_row7_col4" class="data row7 col4" >nan</td>
+    </tr>
+    <tr>
+      <td id="T_ee4b9_row8_col0" class="data row8 col0" >2003-09-01</td>
+      <td id="T_ee4b9_row8_col1" class="data row8 col1" >1470.000000</td>
+      <td id="T_ee4b9_row8_col2" class="data row8 col2" >nan</td>
+      <td id="T_ee4b9_row8_col3" class="data row8 col3" >nan</td>
+      <td id="T_ee4b9_row8_col4" class="data row8 col4" >nan</td>
+    </tr>
+    <tr>
+      <td id="T_ee4b9_row9_col0" class="data row9 col0" >2003-10-01</td>
+      <td id="T_ee4b9_row9_col1" class="data row9 col1" >1554.000000</td>
+      <td id="T_ee4b9_row9_col2" class="data row9 col2" >nan</td>
+      <td id="T_ee4b9_row9_col3" class="data row9 col3" >nan</td>
+      <td id="T_ee4b9_row9_col4" class="data row9 col4" >nan</td>
+    </tr>
+    <tr>
+      <td id="T_ee4b9_row10_col0" class="data row10 col0" >2003-11-01</td>
+      <td id="T_ee4b9_row10_col1" class="data row10 col1" >1332.000000</td>
+      <td id="T_ee4b9_row10_col2" class="data row10 col2" >nan</td>
+      <td id="T_ee4b9_row10_col3" class="data row10 col3" >nan</td>
+      <td id="T_ee4b9_row10_col4" class="data row10 col4" >nan</td>
+    </tr>
+    <tr>
+      <td id="T_ee4b9_row11_col0" class="data row11 col0" >2003-12-01</td>
+      <td id="T_ee4b9_row11_col1" class="data row11 col1" >1422.000000</td>
+      <td id="T_ee4b9_row11_col2" class="data row11 col2" >nan</td>
+      <td id="T_ee4b9_row11_col3" class="data row11 col3" >nan</td>
+      <td id="T_ee4b9_row11_col4" class="data row11 col4" >nan</td>
+    </tr>
+    <tr>
+      <td id="T_ee4b9_row12_col0" class="data row12 col0" >2004-01-01</td>
+      <td id="T_ee4b9_row12_col1" class="data row12 col1" >1319.000000</td>
+      <td id="T_ee4b9_row12_col2" class="data row12 col2" >1478.670000</td>
+      <td id="T_ee4b9_row12_col3" class="data row12 col3" >1462.020000</td>
+      <td id="T_ee4b9_row12_col4" class="data row12 col4" >1338.040000</td>
+    </tr>
+    <tr>
+      <td id="T_ee4b9_row13_col0" class="data row13 col0" >2004-02-01</td>
+      <td id="T_ee4b9_row13_col1" class="data row13 col1" >1276.000000</td>
+      <td id="T_ee4b9_row13_col2" class="data row13 col2" >1468.750000</td>
+      <td id="T_ee4b9_row13_col3" class="data row13 col3" >1414.460000</td>
+      <td id="T_ee4b9_row13_col4" class="data row13 col4" >1276.890000</td>
+    </tr>
+    <tr>
+      <td id="T_ee4b9_row14_col0" class="data row14 col0" >2004-03-01</td>
+      <td id="T_ee4b9_row14_col1" class="data row14 col1" >1523.000000</td>
+      <td id="T_ee4b9_row14_col2" class="data row14 col2" >1483.250000</td>
+      <td id="T_ee4b9_row14_col3" class="data row14 col3" >1374.990000</td>
+      <td id="T_ee4b9_row14_col4" class="data row14 col4" >1489.310000</td>
+    </tr>
+  </tbody>
+</table>
+</div><figcaption>
+<p><span class="caption-number">Fig. 10 </span><span class="caption-text">Head Preview of Predictions.</span><a class="headerlink" href="#all-predictions-head" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="all-predictions-tail">
+<div class="output text_html"><style type="text/css">
+</style>
+<table id="T_03abc">
+  <thead>
+    <tr>
+      <th id="T_03abc_level0_col0" class="col_heading level0 col0" >Unnamed: 0</th>
+      <th id="T_03abc_level0_col1" class="col_heading level0 col1" >Observations</th>
+      <th id="T_03abc_level0_col2" class="col_heading level0 col2" >SMA_Forecast</th>
+      <th id="T_03abc_level0_col3" class="col_heading level0 col3" >ES_Forecast</th>
+      <th id="T_03abc_level0_col4" class="col_heading level0 col4" >ARIMA_Forecast</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td id="T_03abc_row0_col0" class="data row0 col0" >2023-07-01</td>
+      <td id="T_03abc_row0_col1" class="data row0 col1" >684.000000</td>
+      <td id="T_03abc_row0_col2" class="data row0 col2" >594.080000</td>
+      <td id="T_03abc_row0_col3" class="data row0 col3" >603.750000</td>
+      <td id="T_03abc_row0_col4" class="data row0 col4" >665.150000</td>
+    </tr>
+    <tr>
+      <td id="T_03abc_row1_col0" class="data row1 col0" >2023-08-01</td>
+      <td id="T_03abc_row1_col1" class="data row1 col1" >749.000000</td>
+      <td id="T_03abc_row1_col2" class="data row1 col2" >603.250000</td>
+      <td id="T_03abc_row1_col3" class="data row1 col3" >628.480000</td>
+      <td id="T_03abc_row1_col4" class="data row1 col4" >717.030000</td>
+    </tr>
+    <tr>
+      <td id="T_03abc_row2_col0" class="data row2 col0" >2023-09-01</td>
+      <td id="T_03abc_row2_col1" class="data row2 col1" >651.000000</td>
+      <td id="T_03abc_row2_col2" class="data row2 col2" >613.920000</td>
+      <td id="T_03abc_row2_col3" class="data row2 col3" >665.450000</td>
+      <td id="T_03abc_row2_col4" class="data row2 col4" >701.820000</td>
+    </tr>
+    <tr>
+      <td id="T_03abc_row3_col0" class="data row3 col0" >2023-10-01</td>
+      <td id="T_03abc_row3_col1" class="data row3 col1" >656.000000</td>
+      <td id="T_03abc_row3_col2" class="data row3 col2" >611.500000</td>
+      <td id="T_03abc_row3_col3" class="data row3 col3" >660.770000</td>
+      <td id="T_03abc_row3_col4" class="data row3 col4" >652.820000</td>
+    </tr>
+    <tr>
+      <td id="T_03abc_row4_col0" class="data row4 col0" >2023-11-01</td>
+      <td id="T_03abc_row4_col1" class="data row4 col1" >nan</td>
+      <td id="T_03abc_row4_col2" class="data row4 col2" >611.580000</td>
+      <td id="T_03abc_row4_col3" class="data row4 col3" >657.150000</td>
+      <td id="T_03abc_row4_col4" class="data row4 col4" >652.850000</td>
+    </tr>
+  </tbody>
+</table>
+</div><figcaption>
+<p><span class="caption-number">Fig. 11 </span><span class="caption-text">Tail Preview of Predictions.</span><a class="headerlink" href="#all-predictions-tail" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="sma-prediction-plot">
+<a class="reference internal image-reference" href="_images/sma_prediction_plot.png"><img alt="_images/sma_prediction_plot.png" src="_images/sma_prediction_plot.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 12 </span><span class="caption-text">The plot that compares the original value and the predictions made by simple moving average.</span><a class="headerlink" href="#sma-prediction-plot" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="es-prediction-plot">
+<a class="reference internal image-reference" href="_images/es_prediction_plot.png"><img alt="_images/es_prediction_plot.png" src="_images/es_prediction_plot.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 13 </span><span class="caption-text">The plot that compares the original value and the predictions made by exponential smoothing.</span><a class="headerlink" href="#es-prediction-plot" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Based on a visual assessment of the Simple Moving Average (SMA) and Exponential Smoothing (ES) forecasts, it’s evident that both methods broadly capture the general trend of the actual values. However, neither forecast method appears to be highly accurate. The Exponential Smoothing approach demonstrates a slightly improved performance compared to SMA.</p>
+</section>
+<section id="arima-1-1-0">
+<h3>ARIMA(1,1,0)<a class="headerlink" href="#arima-1-1-0" title="Permalink to this heading">#</a></h3>
+<figure class="align-default" id="autocorrelation-plot">
+<a class="reference internal image-reference" href="_images/autocorrelation_plot.png"><img alt="_images/autocorrelation_plot.png" src="_images/autocorrelation_plot.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 14 </span><span class="caption-text">The autocorrelation plot for the time-series observations in our preprocessed data.</span><a class="headerlink" href="#autocorrelation-plot" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="autocorrelation-with-diff-plot">
+<a class="reference internal image-reference" href="_images/autocorrelation_with_diff_plot.png"><img alt="_images/autocorrelation_with_diff_plot.png" src="_images/autocorrelation_with_diff_plot.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 15 </span><span class="caption-text">The autocorrelation plot for the time-series observations in our preprocessed data with 1-time differencing.</span><a class="headerlink" href="#autocorrelation-with-diff-plot" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="arima-prediction-plot">
+<a class="reference internal image-reference" href="_images/arima_prediction_plot.png"><img alt="_images/arima_prediction_plot.png" src="_images/arima_prediction_plot.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text">The plot that compares the original value and the predictions made by arima model.</span><a class="headerlink" href="#arima-prediction-plot" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The forecast from the ARIMA model looks much better! We can see some clear overlaps between the forecasted value and the original value.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Drop NA values to evaluate performance</span>
+
+<span class="n">prediction_drop_na</span> <span class="o">=</span> <span class="n">prediction</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+
+<span class="n">results_df</span> <span class="o">=</span> <span class="n">get_metrics_from_df</span><span class="p">(</span><span class="n">prediction_drop_na</span><span class="p">,</span> <span class="s2">&quot;Observations&quot;</span><span class="p">)</span>
+<span class="n">results_df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">NameError</span><span class="g g-Whitespace">                                 </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">5</span><span class="p">],</span> <span class="n">line</span> <span class="mi">3</span>
+<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1"># Drop NA values to evaluate performance</span>
+<span class="ne">----&gt; </span><span class="mi">3</span> <span class="n">prediction_drop_na</span> <span class="o">=</span> <span class="n">prediction</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="n">results_df</span> <span class="o">=</span> <span class="n">get_metrics_from_df</span><span class="p">(</span><span class="n">prediction_drop_na</span><span class="p">,</span> <span class="s2">&quot;Observations&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">      </span><span class="mi">6</span> <span class="n">results_df</span>
+
+<span class="ne">NameError</span>: name &#39;prediction&#39; is not defined
+</pre></div>
+</div>
+</div>
+</div>
+<p>The displayed dataframe outlines the performance metrics, specifically the mean absolute error (MAE) and mean squared error (MSE), for the three models. Notably, there’s a discernible pattern showcasing a marked enhancement in performance, progressing from Simple Moving Average (SMA) to Exponential Smoothing Approach (ESA) and ultimately to ARIMA. This consistent trend aligns with the observations gleaned from the visualizations crafted earlier, affirming the gradual improvement in forecasting accuracy across the models.</p>
+<p>While the ARIMA model stands out as the most effective among the three forecasting models—simple moving average and exponential smoothing—it’s crucial to acknowledge the room for enhancement in our predictive capabilities. Future advancements could entail fine-tuning the ARIMA hyperparameters or exploring alternative models to ascertain if further accuracy gains are attainable. Additionally, integrating exogenous variables, such as socioeconomic indicators or weather data, might augment the predictive power of our models, offering a more comprehensive understanding of crime dynamics. Furthermore, this analysis prompts future inquiries, including investigating the influence of specific external factors on crime occurrences or exploring spatial-temporal models to predict crime hotspots within Vancouver. These prospective avenues aim to refine our forecasting precision and deepen our insights into crime trends, paving the way for more informed law enforcement strategies and proactive crime prevention measures.</p>
+</section>
+</section>
+<section id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h2>
+<div class="docutils container" id="id11">
+<dl class="citation">
+<dt class="label" id="id14"><span class="brackets"><a class="fn-backref" href="#id1">Ama23</a></span></dt>
+<dd><p>Hayatullah Amanat. Vehicle theft at a 'critical point' in canada, with car stolen every six minutes: report. 2023. URL: <a class="reference external" href="https://www.ctvnews.ca/canada/vehicle-theft-at-a-critical-point-in-canada-with-car-stolen-every-six-minutes-report-1.6443514">https://www.ctvnews.ca/canada/vehicle-theft-at-a-critical-point-in-canada-with-car-stolen-every-six-minutes-report-1.6443514</a> (visited on 2023-12-03).</p>
+</dd>
+<dt class="label" id="id19"><span class="brackets"><a class="fn-backref" href="#id2">Dep23</a></span></dt>
+<dd><p>Vancouver Police Department. 2023.</p>
+</dd>
+<dt class="label" id="id13"><span class="brackets"><a class="fn-backref" href="#id3">HMVDW+20</a></span></dt>
+<dd><p>Charles R Harris, K Jarrod Millman, Stéfan J Van Der Walt, Ralf Gommers, Pauli Virtanen, David Cournapeau, Eric Wieser, Julian Taylor, Sebastian Berg, Nathaniel J Smith, and others. Array programming with numpy. <em>Nature</em>, 585(7825):357–362, 2020.</p>
+</dd>
+<dt class="label" id="id15"><span class="brackets"><a class="fn-backref" href="#id7">Hun07</a></span></dt>
+<dd><p>John D. Hunter. Matplotlib: a 2d graphics environment. <em>Computing in Science &amp; Engineering</em>, 9(3):90–95, 2007. <a class="reference external" href="https://doi.org/10.1109/MCSE.2007.55">doi:10.1109/MCSE.2007.55</a>.</p>
+</dd>
+<dt class="label" id="id16"><span class="brackets"><a class="fn-backref" href="#id6">PVG+11</a></span></dt>
+<dd><p>Fabian Pedregosa, Gaël Varoquaux, Alexandre Gramfort, Vincent Michel, Bertrand Thirion, Olivier Grisel, Mathieu Blondel, Peter Prettenhofer, Ron Weiss, Vincent Dubourg, Jake Vanderplas, Alexandre Passos, David Cournapeau, Matthieu Brucher, Matthieu Perrot, and Édouard Duchesnay. Scikit-learn: machine learning in python. <em>Journal of Machine Learning Research</em>, 12(85):2825–2830, 2011. URL: <a class="reference external" href="http://jmlr.org/papers/v12/pedregosa11a.html">http://jmlr.org/papers/v12/pedregosa11a.html</a>.</p>
+</dd>
+<dt class="label" id="id18"><span class="brackets"><a class="fn-backref" href="#id5">VGH+18</a></span></dt>
+<dd><p>Jacob VanderPlas, Brian E. Granger, Jeffrey Heer, Dominik Moritz, Kanit Wongsuphasawat, Arvind Satyanarayan, Eitan Lees, Ilia Timofeev, Ben Welsh, and Scott Sievert. Altair: interactive statistical visualizations for python. <em>Journal of Open Source Software</em>, 3(32):1057, 2018. URL: <a class="reference external" href="https://doi.org/10.21105/joss.01057">https://doi.org/10.21105/joss.01057</a>, <a class="reference external" href="https://doi.org/10.21105/joss.01057">doi:10.21105/joss.01057</a>.</p>
+</dd>
+<dt class="label" id="id17"><span class="brackets"><a class="fn-backref" href="#id9">SkipperSeaboldJosefPerktold10</a></span></dt>
+<dd><p>Skipper Seabold and Josef Perktold. Statsmodels: Econometric and Statistical Modeling with Python. In Stéfan van der Walt and Jarrod Millman, editors, <em>Proceedings of the 9th Python in Science Conference</em>, 92 – 96. 2010. <a class="reference external" href="https://doi.org/10.25080/Majora-92bf1922-011">doi:10.25080/Majora-92bf1922-011</a>.</p>
+</dd>
+<dt class="label" id="id20"><span class="brackets"><a class="fn-backref" href="#id8">Waskom21</a></span></dt>
+<dd><p>Michael Waskom. seaborn: statistical data visualization. <em>The Journal of Open Source Software</em>, 6(60):3021, April 2021. <a class="reference external" href="https://doi.org/10.21105/joss.03021">doi:10.21105/joss.03021</a>.</p>
+</dd>
+<dt class="label" id="id12"><span class="brackets"><a class="fn-backref" href="#id4">WesMcKinney10</a></span></dt>
+<dd><p>Wes McKinney. Data Structures for Statistical Computing in Python. In Stéfan van der Walt and Jarrod Millman, editors, <em>Proceedings of the 9th Python in Science Conference</em>, 56 – 61. 2010. <a class="reference external" href="https://doi.org/10.25080/Majora-92bf1922-00a">doi:10.25080/Majora-92bf1922-00a</a>.</p>
+</dd>
+</dl>
+</div>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis">Analysis</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#results-discussions">Results &amp; Discussions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#missing-values">Missing values</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#distribution">Distribution</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation">Correlation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing">Preprocessing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-moving-average-exponential-smoothing">Simple Moving Average &amp; Exponential Smoothing</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#arima-1-1-0">ARIMA(1,1,0)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Orix Au Yeung, Ben Chen, Mo Norouzi, Yiwei Zhang
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
