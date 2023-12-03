@@ -40,6 +40,7 @@ def main(input_filepath, output_filepath):
     print ("Your selected dataframe has " + str(data.shape[1]) + " columns and " + str(data.shape[0]) + " Rows.\n"      
            "There are " + str(mz_table.shape[0]) +
               " columns that have missing values.")
+    mz_table = mz_table.reset_index().rename(columns={'index': 'variable'})
     pd.DataFrame(mz_table).to_csv(os.path.join(output_filepath, "tables", "missing_values.csv"), index=False)
 
     # correlation
