@@ -10,8 +10,8 @@ from src.arima_forecasting import arima_prediction
 
 
 @click.command()
-@click.argument('preprocessed_data')
-@click.argument('results_folder')
+@click.option('--preprocessed_data', type=str, help="Path to preprocessed data")
+@click.option('--results_folder', type=str, help="Path to results folder")
 def main(preprocessed_data, results_folder):
     data = pd.read_csv(preprocessed_data)
     data = data[['YEAR-MONTH', 'Observations']]
