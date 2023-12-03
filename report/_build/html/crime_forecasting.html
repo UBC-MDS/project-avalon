@@ -1,0 +1,1614 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Envrionment Setup &#8212; Crime Forecast in VancouverC</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=5b4479735964841361fd" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=5b4479735964841361fd" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.1.2/css/all.min.css?digest=5b4479735964841361fd" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.1.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=5b4479735964841361fd" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd" />
+  <script src="_static/vendor/fontawesome/6.1.2/js/all.min.js?digest=5b4479735964841361fd"></script>
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'crime_forecasting';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+  
+    <nav class="bd-header navbar navbar-expand-lg bd-navbar">
+    </nav>
+  
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+  
+    <p class="title logo__title">Crime Forecast in VancouverC</p>
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Envrionment Setup
+                </a>
+            </li>
+        </ul>
+        
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/crime_forecasting.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Envrionment Setup</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Envrionment Setup</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#crime-forecast-in-vancouver">Crime Forecast in Vancouver</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis">Analysis</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#results-discussions">Results &amp; Discussions</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#missing-values">Missing values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distribution">Distribution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation">Correlation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing">Preprocessing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-moving-average-exponential-smoothing">Simple Moving Average &amp; Exponential Smoothing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arima-1-1-0">ARIMA(1,1,0)</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article" role="main">
+                  
+  <section id="envrionment-setup">
+<h1>Envrionment Setup<a class="headerlink" href="#envrionment-setup" title="Permalink to this heading">#</a></h1>
+<ul class="simple">
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">--name</span> <span class="pre">avalon</span> <span class="pre">--file=environment.yaml</span></code></p></li>
+<li><p>Then switch to the environment by clicking the <code class="docutils literal notranslate"><span class="pre">avalon</span></code> item of the drop-down in the top right corner of Jupyter Notebook.</p></li>
+</ul>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="crime-forecast-in-vancouver">
+<h1>Crime Forecast in Vancouver<a class="headerlink" href="#crime-forecast-in-vancouver" title="Permalink to this heading">#</a></h1>
+<p>by Ben Chen, Mo Norouzi, Orix Au Yeung, Yiwei Zhang</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">from</span> <span class="nn">pandas.plotting</span> <span class="kn">import</span> <span class="n">autocorrelation_plot</span>
+<span class="kn">from</span> <span class="nn">statsmodels.tsa.arima.model</span> <span class="kn">import</span> <span class="n">ARIMA</span>
+<span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">mean_absolute_error</span><span class="p">,</span> <span class="n">mean_squared_error</span>
+<span class="kn">import</span> <span class="nn">warnings</span>
+<span class="kn">import</span> <span class="nn">sys</span>
+<span class="kn">from</span> <span class="nn">myst_nb</span> <span class="kn">import</span> <span class="n">glue</span>
+<span class="n">warnings</span><span class="o">.</span><span class="n">filterwarnings</span><span class="p">(</span><span class="s2">&quot;ignore&quot;</span><span class="p">)</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s1">&#39;../src&#39;</span><span class="p">)</span> 
+
+<span class="kn">from</span> <span class="nn">get_metrics_from_df</span> <span class="kn">import</span> <span class="n">get_metrics_from_df</span>
+<span class="kn">from</span> <span class="nn">missing_value</span> <span class="kn">import</span> <span class="n">missing_zero_values_table</span>
+<span class="kn">from</span> <span class="nn">numeric_cols</span> <span class="kn">import</span> <span class="n">create_numeric_cols_chart</span>
+<span class="kn">from</span> <span class="nn">merge_forecast_values</span> <span class="kn">import</span> <span class="n">merge_forecast_values</span>
+<span class="kn">from</span> <span class="nn">arima_forecasting</span> <span class="kn">import</span> <span class="n">arima_prediction</span>
+<span class="kn">from</span> <span class="nn">correlation</span> <span class="kn">import</span> <span class="n">get_redundant_pairs</span><span class="p">,</span> <span class="n">get_top_abs_correlations</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="summary">
+<h1>Summary<a class="headerlink" href="#summary" title="Permalink to this heading">#</a></h1>
+<p>In this notebook, our focus revolved around constructing a time-series forecasting model tailored to predict crime incidents in Vancouver, using “Month” as the temporal unit. Our primary emphasis centered on one of the most prevalent crime types in Vancouver over the past two decades: theft from vehicles. We evaluated the efficacy of three fundamental forecasting models—simple moving average, exponential smoothing, and ARIMA(1,1,0). Notably, the ARIMA(1,1,0) model emerged as the most effective, yielding a Mean Absolute Error (MAE) of 26.856890. Considering that the occurrences of “theft from a vehicle” crimes per month often range in the hundreds to thousands, achieving a forecast performance of this caliber is notably commendable. It’s worth highlighting that further refinement through comprehensive parameter tuning and integration of additional external variables holds the potential to cultivate even more accurate forecasting models.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="introduction">
+<h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading">#</a></h1>
+<p>Vehicle-related theft remains an ongoing concern nationwide in Canada, with statistics revealing a staggering incident of vehicle theft occurring every six minutes across the country <span id="id1">[<a class="reference internal" href="#id13">Amanat, 2023</a>]</span>. This pervasive issue extends into Vancouver, presenting formidable challenges to both community safety and law enforcement efforts. Theft from vehicles, a prevalent form of this crime, significantly affects neighborhoods, inflicting distress and substantial financial losses on local residents. In response to this pressing concern, this project is dedicated to forecasting occurrences of theft from vehicles specifically within Vancouver.</p>
+<p>The primary objective of this project is to forecast instances of theft from vehicles in Vancouver by analyzing historical data. Leveraging a comprehensive dataset sourced from the Vancouver Police Department, encompassing diverse crime records in Vancouver over the past 20 years alongside incident locations, our goal is to construct a reliable predictive model. This model aims to anticipate the frequency and patterns specific to theft from vehicles. An accurate forecast holds the potential to empower the City of Vancouver to proactively allocate law enforcement resources, thereby curbing the occurrence of such crimes and enhancing community safety.</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="methods">
+<h1>Methods<a class="headerlink" href="#methods" title="Permalink to this heading">#</a></h1>
+<section id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this heading">#</a></h2>
+<p>The dataset utilized for this project originates from the Vancouver Police Department, available through the following link: <a class="reference external" href="https://geodash.vpd.ca/opendata/">https://geodash.vpd.ca/opendata/</a> <span id="id2">[<a class="reference internal" href="#id18" title="Vancouver Police Department. 2023.">Department, 2023</a>]</span>. It comprises 10 columns/variables and encompasses a substantial volume of data, totaling 879,861 rows. Each row corresponds to a distinct crime incident recorded within the dataset. The available information includes details about the crime type, the corresponding date of occurrence, and the specific location or neighborhood where the crime took place. These data points serve as crucial elements for our analysis and forecasting efforts.</p>
+</section>
+<section id="analysis">
+<h2>Analysis<a class="headerlink" href="#analysis" title="Permalink to this heading">#</a></h2>
+<p>We’re deploying three distinct time-series forecasting models—Simple Moving Average (SMA), Exponential Smoothing (ES), and Autoregressive Integrated Moving Average (ARIMA). These models rely solely on the timestamp and the targeted forecasted value. Despite having location data, which holds potential value, we’ve deferred its utilization in this phase of the project. Employing a rolling window approach, we’ll predict and assess model performance across a 20-year duration, setting the window size to 12 months. This configuration ensures that forecasts leverage the preceding year’s data for accuracy. Specifically for ARIMA, the hyperparameters (p, d, q) are set at (1, 1, 0). This specification signifies that the model factors in the most recent lagged observations of the differenced series to predict the subsequent value. Our analysis was executed using Python, leveraging various libraries: numpy<span id="id3">[<a class="reference internal" href="#id12" title="Charles R Harris, K Jarrod Millman, Stéfan J Van Der Walt, Ralf Gommers, Pauli Virtanen, David Cournapeau, Eric Wieser, Julian Taylor, Sebastian Berg, Nathaniel J Smith, and others. Array programming with numpy. Nature, 585(7825):357–362, 2020.">Harris <em>et al.</em>, 2020</a>]</span>, Pandas<span id="id4">[<a class="reference internal" href="#id11" title="Wes McKinney. Data Structures for Statistical Computing in Python. In Stéfan van der Walt and Jarrod Millman, editors, Proceedings of the 9th Python in Science Conference, 56 - 61. 2010. doi:10.25080/Majora-92bf1922-00a.">Wes McKinney, 2010</a>]</span>, Altair<span id="id5">[<a class="reference internal" href="#id17" title="Jacob VanderPlas, Brian E. Granger, Jeffrey Heer, Dominik Moritz, Kanit Wongsuphasawat, Arvind Satyanarayan, Eitan Lees, Ilia Timofeev, Ben Welsh, and Scott Sievert. Altair: interactive statistical visualizations for python. Journal of Open Source Software, 3(32):1057, 2018. URL: https://doi.org/10.21105/joss.01057, doi:10.21105/joss.01057.">VanderPlas <em>et al.</em>, 2018</a>]</span>, scikit-learn<span id="id6">[<a class="reference internal" href="#id15" title="Fabian Pedregosa, Gaël Varoquaux, Alexandre Gramfort, Vincent Michel, Bertrand Thirion, Olivier Grisel, Mathieu Blondel, Peter Prettenhofer, Ron Weiss, Vincent Dubourg, Jake Vanderplas, Alexandre Passos, David Cournapeau, Matthieu Brucher, Matthieu Perrot, and Édouard Duchesnay. Scikit-learn: machine learning in python. Journal of Machine Learning Research, 12(85):2825–2830, 2011. URL: http://jmlr.org/papers/v12/pedregosa11a.html.">Pedregosa <em>et al.</em>, 2011</a>]</span>, Matplotlib<span id="id7">[<a class="reference internal" href="#id14" title="John D. Hunter. Matplotlib: a 2d graphics environment. Computing in Science &amp; Engineering, 9(3):90-95, 2007. doi:10.1109/MCSE.2007.55.">Hunter, 2007</a>]</span>, Seaborn<span id="id8">[<a class="reference internal" href="#id19" title="Michael Waskom. seaborn: statistical data visualization. The Journal of Open Source Software, 6(60):3021, April 2021. doi:10.21105/joss.03021.">Waskom, 2021</a>]</span>, and Statsmodels<span id="id9">[<a class="reference internal" href="#id16" title="Skipper Seabold and Josef Perktold. Statsmodels: Econometric and Statistical Modeling with Python. In Stéfan van der Walt and Jarrod Millman, editors, Proceedings of the 9th Python in Science Conference, 92 - 96. 2010. doi:10.25080/Majora-92bf1922-011.">Skipper Seabold and Josef Perktold, 2010</a>]</span>.</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="results-discussions">
+<h1>Results &amp; Discussions<a class="headerlink" href="#results-discussions" title="Permalink to this heading">#</a></h1>
+<p>Upon conducting exploratory data analysis (EDA), conspicuous anomalies surface in the dataset. The HOUR and MINUTE columns exhibit an unusual frequency of zero values, along with a disproportionate occurrence of ‘30’ in the MINUTE column. Additionally, the DAY column prominently features an excessive number of records logged on the 31st of the month. These irregularities likely stem from convenience in data recording, casting uncertainty on the accuracy of these three columns. In light of these inconsistencies, the most prudent approach is to exclude the DAY, HOUR, and MINUTE columns from analysis and focus solely on forecasting crime occurrences based on the MONTH variable.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../data/raw/crimedata_csv_AllNeighbourhoods_AllYears.csv&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+<span class="n">data</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>TYPE</th>
+      <th>YEAR</th>
+      <th>MONTH</th>
+      <th>DAY</th>
+      <th>HOUR</th>
+      <th>MINUTE</th>
+      <th>HUNDRED_BLOCK</th>
+      <th>NEIGHBOURHOOD</th>
+      <th>X</th>
+      <th>Y</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Break and Enter Commercial</td>
+      <td>2012</td>
+      <td>12</td>
+      <td>14</td>
+      <td>8</td>
+      <td>52</td>
+      <td>NaN</td>
+      <td>Oakridge</td>
+      <td>491285.0000</td>
+      <td>5.453433e+06</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Break and Enter Commercial</td>
+      <td>2019</td>
+      <td>3</td>
+      <td>7</td>
+      <td>2</td>
+      <td>6</td>
+      <td>10XX SITKA SQ</td>
+      <td>Fairview</td>
+      <td>490612.9648</td>
+      <td>5.457110e+06</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Break and Enter Commercial</td>
+      <td>2019</td>
+      <td>8</td>
+      <td>27</td>
+      <td>4</td>
+      <td>12</td>
+      <td>10XX ALBERNI ST</td>
+      <td>West End</td>
+      <td>491007.7798</td>
+      <td>5.459174e+06</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Break and Enter Commercial</td>
+      <td>2021</td>
+      <td>4</td>
+      <td>26</td>
+      <td>4</td>
+      <td>44</td>
+      <td>10XX ALBERNI ST</td>
+      <td>West End</td>
+      <td>491007.7798</td>
+      <td>5.459174e+06</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Break and Enter Commercial</td>
+      <td>2014</td>
+      <td>8</td>
+      <td>8</td>
+      <td>5</td>
+      <td>13</td>
+      <td>10XX ALBERNI ST</td>
+      <td>West End</td>
+      <td>491015.9434</td>
+      <td>5.459166e+06</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 879861 entries, 0 to 879860
+Data columns (total 10 columns):
+ #   Column         Non-Null Count   Dtype  
+---  ------         --------------   -----  
+ 0   TYPE           879861 non-null  object 
+ 1   YEAR           879861 non-null  int64  
+ 2   MONTH          879861 non-null  int64  
+ 3   DAY            879861 non-null  int64  
+ 4   HOUR           879861 non-null  int64  
+ 5   MINUTE         879861 non-null  int64  
+ 6   HUNDRED_BLOCK  879849 non-null  object 
+ 7   NEIGHBOURHOOD  879717 non-null  object 
+ 8   X              879785 non-null  float64
+ 9   Y              879785 non-null  float64
+dtypes: float64(2), int64(5), object(3)
+memory usage: 67.1+ MB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">data</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">T</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>count</th>
+      <th>mean</th>
+      <th>std</th>
+      <th>min</th>
+      <th>25%</th>
+      <th>50%</th>
+      <th>75%</th>
+      <th>max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>YEAR</th>
+      <td>879861.0</td>
+      <td>2.012265e+03</td>
+      <td>6.183902e+00</td>
+      <td>2003.0</td>
+      <td>2.006000e+03</td>
+      <td>2.012000e+03</td>
+      <td>2.018000e+03</td>
+      <td>2023.0</td>
+    </tr>
+    <tr>
+      <th>MONTH</th>
+      <td>879861.0</td>
+      <td>6.516683e+00</td>
+      <td>3.391857e+00</td>
+      <td>1.0</td>
+      <td>4.000000e+00</td>
+      <td>7.000000e+00</td>
+      <td>9.000000e+00</td>
+      <td>12.0</td>
+    </tr>
+    <tr>
+      <th>DAY</th>
+      <td>879861.0</td>
+      <td>1.538500e+01</td>
+      <td>8.757135e+00</td>
+      <td>1.0</td>
+      <td>8.000000e+00</td>
+      <td>1.500000e+01</td>
+      <td>2.300000e+01</td>
+      <td>31.0</td>
+    </tr>
+    <tr>
+      <th>HOUR</th>
+      <td>879861.0</td>
+      <td>1.231342e+01</td>
+      <td>7.463913e+00</td>
+      <td>0.0</td>
+      <td>7.000000e+00</td>
+      <td>1.400000e+01</td>
+      <td>1.800000e+01</td>
+      <td>23.0</td>
+    </tr>
+    <tr>
+      <th>MINUTE</th>
+      <td>879861.0</td>
+      <td>1.586139e+01</td>
+      <td>1.836042e+01</td>
+      <td>0.0</td>
+      <td>0.000000e+00</td>
+      <td>5.000000e+00</td>
+      <td>3.000000e+01</td>
+      <td>59.0</td>
+    </tr>
+    <tr>
+      <th>X</th>
+      <td>879785.0</td>
+      <td>4.490074e+05</td>
+      <td>1.393043e+05</td>
+      <td>0.0</td>
+      <td>4.901879e+05</td>
+      <td>4.915699e+05</td>
+      <td>4.933801e+05</td>
+      <td>511303.0</td>
+    </tr>
+    <tr>
+      <th>Y</th>
+      <td>879785.0</td>
+      <td>4.977853e+06</td>
+      <td>1.544127e+06</td>
+      <td>0.0</td>
+      <td>5.454211e+06</td>
+      <td>5.457170e+06</td>
+      <td>5.458718e+06</td>
+      <td>5512579.0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<section id="missing-values">
+<h2>Missing values<a class="headerlink" href="#missing-values" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">missing_zero_values_table</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Your selected dataframe has 10 columns and 879861 Rows.
+There are 4 columns that have missing values.
+</pre></div>
+</div>
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Zero Values</th>
+      <th>Missing Values</th>
+      <th>% of Total Values</th>
+      <th>Total Zero Missing Values</th>
+      <th>% Total Zero Missing Values</th>
+      <th>Data Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>NEIGHBOURHOOD</th>
+      <td>0</td>
+      <td>144</td>
+      <td>0.0</td>
+      <td>144</td>
+      <td>0.0</td>
+      <td>object</td>
+    </tr>
+    <tr>
+      <th>X</th>
+      <td>77225</td>
+      <td>76</td>
+      <td>0.0</td>
+      <td>77301</td>
+      <td>8.8</td>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>Y</th>
+      <td>77225</td>
+      <td>76</td>
+      <td>0.0</td>
+      <td>77301</td>
+      <td>8.8</td>
+      <td>float64</td>
+    </tr>
+    <tr>
+      <th>HUNDRED_BLOCK</th>
+      <td>0</td>
+      <td>12</td>
+      <td>0.0</td>
+      <td>12</td>
+      <td>0.0</td>
+      <td>object</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="distribution">
+<h2>Distribution<a class="headerlink" href="#distribution" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">alt</span><span class="o">.</span><span class="n">data_transformers</span><span class="o">.</span><span class="n">enable</span><span class="p">(</span><span class="s1">&#39;vegafusion&#39;</span><span class="p">)</span>
+<span class="n">numeric_cols</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;MONTH&quot;</span><span class="p">,</span> <span class="s2">&quot;DAY&quot;</span><span class="p">,</span> <span class="s2">&quot;HOUR&quot;</span><span class="p">,</span> <span class="s2">&quot;MINUTE&quot;</span><span class="p">]</span>
+<span class="n">create_numeric_cols_chart</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">numeric_cols</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<style>
+  #altair-viz-1c5c173bee06473ea3d022cbddea02d4.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-1c5c173bee06473ea3d022cbddea02d4.vega-embed details,
+  #altair-viz-1c5c173bee06473ea3d022cbddea02d4.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-1c5c173bee06473ea3d022cbddea02d4"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-1c5c173bee06473ea3d022cbddea02d4") {
+      outputDiv = document.getElementById("altair-viz-1c5c173bee06473ea3d022cbddea02d4");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.15.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.15.1"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"$schema": "https://vega.github.io/schema/vega/v5.json", "data": [{"name": "source_0", "values": [{"__count": 66513, "bin_maxbins_30_MONTH": 11.5, "bin_maxbins_30_MONTH_end": 12.0}, {"__count": 73191, "bin_maxbins_30_MONTH": 3.0, "bin_maxbins_30_MONTH_end": 3.5}, {"__count": 80230, "bin_maxbins_30_MONTH": 8.0, "bin_maxbins_30_MONTH_end": 8.5}, {"__count": 70993, "bin_maxbins_30_MONTH": 4.0, "bin_maxbins_30_MONTH_end": 4.5}, {"__count": 77388, "bin_maxbins_30_MONTH": 7.0, "bin_maxbins_30_MONTH_end": 7.5}, {"__count": 69611, "bin_maxbins_30_MONTH": 11.0, "bin_maxbins_30_MONTH_end": 11.5}, {"__count": 73387, "bin_maxbins_30_MONTH": 1.0, "bin_maxbins_30_MONTH_end": 1.5}, {"__count": 74539, "bin_maxbins_30_MONTH": 5.0, "bin_maxbins_30_MONTH_end": 5.5}, {"__count": 74857, "bin_maxbins_30_MONTH": 6.0, "bin_maxbins_30_MONTH_end": 6.5}, {"__count": 76283, "bin_maxbins_30_MONTH": 9.0, "bin_maxbins_30_MONTH_end": 9.5}, {"__count": 65958, "bin_maxbins_30_MONTH": 2.0, "bin_maxbins_30_MONTH_end": 2.5}, {"__count": 76911, "bin_maxbins_30_MONTH": 10.0, "bin_maxbins_30_MONTH_end": 10.5}]}, {"name": "source_1", "values": [{"__count": 30204, "bin_maxbins_30_DAY": 14.0, "bin_maxbins_30_DAY_end": 15.0}, {"__count": 29931, "bin_maxbins_30_DAY": 7.0, "bin_maxbins_30_DAY_end": 8.0}, {"__count": 26318, "bin_maxbins_30_DAY": 27.0, "bin_maxbins_30_DAY_end": 28.0}, {"__count": 26182, "bin_maxbins_30_DAY": 26.0, "bin_maxbins_30_DAY_end": 27.0}, {"__count": 29792, "bin_maxbins_30_DAY": 8.0, "bin_maxbins_30_DAY_end": 9.0}, {"__count": 27069, "bin_maxbins_30_DAY": 28.0, "bin_maxbins_30_DAY_end": 29.0}, {"__count": 27424, "bin_maxbins_30_DAY": 21.0, "bin_maxbins_30_DAY_end": 22.0}, {"__count": 29462, "bin_maxbins_30_DAY": 5.0, "bin_maxbins_30_DAY_end": 6.0}, {"__count": 33378, "bin_maxbins_30_DAY": 1.0, "bin_maxbins_30_DAY_end": 2.0}, {"__count": 30020, "bin_maxbins_30_DAY": 17.0, "bin_maxbins_30_DAY_end": 18.0}, {"__count": 29075, "bin_maxbins_30_DAY": 3.0, "bin_maxbins_30_DAY_end": 4.0}, {"__count": 28567, "bin_maxbins_30_DAY": 2.0, "bin_maxbins_30_DAY_end": 3.0}, {"__count": 30226, "bin_maxbins_30_DAY": 13.0, "bin_maxbins_30_DAY_end": 14.0}, {"__count": 31876, "bin_maxbins_30_DAY": 15.0, "bin_maxbins_30_DAY_end": 16.0}, {"__count": 29406, "bin_maxbins_30_DAY": 6.0, "bin_maxbins_30_DAY_end": 7.0}, {"__count": 27647, "bin_maxbins_30_DAY": 22.0, "bin_maxbins_30_DAY_end": 23.0}, {"__count": 28487, "bin_maxbins_30_DAY": 19.0, "bin_maxbins_30_DAY_end": 20.0}, {"__count": 26490, "bin_maxbins_30_DAY": 24.0, "bin_maxbins_30_DAY_end": 25.0}, {"__count": 25699, "bin_maxbins_30_DAY": 25.0, "bin_maxbins_30_DAY_end": 26.0}, {"__count": 29336, "bin_maxbins_30_DAY": 18.0, "bin_maxbins_30_DAY_end": 19.0}, {"__count": 28897, "bin_maxbins_30_DAY": 4.0, "bin_maxbins_30_DAY_end": 5.0}, {"__count": 30038, "bin_maxbins_30_DAY": 16.0, "bin_maxbins_30_DAY_end": 17.0}, {"__count": 25758, "bin_maxbins_30_DAY": 29.0, "bin_maxbins_30_DAY_end": 30.0}, {"__count": 29784, "bin_maxbins_30_DAY": 9.0, "bin_maxbins_30_DAY_end": 10.0}, {"__count": 29830, "bin_maxbins_30_DAY": 10.0, "bin_maxbins_30_DAY_end": 11.0}, {"__count": 30391, "bin_maxbins_30_DAY": 12.0, "bin_maxbins_30_DAY_end": 13.0}, {"__count": 42859, "bin_maxbins_30_DAY": 30.0, "bin_maxbins_30_DAY_end": 31.0}, {"__count": 29990, "bin_maxbins_30_DAY": 11.0, "bin_maxbins_30_DAY_end": 12.0}, {"__count": 26841, "bin_maxbins_30_DAY": 23.0, "bin_maxbins_30_DAY_end": 24.0}, {"__count": 28884, "bin_maxbins_30_DAY": 20.0, "bin_maxbins_30_DAY_end": 21.0}]}, {"name": "source_2", "values": [{"__count": 26449, "bin_maxbins_30_HOUR": 8.0, "bin_maxbins_30_HOUR_end": 9.0}, {"__count": 17300, "bin_maxbins_30_HOUR": 2.0, "bin_maxbins_30_HOUR_end": 3.0}, {"__count": 13270, "bin_maxbins_30_HOUR": 4.0, "bin_maxbins_30_HOUR_end": 5.0}, {"__count": 12579, "bin_maxbins_30_HOUR": 5.0, "bin_maxbins_30_HOUR_end": 6.0}, {"__count": 47708, "bin_maxbins_30_HOUR": 19.0, "bin_maxbins_30_HOUR_end": 20.0}, {"__count": 13281, "bin_maxbins_30_HOUR": 6.0, "bin_maxbins_30_HOUR_end": 7.0}, {"__count": 17820, "bin_maxbins_30_HOUR": 7.0, "bin_maxbins_30_HOUR_end": 8.0}, {"__count": 14790, "bin_maxbins_30_HOUR": 3.0, "bin_maxbins_30_HOUR_end": 4.0}, {"__count": 124830, "bin_maxbins_30_HOUR": 0.0, "bin_maxbins_30_HOUR_end": 1.0}, {"__count": 44724, "bin_maxbins_30_HOUR": 20.0, "bin_maxbins_30_HOUR_end": 21.0}, {"__count": 37911, "bin_maxbins_30_HOUR": 14.0, "bin_maxbins_30_HOUR_end": 15.0}, {"__count": 45109, "bin_maxbins_30_HOUR": 16.0, "bin_maxbins_30_HOUR_end": 17.0}, {"__count": 57210, "bin_maxbins_30_HOUR": 18.0, "bin_maxbins_30_HOUR_end": 19.0}, {"__count": 42261, "bin_maxbins_30_HOUR": 15.0, "bin_maxbins_30_HOUR_end": 16.0}, {"__count": 29831, "bin_maxbins_30_HOUR": 11.0, "bin_maxbins_30_HOUR_end": 12.0}, {"__count": 82526, "bin_maxbins_30_HOUR": 22.0, "bin_maxbins_30_HOUR_end": 23.0}, {"__count": 21631, "bin_maxbins_30_HOUR": 1.0, "bin_maxbins_30_HOUR_end": 2.0}, {"__count": 42786, "bin_maxbins_30_HOUR": 21.0, "bin_maxbins_30_HOUR_end": 22.0}, {"__count": 34432, "bin_maxbins_30_HOUR": 13.0, "bin_maxbins_30_HOUR_end": 14.0}, {"__count": 29259, "bin_maxbins_30_HOUR": 10.0, "bin_maxbins_30_HOUR_end": 11.0}, {"__count": 52050, "bin_maxbins_30_HOUR": 17.0, "bin_maxbins_30_HOUR_end": 18.0}, {"__count": 43396, "bin_maxbins_30_HOUR": 12.0, "bin_maxbins_30_HOUR_end": 13.0}, {"__count": 28708, "bin_maxbins_30_HOUR": 9.0, "bin_maxbins_30_HOUR_end": 10.0}]}, {"name": "source_3", "values": [{"__count": 8857, "bin_maxbins_30_MINUTE": 52.0, "bin_maxbins_30_MINUTE_end": 54.0}, {"__count": 8696, "bin_maxbins_30_MINUTE": 6.0, "bin_maxbins_30_MINUTE_end": 8.0}, {"__count": 8805, "bin_maxbins_30_MINUTE": 12.0, "bin_maxbins_30_MINUTE_end": 14.0}, {"__count": 30533, "bin_maxbins_30_MINUTE": 44.0, "bin_maxbins_30_MINUTE_end": 46.0}, {"__count": 8628, "bin_maxbins_30_MINUTE": 32.0, "bin_maxbins_30_MINUTE_end": 34.0}, {"__count": 12085, "bin_maxbins_30_MINUTE": 34.0, "bin_maxbins_30_MINUTE_end": 36.0}, {"__count": 8992, "bin_maxbins_30_MINUTE": 8.0, "bin_maxbins_30_MINUTE_end": 10.0}, {"__count": 17533, "bin_maxbins_30_MINUTE": 50.0, "bin_maxbins_30_MINUTE_end": 52.0}, {"__count": 421749, "bin_maxbins_30_MINUTE": 0.0, "bin_maxbins_30_MINUTE_end": 2.0}, {"__count": 18496, "bin_maxbins_30_MINUTE": 20.0, "bin_maxbins_30_MINUTE_end": 22.0}, {"__count": 8830, "bin_maxbins_30_MINUTE": 18.0, "bin_maxbins_30_MINUTE_end": 20.0}, {"__count": 8571, "bin_maxbins_30_MINUTE": 16.0, "bin_maxbins_30_MINUTE_end": 18.0}, {"__count": 8774, "bin_maxbins_30_MINUTE": 38.0, "bin_maxbins_30_MINUTE_end": 40.0}, {"__count": 12123, "bin_maxbins_30_MINUTE": 4.0, "bin_maxbins_30_MINUTE_end": 6.0}, {"__count": 8546, "bin_maxbins_30_MINUTE": 28.0, "bin_maxbins_30_MINUTE_end": 30.0}, {"__count": 16980, "bin_maxbins_30_MINUTE": 40.0, "bin_maxbins_30_MINUTE_end": 42.0}, {"__count": 124340, "bin_maxbins_30_MINUTE": 30.0, "bin_maxbins_30_MINUTE_end": 32.0}, {"__count": 8522, "bin_maxbins_30_MINUTE": 56.0, "bin_maxbins_30_MINUTE_end": 58.0}, {"__count": 8808, "bin_maxbins_30_MINUTE": 42.0, "bin_maxbins_30_MINUTE_end": 44.0}, {"__count": 8714, "bin_maxbins_30_MINUTE": 46.0, "bin_maxbins_30_MINUTE_end": 48.0}, {"__count": 27801, "bin_maxbins_30_MINUTE": 14.0, "bin_maxbins_30_MINUTE_end": 16.0}, {"__count": 12359, "bin_maxbins_30_MINUTE": 24.0, "bin_maxbins_30_MINUTE_end": 26.0}, {"__count": 12350, "bin_maxbins_30_MINUTE": 54.0, "bin_maxbins_30_MINUTE_end": 56.0}, {"__count": 8759, "bin_maxbins_30_MINUTE": 48.0, "bin_maxbins_30_MINUTE_end": 50.0}, {"__count": 9283, "bin_maxbins_30_MINUTE": 58.0, "bin_maxbins_30_MINUTE_end": 60.0}, {"__count": 8652, "bin_maxbins_30_MINUTE": 2.0, "bin_maxbins_30_MINUTE_end": 4.0}, {"__count": 8796, "bin_maxbins_30_MINUTE": 22.0, "bin_maxbins_30_MINUTE_end": 24.0}, {"__count": 15704, "bin_maxbins_30_MINUTE": 10.0, "bin_maxbins_30_MINUTE_end": 12.0}, {"__count": 8902, "bin_maxbins_30_MINUTE": 36.0, "bin_maxbins_30_MINUTE_end": 38.0}, {"__count": 8673, "bin_maxbins_30_MINUTE": 26.0, "bin_maxbins_30_MINUTE_end": 28.0}]}, {"name": "source_0_child__MONTH_y_domain___count", "values": [{"min": 65958, "max": 80230}]}, {"name": "source_1_child__DAY_y_domain___count", "values": [{"min": 25699, "max": 42859}]}, {"name": "source_2_child__HOUR_y_domain___count", "values": [{"min": 12579, "max": 124830}]}, {"name": "source_3_child__MINUTE_y_domain___count", "values": [{"min": 8522, "max": 421749}]}], "signals": [{"name": "child__MONTH_bin_maxbins_30_MONTH_bins", "value": {"fields": ["MONTH"], "fname": "bin_MONTH", "start": 1.0, "step": 0.5, "stop": 12.0}}, {"name": "child__DAY_bin_maxbins_30_DAY_bins", "value": {"fields": ["DAY"], "fname": "bin_DAY", "start": 1.0, "step": 1.0, "stop": 31.0}}, {"name": "child__MINUTE_bin_maxbins_30_MINUTE_bins", "value": {"fields": ["MINUTE"], "fname": "bin_MINUTE", "start": 0.0, "step": 2.0, "stop": 60.0}}, {"name": "child__HOUR_bin_maxbins_30_HOUR_bins", "value": {"fields": ["HOUR"], "fname": "bin_HOUR", "start": 0.0, "step": 1.0, "stop": 23.0}}, {"name": "concat_0_childWidth", "value": 200}, {"name": "concat_0_childHeight", "value": 150}, {"name": "concat_1_childWidth", "value": 200}, {"name": "concat_1_childHeight", "value": 150}, {"name": "concat_2_childWidth", "value": 200}, {"name": "concat_2_childHeight", "value": 150}, {"name": "concat_3_childWidth", "value": 200}, {"name": "concat_3_childHeight", "value": 150}], "marks": [{"type": "group", "name": "concat_0_group", "marks": [{"type": "group", "name": "child__MONTH_group", "encode": {"update": {"height": {"signal": "concat_0_childHeight"}, "width": {"signal": "concat_0_childWidth"}}}, "marks": [{"type": "rect", "name": "child__MONTH_marks", "from": {"data": "source_0"}, "encode": {"update": {"x": {"field": "bin_maxbins_30_MONTH_end", "scale": "child__MONTH_x", "offset": {"signal": "0.5 + (abs(scale(\"child__MONTH_x\", datum[\"bin_maxbins_30_MONTH_end\"]) - scale(\"child__MONTH_x\", datum[\"bin_maxbins_30_MONTH\"])) < 0.25 ? 0.5 * (0.25 - (abs(scale(\"child__MONTH_x\", datum[\"bin_maxbins_30_MONTH_end\"]) - scale(\"child__MONTH_x\", datum[\"bin_maxbins_30_MONTH\"])))) : -0.5)"}}, "fill": {"value": "#4c78a8"}, "ariaRoleDescription": {"value": "bar"}, "y": {"field": "__count", "scale": "child__MONTH_y"}, "description": {"signal": "\"MONTH (binned): \" + (!isValid(datum[\"bin_maxbins_30_MONTH\"]) || !isFinite(+datum[\"bin_maxbins_30_MONTH\"]) ? \"null\" : format(datum[\"bin_maxbins_30_MONTH\"], \"\") + \" \u2013 \" + format(datum[\"bin_maxbins_30_MONTH_end\"], \"\")) + \"; Count of Records: \" + (format(datum[\"__count\"], \"\"))"}, "x2": {"field": "bin_maxbins_30_MONTH", "scale": "child__MONTH_x", "offset": {"signal": "0.5 + (abs(scale(\"child__MONTH_x\", datum[\"bin_maxbins_30_MONTH_end\"]) - scale(\"child__MONTH_x\", datum[\"bin_maxbins_30_MONTH\"])) < 0.25 ? -0.5 * (0.25 - (abs(scale(\"child__MONTH_x\", datum[\"bin_maxbins_30_MONTH_end\"]) - scale(\"child__MONTH_x\", datum[\"bin_maxbins_30_MONTH\"])))) : 0.5)"}}, "y2": {"value": 0, "scale": "child__MONTH_y"}}}, "style": ["bar"]}], "axes": [{"scale": "child__MONTH_y", "grid": true, "minExtent": 0, "zindex": 0, "labels": false, "maxExtent": 0, "aria": false, "tickCount": {"signal": "ceil(concat_0_childHeight/40)"}, "orient": "left", "gridScale": "child__MONTH_x", "domain": false, "ticks": false}, {"scale": "child__MONTH_x", "tickCount": {"signal": "ceil(concat_0_childWidth/10)"}, "labelFlush": true, "labelOverlap": true, "zindex": 0, "grid": false, "title": "MONTH (binned)", "orient": "bottom"}, {"scale": "child__MONTH_y", "zindex": 0, "labelOverlap": true, "title": "Count of Records", "grid": false, "orient": "left", "tickCount": {"signal": "ceil(concat_0_childHeight/40)"}}], "style": "cell"}], "layout": {"padding": 20, "columns": 2, "bounds": "full", "align": "all"}}, {"type": "group", "name": "concat_1_group", "marks": [{"type": "group", "name": "child__DAY_group", "encode": {"update": {"width": {"signal": "concat_1_childWidth"}, "height": {"signal": "concat_1_childHeight"}}}, "marks": [{"type": "rect", "name": "child__DAY_marks", "from": {"data": "source_1"}, "encode": {"update": {"fill": {"value": "#4c78a8"}, "ariaRoleDescription": {"value": "bar"}, "description": {"signal": "\"DAY (binned): \" + (!isValid(datum[\"bin_maxbins_30_DAY\"]) || !isFinite(+datum[\"bin_maxbins_30_DAY\"]) ? \"null\" : format(datum[\"bin_maxbins_30_DAY\"], \"\") + \" \u2013 \" + format(datum[\"bin_maxbins_30_DAY_end\"], \"\")) + \"; Count of Records: \" + (format(datum[\"__count\"], \"\"))"}, "x2": {"field": "bin_maxbins_30_DAY", "scale": "child__DAY_x", "offset": {"signal": "0.5 + (abs(scale(\"child__DAY_x\", datum[\"bin_maxbins_30_DAY_end\"]) - scale(\"child__DAY_x\", datum[\"bin_maxbins_30_DAY\"])) < 0.25 ? -0.5 * (0.25 - (abs(scale(\"child__DAY_x\", datum[\"bin_maxbins_30_DAY_end\"]) - scale(\"child__DAY_x\", datum[\"bin_maxbins_30_DAY\"])))) : 0.5)"}}, "x": {"field": "bin_maxbins_30_DAY_end", "scale": "child__DAY_x", "offset": {"signal": "0.5 + (abs(scale(\"child__DAY_x\", datum[\"bin_maxbins_30_DAY_end\"]) - scale(\"child__DAY_x\", datum[\"bin_maxbins_30_DAY\"])) < 0.25 ? 0.5 * (0.25 - (abs(scale(\"child__DAY_x\", datum[\"bin_maxbins_30_DAY_end\"]) - scale(\"child__DAY_x\", datum[\"bin_maxbins_30_DAY\"])))) : -0.5)"}}, "y2": {"value": 0, "scale": "child__DAY_y"}, "y": {"field": "__count", "scale": "child__DAY_y"}}}, "style": ["bar"]}], "axes": [{"scale": "child__DAY_y", "labels": false, "zindex": 0, "domain": false, "aria": false, "gridScale": "child__DAY_x", "maxExtent": 0, "grid": true, "ticks": false, "tickCount": {"signal": "ceil(concat_1_childHeight/40)"}, "minExtent": 0, "orient": "left"}, {"scale": "child__DAY_x", "labelFlush": true, "orient": "bottom", "tickCount": {"signal": "ceil(concat_1_childWidth/10)"}, "zindex": 0, "title": "DAY (binned)", "grid": false, "labelOverlap": true}, {"scale": "child__DAY_y", "zindex": 0, "tickCount": {"signal": "ceil(concat_1_childHeight/40)"}, "title": "Count of Records", "orient": "left", "labelOverlap": true, "grid": false}], "style": "cell"}], "layout": {"padding": 20, "columns": 2, "bounds": "full", "align": "all"}}, {"type": "group", "name": "concat_2_group", "marks": [{"type": "group", "name": "child__HOUR_group", "encode": {"update": {"width": {"signal": "concat_2_childWidth"}, "height": {"signal": "concat_2_childHeight"}}}, "marks": [{"type": "rect", "name": "child__HOUR_marks", "from": {"data": "source_2"}, "encode": {"update": {"y2": {"value": 0, "scale": "child__HOUR_y"}, "fill": {"value": "#4c78a8"}, "ariaRoleDescription": {"value": "bar"}, "description": {"signal": "\"HOUR (binned): \" + (!isValid(datum[\"bin_maxbins_30_HOUR\"]) || !isFinite(+datum[\"bin_maxbins_30_HOUR\"]) ? \"null\" : format(datum[\"bin_maxbins_30_HOUR\"], \"\") + \" \u2013 \" + format(datum[\"bin_maxbins_30_HOUR_end\"], \"\")) + \"; Count of Records: \" + (format(datum[\"__count\"], \"\"))"}, "x2": {"field": "bin_maxbins_30_HOUR", "scale": "child__HOUR_x", "offset": {"signal": "0.5 + (abs(scale(\"child__HOUR_x\", datum[\"bin_maxbins_30_HOUR_end\"]) - scale(\"child__HOUR_x\", datum[\"bin_maxbins_30_HOUR\"])) < 0.25 ? -0.5 * (0.25 - (abs(scale(\"child__HOUR_x\", datum[\"bin_maxbins_30_HOUR_end\"]) - scale(\"child__HOUR_x\", datum[\"bin_maxbins_30_HOUR\"])))) : 0.5)"}}, "x": {"field": "bin_maxbins_30_HOUR_end", "scale": "child__HOUR_x", "offset": {"signal": "0.5 + (abs(scale(\"child__HOUR_x\", datum[\"bin_maxbins_30_HOUR_end\"]) - scale(\"child__HOUR_x\", datum[\"bin_maxbins_30_HOUR\"])) < 0.25 ? 0.5 * (0.25 - (abs(scale(\"child__HOUR_x\", datum[\"bin_maxbins_30_HOUR_end\"]) - scale(\"child__HOUR_x\", datum[\"bin_maxbins_30_HOUR\"])))) : -0.5)"}}, "y": {"field": "__count", "scale": "child__HOUR_y"}}}, "style": ["bar"]}], "axes": [{"scale": "child__HOUR_y", "zindex": 0, "labels": false, "orient": "left", "domain": false, "maxExtent": 0, "ticks": false, "gridScale": "child__HOUR_x", "grid": true, "minExtent": 0, "tickCount": {"signal": "ceil(concat_2_childHeight/40)"}, "aria": false}, {"scale": "child__HOUR_x", "labelFlush": true, "tickCount": {"signal": "ceil(concat_2_childWidth/10)"}, "title": "HOUR (binned)", "zindex": 0, "grid": false, "labelOverlap": true, "orient": "bottom"}, {"scale": "child__HOUR_y", "labelOverlap": true, "tickCount": {"signal": "ceil(concat_2_childHeight/40)"}, "zindex": 0, "title": "Count of Records", "orient": "left", "grid": false}], "style": "cell"}], "layout": {"padding": 20, "columns": 2, "bounds": "full", "align": "all"}}, {"type": "group", "name": "concat_3_group", "marks": [{"type": "group", "name": "child__MINUTE_group", "encode": {"update": {"width": {"signal": "concat_3_childWidth"}, "height": {"signal": "concat_3_childHeight"}}}, "marks": [{"type": "rect", "name": "child__MINUTE_marks", "from": {"data": "source_3"}, "encode": {"update": {"x": {"field": "bin_maxbins_30_MINUTE_end", "scale": "child__MINUTE_x", "offset": {"signal": "0.5 + (abs(scale(\"child__MINUTE_x\", datum[\"bin_maxbins_30_MINUTE_end\"]) - scale(\"child__MINUTE_x\", datum[\"bin_maxbins_30_MINUTE\"])) < 0.25 ? 0.5 * (0.25 - (abs(scale(\"child__MINUTE_x\", datum[\"bin_maxbins_30_MINUTE_end\"]) - scale(\"child__MINUTE_x\", datum[\"bin_maxbins_30_MINUTE\"])))) : -0.5)"}}, "ariaRoleDescription": {"value": "bar"}, "y": {"field": "__count", "scale": "child__MINUTE_y"}, "fill": {"value": "#4c78a8"}, "description": {"signal": "\"MINUTE (binned): \" + (!isValid(datum[\"bin_maxbins_30_MINUTE\"]) || !isFinite(+datum[\"bin_maxbins_30_MINUTE\"]) ? \"null\" : format(datum[\"bin_maxbins_30_MINUTE\"], \"\") + \" \u2013 \" + format(datum[\"bin_maxbins_30_MINUTE_end\"], \"\")) + \"; Count of Records: \" + (format(datum[\"__count\"], \"\"))"}, "y2": {"value": 0, "scale": "child__MINUTE_y"}, "x2": {"field": "bin_maxbins_30_MINUTE", "scale": "child__MINUTE_x", "offset": {"signal": "0.5 + (abs(scale(\"child__MINUTE_x\", datum[\"bin_maxbins_30_MINUTE_end\"]) - scale(\"child__MINUTE_x\", datum[\"bin_maxbins_30_MINUTE\"])) < 0.25 ? -0.5 * (0.25 - (abs(scale(\"child__MINUTE_x\", datum[\"bin_maxbins_30_MINUTE_end\"]) - scale(\"child__MINUTE_x\", datum[\"bin_maxbins_30_MINUTE\"])))) : 0.5)"}}}}, "style": ["bar"]}], "axes": [{"scale": "child__MINUTE_y", "zindex": 0, "orient": "left", "maxExtent": 0, "aria": false, "domain": false, "gridScale": "child__MINUTE_x", "minExtent": 0, "grid": true, "labels": false, "ticks": false, "tickCount": {"signal": "ceil(concat_3_childHeight/40)"}}, {"scale": "child__MINUTE_x", "labelFlush": true, "labelOverlap": true, "orient": "bottom", "tickCount": {"signal": "ceil(concat_3_childWidth/10)"}, "title": "MINUTE (binned)", "zindex": 0, "grid": false}, {"scale": "child__MINUTE_y", "zindex": 0, "orient": "left", "tickCount": {"signal": "ceil(concat_3_childHeight/40)"}, "grid": false, "title": "Count of Records", "labelOverlap": true}], "style": "cell"}], "layout": {"padding": 20, "columns": 2, "bounds": "full", "align": "all"}}], "scales": [{"name": "child__MONTH_x", "type": "linear", "domain": {"signal": "[child__MONTH_bin_maxbins_30_MONTH_bins.start, child__MONTH_bin_maxbins_30_MONTH_bins.stop]"}, "range": [0, {"signal": "concat_0_childWidth"}], "bins": {"signal": "child__MONTH_bin_maxbins_30_MONTH_bins"}, "zero": false}, {"name": "child__MONTH_y", "type": "linear", "domain": [{"signal": "(data(\"source_0_child__MONTH_y_domain___count\")[0] || {}).min"}, {"signal": "(data(\"source_0_child__MONTH_y_domain___count\")[0] || {}).max"}], "range": [{"signal": "concat_0_childHeight"}, 0], "zero": true, "nice": true}, {"name": "child__DAY_x", "type": "linear", "domain": {"signal": "[child__DAY_bin_maxbins_30_DAY_bins.start, child__DAY_bin_maxbins_30_DAY_bins.stop]"}, "range": [0, {"signal": "concat_1_childWidth"}], "bins": {"signal": "child__DAY_bin_maxbins_30_DAY_bins"}, "zero": false}, {"name": "child__DAY_y", "type": "linear", "domain": [{"signal": "(data(\"source_1_child__DAY_y_domain___count\")[0] || {}).min"}, {"signal": "(data(\"source_1_child__DAY_y_domain___count\")[0] || {}).max"}], "range": [{"signal": "concat_1_childHeight"}, 0], "nice": true, "zero": true}, {"name": "child__HOUR_x", "type": "linear", "domain": {"signal": "[child__HOUR_bin_maxbins_30_HOUR_bins.start, child__HOUR_bin_maxbins_30_HOUR_bins.stop]"}, "range": [0, {"signal": "concat_2_childWidth"}], "bins": {"signal": "child__HOUR_bin_maxbins_30_HOUR_bins"}, "zero": false}, {"name": "child__HOUR_y", "type": "linear", "domain": [{"signal": "(data(\"source_2_child__HOUR_y_domain___count\")[0] || {}).min"}, {"signal": "(data(\"source_2_child__HOUR_y_domain___count\")[0] || {}).max"}], "range": [{"signal": "concat_2_childHeight"}, 0], "zero": true, "nice": true}, {"name": "child__MINUTE_x", "type": "linear", "domain": {"signal": "[child__MINUTE_bin_maxbins_30_MINUTE_bins.start, child__MINUTE_bin_maxbins_30_MINUTE_bins.stop]"}, "range": [0, {"signal": "concat_3_childWidth"}], "bins": {"signal": "child__MINUTE_bin_maxbins_30_MINUTE_bins"}, "zero": false}, {"name": "child__MINUTE_y", "type": "linear", "domain": [{"signal": "(data(\"source_3_child__MINUTE_y_domain___count\")[0] || {}).min"}, {"signal": "(data(\"source_3_child__MINUTE_y_domain___count\")[0] || {}).max"}], "range": [{"signal": "concat_3_childHeight"}, 0], "zero": true, "nice": true}], "background": "white", "padding": 5, "layout": {"padding": 20, "bounds": "full", "align": "each"}}, {"mode": "vega"});
+</script></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">categ_cols_dist</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">data</span><span class="p">)</span><span class="o">.</span><span class="n">mark_bar</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="n">alt</span><span class="o">.</span><span class="n">repeat</span><span class="p">(),</span><span class="nb">type</span><span class="o">=</span> <span class="s2">&quot;nominal&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s2">&quot;x&quot;</span><span class="p">),</span>
+    <span class="n">x</span> <span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s2">&quot;count()&quot;</span><span class="p">),</span>
+<span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span>
+        <span class="n">width</span> <span class="o">=</span> <span class="mi">400</span><span class="p">,</span>
+        <span class="n">height</span> <span class="o">=</span> <span class="mi">300</span>
+<span class="p">)</span><span class="o">.</span><span class="n">repeat</span><span class="p">(</span>
+     <span class="p">[</span><span class="s2">&quot;TYPE&quot;</span><span class="p">,</span> <span class="s2">&quot;NEIGHBOURHOOD&quot;</span><span class="p">],</span>
+    <span class="n">columns</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="p">)</span>
+<span class="n">categ_cols_dist</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html">
+<style>
+  #altair-viz-2bf113c847a64136a2e796ddae10dd28.vega-embed {
+    width: 100%;
+    display: flex;
+  }
+
+  #altair-viz-2bf113c847a64136a2e796ddae10dd28.vega-embed details,
+  #altair-viz-2bf113c847a64136a2e796ddae10dd28.vega-embed details summary {
+    position: relative;
+  }
+</style>
+<div id="altair-viz-2bf113c847a64136a2e796ddae10dd28"></div>
+<script type="text/javascript">
+  var VEGA_DEBUG = (typeof VEGA_DEBUG == "undefined") ? {} : VEGA_DEBUG;
+  (function(spec, embedOpt){
+    let outputDiv = document.currentScript.previousElementSibling;
+    if (outputDiv.id !== "altair-viz-2bf113c847a64136a2e796ddae10dd28") {
+      outputDiv = document.getElementById("altair-viz-2bf113c847a64136a2e796ddae10dd28");
+    }
+    const paths = {
+      "vega": "https://cdn.jsdelivr.net/npm/vega@5?noext",
+      "vega-lib": "https://cdn.jsdelivr.net/npm/vega-lib?noext",
+      "vega-lite": "https://cdn.jsdelivr.net/npm/vega-lite@5.15.1?noext",
+      "vega-embed": "https://cdn.jsdelivr.net/npm/vega-embed@6?noext",
+    };
+
+    function maybeLoadScript(lib, version) {
+      var key = `${lib.replace("-", "")}_version`;
+      return (VEGA_DEBUG[key] == version) ?
+        Promise.resolve(paths[lib]) :
+        new Promise(function(resolve, reject) {
+          var s = document.createElement('script');
+          document.getElementsByTagName("head")[0].appendChild(s);
+          s.async = true;
+          s.onload = () => {
+            VEGA_DEBUG[key] = version;
+            return resolve(paths[lib]);
+          };
+          s.onerror = () => reject(`Error loading script: ${paths[lib]}`);
+          s.src = paths[lib];
+        });
+    }
+
+    function showError(err) {
+      outputDiv.innerHTML = `<div class="error" style="color:red;">${err}</div>`;
+      throw err;
+    }
+
+    function displayChart(vegaEmbed) {
+      vegaEmbed(outputDiv, spec, embedOpt)
+        .catch(err => showError(`Javascript Error: ${err.message}<br>This usually means there's a typo in your chart specification. See the javascript console for the full traceback.`));
+    }
+
+    if(typeof define === "function" && define.amd) {
+      requirejs.config({paths});
+      require(["vega-embed"], displayChart, err => showError(`Error loading script: ${err.message}`));
+    } else {
+      maybeLoadScript("vega", "5")
+        .then(() => maybeLoadScript("vega-lite", "5.15.1"))
+        .then(() => maybeLoadScript("vega-embed", "6"))
+        .catch(showError)
+        .then(() => displayChart(vegaEmbed));
+    }
+  })({"$schema": "https://vega.github.io/schema/vega/v5.json", "data": [{"name": "source_0"}, {"name": "data_1", "values": [{"TYPE": "Break and Enter Commercial", "__count": 47836}, {"TYPE": "Break and Enter Residential/Other", "__count": 72543}, {"TYPE": "Homicide", "__count": 316}, {"TYPE": "Mischief", "__count": 107268}, {"TYPE": "Offence Against a Person", "__count": 76906}, {"TYPE": "Other Theft", "__count": 219751}, {"TYPE": "Theft from Vehicle", "__count": 243335}, {"TYPE": "Theft of Bicycle", "__count": 37293}, {"TYPE": "Theft of Vehicle", "__count": 44935}, {"TYPE": "Vehicle Collision or Pedestrian Struck (with Fatality)", "__count": 359}, {"TYPE": "Vehicle Collision or Pedestrian Struck (with Injury)", "__count": 29319}]}, {"name": "data_2", "values": [{"NEIGHBOURHOOD": "Oakridge", "__count": 13174}, {"NEIGHBOURHOOD": "Fairview", "__count": 53853}, {"NEIGHBOURHOOD": "West End", "__count": 78862}, {"NEIGHBOURHOOD": "Shaughnessy", "__count": 8639}, {"NEIGHBOURHOOD": "Central Business District", "__count": 237333}, {"NEIGHBOURHOOD": "Hastings-Sunrise", "__count": 30289}, {"NEIGHBOURHOOD": "Strathcona", "__count": 56667}, {"NEIGHBOURHOOD": "Grandview-Woodland", "__count": 49300}, {"NEIGHBOURHOOD": "Kitsilano", "__count": 42859}, {"NEIGHBOURHOOD": "Mount Pleasant", "__count": 55435}, {"NEIGHBOURHOOD": "Kensington-Cedar Cottage", "__count": 41682}, {"NEIGHBOURHOOD": "Sunset", "__count": 29471}, {"NEIGHBOURHOOD": "Stanley Park", "__count": 5671}, {"NEIGHBOURHOOD": "Marpole", "__count": 22019}, {"NEIGHBOURHOOD": "West Point Grey", "__count": 9595}, {"NEIGHBOURHOOD": "Victoria-Fraserview", "__count": 17603}, {"NEIGHBOURHOOD": "Kerrisdale", "__count": 11529}, {"NEIGHBOURHOOD": "Riley Park", "__count": 21002}, {"NEIGHBOURHOOD": "Arbutus Ridge", "__count": 9418}, {"NEIGHBOURHOOD": "Renfrew-Collingwood", "__count": 47280}, {"NEIGHBOURHOOD": "Killarney", "__count": 16595}, {"NEIGHBOURHOOD": "Dunbar-Southlands", "__count": 11462}, {"NEIGHBOURHOOD": "South Cambie", "__count": 8972}, {"NEIGHBOURHOOD": "Musqueam", "__count": 1007}, {"NEIGHBOURHOOD": null, "__count": 144}]}, {"name": "data_1_child__TYPE_x_domain___count", "values": [{"min": 316, "max": 243335}]}, {"name": "source_0_child__TYPE_y_domain_TYPE", "values": [{"TYPE": "Break and Enter Commercial", "sort_field": 47836}, {"TYPE": "Break and Enter Residential/Other", "sort_field": 72543}, {"TYPE": "Homicide", "sort_field": 316}, {"TYPE": "Mischief", "sort_field": 107268}, {"TYPE": "Offence Against a Person", "sort_field": 76906}, {"TYPE": "Other Theft", "sort_field": 219751}, {"TYPE": "Theft from Vehicle", "sort_field": 243335}, {"TYPE": "Theft of Bicycle", "sort_field": 37293}, {"TYPE": "Theft of Vehicle", "sort_field": 44935}, {"TYPE": "Vehicle Collision or Pedestrian Struck (with Fatality)", "sort_field": 359}, {"TYPE": "Vehicle Collision or Pedestrian Struck (with Injury)", "sort_field": 29319}]}, {"name": "data_2_child__NEIGHBOURHOOD_x_domain___count", "values": [{"min": 144, "max": 237333}]}, {"name": "source_0_child__NEIGHBOURHOOD_y_domain_NEIGHBOURHOOD", "values": [{"NEIGHBOURHOOD": "Oakridge", "sort_field": 13174}, {"NEIGHBOURHOOD": "Fairview", "sort_field": 53853}, {"NEIGHBOURHOOD": "West End", "sort_field": 78862}, {"NEIGHBOURHOOD": "Shaughnessy", "sort_field": 8639}, {"NEIGHBOURHOOD": "Central Business District", "sort_field": 237333}, {"NEIGHBOURHOOD": "Hastings-Sunrise", "sort_field": 30289}, {"NEIGHBOURHOOD": "Strathcona", "sort_field": 56667}, {"NEIGHBOURHOOD": "Grandview-Woodland", "sort_field": 49300}, {"NEIGHBOURHOOD": "Kitsilano", "sort_field": 42859}, {"NEIGHBOURHOOD": "Mount Pleasant", "sort_field": 55435}, {"NEIGHBOURHOOD": "Kensington-Cedar Cottage", "sort_field": 41682}, {"NEIGHBOURHOOD": "Sunset", "sort_field": 29471}, {"NEIGHBOURHOOD": "Stanley Park", "sort_field": 5671}, {"NEIGHBOURHOOD": "Marpole", "sort_field": 22019}, {"NEIGHBOURHOOD": "West Point Grey", "sort_field": 9595}, {"NEIGHBOURHOOD": "Victoria-Fraserview", "sort_field": 17603}, {"NEIGHBOURHOOD": "Kerrisdale", "sort_field": 11529}, {"NEIGHBOURHOOD": "Riley Park", "sort_field": 21002}, {"NEIGHBOURHOOD": "Arbutus Ridge", "sort_field": 9418}, {"NEIGHBOURHOOD": "Renfrew-Collingwood", "sort_field": 47280}, {"NEIGHBOURHOOD": "Killarney", "sort_field": 16595}, {"NEIGHBOURHOOD": "Dunbar-Southlands", "sort_field": 11462}, {"NEIGHBOURHOOD": "South Cambie", "sort_field": 8972}, {"NEIGHBOURHOOD": "Musqueam", "sort_field": 1007}, {"NEIGHBOURHOOD": null, "sort_field": 144}]}], "signals": [{"name": "childHeight", "value": 300}], "marks": [{"type": "group", "name": "child__TYPE_group", "encode": {"update": {"height": {"signal": "childHeight"}, "width": {"signal": "width"}}}, "marks": [{"type": "rect", "name": "child__TYPE_marks", "from": {"data": "data_1"}, "encode": {"update": {"y": {"field": "TYPE", "scale": "child__TYPE_y"}, "height": {"signal": "max(0.25, bandwidth('child__TYPE_y'))"}, "x2": {"value": 0, "scale": "child__TYPE_x"}, "description": {"signal": "\"Count of Records: \" + (format(datum[\"__count\"], \"\")) + \"; TYPE: \" + (isValid(datum[\"TYPE\"]) ? datum[\"TYPE\"] : \"\"+datum[\"TYPE\"])"}, "x": {"field": "__count", "scale": "child__TYPE_x"}, "fill": {"value": "#4c78a8"}, "ariaRoleDescription": {"value": "bar"}}}, "style": ["bar"]}], "axes": [{"scale": "child__TYPE_x", "domain": false, "gridScale": "child__TYPE_y", "maxExtent": 0, "tickCount": {"signal": "ceil(width/40)"}, "aria": false, "minExtent": 0, "labels": false, "zindex": 0, "grid": true, "ticks": false, "orient": "bottom"}, {"scale": "child__TYPE_x", "labelOverlap": true, "tickCount": {"signal": "ceil(width/40)"}, "orient": "bottom", "labelFlush": true, "grid": false, "title": "Count of Records", "zindex": 0}, {"scale": "child__TYPE_y", "zindex": 0, "grid": false, "orient": "left", "title": "TYPE"}], "style": "cell"}, {"type": "group", "name": "child__NEIGHBOURHOOD_group", "encode": {"update": {"height": {"signal": "childHeight"}, "width": {"signal": "width"}}}, "marks": [{"type": "rect", "name": "child__NEIGHBOURHOOD_marks", "from": {"data": "data_2"}, "encode": {"update": {"fill": {"value": "#4c78a8"}, "ariaRoleDescription": {"value": "bar"}, "x": {"field": "__count", "scale": "child__NEIGHBOURHOOD_x"}, "x2": {"value": 0, "scale": "child__NEIGHBOURHOOD_x"}, "y": {"field": "NEIGHBOURHOOD", "scale": "child__NEIGHBOURHOOD_y"}, "height": {"signal": "max(0.25, bandwidth('child__NEIGHBOURHOOD_y'))"}, "description": {"signal": "\"Count of Records: \" + (format(datum[\"__count\"], \"\")) + \"; NEIGHBOURHOOD: \" + (isValid(datum[\"NEIGHBOURHOOD\"]) ? datum[\"NEIGHBOURHOOD\"] : \"\"+datum[\"NEIGHBOURHOOD\"])"}}}, "style": ["bar"]}], "axes": [{"scale": "child__NEIGHBOURHOOD_x", "tickCount": {"signal": "ceil(width/40)"}, "orient": "bottom", "gridScale": "child__NEIGHBOURHOOD_y", "aria": false, "grid": true, "maxExtent": 0, "minExtent": 0, "zindex": 0, "domain": false, "ticks": false, "labels": false}, {"scale": "child__NEIGHBOURHOOD_x", "labelFlush": true, "labelOverlap": true, "zindex": 0, "orient": "bottom", "grid": false, "tickCount": {"signal": "ceil(width/40)"}, "title": "Count of Records"}, {"scale": "child__NEIGHBOURHOOD_y", "orient": "left", "zindex": 0, "grid": false, "title": "NEIGHBOURHOOD"}], "style": "cell"}], "scales": [{"name": "child__TYPE_x", "type": "linear", "domain": [{"signal": "(data(\"data_1_child__TYPE_x_domain___count\")[0] || {}).min"}, {"signal": "(data(\"data_1_child__TYPE_x_domain___count\")[0] || {}).max"}], "range": [0, {"signal": "width"}], "nice": true, "zero": true}, {"name": "child__TYPE_y", "type": "band", "domain": {"data": "source_0_child__TYPE_y_domain_TYPE", "field": "TYPE", "sort": {"op": "max", "field": "sort_field"}}, "range": [0, {"signal": "childHeight"}], "paddingOuter": 0.05, "paddingInner": 0.1}, {"name": "child__NEIGHBOURHOOD_x", "type": "linear", "domain": [{"signal": "(data(\"data_2_child__NEIGHBOURHOOD_x_domain___count\")[0] || {}).min"}, {"signal": "(data(\"data_2_child__NEIGHBOURHOOD_x_domain___count\")[0] || {}).max"}], "range": [0, {"signal": "width"}], "nice": true, "zero": true}, {"name": "child__NEIGHBOURHOOD_y", "type": "band", "domain": {"data": "source_0_child__NEIGHBOURHOOD_y_domain_NEIGHBOURHOOD", "field": "NEIGHBOURHOOD", "sort": {"op": "max", "field": "sort_field"}}, "range": [0, {"signal": "childHeight"}], "paddingOuter": 0.05, "paddingInner": 0.1}], "layout": {"padding": 20, "columns": 1, "bounds": "full", "align": "all"}, "width": 400, "padding": 5, "background": "white"}, {"mode": "vega"});
+</script></div></div>
+</div>
+</section>
+<section id="correlation">
+<h2>Correlation<a class="headerlink" href="#correlation" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Top Absolute Correlations !&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">get_top_abs_correlations</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">select_dtypes</span><span class="p">(</span><span class="n">include</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;int32&#39;</span><span class="p">,</span><span class="s1">&#39;int64&#39;</span><span class="p">]),</span> <span class="mi">10</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Top Absolute Correlations !
+HOUR   MINUTE    0.114717
+YEAR   MINUTE    0.056099
+       HOUR      0.035971
+       MONTH     0.010681
+       DAY       0.009736
+MONTH  DAY       0.006062
+DAY    HOUR      0.004696
+MONTH  MINUTE    0.003963
+DAY    MINUTE    0.003185
+MONTH  HOUR      0.002013
+dtype: float64
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="preprocessing">
+<h2>Preprocessing<a class="headerlink" href="#preprocessing" title="Permalink to this heading">#</a></h2>
+<p>We’ll start the data preprocessing phase by grouping the rows according to the TYPE, YEAR, and MONTH columns to aggregate the counts of specific crimes occurring in each month. Additionally, we’ll adjust the datetime variable format for consistency. However, as the latest month (2023-11) is incomplete, we’ll exclude this month from the dataset. Finally, we’ll filter the data so that we focus only on <code class="docutils literal notranslate"><span class="pre">Theft</span> <span class="pre">from</span> <span class="pre">Vehicle</span></code> crimes, the most common crime in Vancouver in the past 20 years. This initial processing sets the groundwork for our subsequent time-series forecasting models.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">preprocessed_data_full</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../data/processed/preprocessed_data_full.csv&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+<span class="n">preprocessed_data_full</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>TYPE</th>
+      <th>YEAR</th>
+      <th>MONTH</th>
+      <th>Observations</th>
+      <th>YEAR-MONTH</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Break and Enter Commercial</td>
+      <td>2003</td>
+      <td>1</td>
+      <td>303</td>
+      <td>2003-01-01</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Break and Enter Commercial</td>
+      <td>2003</td>
+      <td>2</td>
+      <td>254</td>
+      <td>2003-02-01</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Break and Enter Commercial</td>
+      <td>2003</td>
+      <td>3</td>
+      <td>292</td>
+      <td>2003-03-01</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Break and Enter Commercial</td>
+      <td>2003</td>
+      <td>4</td>
+      <td>266</td>
+      <td>2003-04-01</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Break and Enter Commercial</td>
+      <td>2003</td>
+      <td>5</td>
+      <td>290</td>
+      <td>2003-05-01</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theft_from_vehicle</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;../data/processed/preprocessed_theft_from_vehicle_full.csv&quot;</span><span class="p">,</span> <span class="n">encoding</span><span class="o">=</span><span class="s2">&quot;utf-8&quot;</span><span class="p">)</span>
+<span class="n">theft_from_vehicle</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>TYPE</th>
+      <th>YEAR</th>
+      <th>MONTH</th>
+      <th>Observations</th>
+      <th>YEAR-MONTH</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Theft from Vehicle</td>
+      <td>2003</td>
+      <td>1</td>
+      <td>1438</td>
+      <td>2003-01-01</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Theft from Vehicle</td>
+      <td>2003</td>
+      <td>2</td>
+      <td>1102</td>
+      <td>2003-02-01</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Theft from Vehicle</td>
+      <td>2003</td>
+      <td>3</td>
+      <td>1251</td>
+      <td>2003-03-01</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Theft from Vehicle</td>
+      <td>2003</td>
+      <td>4</td>
+      <td>1528</td>
+      <td>2003-04-01</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Theft from Vehicle</td>
+      <td>2003</td>
+      <td>5</td>
+      <td>1873</td>
+      <td>2003-05-01</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theft_from_vehicle</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+RangeIndex: 250 entries, 0 to 249
+Data columns (total 5 columns):
+ #   Column        Non-Null Count  Dtype 
+---  ------        --------------  ----- 
+ 0   TYPE          250 non-null    object
+ 1   YEAR          250 non-null    int64 
+ 2   MONTH         250 non-null    int64 
+ 3   Observations  250 non-null    int64 
+ 4   YEAR-MONTH    250 non-null    object
+dtypes: int64(3), object(2)
+memory usage: 9.9+ KB
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">theft_from_vehicle</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s1">&#39;YEAR-MONTH&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Observations&#39;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>&lt;Axes: xlabel=&#39;YEAR-MONTH&#39;, ylabel=&#39;Observations&#39;&gt;
+</pre></div>
+</div>
+<img alt="_images/e1e65eac8b8994abcee1dfc31206ac2acecb43ae1c75f08e7b331cb3894551bc.png" src="_images/e1e65eac8b8994abcee1dfc31206ac2acecb43ae1c75f08e7b331cb3894551bc.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theft_from_vehicle_filtered</span> <span class="o">=</span> <span class="n">theft_from_vehicle</span><span class="p">[[</span><span class="s1">&#39;YEAR-MONTH&#39;</span><span class="p">,</span><span class="s1">&#39;Observations&#39;</span><span class="p">]]</span>
+<span class="n">theft_from_vehicle_filtered</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s1">&#39;YEAR-MONTH&#39;</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">theft_from_vehicle_filtered</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Observations</th>
+    </tr>
+    <tr>
+      <th>YEAR-MONTH</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2003-01-01</th>
+      <td>1438</td>
+    </tr>
+    <tr>
+      <th>2003-02-01</th>
+      <td>1102</td>
+    </tr>
+    <tr>
+      <th>2003-03-01</th>
+      <td>1251</td>
+    </tr>
+    <tr>
+      <th>2003-04-01</th>
+      <td>1528</td>
+    </tr>
+    <tr>
+      <th>2003-05-01</th>
+      <td>1873</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="simple-moving-average-exponential-smoothing">
+<h2>Simple Moving Average &amp; Exponential Smoothing<a class="headerlink" href="#simple-moving-average-exponential-smoothing" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define the size of the sliding window</span>
+<span class="n">window_size</span> <span class="o">=</span> <span class="mi">12</span>
+<span class="c1"># Define alpha (smoothing parameter in ES)</span>
+<span class="n">alpha</span><span class="o">=</span><span class="mf">0.3</span>
+
+<span class="c1"># Perform Simple Moving Average (SMA) and Exponential Smoothing (ES)</span>
+<span class="n">sma_values</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">smoothed_values</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">theft_from_vehicle_filtered</span><span class="p">)</span> <span class="o">-</span> <span class="n">window_size</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+    
+    <span class="n">window</span> <span class="o">=</span> <span class="n">theft_from_vehicle_filtered</span><span class="p">[</span><span class="s1">&#39;Observations&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="n">i</span><span class="p">:</span><span class="n">i</span><span class="o">+</span><span class="n">window_size</span><span class="p">]</span>
+
+    <span class="c1"># SMA</span>
+    <span class="n">window_mean</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span>
+    <span class="n">sma_values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">window_mean</span><span class="p">)</span>
+
+    <span class="c1"># ES</span>
+    <span class="n">smoothed_val</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">ewm</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span> <span class="n">adjust</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+    <span class="n">smoothed_values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">smoothed_val</span><span class="p">)</span>
+
+<span class="n">sma_merged</span> <span class="o">=</span> <span class="n">merge_forecast_values</span><span class="p">(</span><span class="n">theft_from_vehicle_filtered</span><span class="p">,</span> <span class="n">sma_values</span><span class="p">,</span> <span class="s2">&quot;SMA_Forecast&quot;</span><span class="p">)</span>
+<span class="n">es_merged</span> <span class="o">=</span> <span class="n">merge_forecast_values</span><span class="p">(</span><span class="n">theft_from_vehicle_filtered</span><span class="p">,</span> <span class="n">smoothed_values</span><span class="p">,</span> <span class="s2">&quot;ES_Forecast&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
+<span class="ne">ValueError</span><span class="g g-Whitespace">                                </span>Traceback (most recent call last)
+<span class="n">Cell</span> <span class="n">In</span><span class="p">[</span><span class="mi">14</span><span class="p">],</span> <span class="n">line</span> <span class="mi">21</span>
+<span class="g g-Whitespace">     </span><span class="mi">18</span>     <span class="n">smoothed_val</span> <span class="o">=</span> <span class="n">window</span><span class="o">.</span><span class="n">ewm</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="n">alpha</span><span class="p">,</span> <span class="n">adjust</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="g g-Whitespace">     </span><span class="mi">19</span>     <span class="n">smoothed_values</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">smoothed_val</span><span class="p">)</span>
+<span class="ne">---&gt; </span><span class="mi">21</span> <span class="n">sma_merged</span> <span class="o">=</span> <span class="n">merge_forecast_values</span><span class="p">(</span><span class="n">theft_from_vehicle_filtered</span><span class="p">,</span> <span class="n">sma_values</span><span class="p">,</span> <span class="s2">&quot;SMA_Forecast&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">22</span> <span class="n">es_merged</span> <span class="o">=</span> <span class="n">merge_forecast_values</span><span class="p">(</span><span class="n">theft_from_vehicle_filtered</span><span class="p">,</span> <span class="n">smoothed_values</span><span class="p">,</span> <span class="s2">&quot;ES_Forecast&quot;</span><span class="p">)</span>
+
+<span class="nn">File ~/git/522/project-avalon/report/../src/merge_forecast_values.py:26,</span> in <span class="ni">merge_forecast_values</span><span class="nt">(original_df, forecasted_values, col_name)</span>
+<span class="g g-Whitespace">     </span><span class="mi">24</span> <span class="c1"># Check if the index of original df is a DatetimeIndex</span>
+<span class="g g-Whitespace">     </span><span class="mi">25</span> <span class="k">if</span> <span class="ow">not</span> <span class="nb">isinstance</span><span class="p">(</span><span class="n">original_df</span><span class="o">.</span><span class="n">index</span><span class="p">,</span> <span class="n">pd</span><span class="o">.</span><span class="n">DatetimeIndex</span><span class="p">):</span>
+<span class="ne">---&gt; </span><span class="mi">26</span>     <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;Index of the DataFrame must be a DatetimeIndex for ARIMA prediction.&quot;</span><span class="p">)</span>
+<span class="g g-Whitespace">     </span><span class="mi">28</span> <span class="c1"># Check if all columns in original df is numerical</span>
+<span class="g g-Whitespace">     </span><span class="mi">29</span> <span class="k">if</span> <span class="ow">not</span> <span class="nb">all</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">api</span><span class="o">.</span><span class="n">types</span><span class="o">.</span><span class="n">is_numeric_dtype</span><span class="p">(</span><span class="n">original_df</span><span class="o">.</span><span class="n">loc</span><span class="p">[:,</span> <span class="n">col</span><span class="p">])</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">original_df</span><span class="o">.</span><span class="n">columns</span><span class="p">):</span>
+
+<span class="ne">ValueError</span>: Index of the DataFrame must be a DatetimeIndex for ARIMA prediction.
+</pre></div>
+</div>
+</div>
+</div>
+<figure class="align-default" id="sma-prediction-plot">
+<a class="reference internal image-reference" href="_images/sma_prediction_plot.png"><img alt="_images/sma_prediction_plot.png" src="_images/sma_prediction_plot.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">The plot that compares the original value and the predictions made by simple moving average.</span><a class="headerlink" href="#sma-prediction-plot" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="es-prediction-plot">
+<a class="reference internal image-reference" href="_images/es_prediction_plot.png"><img alt="_images/es_prediction_plot.png" src="_images/es_prediction_plot.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">The plot that compares the original value and the predictions made by exponential smoothing.</span><a class="headerlink" href="#es-prediction-plot" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Based on a visual assessment of the Simple Moving Average (SMA) and Exponential Smoothing (ES) forecasts, it’s evident that both methods broadly capture the general trend of the actual values. However, neither forecast method appears to be highly accurate. The Exponential Smoothing approach demonstrates a slightly improved performance compared to SMA.</p>
+</section>
+<section id="arima-1-1-0">
+<h2>ARIMA(1,1,0)<a class="headerlink" href="#arima-1-1-0" title="Permalink to this heading">#</a></h2>
+<figure class="align-default" id="autocorrelation-plot">
+<a class="reference internal image-reference" href="_images/autocorrelation_plot.png"><img alt="_images/autocorrelation_plot.png" src="_images/autocorrelation_plot.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">The autocorrelation plot for the time-series observations in our preprocessed data.</span><a class="headerlink" href="#autocorrelation-plot" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="autocorrelation-with-diff-plot">
+<a class="reference internal image-reference" href="_images/autocorrelation_with_diff_plot.png"><img alt="_images/autocorrelation_with_diff_plot.png" src="_images/autocorrelation_with_diff_plot.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 4 </span><span class="caption-text">The autocorrelation plot for the time-series observations in our preprocessed data with 1-time differencing.</span><a class="headerlink" href="#autocorrelation-with-diff-plot" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">arima_pred_values</span> <span class="o">=</span> <span class="n">arima_prediction</span><span class="p">(</span><span class="n">theft_from_vehicle_filtered</span><span class="p">)</span>
+<span class="n">arima_merged</span> <span class="o">=</span> <span class="n">merge_forecast_values</span><span class="p">(</span><span class="n">theft_from_vehicle_filtered</span><span class="p">,</span> <span class="n">arima_pred_values</span><span class="p">,</span> <span class="s2">&quot;ARIMA_Forecast&quot;</span><span class="p">)</span>
+<span class="n">arima_merged</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Observations</th>
+      <th>ARIMA_Forecast</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2003-01-01</th>
+      <td>1438.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2003-02-01</th>
+      <td>1102.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2003-03-01</th>
+      <td>1251.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2003-04-01</th>
+      <td>1528.0</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2003-05-01</th>
+      <td>1873.0</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<figure class="align-default" id="arima-prediction-plot">
+<a class="reference internal image-reference" href="_images/arima_prediction_plot.png"><img alt="_images/arima_prediction_plot.png" src="_images/arima_prediction_plot.png" style="width: 600px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 5 </span><span class="caption-text">The plot that compares the original value and the predictions made by arima model.</span><a class="headerlink" href="#arima-prediction-plot" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>The forecast from the ARIMA model looks much better! We can see some clear overlaps between the forecasted value and the original value.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">merged_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">sma_merged</span><span class="p">,</span> <span class="n">es_merged</span><span class="p">[</span><span class="s2">&quot;ES_Forecast&quot;</span><span class="p">],</span> <span class="n">arima_merged</span><span class="p">[</span><span class="s2">&quot;ARIMA_Forecast&quot;</span><span class="p">]],</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">merged_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Observations</th>
+      <th>SMA_Forecast</th>
+      <th>ES_Forecast</th>
+      <th>ARIMA_Forecast</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2003-01-01</th>
+      <td>1438.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2003-02-01</th>
+      <td>1102.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2003-03-01</th>
+      <td>1251.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2003-04-01</th>
+      <td>1528.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2003-05-01</th>
+      <td>1873.0</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Drop NA values to evaluate performance</span>
+
+<span class="n">merged_df_drop</span> <span class="o">=</span> <span class="n">merged_df</span><span class="o">.</span><span class="n">dropna</span><span class="p">()</span>
+
+<span class="n">results_df</span> <span class="o">=</span> <span class="n">get_metrics_from_df</span><span class="p">(</span><span class="n">merged_df_drop</span><span class="p">,</span> <span class="s2">&quot;Observations&quot;</span><span class="p">)</span>
+<span class="n">results_df</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Forecast_Column</th>
+      <th>MAE</th>
+      <th>MSE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>SMA_Forecast</td>
+      <td>121.216737</td>
+      <td>27239.951827</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ES_Forecast</td>
+      <td>98.641493</td>
+      <td>16240.436389</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ARIMA_Forecast</td>
+      <td>26.856890</td>
+      <td>1940.870649</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+<p>The displayed dataframe outlines the performance metrics, specifically the mean absolute error (MAE) and mean squared error (MSE), for the three models. Notably, there’s a discernible pattern showcasing a marked enhancement in performance, progressing from Simple Moving Average (SMA) to Exponential Smoothing Approach (ESA) and ultimately to ARIMA. This consistent trend aligns with the observations gleaned from the visualizations crafted earlier, affirming the gradual improvement in forecasting accuracy across the models.</p>
+<p>While the ARIMA model stands out as the most effective among the three forecasting models—simple moving average and exponential smoothing—it’s crucial to acknowledge the room for enhancement in our predictive capabilities. Future advancements could entail fine-tuning the ARIMA hyperparameters or exploring alternative models to ascertain if further accuracy gains are attainable. Additionally, integrating exogenous variables, such as socioeconomic indicators or weather data, might augment the predictive power of our models, offering a more comprehensive understanding of crime dynamics. Furthermore, this analysis prompts future inquiries, including investigating the influence of specific external factors on crime occurrences or exploring spatial-temporal models to predict crime hotspots within Vancouver. These prospective avenues aim to refine our forecasting precision and deepen our insights into crime trends, paving the way for more informed law enforcement strategies and proactive crime prevention measures.</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="references">
+<h1>References<a class="headerlink" href="#references" title="Permalink to this heading">#</a></h1>
+<div class="docutils container" id="id10">
+<dl class="citation">
+<dt class="label" id="id13"><span class="brackets"><a class="fn-backref" href="#id1">Ama23</a></span></dt>
+<dd><p><strong>missing journal in CTVnews</strong></p>
+</dd>
+<dt class="label" id="id18"><span class="brackets"><a class="fn-backref" href="#id2">Dep23</a></span></dt>
+<dd><p>Vancouver Police Department. 2023.</p>
+</dd>
+<dt class="label" id="id12"><span class="brackets"><a class="fn-backref" href="#id3">HMVDW+20</a></span></dt>
+<dd><p>Charles R Harris, K Jarrod Millman, Stéfan J Van Der Walt, Ralf Gommers, Pauli Virtanen, David Cournapeau, Eric Wieser, Julian Taylor, Sebastian Berg, Nathaniel J Smith, and others. Array programming with numpy. <em>Nature</em>, 585(7825):357–362, 2020.</p>
+</dd>
+<dt class="label" id="id14"><span class="brackets"><a class="fn-backref" href="#id7">Hun07</a></span></dt>
+<dd><p>John D. Hunter. Matplotlib: a 2d graphics environment. <em>Computing in Science &amp; Engineering</em>, 9(3):90–95, 2007. <a class="reference external" href="https://doi.org/10.1109/MCSE.2007.55">doi:10.1109/MCSE.2007.55</a>.</p>
+</dd>
+<dt class="label" id="id15"><span class="brackets"><a class="fn-backref" href="#id6">PVG+11</a></span></dt>
+<dd><p>Fabian Pedregosa, Gaël Varoquaux, Alexandre Gramfort, Vincent Michel, Bertrand Thirion, Olivier Grisel, Mathieu Blondel, Peter Prettenhofer, Ron Weiss, Vincent Dubourg, Jake Vanderplas, Alexandre Passos, David Cournapeau, Matthieu Brucher, Matthieu Perrot, and Édouard Duchesnay. Scikit-learn: machine learning in python. <em>Journal of Machine Learning Research</em>, 12(85):2825–2830, 2011. URL: <a class="reference external" href="http://jmlr.org/papers/v12/pedregosa11a.html">http://jmlr.org/papers/v12/pedregosa11a.html</a>.</p>
+</dd>
+<dt class="label" id="id17"><span class="brackets"><a class="fn-backref" href="#id5">VGH+18</a></span></dt>
+<dd><p>Jacob VanderPlas, Brian E. Granger, Jeffrey Heer, Dominik Moritz, Kanit Wongsuphasawat, Arvind Satyanarayan, Eitan Lees, Ilia Timofeev, Ben Welsh, and Scott Sievert. Altair: interactive statistical visualizations for python. <em>Journal of Open Source Software</em>, 3(32):1057, 2018. URL: <a class="reference external" href="https://doi.org/10.21105/joss.01057">https://doi.org/10.21105/joss.01057</a>, <a class="reference external" href="https://doi.org/10.21105/joss.01057">doi:10.21105/joss.01057</a>.</p>
+</dd>
+<dt class="label" id="id16"><span class="brackets"><a class="fn-backref" href="#id9">SkipperSeaboldJosefPerktold10</a></span></dt>
+<dd><p>Skipper Seabold and Josef Perktold. Statsmodels: Econometric and Statistical Modeling with Python. In Stéfan van der Walt and Jarrod Millman, editors, <em>Proceedings of the 9th Python in Science Conference</em>, 92 – 96. 2010. <a class="reference external" href="https://doi.org/10.25080/Majora-92bf1922-011">doi:10.25080/Majora-92bf1922-011</a>.</p>
+</dd>
+<dt class="label" id="id19"><span class="brackets"><a class="fn-backref" href="#id8">Waskom21</a></span></dt>
+<dd><p>Michael Waskom. seaborn: statistical data visualization. <em>The Journal of Open Source Software</em>, 6(60):3021, April 2021. <a class="reference external" href="https://doi.org/10.21105/joss.03021">doi:10.21105/joss.03021</a>.</p>
+</dd>
+<dt class="label" id="id11"><span class="brackets"><a class="fn-backref" href="#id4">WesMcKinney10</a></span></dt>
+<dd><p>Wes McKinney. Data Structures for Statistical Computing in Python. In Stéfan van der Walt and Jarrod Millman, editors, <em>Proceedings of the 9th Python in Science Conference</em>, 56 – 61. 2010. <a class="reference external" href="https://doi.org/10.25080/Majora-92bf1922-00a">doi:10.25080/Majora-92bf1922-00a</a>.</p>
+</dd>
+</dl>
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Envrionment Setup</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#crime-forecast-in-vancouver">Crime Forecast in Vancouver</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#summary">Summary</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#introduction">Introduction</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#methods">Methods</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#data">Data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis">Analysis</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#results-discussions">Results &amp; Discussions</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#missing-values">Missing values</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#distribution">Distribution</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#correlation">Correlation</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#preprocessing">Preprocessing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#simple-moving-average-exponential-smoothing">Simple Moving Average &amp; Exponential Smoothing</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#arima-1-1-0">ARIMA(1,1,0)</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#references">References</a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Orix Au Yeung, Ben Chen, Mo Norouzi, Yiwei Zhang
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=5b4479735964841361fd"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=5b4479735964841361fd"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
