@@ -61,11 +61,41 @@ python -m ipykernel install --user --name avalon --display-name "Python (avalon)
 2. Ensure all dependencies are installed.
 3. Open Jupyter Notebook or JupyterLab to run the [analysis notebook](milestone_1.ipynb)
 
-## 📔 Building the report website
+### 📔 Run the Scripts
 
 Either in the docker environment/local conda environment, run the following command:
 
 ```shell
+# Read raw data and perform EDA and output figures and tables
+python scripts/EDA.py \
+   --input_filepath=data/raw/crimedata_csv_AllNeighbourhoods_AllYears.csv \
+   --output_filepath=results/
+
+# split and preprocess data
+python scripts/split_n_preprocess.py \
+   --raw-data=data/raw/crimedata_csv_AllNeighbourhoods_AllYears.csv \
+   --data-to=data/processed/
+
+# make forecasting and save results as csv
+python scripts/modelling.py \
+   --preprocessed_data=data/processed/preprocessed_theft_from_vehicle_full.csv \
+   --results_folder=results/ 
+
+# plot out prediction results
+python scripts/prediction_plot.py \
+   --prediction_df=results/tables/all_predictions.csv \
+   --results_folder=results/
+
+# evaluate model on test data and save results
+python scripts/autocorrelation_plot.py \
+   --preprocessed_data=data/processed/preprocessed_theft_from_vehicle_full.csv \
+   --results_folder=results/
+
+# find final metric
+python scripts/get_metrics.py \
+   --predictions_data=results/tables/all_predictions.csv \
+   --results_folder=results/
+
 # build HTML report and copy build to docs folder
 jupyter-book build --builder html ./report && \
 rm -rf ./docs && \
