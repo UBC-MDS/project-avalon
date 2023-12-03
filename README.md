@@ -68,7 +68,8 @@ Either in the docker environment/local conda environment, run the following comm
 ```shell
 # build HTML report and copy build to docs folder
 jupyter-book build --builder html ./report && \
-cp -r ./report/_build/html ./docs && \
+rm -rf ./docs && \
+cp -rf ./report/_build/html ./docs && \
 jupyter-book clean report/ --all 
 ```
 
