@@ -11,8 +11,8 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 
 @click.command()
-@click.argument('preprocessed_data')
-@click.argument('results_folder')
+@click.option('--preprocessed_data', type=str, help="Path to preprocessed data")
+@click.option('--results_folder', type=str, help="Path to results folder")
 
 def main(preprocessed_data, results_folder):
 

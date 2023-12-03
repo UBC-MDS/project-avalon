@@ -10,8 +10,8 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 
 @click.command()
-@click.argument('prediction_df')
-@click.argument('results_folder')
+@click.option('--prediction_df', type=str, help="Path of predictions csv")
+@click.option('--results_folder', type=str, help="Path to results folder")
 
 def main(prediction_df, results_folder):
 
