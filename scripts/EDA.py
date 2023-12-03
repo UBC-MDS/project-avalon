@@ -8,17 +8,18 @@ sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from src.numeric_cols import create_numeric_cols_chart
 
 
+
 @click.command()
-@click.argument('input_filepath')
-@click.argument('output_filepath')
+@click.option('--input_filepath', type=str, help="Path to raw data")
+@click.option('--output_filepath', type=str, help="Path to directory where processed data csv will be written to")
+
 
 
 def main(input_filepath, output_filepath):
     
     #reading and 
     data = pd.read_csv(input_filepath, encoding="utf-8")
-    data_info = data.info()
-    pd.DataFrame(data_info).to_csv(os.path.join(output_filepath, "tables", "info.csv"), index=False)
+    data.info()
     data_description= data.describe().T
     pd.DataFrame(data_description).to_csv(os.path.join(output_filepath, "tables", "description.csv"), index=False)
 
@@ -42,8 +43,13 @@ def main(input_filepath, output_filepath):
 
     # correlation
     numeric_columns = data.select_dtypes(include=['float64', 'int64']).columns
-    au_corr = data[numeric_columns].corr().abs().unstack().sort_values(ascending=False)
-    pd.DataFrame(au_corr).to_csv(os.path.join(output_filepath, "tables", "correlation.csv"), index=False)
+    correlation_matrix = data[numeric_columns].corr().abs()
+    correlation_df = correlation_matrix.reset_index().rename(columns={'index': ''})
+    correlation_df.columns = correlation_df.columns.astype(str)
+    correlation_df = correlation_df.rename_axis('', axis=1)
+    correlation_df.to_csv(os.path.join(output_filepath, "tables", "correlation.csv"), index=False)
+
+
 
     #numeric distribution
     numeric_cols = ["MONTH", "DAY", "HOUR", "MINUTE"]
