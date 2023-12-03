@@ -46,7 +46,7 @@ def main(input_filepath, output_filepath):
     # correlation
     numeric_columns = data.select_dtypes(include=['float64', 'int64']).columns
     correlation_matrix = data[numeric_columns].corr().abs()
-    correlation_df = correlation_matrix.reset_index().rename(columns={'index': ''})
+    correlation_df = correlation_matrix.reset_index().rename(columns={'index': 'variable'})
     correlation_df.columns = correlation_df.columns.astype(str)
     correlation_df = correlation_df.rename_axis('', axis=1)
     correlation_df.to_csv(os.path.join(output_filepath, "tables", "correlation.csv"), index=False)
