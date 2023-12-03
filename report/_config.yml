@@ -1,10 +1,33 @@
 title: "Crime Forecast in Vancouver"
 author: "Orix Au Yeung, Ben Chen, Mo Norouzi, Yiwei Zhang"
-date: "2023-12-01"
+date: "2023-12-03"
+copyright: "2023"
+
 sphinx:
   config:
     bibtex_reference_style: author_year
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+#######################################################################################
+# Execution settings
 execute:
   execute_notebooks: force 
+
+#######################################################################################
+# HTML-specific settings
+html:
+  use_repository_button     : true
+  use_issues_button         : true
+  extra_navbar              : Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+  extra_footer              : "Made with ❤️"
+  baseurl                   : "https://pages.github.com/UBC-MDS/project-avalon"
+
 bibtex_bibfiles:
-    - references.bib
+  - references.bib
+
+# Information about where the book exists on the web
+repository:
+  url: https://github.com/UBC-MDS/project-avalon
+  path_to_book: report
+  branch: main
