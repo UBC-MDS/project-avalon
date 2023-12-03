@@ -30,7 +30,7 @@ To run tests, execute the following command in the project root directory:
 python3 tests/run_all_tests.py
 ```
 
-## 🧑‍💻 How to run the notebook
+## 🧑‍💻 How to run the notebook server
 
 ### Docker/Docker compose (recommended)
 
@@ -60,6 +60,17 @@ python -m ipykernel install --user --name avalon --display-name "Python (avalon)
 ```
 2. Ensure all dependencies are installed.
 3. Open Jupyter Notebook or JupyterLab to run the [analysis notebook](milestone_1.ipynb)
+
+## 📔 Building the report website
+
+Either in the docker environment/local conda environment, run the following command:
+
+```shell
+# build HTML report and copy build to docs folder
+jupyter-book build --builder html ./report && \
+cp -r ./report/_build/html ./docs && \
+jupyter-book clean report/ --all 
+```
 
 ## 🌟 Stakeholders
 
