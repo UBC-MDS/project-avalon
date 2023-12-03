@@ -9,6 +9,8 @@ Welcome to the repository for Project Avalon, a part of the DSCI-522 course by G
 
 ## ⭐️ Project Summary
 
+**Project Website:** <https://ubc-mds.github.io/project-avalon/>
+
 This project aims to perform statistical analyses on the crimes committed in the City of Vancouver and develop a classification algorithm to determine the types of crime given a set of parameters.
 
 We created a model to estimate the frequency of vehicle break-ins each month in Vancouver. It uses historical data to inform its predictions, applying methods that consider both recent occurrences and long-established trends. The chosen approach has an average deviation of about 27 incidents per month from the actual numbers, which is notable given the substantial month-to-month variation in the incident counts. The model's current accuracy demonstrates its potential, and we anticipate that incorporating additional factors, such as weather patterns or significant city events, could enhance its predictive capabilities.
