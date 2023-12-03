@@ -19,9 +19,10 @@ def main(input_filepath, output_filepath):
     
     #reading and 
     data = pd.read_csv(input_filepath, encoding="utf-8")
-    data.info()
     data_description= data.describe().T
+    data_description = data_description.reset_index().rename(columns={'index': 'variable'})
     pd.DataFrame(data_description).to_csv(os.path.join(output_filepath, "tables", "description.csv"), index=False)
+    print(data_description)
 
     #finding missing value
     zero_val = (data == 0.00).astype(int).sum(axis=0)
