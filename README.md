@@ -123,6 +123,10 @@ Here are some handy links for quick access:
 
 ## 📖 License
 
-This project is released under [MIT License](LICENSE.md).
-
+All reports contained herein are licensed under the
+[Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License](https://creativecommons.org/licenses/by-sa/4.0/).
+See [the license file](LICENSE.md) for more information. If
+re-using/re-mixing please provide attribution and link to this webpage.
+The software code contained within this repository is licensed under the
+MIT license. See [the license file](LICENSE.md) for more information.
 ---
