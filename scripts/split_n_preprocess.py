@@ -16,7 +16,6 @@ from src.capture_df_info import capture_df_info
 @click.option('--raw-data', type=str, help="Path to raw data")
 @click.option('--data-to', type=str, help="Path to directory where processed data csv will be written to")
 @click.option('--preview_to', type=str, help="Path to directory where the preview csv will be written to")
-
 # python3 split_n_preprocess.py "../data/crimedata_csv_AllNeighbourhoods_AllYears.csv" "../reports"
 
 def main(raw_data, data_to, preview_to=None):
@@ -37,7 +36,7 @@ def main(raw_data, data_to, preview_to=None):
 
     if preview_to is None:
         preview_to = data_to
-    
+
     df = pd.read_csv(raw_data, encoding="utf-8")
     # df = pd.read_csv(raw_data, header=None).drop(columns=['id'])
 

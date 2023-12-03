@@ -12,11 +12,9 @@ from src.arima_forecasting import arima_prediction
 @click.command()
 @click.argument('preprocessed_data')
 @click.argument('results_folder')
-
 def main(preprocessed_data, results_folder):
-
     data = pd.read_csv(preprocessed_data)
-    data = data[['YEAR-MONTH','Observations']]
+    data = data[['YEAR-MONTH', 'Observations']]
     data.set_index('YEAR-MONTH', inplace=True)
     data.index = pd.to_datetime(data.index)
     print(data)
@@ -24,14 +22,13 @@ def main(preprocessed_data, results_folder):
     # Define the size of the sliding window
     window_size = 12
     # Define alpha (smoothing parameter in ES)
-    alpha=0.3
+    alpha = 0.3
 
     # Perform Simple Moving Average (SMA) and Exponential Smoothing (ES)
     sma_values = []
     smoothed_values = []
     for i in range(len(data) - window_size + 1):
-        
-        window = data['Observations'].iloc[i:i+window_size]
+        window = data['Observations'].iloc[i:i + window_size]
 
         # SMA
         window_mean = window.mean()
@@ -40,7 +37,7 @@ def main(preprocessed_data, results_folder):
         # ES
         smoothed_val = window.ewm(alpha=alpha, adjust=False).mean().iloc[-1]
         smoothed_values.append(smoothed_val)
-    
+
     arima_pred_values = arima_prediction(data)
 
     sma_merged = merge_forecast_values(data, sma_values, "SMA_Forecast")
@@ -50,6 +47,7 @@ def main(preprocessed_data, results_folder):
     merged_df = pd.concat([sma_merged, es_merged["ES_Forecast"], arima_merged["ARIMA_Forecast"]], axis=1)
 
     merged_df.to_csv(os.path.join(results_folder, "tables", "all_predictions.csv"))
+
 
 if __name__ == '__main__':
     main()

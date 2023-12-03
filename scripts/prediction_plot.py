@@ -5,20 +5,17 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 
 
 @click.command()
 @click.argument('prediction_df')
 @click.argument('results_folder')
-
 def main(prediction_df, results_folder):
-
     data = pd.read_csv(prediction_df, index_col=[0])
     data.index = pd.to_datetime(data.index)
-    
-    #Original Plot
+
+    # Original Plot
     plt.figure(figsize=(10, 6))
     plt.plot(data.index, data['Observations'], label='Original Values', color='black')
     plt.legend()
