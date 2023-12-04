@@ -100,6 +100,7 @@ python scripts/get_metrics.py \
 jupyter-book build --builder html ./report && \
 rm -rf ./docs && \
 cp -rf ./report/_build/html ./docs && \
+touch ./docs/.nojekyll && \
 jupyter-book clean report/ --all 
 ```
 
@@ -125,10 +126,11 @@ Here are some handy links for quick access:
 
 ## 📖 License
 
-All reports contained herein are licensed under the
-[Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License](https://creativecommons.org/licenses/by-sa/4.0/).
-See [the license file](LICENSE.md) for more information. If
-re-using/re-mixing please provide attribution and link to this webpage.
+All reports contained herein are licensed under the [Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License](https://creativecommons.org/licenses/by-sa/4.0/).
+ See [the license file](LICENSE.md) for more information.
+
+If re-using/re-mixing please provide attribution and link to this webpage.
+
 The software code contained within this repository is licensed under the
 MIT license. See [the license file](LICENSE.md) for more information.
 ---
