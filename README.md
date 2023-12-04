@@ -133,4 +133,3 @@ If re-using/re-mixing please provide attribution and link to this webpage.
 
 The software code contained within this repository is licensed under the
 MIT license. See [the license file](LICENSE.md) for more information.
----
