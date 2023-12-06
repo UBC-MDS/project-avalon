@@ -4,7 +4,7 @@
 # Crime Forecast in Vancouver
   - DSCI-522 Group 23
   - Alias: Project Avalon
-  - 
+
 ## 🌟 Stakeholders
 
 Our team, in alphabetical order:
