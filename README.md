@@ -4,6 +4,15 @@
 # Crime Forecast in Vancouver
   - DSCI-522 Group 23
   - Alias: Project Avalon
+  - 
+## 🌟 Stakeholders
+
+Our team, in alphabetical order:
+
+- **Orix Au Yeung**
+- **Ben Chen**
+- **Mo Norouzi**
+- **Yiwei Zhang**
     
 Welcome to the repository for Project Avalon, a part of the DSCI-522 course by Group 23 in the MDS-V Cohort 8 at UBC.
 
@@ -103,15 +112,6 @@ cp -rf ./report/_build/html ./docs && \
 touch ./docs/.nojekyll && \
 jupyter-book clean report/ --all 
 ```
-
-## 🌟 Stakeholders
-
-Our team, in alphabetical order:
-
-- **Orix Au Yeung**
-- **Ben Chen**
-- **Mo Norouzi**
-- **Yiwei Zhang**
 
 ## 📌 Useful URLs
 
