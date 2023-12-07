@@ -1,0 +1,9 @@
+table.dataframe {
+    border: 0;
+    width: auto;
+    font-size: 0.9em;
+}
+
+table.dataframe td, table.dataframe th {
+    padding: 0 0.5em;
+}
