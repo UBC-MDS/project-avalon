@@ -1,7 +1,7 @@
 ## What's Changed
-### version v0.5.0 - Date Dec 9, 2023
+### version v1.0.0-rc1 - Date Dec 8, 2023
 
-### Major changes
+### Changes to address feedbacks
 The issues we prioritized to resolve：
 - https://github.com/UBC-MDS/data-analysis-review-2023/issues/16#issuecomment-1839700250
   ```
@@ -39,12 +39,12 @@ The issues we prioritized to resolve：
   * Issue 4:
     * Change formatting content of tables by @phchen5 and @SoloSynth1 in https://github.com/UBC-MDS/project-avalon/pull/118  (same as above)
   
-### Minor changes
+### Other changes
 * Update README.md to include a better project summary by @zywkloo in https://github.com/UBC-MDS/project-avalon/pull/103
 * Create CHANGELOG.md by @zywkloo in https://github.com/UBC-MDS/project-avalon/pull/121
 * Fix: remove the extra dash in README.md by @SoloSynth1 in https://github.com/UBC-MDS/project-avalon/pull/115
 * Remove unused imports in the notebook by @SoloSynth1 in https://github.com/UBC-MDS/project-avalon/pull/114
 * Create `makefile` to compile a report by @SoloSynth1 in https://github.com/UBC-MDS/project-avalon/pull/120
-* Change Dockerfile & docker-compose.yaml for using GNU Make by @SoloSynth1 in https://github.com/UBC-MDS/project-avalon/blob/main/docker-compose.yaml
+* Add makefile workflow to docker by @SoloSynth1 in https://github.com/UBC-MDS/project-avalon/pull/123
 
-**Full Changelog**: https://github.com/UBC-MDS/project-avalon/compare/v0.4.0...v0.5.0
+**Full Changelog**: https://github.com/UBC-MDS/project-avalon/compare/v0.4.0...v1.0.0-rc1
