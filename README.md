@@ -31,30 +31,38 @@ We created a model to estimate the frequency of vehicle break-ins each month in 
 ## 📋 Dependencies
 
 All required dependencies are listed in this [conda environment file](environment.yaml).
+## 🧑‍💻 How to Reproduce Our Findings
 
-## 🧪 Test Automation
+### Option 1: Docker/Docker compose (recommended)
 
-To run tests, execute the following command in the project root directory:
-```
-python3 tests/run_all_tests.py
-```
+[Link to the DockerHub Image](https://hub.docker.com/repository/docker/solosynth1/project-avalon/general)
 
-## 🧑‍💻 How to run the notebook server
-
-### Docker/Docker compose (recommended)
-
-Link to [DockerHub Image](https://hub.docker.com/repository/docker/solosynth1/project-avalon/general)
-
-1. Make sure Docker Engine/Desktop is installed and running.
-1. Go to the project root folder.
-2. Run `docker compose pull && docker compose up` to bring up the container.
-4. Use browser to visit http://localhost:8888 and supply the generate token.
+For this method, you will need to ensure either [Docker Dekstop](https://www.docker.com/products/docker-desktop/) or [Docker Engine](https://docs.docker.com/engine/) is installed and running in your system.
 
 **Important Notes:**
 - (For Docker Desktop users) The created container will require more than 4GB of RAM to run the analysis notebook. Please ensure the settings in Docker Desktop enables provisioning at least 8GB of RAM to the container.
 - (For Apple Silicon users) Please enable the feature "Use Rosetta for x86/amd64 emulation on Apple Silicon" inside the setting menu. Otherwise, the kernel will not be properly run.
 
-### Local conda environment
+#### Report Generation Pipeline
+Go to the project's root folder and run:
+```shell
+docker compose --profile make-report pull && \
+  docker compose --profile make-report up
+```
+- The above script generates the report using GNU Make and Jupyter Book.
+- The final report will be placed under `docs/`.
+
+#### JupyterLab Server
+Go to the project's root folder and run:
+```shell
+docker compose --profile interactive pull && \
+  docker compose --profile interactive up
+```
+- This is best for users who are interested in tinkering with the data, models and report.
+- Use browser to visit http://localhost:8888 and supply the generate token.
+
+### Option 2: Local conda environment
+
 1. Create a new conda environment based on the provided [YAML file](environment.yaml).
   - Run `conda env create --name avalon --file=environment.yaml`
   - Then switch to `avalon` env by clicking the drop-down, and select `avalon`
@@ -70,60 +78,11 @@ python -m ipykernel install --user --name avalon --display-name "Python (avalon)
 2. Ensure all dependencies are installed.
 3. Open Jupyter Notebook or JupyterLab to run the [analysis notebook](milestone_1.ipynb)
 
-### 📔 Run the Scripts
+## 🧪 Test Automation
 
-Either in the docker environment/local conda environment, run the following command:
-
-
-1. Read raw data and perform EDA and output figures and tables
-```shell
-python scripts/EDA.py \
-   --input_filepath=data/raw/crimedata_csv_AllNeighbourhoods_AllYears.csv \
-   --output_filepath=results/
+To run tests, execute the following command in the project root directory:
 ```
-
-2. split and preprocess data
-```shell
-python scripts/split_n_preprocess.py \
-   --raw-data=data/raw/crimedata_csv_AllNeighbourhoods_AllYears.csv \
-   --data-to=data/processed/
-```
-
-3. make forecasting and save results as csv
-```
-python scripts/modelling.py \
-   --preprocessed_data=data/processed/preprocessed_theft_from_vehicle_full.csv \
-   --results_folder=results/
-```
-
-4. plot out prediction results
-```
-python scripts/prediction_plot.py \
-   --prediction_df=results/tables/all_predictions.csv \
-   --results_folder=results/
-```
-
-5. evaluate model on test data and save results
-```
-python scripts/autocorrelation_plot.py \
-   --preprocessed_data=data/processed/preprocessed_theft_from_vehicle_full.csv \
-   --results_folder=results/
-```
-
-6. find final metric
-```
-python scripts/get_metrics.py \
-   --predictions_data=results/tables/all_predictions.csv \
-   --results_folder=results/
-```
-
-7. build HTML report and copy build to docs folder
-```
-jupyter-book build --builder html ./report && \
-rm -rf ./docs && \
-cp -rf ./report/_build/html ./docs && \
-touch ./docs/.nojekyll && \
-jupyter-book clean report/ --all 
+python3 tests/run_all_tests.py
 ```
 
 ## 📌 Useful URLs
