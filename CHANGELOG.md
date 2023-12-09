@@ -1,4 +1,5 @@
 ## What's Changed
+### version v0.5.0 - Date Dec 9, 2023
 * Update book rendering command in `README` and license information by @SoloSynth1 in https://github.com/UBC-MDS/project-avalon/pull/102
 * Update README.md to include a better project summary by @zywkloo in https://github.com/UBC-MDS/project-avalon/pull/103
 * Create CHANGELOG.md by @zywkloo in [https://github.com/UBC-MDS/project-avalon/pull/103](https://github.com/UBC-MDS/project-avalon/blob/main/README.md)
