@@ -1,9 +1,21 @@
 version: '3'
 services:
   notebook-server:
+    profiles:
+      - interactive
     image: "solosynth1/project-avalon:main"
     volumes:
       - .:/home/jovyan/work
     ports:
       - "8888:8888"
     platform: linux/amd64
+  report-gen:
+    profiles:
+      - make-report
+    image: "solosynth1/project-avalon:main"
+    volumes:
+      - .:/home/jovyan/work
+    platform: linux/amd64
+    working_dir: /home/jovyan/work
+    command: sh -c "make clean && make all"
+    user: 0:0
