@@ -74,38 +74,51 @@ python -m ipykernel install --user --name avalon --display-name "Python (avalon)
 
 Either in the docker environment/local conda environment, run the following command:
 
+
+1. Read raw data and perform EDA and output figures and tables
 ```shell
-# Read raw data and perform EDA and output figures and tables
 python scripts/EDA.py \
    --input_filepath=data/raw/crimedata_csv_AllNeighbourhoods_AllYears.csv \
    --output_filepath=results/
+```
 
-# split and preprocess data
+2. split and preprocess data
+```shell
 python scripts/split_n_preprocess.py \
    --raw-data=data/raw/crimedata_csv_AllNeighbourhoods_AllYears.csv \
    --data-to=data/processed/
+```
 
-# make forecasting and save results as csv
+3. make forecasting and save results as csv
+```
 python scripts/modelling.py \
    --preprocessed_data=data/processed/preprocessed_theft_from_vehicle_full.csv \
-   --results_folder=results/ 
+   --results_folder=results/
+```
 
-# plot out prediction results
+4. plot out prediction results
+```
 python scripts/prediction_plot.py \
    --prediction_df=results/tables/all_predictions.csv \
    --results_folder=results/
+```
 
-# evaluate model on test data and save results
+5. evaluate model on test data and save results
+```
 python scripts/autocorrelation_plot.py \
    --preprocessed_data=data/processed/preprocessed_theft_from_vehicle_full.csv \
    --results_folder=results/
+```
 
-# find final metric
+6. find final metric
+```
 python scripts/get_metrics.py \
    --predictions_data=results/tables/all_predictions.csv \
    --results_folder=results/
+```
 
-# build HTML report and copy build to docs folder
+7. build HTML report and copy build to docs folder
+```
 jupyter-book build --builder html ./report && \
 rm -rf ./docs && \
 cp -rf ./report/_build/html ./docs && \
