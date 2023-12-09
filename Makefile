@@ -79,6 +79,6 @@ data/processed/preprocessed_theft_from_vehicle_head.csv
 
 clean :
 	rm -rf docs/ && \
-	rm data/processed/* && \
-	rm results/figures/* &&\
-	rm results/tables/*
+	rm -f data/processed/* && \
+	rm -f results/figures/* &&\
+	rm -f results/tables/*
